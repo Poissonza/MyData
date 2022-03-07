@@ -54,9 +54,9 @@ class BGGAPI:
         else:
             final_data = []
 
-        play_url = f"https://boardgamegeek.com/xmlapi2/plays?id={game_id}&mindate={last_date[game_id]}"
+        play_url = f"https://boardgamegeek.com/xmlapi2/plays?id={game_id}"
 
-        url_data = urllib.request.urlopen(play_url).read()
+        url_data = urllib.request.urlopen(f"{play_url}&mindate={last_date[game_id]}").read()
 
         soup = BeautifulSoup(url_data, "html.parser")
         max_pages = math.ceil(int(soup.plays["total"]) / 100)
