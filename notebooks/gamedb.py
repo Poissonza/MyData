@@ -11,6 +11,8 @@ class GameDB:
         self.plays = Table("plays", self.meta_data, autoload_with=self.engine)
         self.playsplayer = Table("playsplayer", self.meta_data, autoload_with=self.engine)
         self.games = Table("games", self.meta_data, autoload_with=self.engine)
+        self.classificationlink = Table("classificationgamelink", self.meta_data, autoload_with=self.engine)
+        self.classification = Table("classifications", self.meta_data, autoload_with=self.engine)
 
     def create_tables(self):
         plays = Table(
@@ -30,7 +32,7 @@ class GameDB:
         playsplayer = Table(
             "playsplayer",
             self.meta_data,
-            Column("id", Integer,primary_key=True),
+            Column("id", Integer, primary_key=True),
             Column("playid", Integer, ForeignKey("plays.playid")),
             Column("username", String),
             Column("userid", Integer),
@@ -67,12 +69,14 @@ class GameDB:
             Column("numcomments", Integer),
             Column("numweights", Integer),
             Column("averageweight", Float),
+            Column("description", String)
         )
 
         classifications = Table(
             "classifications",
             self.meta_data,
-            Column("id", Integer, primary_key=True),
+            Column("internalId", Integer, primary_key=True),
+            Column("id", Integer),
             Column("type", String),
             Column("value", String)
         )
@@ -90,6 +94,18 @@ class GameDB:
     def insert_play(self, data):
         ins = self.plays.insert()
         self.engine.execute(ins, data)
+
+    def insert_classification_link(self, data):
+        ins = self.classificationlink.insert()
+        self.engine.execute(ins, data)
+
+    def insert_classification(self, data):
+        ins = self.classification.insert()
+        self.engine.execute(ins, data)
+
+    def get_classification_id(self):
+        s = select(self.classification.c.id)
+        return [item for t in self.engine.execute(s).fetchall() for item in t]
 
     def get_play_id(self, gameid):
         s = select(self.plays.c.playid).where(self.plays.c.gameid == gameid)

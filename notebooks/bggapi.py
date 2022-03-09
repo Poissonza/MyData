@@ -1,5 +1,6 @@
 import pathlib
-import urllib
+# import urllib
+import requests
 from bs4 import BeautifulSoup
 import math
 from tqdm import tqdm
@@ -11,14 +12,69 @@ from more_itertools import chunked
 
 class BGGAPI:
 
+    def populate_game_info_batch(self, game_id, db):
+        fetched_games = db.get_game_id()
+        collected_classification = db.get_classification_id()
+        chunks = chunked(game_id, 100)
+        for chunk in tqdm(chunks, desc="Game Chunk"):
+            game_ids = ",".join([str(item) for item in chunk])
+            game_url = f"https://boardgamegeek.com/xmlapi2/thing?id={game_ids}&stats=1"
+            url_data = requests.get(game_url).content
+            soup = BeautifulSoup(url_data, "html.parser")
+            # return soup
+            for game in soup.findAll("item"):
+                if not int(game["id"]) in fetched_games:
+                    dict = {
+                        "id": int(game["id"]),
+                        "name": game.find("name", type="primary")["value"],
+                        "yearpublished": int(game.find("yearpublished")["value"]),
+                        "minplayers": int(game.find("minplayers")["value"]),
+                        "maxplayers": int(game.find("maxplayers")["value"]),
+                        "playingtime": int(game.find("playingtime")["value"]),
+                        "minplaytime": int(game.find("minplaytime")["value"]),
+                        "maxplaytime": int(game.find("maxplaytime")["value"]),
+                        "minage": int(game.find("minage")["value"]),
+                        "usersrated": int(game.find("usersrated")["value"]),
+                        "average": float(game.find("average")["value"]),
+                        "bayesaverage": float(game.find("bayesaverage")["value"]),
+                        "stddev": float(game.find("stddev")["value"]),
+                        "media": int(game.find("median")["value"]),
+                        "owned": int(game.find("owned")["value"]),
+                        "trading": int(game.find("trading")["value"]),
+                        "wanting": int(game.find("wanting")["value"]),
+                        "wishing": int(game.find("wishing")["value"]),
+                        "numcomments": int(game.find("numcomments")["value"]),
+                        "numweights": int(game.find("numweights")["value"]),
+                        "averageweight": float(game.find("averageweight")["value"]),
+                        "description": game.find("description").contents[0],
+                    }
+                    for classification in game.findAll("link"):
+                        class_dict = {
+                            "gameid": int(game["id"]),
+                            "classificationid": int(classification["id"])
+                        }
+                        if not int(classification["id"]) in collected_classification:
+                            db.insert_classification(
+                                {
+                                    "id": int(classification["id"]),
+                                    "type": classification["type"],
+                                    "value": classification["value"]
+                                }
+                            )
+                            collected_classification.append(int(classification["id"]))
+                        db.insert_classification_link(class_dict)
+
+                    fetched_games.append(int(game["id"]))
+                    db.insert_game(dict)
+            sleep(1)
+
     def populate_game_info(self, game_id: list, db):
         fetched_games = db.get_game_id()
-        chunks = chunked(game_id,100)
-        print(chunks)
+        chunks = chunked(game_id, 100)
         for game in tqdm(game_id, desc="Game"):
             if not game in fetched_games:
                 game_url = f"https://boardgamegeek.com/xmlapi2/thing?id={game}&stats=1"
-                url_data = urllib.request.urlopen(game_url).read()
+                url_data = requests.get(game_url).content
                 soup = BeautifulSoup(url_data, "html.parser")
                 dict = {
                     "id": int(soup.items.item["id"]),
@@ -55,17 +111,17 @@ class BGGAPI:
 
         play_url = f"https://boardgamegeek.com/xmlapi2/plays?id={game_id}"
 
-        url_data = urllib.request.urlopen(
+        url_data = requests.get(
             f"{play_url}&mindate={last_date}"
-        ).read()
+        ).content
 
         soup = BeautifulSoup(url_data, "html.parser")
         max_pages = math.ceil(int(soup.plays["total"]) / 100)
 
         for page in tqdm(range(max_pages, 0, -1), maxinterval=max_pages, desc=f"{game_id}: Page"):
-            url_data = urllib.request.urlopen(
+            url_data = requests.get(
                 f"{play_url}&mindate={last_date}&page={page}"
-            ).read()
+            ).content
             soup2 = BeautifulSoup(url_data, "html.parser")
             for play in soup2.findAll("play"):
                 if not int(play["id"]) in id_collected:
