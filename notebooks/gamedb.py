@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine, Table, Column, MetaData, Integer, String, Date, select, func, ForeignKey
+from sqlalchemy import create_engine, Table, Column, MetaData, Integer, String, Date, select, func, ForeignKey, Float
 
 
 class GameDB:
@@ -10,6 +10,7 @@ class GameDB:
 
         self.plays = Table("plays", self.meta_data, autoload_with=self.engine)
         self.playsplayer = Table("playsplayer", self.meta_data, autoload_with=self.engine)
+        self.games = Table("games", self.meta_data, autoload_with=self.engine)
 
     def create_tables(self):
         plays = Table(
@@ -42,6 +43,48 @@ class GameDB:
             Column("win", Integer)
         )
 
+        game = Table(
+            "games",
+            self.meta_data,
+            Column("id", Integer, primary_key=True),
+            Column("name", String),
+            Column("yearpublished", Integer),
+            Column("minplayers", Integer),
+            Column("maxplayers", Integer),
+            Column("playingtime", Integer),
+            Column("minplaytime", Integer),
+            Column("maxplaytime", Integer),
+            Column("minage", Integer),
+            Column("usersrated", Integer),
+            Column("average", Float),
+            Column("bayesaverage", Float),
+            Column("stddev", Float),
+            Column("median", Float),
+            Column("owned", Integer),
+            Column("trading", Integer),
+            Column("wanting", Integer),
+            Column("wishing", Integer),
+            Column("numcomments", Integer),
+            Column("numweights", Integer),
+            Column("averageweight", Float),
+        )
+
+        classifications = Table(
+            "classifications",
+            self.meta_data,
+            Column("id", Integer, primary_key=True),
+            Column("type", String),
+            Column("value", String)
+        )
+
+        classificationgamelink = Table(
+            "classificationgamelink",
+            self.meta_data,
+            Column("id", Integer, primary_key=True),
+            Column("gameid", Integer),
+            Column("classificationid", Integer)
+        )
+
         self.meta_data.create_all(self.engine)
 
     def insert_play(self, data):
@@ -59,3 +102,11 @@ class GameDB:
     def insert_player_play(self, data):
         ins = self.playsplayer.insert()
         self.engine.execute(ins, data)
+
+    def insert_game(self, data):
+        ins = self.games.insert()
+        self.engine.execute(ins, data)
+
+    def get_game_id(self):
+        s = select(self.games.c.id)
+        return [item for t in self.engine.execute(s).fetchall() for item in t]

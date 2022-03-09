@@ -6,24 +6,44 @@ from tqdm import tqdm
 from time import sleep
 import json
 
+from more_itertools import chunked
+
 
 class BGGAPI:
-    def populate_game_info(self, game_id: int):
-        final_dict = {"bggId": game_id}
 
-        game_url = f"https://boardgamegeek.com/xmlapi2/thing?id={game_id}&stats=1"
-        url_data = urllib.request.urlopen(game_url).read()
-
-        soup = BeautifulSoup(url_data, "html.parser")
-
-        final_dict.update(
-            {
-                "weight": float(soup.items.find("averageweight")["value"]),
-                "rating": float(soup.ratings.average["value"]),
-                "bayesrating": float(soup.ratings.bayesaverage["value"]),
-            }
-        )
-        return final_dict
+    def populate_game_info(self, game_id: list, db):
+        fetched_games = db.get_game_id()
+        chunks = chunked(game_id,100)
+        print(chunks)
+        for game in tqdm(game_id, desc="Game"):
+            if not game in fetched_games:
+                game_url = f"https://boardgamegeek.com/xmlapi2/thing?id={game}&stats=1"
+                url_data = urllib.request.urlopen(game_url).read()
+                soup = BeautifulSoup(url_data, "html.parser")
+                dict = {
+                    "id": int(soup.items.item["id"]),
+                    "name": soup.find("name", type="primary")["value"],
+                    "yearpublished": int(soup.find("yearpublished")["value"]),
+                    "minplayers": int(soup.find("minplayers")["value"]),
+                    "maxplayers": int(soup.find("maxplayers")["value"]),
+                    "playingtime": int(soup.find("playingtime")["value"]),
+                    "minplaytime": int(soup.find("minplaytime")["value"]),
+                    "maxplaytime": int(soup.find("maxplaytime")["value"]),
+                    "minage": int(soup.find("minage")["value"]),
+                    "usersrated": int(soup.find("usersrated")["value"]),
+                    "average": float(soup.find("average")["value"]),
+                    "bayesaverage": float(soup.find("bayesaverage")["value"]),
+                    "stddev": float(soup.find("stddev")["value"]),
+                    "media": int(soup.find("median")["value"]),
+                    "owned": int(soup.find("owned")["value"]),
+                    "trading": int(soup.find("trading")["value"]),
+                    "wanting": int(soup.find("wanting")["value"]),
+                    "wishing": int(soup.find("wishing")["value"]),
+                    "numcomments": int(soup.find("numcomments")["value"]),
+                    "numweights": int(soup.find("numweights")["value"]),
+                    "averageweight": float(soup.find("averageweight")["value"]),
+                }
+                db.insert_game(dict)
 
     def get_plays(selfs, game_id: int, db):
 

@@ -3,3 +3,5 @@ jupyter
 matplotlib
 bs4
 tqdm
+sqlalchemy
+more_itertools
