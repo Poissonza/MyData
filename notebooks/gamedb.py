@@ -13,6 +13,7 @@ class GameDB:
         self.games = Table("games", self.meta_data, autoload_with=self.engine)
         self.classificationlink = Table("classificationgamelink", self.meta_data, autoload_with=self.engine)
         self.classification = Table("classifications", self.meta_data, autoload_with=self.engine)
+        self.rank = Table("rank", self.meta_data, autoload_with=self.engine)
 
     def create_tables(self):
         plays = Table(
@@ -89,7 +90,28 @@ class GameDB:
             Column("classificationid", Integer)
         )
 
+        rank = Table(
+            "rank",
+            self.meta_data,
+            Column("internalid", Integer, primary_key=True),
+            Column("type", String),
+            Column("id", Integer),
+            Column("gameid", Integer),
+            Column("name", String),
+            Column("friendlyname", String),
+            Column("value", Integer),
+            Column("bayesaverage", Float)
+        )
+
         self.meta_data.create_all(self.engine)
+
+    def get_plays(self, game, date):
+        s = select(func.count(self.plays.c.game),self.plays.c.date).where(self.plays.c.game == game, self.plays.c.dare >= date).group_by(self.plays.c.date)
+        return self.engine.execute(s).fetchall()
+
+    def get_plays_player(self, game):
+        s = select(self.playsplayer).join(self.plays).where(self.plays.c.game==game)
+        return self.engine.execute(s).fetchall()
 
     def insert_play(self, data):
         ins = self.plays.insert()
@@ -126,3 +148,7 @@ class GameDB:
     def get_game_id(self):
         s = select(self.games.c.id)
         return [item for t in self.engine.execute(s).fetchall() for item in t]
+
+    def insert_rank(self, data):
+        ins = self.rank.insert()
+        self.engine.execute(ins, data)

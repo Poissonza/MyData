@@ -63,6 +63,19 @@ class BGGAPI:
                             )
                             collected_classification.append(int(classification["id"]))
                         db.insert_classification_link(class_dict)
+                    if game.find("rank") is not None:
+                        for rank in game.findAll("rank"):
+                            db.insert_rank(
+                                {
+                                    "type": rank["type"],
+                                    "id": int(rank["id"]),
+                                    "gameid": int(game["id"]),
+                                    "name": rank["name"],
+                                    "friendlyname": rank["friendlyname"],
+                                    "value": int(rank["value"]),
+                                    "bayesaverage": float(rank["bayesaverage"]),
+                                }
+                            )
 
                     fetched_games.append(int(game["id"]))
                     db.insert_game(dict)
@@ -102,7 +115,6 @@ class BGGAPI:
                 db.insert_game(dict)
 
     def get_plays(selfs, game_id: int, db):
-
         id_collected = db.get_play_id(game_id)
         last_date = db.get_last_date(game_id)[0]
 
@@ -157,4 +169,4 @@ class BGGAPI:
                     db.insert_play(dict)
                     last_date = play["date"]
                     id_collected.append(int(play["id"]))
-            sleep(1.5)
+            sleep(1)
