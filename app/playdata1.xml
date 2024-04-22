@@ -1,0 +1,2734 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plays username="scod101" userid="960336" total="5202" page="1"
+       termsofuse="https://boardgamegeek.com/xmlapi/termsofuse">
+    <play id="83868501" date="2024-04-20" quantity="1" length="42" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="2" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Dominique Borlase" startposition="" color="" score="3" new="1"
+                    rating="0"
+                    win="1"/>
+            <player username="" userid="0" name="Jodi" startposition="" color="" score="1"
+                    new="1" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83871377" date="2024-04-20" quantity="1" length="68" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="The Quacks of Quedlinburg" objecttype="thing" objectid="244521">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="54" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Dominique Borlase" startposition="" color="" score="48" new="1"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Jodi" startposition="" color="" score="57"
+                    new="1" rating="0" win="1"/>
+        </players>
+
+    </play>
+
+    <play id="83873541" date="2024-04-20" quantity="1" length="30" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="SCOUT" objecttype="thing" objectid="291453">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="8" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Dominique Borlase" startposition="" color="" score="13" new="1"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Jodi" startposition="" color="" score="17"
+                    new="1" rating="0" win="1"/>
+        </players>
+
+    </play>
+
+    <play id="83871792" date="2024-04-20" quantity="1" length="3" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Timeline" objecttype="thing" objectid="128664">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameintegration"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Dominique Borlase" startposition="" color="" score="" new="0"
+                    rating="0"
+                    win="1"/>
+            <player username="" userid="0" name="Jodi" startposition="" color="" score=""
+                    new="1" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83871862" date="2024-04-20" quantity="1" length="0" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Timeline" objecttype="thing" objectid="128664">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameintegration"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Dominique Borlase" startposition="" color="" score="" new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Jodi" startposition="" color="" score=""
+                    new="0" rating="0" win="1"/>
+        </players>
+
+    </play>
+
+    <play id="83871939" date="2024-04-20" quantity="1" length="3" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Timeline" objecttype="thing" objectid="128664">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameintegration"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Dominique Borlase" startposition="" color="" score="" new="0"
+                    rating="0"
+                    win="1"/>
+            <player username="" userid="0" name="Jodi" startposition="" color="" score=""
+                    new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83838263" date="2024-04-19" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Russian Railroads" objecttype="thing" objectid="144733">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Oksana" startposition="" color="" score="439"
+                    new="0" rating="0" win="1"/>
+            <player username="" userid="0"
+                    name="Dave"
+                    startposition="" color=""
+                    score="360" new="0"
+                    rating="0" win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="285" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Kate"
+                    startposition=""
+                    color="" score="272"
+                    new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83810622" date="2024-04-18" quantity="1" length="110" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="59" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Mike" startposition="" color="" score="49" new="1" rating="0" win="0"/>
+            <player username="" userid="0" name="Simon" startposition="" color="" score="67" new="1"
+                    rating="0" win="1"/>
+            <player username="" userid="0" name="Simon S"
+                    startposition="" color="" score="56" new="1"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83838262" date="2024-04-18" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Teotihuacan: City of Gods" objecttype="thing" objectid="229853">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="209" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="158"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="114" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color="" score="107"
+                    new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83786125" date="2024-04-17" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="57" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="47" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83786126" date="2024-04-17" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="57" new="0" rating="0" win="1"/>
+            <player
+                    username="" userid="0" name="Anonymous player" startposition="" color="" score="43" new="0"
+                    rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83786128" date="2024-04-17" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="123" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="112"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="37" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="27" new="0"
+                    rating="0" win="0"/>
+
+        </players>
+
+    </play>
+
+    <play id="83785341" date="2024-04-17" quantity="1" length="139" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Sidereal Confluence" objecttype="thing" objectid="202426">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="Zeth Charity Syndicate" score="44" new="0" rating="0" win="0"/>
+            <player username="" userid="0" name="Callum" startposition="" color="Im&#039;Dril" score="48"
+                    new="1" rating="0" win="0"/>
+            <player username="" userid="0" name="Ellie"
+                    startposition=""
+                    color="Kit Technophiles" score="76"
+                    new="1" rating="0" win="0"/>
+            <player username="" userid="0" name="Ewan" startposition="" color="Caylon Collaborative"
+                    score="86" new="0" rating="0" win="1"/>
+            <player username="" userid="0"
+                    name="John"
+                    startposition=""
+                    color="Faderan Conclave"
+                    score="50" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Rob" startposition="" color="Kjasjavikalimm Directorate"
+                    score="72" new="1" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83786127" date="2024-04-17" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Through the Ages: A New Story of Civilization" objecttype="thing" objectid="182028">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="74" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="66" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83786129" date="2024-04-17" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Ultimate Railroads" objecttype="thing" objectid="329591">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgamecompilation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="658" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="524"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="455"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="232" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83677789" date="2024-04-14" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Anachrony" objecttype="thing" objectid="185343">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameintegration"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="51" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="43"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="38" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="28" new="0"
+                    rating="0" win="0"/>
+
+        </players>
+
+    </play>
+
+    <play id="83746907" date="2024-04-14" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Ancient Knowledge" objecttype="thing" objectid="338093">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="40" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="21" new="1"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83677790" date="2024-04-14" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Ultimate Railroads" objecttype="thing" objectid="329591">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgamecompilation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="528" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="220" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="211" new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83677788" date="2024-04-12" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Barrage" objecttype="thing" objectid="251247">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="147" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Mike"
+                    startposition=""
+                    color=""
+                    score="67"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="58"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="25" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83574791" date="2024-04-11" quantity="1" length="95" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Revive" objecttype="thing" objectid="332772">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="Kuniban" score="45" new="0" rating="0" win="0"/>
+            <player username="" userid="0" name="Akwa" startposition="" color="Nadair" score="90" new="1" rating="0"
+                    win="1"/>
+            <player username="" userid="0" name="Simon" startposition=""
+                    color="Hofstadterians" score="87" new="0" rating="0" win="0"/>
+            <player username="" userid="0" name="Simon S" startposition="" color="" score="41" new="1"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83579091" date="2024-04-11" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Ultimate Railroads" objecttype="thing" objectid="329591">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgamecompilation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="666" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="431"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="389"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="294" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83553990" date="2024-04-10" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="9" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="6"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="4"
+                    new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color="" score="3"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="1" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83553989" date="2024-04-09" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Barrage" objecttype="thing" objectid="251247">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="98" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="53" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="53" new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83510924" date="2024-04-09" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="71" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="66"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="43" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="39" new="0"
+                    rating="0" win="0"/>
+
+        </players>
+
+    </play>
+
+    <play id="83553987" date="2024-04-09" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="81" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="64"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="43"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="17" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83553985" date="2024-04-09" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="9" new="0" rating="0" win="1"/>
+            <player
+                    username="" userid="0" name="Anonymous player" startposition="" color="" score="6" new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="4" new="0" rating="0" win="0"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="3"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+
+        </players>
+
+    </play>
+
+    <play id="83553988" date="2024-04-09" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="6" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="4"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="3"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="2" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83497122" date="2024-04-08" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Teotihuacan: City of Gods" objecttype="thing" objectid="229853">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="188" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="171"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="102" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color="" score="20"
+                    new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83510923" date="2024-04-08" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="The Voyages of Marco Polo" objecttype="thing" objectid="171623">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="79" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Mike"
+                    startposition=""
+                    color=""
+                    score="58"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Liz Cbg" startposition="" color="" score="35" new="0"
+                    rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="22" new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83497121" date="2024-04-07" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Terraforming Mars" objecttype="thing" objectid="167791">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="67" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="53"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="49"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="35" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83436265" date="2024-04-06" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="63" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="38" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="33" new="0" rating="0"
+                    win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="32" new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83436264" date="2024-04-06" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="9" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="4"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="3"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="1" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83436266" date="2024-04-06" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="9" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="6"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="3" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="1" new="0"
+                    rating="0" win="0"/>
+
+        </players>
+
+    </play>
+
+    <play id="83436268" date="2024-04-06" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Teotihuacan: City of Gods" objecttype="thing" objectid="229853">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="177" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="158"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="144"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="119" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83436263" date="2024-04-05" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Century: Golem Edition" objecttype="thing" objectid="232832">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+                <subtype value="boardgameintegration"/>
+
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="74" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="69"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="63"
+                    new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color="" score="61"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="40" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83336665" date="2024-04-04" quantity="1" length="38" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Atlas Lost: Rise of the New Sovereigns" objecttype="thing" objectid="362598">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="29" new="1" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Simon" startposition="" color="" score="36" new="1" rating="0"
+                    win="1"/>
+
+        </players>
+
+    </play>
+
+    <play id="83341407" date="2024-04-04" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Teotihuacan: City of Gods" objecttype="thing" objectid="229853">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="139" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="107" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83341408" date="2024-04-04" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Through the Ages: A New Story of Civilization" objecttype="thing" objectid="182028">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="111" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="107" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="105" new="0" rating="0"
+                    win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="93" new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83340289" date="2024-04-04" quantity="1" length="55" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Wyrmspan" objecttype="thing" objectid="410201">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="75" new="1" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Simon" startposition="" color="" score="97" new="1" rating="0"
+                    win="1"/>
+
+        </players>
+
+    </play>
+
+    <play id="83289874" date="2024-04-03" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Through the Ages: A New Story of Civilization" objecttype="thing" objectid="182028">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="119" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="88"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="86" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83259968" date="2024-04-02" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Through the Ages: A New Story of Civilization" objecttype="thing" objectid="182028">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="312" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="174" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="168" new="0" rating="0"
+                    win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="166" new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83289873" date="2024-04-02" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Ultimate Railroads" objecttype="thing" objectid="329591">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgamecompilation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="424" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="335" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="288" new="0" rating="0"
+                    win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="259" new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83259966" date="2024-04-01" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Caverna: The Cave Farmers" objecttype="thing" objectid="102794">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="74" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="59"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="52"
+                    new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color="" score="49"
+                    new="0" rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="46"
+                    new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color="" score="40"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="35" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83259964" date="2024-04-01" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="65" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="45" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83259965" date="2024-04-01" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="71" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="52"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="47" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83259962" date="2024-03-31" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Through the Ages: A New Story of Civilization" objecttype="thing" objectid="182028">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="220" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="142" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83259963" date="2024-03-31" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Through the Ages: A New Story of Civilization" objecttype="thing" objectid="182028">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="106" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="79" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83259960" date="2024-03-30" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="141" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="112"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="84"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="34" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83046678" date="2024-03-28" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="9" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="6" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="4" new="0" rating="0"
+                    win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="3" new="0" rating="0"
+                    win="0"/>
+            <player
+                    username="" userid="0" name="Anonymous player" startposition="" color="" score="2" new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="1" new="0" rating="0" win="0"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="0"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+
+        </players>
+
+    </play>
+
+    <play id="83044226" date="2024-03-28" quantity="1" length="110" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Sidereal Confluence" objecttype="thing" objectid="202426">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstatsPlayed with expansions:- [thing=349344]Sidereal Confluence:
+            Bifurcation[/thing]
+        </comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="Eni Et Engineers" score="23.5" new="0" rating="0" win="0"/>
+            <player username="" userid="0" name="Ewan" startposition="" color="Deep Unity" score="50"
+                    new="1" rating="0" win="1"/>
+            <player username="" userid="0" name="John"
+                    startposition=""
+                    color="Faderan Conclave" score="35"
+                    new="1" rating="0" win="0"/>
+            <player username="" userid="0" name="Phil" startposition="" color="Im&#039;Dril" score="43.5"
+                    new="1" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83046677" date="2024-03-27" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Barrage" objecttype="thing" objectid="251247">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="74" new="0" rating="0" win="1"/>
+            <player
+                    username="" userid="0" name="Anonymous player" startposition="" color="" score="64" new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="58" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="83046675" date="2024-03-27" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Teotihuacan: City of Gods" objecttype="thing" objectid="229853">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="187" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="100" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82967838" date="2024-03-26" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Agricola (Revised Edition)" objecttype="thing" objectid="200680">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="27" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="24"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="7" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="-3" new="0"
+                    rating="0" win="0"/>
+
+        </players>
+
+    </play>
+
+    <play id="82981096" date="2024-03-26" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Glass Road" objecttype="thing" objectid="143693">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="7" new="1" rating="0" win="1"/>
+            <player
+                    username="" userid="0" name="Anonymous player" startposition="" color="" score="3" new="0"
+                    rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82981095" date="2024-03-26" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="High Season: Grand Hotel Roll &amp; Write" objecttype="thing" objectid="398898">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="42" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="23" new="1"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="22" new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82967834" date="2024-03-25" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="City of the Big Shoulders" objecttype="thing" objectid="214880">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="5020" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="4965"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="3948"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="2262" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82967835" date="2024-03-25" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="151" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="89"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="78"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="40" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82967832" date="2024-03-25" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="9" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="6"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="4"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="3" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="2" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82967836" date="2024-03-25" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="9" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="6"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="4"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="3" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="2" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82967833" date="2024-03-25" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Teotihuacan: City of Gods" objecttype="thing" objectid="229853">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="175" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="96" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82967837" date="2024-03-25" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Ultimate Railroads" objecttype="thing" objectid="329591">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgamecompilation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="346" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="329"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="286" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color="" score="223"
+                    new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82928135" date="2024-03-24" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="7 Wonders: Architects" objecttype="thing" objectid="346703">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="51" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="44"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="41"
+                    new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color="" score="40"
+                    new="0" rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="38"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="31" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="23" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82928136" date="2024-03-24" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="93" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="50"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="27" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82928137" date="2024-03-24" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="9" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="6"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="4"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="3" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="2" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="1" new="0" rating="0"
+                    win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="0" new="0"
+                    rating="0" win="0"/>
+
+        </players>
+
+    </play>
+
+    <play id="82928133" date="2024-03-23" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="56" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="53"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="36" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="34" new="0"
+                    rating="0" win="0"/>
+
+        </players>
+
+    </play>
+
+    <play id="82809864" date="2024-03-22" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="78" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="64"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="-13" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82809865" date="2024-03-22" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Newton" objecttype="thing" objectid="244711">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="1" new="0" rating="0" win="1"/>
+            <player
+                    username="" userid="0" name="Anonymous player" startposition="" color="" score="1" new="0"
+                    rating="0"
+                    win="1"/>
+        </players>
+
+    </play>
+
+    <play id="82928131" date="2024-03-22" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Through the Ages: A New Story of Civilization" objecttype="thing" objectid="182028">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="202" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="115"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="45" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82785002" date="2024-03-21" quantity="1" length="17" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Anomia" objecttype="thing" objectid="67877">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameintegration"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="10" new="1" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Ewan" startposition="" color="" score="19" new="1" rating="0" win="0"/>
+            <player username="" userid="0" name="John" startposition="" color="" score="6" new="1"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Mike"
+                    startposition="" color="" score="20" new="1"
+                    rating="0" win="1"/>
+        </players>
+
+    </play>
+
+    <play id="82785539" date="2024-03-21" quantity="1" length="13" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Anomia" objecttype="thing" objectid="67877">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameintegration"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="9" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Ewan" startposition="" color="" score="18" new="0" rating="0" win="1"/>
+            <player username="" userid="0" name="John" startposition="" color="" score="9" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Mike"
+                    startposition="" color="" score="9" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82809862" date="2024-03-21" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="79" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="63" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82809863" date="2024-03-21" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="166" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="117"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="94"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="6" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82783998" date="2024-03-21" quantity="1" length="76" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Hansa Teutonica: Big Box" objecttype="thing" objectid="286749">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgamecompilation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="33" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Ewan" startposition="" color="" score="27" new="1" rating="0" win="0"/>
+            <player username="" userid="0" name="John" startposition="" color="" score="11" new="1"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Mike"
+                    startposition="" color="" score="39" new="1"
+                    rating="0" win="1"/>
+            <player
+                    username="" userid="0" name="Simon" startposition="" color="" score="26" new="1" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82786509" date="2024-03-21" quantity="1" length="19" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="High Society" objecttype="thing" objectid="220">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="10" new="1" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Ewan" startposition="" color="" score="14" new="1" rating="0" win="1"/>
+            <player username="" userid="0" name="John" startposition="" color="" score="10" new="1"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Mike"
+                    startposition="" color="" score="0" new="1"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82786837" date="2024-03-21" quantity="1" length="7" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Timeline" objecttype="thing" objectid="128664">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameintegration"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Ewan" startposition="" color="" score="" new="1" rating="0" win="1"/>
+            <player username="" userid="0" name="John" startposition="" color="" score="" new="1"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Mike"
+                    startposition="" color="" score="" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82787239" date="2024-03-21" quantity="1" length="8" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Timeline" objecttype="thing" objectid="128664">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameintegration"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="" new="0" rating="0" win="1"/>
+            <player
+                    username="" userid="0" name="Ewan" startposition="" color="" score="" new="0" rating="0" win="0"/>
+            <player username="" userid="0" name="John" startposition="" color="" score="" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Mike"
+                    startposition="" color="" score="" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82748716" date="2024-03-20" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="102" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="75"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="42" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82748715" date="2024-03-20" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Teotihuacan: City of Gods" objecttype="thing" objectid="229853">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="134" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="125" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="120" new="0" rating="0"
+                    win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="105" new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82720656" date="2024-03-19" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Ultimate Railroads" objecttype="thing" objectid="329591">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgamecompilation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="388" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="348"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="333"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="208" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82720655" date="2024-03-18" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Ultimate Railroads" objecttype="thing" objectid="329591">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgamecompilation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="386" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="307"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="277"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="215" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82689763" date="2024-03-17" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Barrage" objecttype="thing" objectid="251247">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="63" new="0" rating="0" win="1"/>
+            <player
+                    username="" userid="0" name="Anonymous player" startposition="" color="" score="61" new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="45" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82689762" date="2024-03-17" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="MLEM: Space Agency" objecttype="thing" objectid="387378">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Kate" startposition="" color="" score="25"
+                    new="0" rating="0" win="1"/>
+            <player username="" userid="0"
+                    name="Steven CBG"
+                    startposition="" color=""
+                    score="18" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="13"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="12" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82592983" date="2024-03-16" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="73" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="50" new="0"
+                    rating="0" win="0"/>
+            <player username="" userid="0" name="Anonymous player"
+                    startposition="" color="" score="40" new="0" rating="0"
+                    win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition="" color=""
+                    score="35" new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82592985" date="2024-03-16" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="62" new="0" rating="0" win="1"/>
+            <player
+                    username="" userid="0" name="Anonymous player" startposition="" color="" score="53" new="0"
+                    rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82602603" date="2024-03-16" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="64" new="0" rating="0" win="1"/>
+            <player
+                    username="" userid="0" name="Anonymous player" startposition="" color="" score="35" new="0"
+                    rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82592986" date="2024-03-16" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Ultimate Railroads" objecttype="thing" objectid="329591">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgamecompilation"/>
+            </subtypes>
+
+        </item>
+        <comments>German #bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="277" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Anonymous player" startposition="" color="" score="404" new="0"
+                    rating="0"
+                    win="1"/>
+        </players>
+
+    </play>
+
+    <play id="82552910" date="2024-03-15" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="153" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="50" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82558818" date="2024-03-15" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="143" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="20" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82592981" date="2024-03-15" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Heat: Pedal to the Metal" objecttype="thing" objectid="366013">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="9" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="4"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="1" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82558820" date="2024-03-15" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Turing Machine" objecttype="thing" objectid="356123">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="1" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="1"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="0" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82535776" date="2024-03-14" quantity="1" length="108" incomplete="0" nowinstats="0" location="Ludoquist">
+
+        <item name="Lisboa" objecttype="thing" objectid="161533">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition=""
+                    color="" score="109" new="0" rating="0" win="0"/>
+            <player
+                    username="" userid="0" name="Simon" startposition="" color="" score="124" new="1" rating="0"
+                    win="1"/>
+
+        </players>
+
+    </play>
+
+    <play id="82538362" date="2024-03-14" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Teotihuacan: City of Gods" objecttype="thing" objectid="229853">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="220" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="132"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="121" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color="" score="96"
+                    new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82500745" date="2024-03-13" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="141" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="116"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="30" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82522274" date="2024-03-13" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="A Feast for Odin" objecttype="thing" objectid="177736">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="111" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="105"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="100"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="25" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82500743" date="2024-03-13" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Maracaibo" objecttype="thing" objectid="276025">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="225" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="174"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="134" new="0" rating="0" win="0"/>
+            <player username="" userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color="" score="59"
+                    new="0" rating="0"
+                    win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82500744" date="2024-03-13" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Teotihuacan: City of Gods" objecttype="thing" objectid="229853">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="164" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="157"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="" userid="0" name="Anonymous player" startposition="" color="" score="150"
+                    new="0" rating="0" win="0"/>
+            <player username="scod101" userid="960336"
+                    name="Adam Borlase" startposition=""
+                    color="" score="77" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82476475" date="2024-03-12" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Dungeon Petz" objecttype="thing" objectid="97207">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="93" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="69"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="31" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82480605" date="2024-03-12" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Through the Ages: A New Story of Civilization" objecttype="thing" objectid="182028">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="237" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="62" new="0"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82480606" date="2024-03-12" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Through the Ages: A New Story of Civilization" objecttype="thing" objectid="182028">
+            <subtypes>
+                <subtype value="boardgame"/>
+                <subtype
+                        value="boardgameimplementation"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="244" new="0" rating="0" win="1"/>
+            <player username=""
+                    userid="0"
+                    name="Anonymous player"
+                    startposition=""
+                    color=""
+                    score="178"
+                    new="0"
+                    rating="0"
+                    win="0"/>
+            <player username="scod101" userid="960336" name="Adam Borlase" startposition="" color=""
+                    score="130" new="0" rating="0" win="0"/>
+        </players>
+
+    </play>
+
+    <play id="82453286" date="2024-03-11" quantity="1" length="0" incomplete="0" nowinstats="0"
+          location="Board Game Arena">
+        <item name="Newton" objecttype="thing" objectid="244711">
+            <subtypes>
+                <subtype value="boardgame"/>
+            </subtypes>
+
+        </item>
+        <comments>#bgstats</comments>
+        <players>
+            <player username="" userid="0" name="Anonymous player" startposition="" color=""
+                    score="45" new="0" rating="0" win="1"/>
+            <player
+                    username="scod101" userid="960336" name="Adam Borlase" startposition="" color="" score="13" new="1"
+                    rating="0" win="0"/>
+        </players>
+
+    </play>
+
+</plays>

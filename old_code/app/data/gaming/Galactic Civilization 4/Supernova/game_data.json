@@ -1,0 +1,796 @@
+{
+  "galaxy_difficulty": [
+    {
+      "galaxy_difficulty": "Beginner"
+    },
+    {
+      "galaxy_difficulty": "Easy"
+    },
+    {
+      "galaxy_difficulty": "Normal"
+    },
+    {
+      "galaxy_difficulty": "Bright"
+    },
+    {
+      "galaxy_difficulty": "Genius"
+    },
+    {
+      "galaxy_difficulty": "Incredible"
+    },
+    {
+      "galaxy_difficulty": "Godlike"
+    },
+    {
+      "galaxy_difficulty": "Random"
+    }
+  ],
+  "game_pacing": [
+    {
+      "game_pacing": "Very Slow"
+    },
+    {
+      "game_pacing": "Slow"
+    },
+    {
+      "game_pacing": "Normal"
+    },
+    {
+      "game_pacing": "Fast"
+    },
+    {
+      "game_pacing": "Very Fast"
+    }
+  ],
+  "research_rate": [
+    {
+      "research_rate": "Very Slow"
+    },
+    {
+      "research_rate": "Slow"
+    },
+    {
+      "research_rate": "Normal"
+    },
+    {
+      "research_rate": "Fast"
+    },
+    {
+      "research_rate": "Very Fast"
+    }
+  ],
+  "minor_races": [
+    {
+      "minor_races": "None"
+    },
+    {
+      "minor_races": "Rare"
+    },
+    {
+      "minor_races": "Uncommon"
+    },
+    {
+      "minor_races": "Occasional"
+    },
+    {
+      "minor_races": "Common"
+    },
+    {
+      "minor_races": "Abundant"
+    }
+  ],
+  "hostile_entities": [
+    {
+      "hostile_entities": "None"
+    },
+    {
+      "hostile_entities": "Rare"
+    },
+    {
+      "hostile_entities": "Uncommon"
+    },
+    {
+      "hostile_entities": "Occasional"
+    },
+    {
+      "hostile_entities": "Common"
+    },
+    {
+      "hostile_entities": "Abundant"
+    }
+  ],
+  "galaxy_size": [
+    {"galaxy_size": "Tiny"},
+    {"galaxy_size": "Small"},
+    {"galaxy_size": "Medium"},
+    {"galaxy_size": "Large"},
+    {"galaxy_size": "Gigantic"}
+  ],
+  "number_of_sectors": [
+    {
+      "number_of_sectors": "Singular"
+    },
+    {
+      "number_of_sectors": "Binary"
+    },
+    {
+      "number_of_sectors": "A Few"
+    },
+    {
+      "number_of_sectors": "Several"
+    },
+    {
+      "number_of_sectors": "Many"
+    }
+  ],
+  "civilization_proximity": [
+    {
+      "civilization_proximity": "Close"
+    },
+    {
+      "civilization_proximity": "Others in Sector"
+    },
+    {
+      "civilization_proximity": "Distant"
+    },
+    {
+      "civilization_proximity": "Far"
+    }
+  ],
+  "habitable_planets": [
+    {
+      "habitable_planets": "Rare"
+    },
+    {
+      "habitable_planets": "Uncommon"
+    },
+    {
+      "habitable_planets": "Occasional"
+    },
+    {
+      "habitable_planets": "Common"
+    },
+    {
+      "habitable_planets": "Abundant"
+    }
+  ],
+  "extreme_planets": [
+    {
+      "extreme_planets": "None"
+    },
+    {
+      "extreme_planets": "Rare"
+    },
+    {
+      "extreme_planets": "Uncommon"
+    },
+    {
+      "extreme_planets": "Occasional"
+    },
+    {
+      "extreme_planets": "Common"
+    },
+    {
+      "extreme_planets": "Abundant"
+    }
+  ],
+  "resources": [
+    {
+      "resources": "None"
+    },
+    {
+      "resources": "Rare"
+    },
+    {
+      "resources": "Uncommon"
+    },
+    {
+      "resources": "Occasional"
+    },
+    {
+      "resources": "Common"
+    },
+    {
+      "resources": "Abundant"
+    }
+  ],
+  "victory_condition": [
+    {
+      "victory_condition": "Conquest",
+      "version": "version 1.50"
+    },
+    {
+      "victory_condition": "Influence",
+      "version": "version 1.50"
+    },
+    {
+      "victory_condition": "Month Limit",
+      "version": "version 1.50"
+    },
+    {
+      "victory_condition": "Prestige",
+      "version": "version 1.50"
+    },
+    {
+      "victory_condition": "Defeat",
+      "version": "version 1.50"
+    },
+    {
+      "victory_condition": "Alliance",
+      "version": "version 1.50"
+    }
+  ],
+  "version": [
+    {
+      "version": "version 1.50",
+      "description": "Launch Version"
+    }
+  ],
+  "race": [
+    {
+      "race": "Terran Alliance",
+      "ideology": "Innovation",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Festron Hunt",
+      "ideology": "Malevolence",
+      "biology": "Aquatic",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Navigators",
+      "ideology": "Innovation",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Mimot Brotherhood",
+      "ideology": "Benevolence",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Xeloxi",
+      "ideology": "Secrecy",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Arcean Republic",
+      "ideology": "Tradition",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Drengin Empire",
+      "ideology": "Authority",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Altarian Republic",
+      "ideology": "Compassion",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Yor Singularity",
+      "ideology": "Malevolence",
+      "biology": "Synthetic",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Torian Regime",
+      "ideology": "Pragmatism",
+      "biology": "Aquatic",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Manti Cluster",
+      "ideology": "Transparency",
+      "biology": "Aquatic",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Krynn Syndicate",
+      "ideology": "Harmony",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Iconian Refuge",
+      "ideology": "Secrecy",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Drath Freehold",
+      "ideology": "Opportunity",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Corporate Sector",
+      "ideology": "Opportunity",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Onyx Hive",
+      "ideology": "Tradition",
+      "biology": "Silicon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Baratak Grove",
+      "ideology": "Equality",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    },
+    {
+      "race": "Terran Resistance",
+      "ideology": "Opportunity",
+      "biology": "Carbon Based",
+      "version": "version 1.50"
+    }
+  ],
+
+  "abilities": [
+    {
+      "ability": "Explorers",
+      "description": "+25% Ship Range",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Inspired",
+      "description": "An additional Leader is avaliable for recruitment and Leader costs 25% less to recruit",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Colony Ship",
+      "description": "Begins with a Colony Ship and probe to quickly find and colonize new worlds",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Survey Ship",
+      "description": "Begin with a Survey Ship that explores the galaxy and investigates valuable Anomalies",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Ravenous",
+      "description": "Receives 1000 credits and +10% approval for 25 turns after conquering a planet.",
+      "extra_ability": "Grants the ability to consume aliens and spawn new Festron citizens",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Archaeologist",
+      "description": "Whenever artifact charges are earned an addition charge is gained",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Starfaring",
+      "description": "+50% Ship Range.",
+      "extra_ability": "Grants the ability to detect and travel on Subspace Streams",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Colony Fleet",
+      "description": "Begins with two Colony Ships to quickly find and colonize new worlds",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Fertile",
+      "description": "Starts with 2 additional workers and population grows 25% faster",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Proliferation",
+      "description": "When a ship is constructed, two ships are constructed instead. But all ships have -25% Hit Points",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Warriors",
+      "description": "Ignore 10% of all damage done to their ships. All weapons have 10% longer range",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Crimelord",
+      "description": "Starts allied with the Pirates",
+      "extra_ability": "Grants access to look the other way Policy and improvements unlocked by increased crime",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Loyal",
+      "description": "Leaders all have +10 Loyalty and cost 25% less to recruit",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Vigilant",
+      "description": "Starbases have larger Areas of Effect. Enemy ships are slowed, and player ships gain an attack bonus, while in the area of any starbase.",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Slavers",
+      "description": "Can Slave citizens, reducing their approval, production and food consumption but they can never protest",
+      "extra_ability": "Gain access to Slaving technologies",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Unrelenting",
+      "description": "+10 Control. Planets Generate +1 more influnce per turn",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Ancient",
+      "description": "Gets Research from Precursor Artifacts and anomolies.",
+      "extra_ability": "Starts with an additional Policy Slot",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Empathy",
+      "description": "Increases Diplomacy and reduces Crime",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Adaptable",
+      "description": "Can Colonize extreme Worlds",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Unwavering",
+      "description": "Colonies are much harder to culture flip, and access to the unbroken Spirit technologies",
+      "version": "version 1.0"
+    },
+    {
+      "ability": "Paranoid",
+      "description": "Free Drones defend planets, shipyards and starbases get +25%",
+      "version": "version 1.0"
+    }
+  ],
+  "anomolies": [
+    {
+      "anomolies": "None"
+    },
+    {
+      "anomolies": "Rare"
+    },
+    {
+      "anomolies": "Uncommon"
+    },
+    {
+      "anomolies": "Occasional"
+    },
+    {
+      "anomolies": "Common"
+    },
+    {
+      "anomolies": "Abundant"
+    }
+  ],
+  "ascension_crystals": [
+    {
+      "ascension_crystals": "None"
+    },
+    {
+      "ascension_crystals": "Rare"
+    },
+    {
+      "ascension_crystals": "Uncommon"
+    },
+    {
+      "ascension_crystals": "Occasional"
+    },
+    {
+      "ascension_crystals": "Common"
+    },
+    {
+      "ascension_crystals": "Abundant"
+    }
+  ],
+  "asteroid": [
+    {
+      "asteroid": "None"
+    },
+    {
+      "asteroid": "Rare"
+    },
+    {
+      "asteroid": "Uncommon"
+    },
+    {
+      "asteroid": "Occasional"
+    },
+    {
+      "asteroid": "Common"
+    },
+    {
+      "asteroid": "Abundant"
+    }
+  ],
+  "biology": [
+    {
+      "biology": "Carbon Based"
+    },
+    {
+      "biology": "Aquatic"
+    },
+    {
+      "biology": "Synthetic"
+    },
+    {
+      "biology": "Silicon Based"
+    }
+  ],
+  "black_holes": [
+    {
+      "black_holes": "None"
+    },
+    {
+      "black_holes": "Rare"
+    },
+    {
+      "black_holes": "Uncommon"
+    },
+    {
+      "black_holes": "Occasional"
+    },
+    {
+      "black_holes": "Common"
+    },
+    {
+      "black_holes": "Abundant"
+    }
+  ],
+  "event": [
+    {
+      "event": "Long Journey Home",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Speed Device",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Intelligence Bazaar",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Making New Friends",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Bad Directions",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Past its Prime",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Dwindling Numbers",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Pesky Beings",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Pas and Future",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Long Journey Home",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "The Great Amusement",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "It's Fine",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Mission of Mercy",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Long Journey Home",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Spaced Based Landfill",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Long Journey Home",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Terrible Weapon",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Missed Connections",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Unsporting Behaviour",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Prag'Aloth",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "Sounds Risky",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "The Deal",
+      "version": "Version 1.03"
+    },
+    {
+      "event": "The Rabbit and Hounds",
+      "version": "Version 1.03"
+    }
+  ],
+  "ideology": [
+    {
+      "ideology": "Innovation",
+      "description": "Believes that new methods and Insights will allow our empire to adapt and succeed",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Pragmatism",
+      "description": "temp",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Cooperation",
+      "description": "temp",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Secrecy",
+      "description": "Secrets are critical part of a successful empire",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Tradition",
+      "description": "temp",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Authority",
+      "description": "temp",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Compassion",
+      "description": "temp",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Creativity",
+      "description": "temp",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Transparency",
+      "description": "temp",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Harmony",
+      "description": "temp",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Opportunity",
+      "description": "temp",
+      "version": "version 1.0"
+    },
+    {
+      "ideology": "Equality",
+      "description": "temp",
+      "version": "version 1.0"
+    }
+  ],
+  "nebulas": [
+    {
+      "nebulas": "None"
+    },
+    {
+      "nebulas": "Rare"
+    },
+    {
+      "nebulas": "Uncommon"
+    },
+    {
+      "nebulas": "Occasional"
+    },
+    {
+      "nebulas": "Common"
+    },
+    {
+      "nebulas": "Abundant"
+    }
+  ],
+
+  "planets_frequency": [
+    {
+      "planet_frequency": "Rare"
+    },
+    {
+      "planet_frequency": "Uncommon"
+    },
+    {
+      "planet_frequency": "Occasional"
+    },
+    {
+      "planet_frequency": "Common"
+    },
+    {
+      "planet_frequency": "Abundant"
+    }
+  ],
+
+  "relics": [
+    {
+      "relics": "None"
+    },
+    {
+      "relics": "Rare"
+    },
+    {
+      "relics": "Uncommon"
+    },
+    {
+      "relics": "Occasional"
+    },
+    {
+      "relics": "Abundant"
+    }
+  ],
+
+
+  "star_frequency": [
+    {
+      "star_frequency": "Rare"
+    },
+    {
+      "star_frequency": "Uncommon"
+    },
+    {
+      "star_frequency": "Occasional"
+    },
+    {
+      "star_frequency": "Common"
+    },
+    {
+      "star_frequency": "Abundant"
+    }
+  ],
+  "starting_sector_size": [
+    {
+      "starting_sector_size": "Tiny"
+    },
+    {
+      "starting_sector_size": "Small"
+    },
+    {
+      "starting_sector_size": "Medium"
+    },
+    {
+      "starting_sector_size": "Large"
+    },
+    {
+      "starting_sector_size": "Huge"
+    }
+  ]
+
+
+}
