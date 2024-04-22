@@ -1,4 +1,4 @@
-from .util import XMLTools
+from app.boardgamegeek.util import XMLTools
 import xml.etree.ElementTree as ET
 
 
@@ -18,7 +18,6 @@ class Thing:
         self._id = self._xml_data.attrib.get("id")
         self._name = self._xml_data.find("name[@type='primary']").attrib.get("value")
         self._type = self._xml_data.attrib.get("type")
-        # return dict
 
     @property
     def id(self):

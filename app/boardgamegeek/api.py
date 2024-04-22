@@ -13,7 +13,7 @@ class API:
             data = requests.get(self._url, params=params).text
         except Exception as e:
             raise e
-        return ET.fromstring(data)
+        return data
 
 
 class ThingAPI(API):
@@ -22,3 +22,10 @@ class ThingAPI(API):
         super().__init__()
 
         self._url = self._api_endpoint + "thing"
+
+class UserApi(API):
+
+    def __init__(self):
+        super().__init__()
+
+        self._url = self._api_endpoint + "user"
