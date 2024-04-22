@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<user id="960336" name="scod101"
+      termsofuse="https://boardgamegeek.com/xmlapi/termsofuse">
+    <firstname value="Adam"/>
+    <lastname value="Borlase"/>
+    <avatarlink value="N/A"/>
+    <yearregistered value="2014"/>
+    <lastlogin value="2024-04-22"/>
+    <stateorprovince value=""/>
+    <country
+            value="United Kingdom"/>
+    <webaddress value=""/>
+    <xboxaccount value=""/>
+    <wiiaccount value=""/>
+
+    <psnaccount value=""/>
+    <battlenetaccount value=""/>
+    <steamaccount value=""/>
+    <traderating
+            value="0"/>
+    <buddies total="8" page="1">
+        <buddy id="973128" name="Epic_Bubblesa"/>
+        <buddy id="1059250" name="Gameruman"/>
+        <buddy id="773856" name="MikeDT"/>
+        <buddy id="771064" name="MoonStache"/>
+        <buddy id="1572793" name="Rucketman"/>
+        <buddy id="730324" name="terriswheel"/>
+        <buddy id="1631995" name="twilightofdawn"/>
+        <buddy id="1266435" name="VikingZ"/>
+    </buddies>
+    <guilds total="5" page="1">
+        <guild id="477" name="Print and Play"/>
+        <guild id="1191" name="Shut Up &amp; Sit Down"/>
+        <guild id="1303" name="1 Player guild"/>
+        <guild id="1622" name="Rahdo Runs Through"/>
+        <guild id="2246" name="Board Game Stats"/>
+    </guilds>
+</user>

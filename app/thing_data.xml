@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse">
+    <item type="boardgame" id="192836">
+        <thumbnail>
+            https://cf.geekdo-images.com/Ca6hNgx3vX8dri1yj-3CWg__thumb/img/NU1qPi1sLNOfIYLmc4lRyQXgHVo=/fit-in/200x150/filters:strip_icc()/pic3195482.jpg
+        </thumbnail>
+        <image>
+            https://cf.geekdo-images.com/Ca6hNgx3vX8dri1yj-3CWg__original/img/hVWz5MTXBBc4RCXAQvQ3pnZ7aFc=/0x0/filters:format(jpeg)/pic3195482.jpg
+        </image>
+        <name type="primary" sortindex="5" value="The Colonists"/>
+        <name type="alternate" sortindex="3" value="I Coloni"/>
+        <name
+                type="alternate" sortindex="5" value="Die Kolonisten"/>
+        <name type="alternate"
+              sortindex="1"
+              value="コロニスト"/>
+        <description>Description from the publisher:&amp;#10;&amp;#10;In
+            The Colonists, a.k.a. Die Kolonisten, each player is a mayor of a village and must develop their environment
+            to gain room for new farmers, craftsmen, and citizens. The main goal of the game is full employment, so
+            players must create new jobs, educate the people, and build new houses to increase their population. But
+            resources are limited, and their storage leads to problems that players must deal with, while also not
+            forgetting to upgrade their buildings. Players select actions by moving their mayor on a central board.&amp;#10;&amp;#10;The
+            Colonists is designed in different levels and scenarios, and even includes something akin to a tutorial,
+            with the playing time varying between 30 minutes (for beginners) and 180 minutes (experts).&amp;#10;&amp;#10;The
+            Colonists FAQ&amp;#10;&amp;#10;
+        </description>
+        <yearpublished value="2016"/>
+        <minplayers value="1"/>
+        <maxplayers value="4"/>
+
+        <poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="138">
+            <results numplayers="1">
+                <result value="Best" numvotes="26"/>
+                <result
+                        value="Recommended" numvotes="52"/>
+                <result value="Not Recommended" numvotes="17"/>
+
+            </results>
+
+            <results numplayers="2">
+                <result value="Best" numvotes="85"/>
+                <result
+                        value="Recommended" numvotes="36"/>
+                <result value="Not Recommended" numvotes="1"/>
+
+            </results>
+
+            <results numplayers="3">
+                <result value="Best" numvotes="33"/>
+                <result
+                        value="Recommended" numvotes="49"/>
+                <result value="Not Recommended" numvotes="24"/>
+
+            </results>
+
+            <results numplayers="4">
+                <result value="Best" numvotes="4"/>
+                <result
+                        value="Recommended" numvotes="22"/>
+                <result value="Not Recommended" numvotes="77"/>
+
+            </results>
+
+            <results numplayers="4+">
+                <result value="Best" numvotes="0"/>
+                <result
+                        value="Recommended" numvotes="0"/>
+                <result value="Not Recommended" numvotes="65"/>
+
+            </results>
+
+        </poll>
+        <playingtime value="360"/>
+        <minplaytime value="30"/>
+        <maxplaytime value="360"/>
+        <minage value="12"/>
+        <poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="19">
+            <results>
+                <result value="2" numvotes="0"/>
+                <result value="3" numvotes="0"/>
+                <result value="4" numvotes="0"/>
+                <result value="5" numvotes="0"/>
+                <result value="6" numvotes="0"/>
+                <result value="8" numvotes="0"/>
+                <result
+                        value="10" numvotes="0"/>
+                <result value="12" numvotes="12"/>
+                <result
+                        value="14" numvotes="7"/>
+                <result value="16" numvotes="0"/>
+                <result
+                        value="18" numvotes="0"/>
+                <result value="21 and up" numvotes="0"/>
+            </results>
+
+        </poll>
+
+        <poll name="language_dependence" title="Language Dependence" totalvotes="9">
+            <results>
+                <result level="1" value="No necessary in-game text" numvotes="0"/>
+                <result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="1"/>
+                <result level="3" value="Moderate in-game text - needs crib sheet or paste ups"
+                        numvotes="7"/>
+                <result level="4"
+                        value="Extensive use of text - massive conversion needed to be playable"
+                        numvotes="1"/>
+                <result level="5"
+                        value="Unplayable in another language"
+                        numvotes="0"/>
+
+            </results>
+
+        </poll>
+        <link type="boardgamecategory" id="1015"
+              value="Civilization"/>
+        <link
+                type="boardgamemechanic" id="2046" value="Area Movement"/>
+        <link type="boardgamemechanic" id="2040" value="Hand Management"/>
+        <link type="boardgamemechanic"
+              id="2011"
+              value="Modular Board"/>
+        <link type="boardgamemechanic"
+              id="2041"
+              value="Open Drafting"/>
+        <link type="boardgamemechanic"
+              id="2819"
+              value="Solo / Solitaire Game"/>
+        <link type="boardgamemechanic"
+              id="2002"
+              value="Tile Placement"/>
+        <link type="boardgamemechanic"
+              id="2082"
+              value="Worker Placement"/>
+        <link
+                type="boardgamefamily" id="5666" value="Players: Games with Solitaire Rules"/>
+        <link
+                type="boardgameexpansion" id="237910" value="The Colonists: Ante Portas"/>
+        <link type="boardgameexpansion"
+              id="216008"
+              value="The Colonists: The Alliance of the Six Cities"/>
+        <link type="boardgameexpansion"
+              id="225980"
+              value="The Colonists: The Imperial Post"/>
+        <link type="boardgameexpansion"
+              id="238809"
+              value="Die Kolonisten: Kaizo Kolonisten"/>
+
+        <link
+                type="boardgamedesigner" id="88684" value="Tim Puls"/>
+        <link type="boardgameartist" id="11507" value="Klemens Franz"/>
+        <link
+                type="boardgamepublisher" id="234" value="Lookout Games"/>
+        <link type="boardgamepublisher" id="10768" value="Cranio Creations"/>
+        <link type="boardgamepublisher"
+              id="1391"
+              value="Hobby Japan"/>
+        <link type="boardgamepublisher"
+              id="10"
+              value="Mayfair Games"/>
+
+        <versions>
+            <item type="boardgameversion" id="299284">
+                <thumbnail>
+                    https://cf.geekdo-images.com/Ca6hNgx3vX8dri1yj-3CWg__thumb/img/NU1qPi1sLNOfIYLmc4lRyQXgHVo=/fit-in/200x150/filters:strip_icc()/pic3195482.jpg
+                </thumbnail>
+                <image>
+                    https://cf.geekdo-images.com/Ca6hNgx3vX8dri1yj-3CWg__original/img/hVWz5MTXBBc4RCXAQvQ3pnZ7aFc=/0x0/filters:format(jpeg)/pic3195482.jpg
+                </image>
+                <link type="boardgameversion" id="192836"
+                      value="The Colonists" inbound="true"/>
+                <name type="primary" sortindex="1"
+                      value="English edition"/>
+                <link
+                        type="boardgamepublisher" id="234" value="Lookout Games"/>
+                <link
+                        type="boardgamepublisher" id="10" value="Mayfair Games"/>
+                <link
+                        type="boardgameartist" id="11507" value="Klemens Franz"/>
+                <yearpublished value="2016"/>
+                <productcode value="MFG3519"/>
+                <width value="8.9"/>
+                <length value="12.4"/>
+                <depth value="3.9"/>
+                <weight
+                        value="0"/>
+                <link type="language"
+                      id="2184"
+                      value="English"/>
+
+            </item>
+
+            <item type="boardgameversion" id="299285">
+                <thumbnail>
+                    https://cf.geekdo-images.com/Xrxe7S1JHV9jT_gPZJxIsQ__thumb/img/4MGruVxFyDJ8iwKuxUjQVUjvET8=/fit-in/200x150/filters:strip_icc()/pic3195483.jpg
+                </thumbnail>
+                <image>
+                    https://cf.geekdo-images.com/Xrxe7S1JHV9jT_gPZJxIsQ__original/img/yzBBbHlB_HAC-58X0MXRB_j1d34=/0x0/filters:format(jpeg)/pic3195483.jpg
+                </image>
+                <link type="boardgameversion" id="192836"
+                      value="The Colonists" inbound="true"/>
+                <name type="primary" sortindex="1"
+                      value="German edition"/>
+                <link
+                        type="boardgamepublisher" id="234" value="Lookout Games"/>
+                <link
+                        type="boardgameartist" id="11507" value="Klemens Franz"/>
+                <yearpublished value="2016"/>
+                <productcode value="LOG0087"/>
+                <width value="8.9"/>
+                <length value="12.4"/>
+                <depth value="3.9"/>
+                <weight
+                        value="6.52568"/>
+                <link
+                        type="language" id="2188" value="German"/>
+
+            </item>
+
+            <item type="boardgameversion" id="355713">
+                <thumbnail>
+                    https://cf.geekdo-images.com/ymlK2Fo67lVS9Zdjvxzm_g__thumb/img/vdpT1OC65vmvzqE16MTLql5UvDM=/fit-in/200x150/filters:strip_icc()/pic5811899.jpg
+                </thumbnail>
+                <image>
+                    https://cf.geekdo-images.com/ymlK2Fo67lVS9Zdjvxzm_g__original/img/5Gi71kKIVCOJSBWFcHn-QVEuwxE=/0x0/filters:format(jpeg)/pic5811899.jpg
+                </image>
+                <link type="boardgameversion" id="192836"
+                      value="The Colonists" inbound="true"/>
+                <name type="primary" sortindex="1"
+                      value="Italian edition"/>
+                <link
+                        type="boardgamepublisher" id="10768" value="Cranio Creations"/>
+                <link
+                        type="boardgameartist" id="11507" value="Klemens Franz"/>
+                <yearpublished value="2017"/>
+                <productcode value=""/>
+                <width value="8.9"/>
+                <length
+                        value="12.4"/>
+                <depth value="3.9"/>
+                <weight
+                        value="0"/>
+                <link type="language"
+                      id="2193"
+                      value="Italian"/>
+
+            </item>
+
+            <item type="boardgameversion" id="641886">
+                <thumbnail>
+                    https://cf.geekdo-images.com/41bfRvHAGnpeCVp9uX-kpA__thumb/img/RnhrynPYZUiL4nFH1qpPE2BLsxs=/fit-in/200x150/filters:strip_icc()/pic7210515.jpg
+                </thumbnail>
+                <image>
+                    https://cf.geekdo-images.com/41bfRvHAGnpeCVp9uX-kpA__original/img/NLKTCiFJXLL2cQsQBNZdzrjSYfI=/0x0/filters:format(jpeg)/pic7210515.jpg
+                </image>
+                <link type="boardgameversion" id="192836"
+                      value="The Colonists" inbound="true"/>
+                <name type="primary" sortindex="1"
+                      value="Japanese edition"/>
+                <link
+                        type="boardgamepublisher" id="1391" value="Hobby Japan"/>
+                <yearpublished value="2018"/>
+                <productcode value=""/>
+                <width value="0"/>
+                <length value="0"/>
+                <depth value="0"/>
+                <weight
+                        value="0"/>
+                <link type="language"
+                      id="2194"
+                      value="Japanese"/>
+
+            </item>
+
+        </versions>
+
+        <comments page="1" totalitems="1011">
+            <comment username="1 Family Meeple" rating="5"
+                     value=":heart:BGG FALL VFM---Yay, It&apos;s Mine!!"/>
+            <comment username="143245" rating="8"
+                     value="In the arena of logistics/resource conversion games, this is the closest contender to Ora &amp; Labora for what I&apos;m looking for that I&apos;ve played (compared to Neuland, Roads &amp; Boats, and Le Havre). First off, this has an almost dizzying decision tree in how wide it is with the various pathways, jumps, chaining of your three turns, etc. You can do just about anything you want and baring a couple of chokepoints (I think the CommunityHall being one), you can sort of do what you want and see how it works out. One thing that this does over R&amp;B is it&apos;s not passive-aggressive in it&apos;s confrontation (e.g. gold isn&apos;t sitting on donkeys for ownership). In that respect, where R&amp;B is logistics, O&amp;L settlement spatial &amp; resource conversions, it feels like The Colonists chooses instead to focus on the central map and connections that you want to make (in an optimized manner). Where Ora &amp; Labora shine for me as a 3 (or, with experienced players, 4p) game due to work contracts, this seems to have a linear play time based on players and works rather well as a 1 and 2p game. One thing I do appreciate in The Colonists over O&amp;L is the variability in when buildings come out within the era (as in O&amp;L, you can pick up the same building on your first turn if you plan well).That said, there are a couple things that annoy me about the game. It runs long, period. This is a game that would jump 2 points in my rating scheme if you could play a 3 era game in 3 hours or less (basically, the time frame of O&amp;L). In 3 games, I&apos;m still averaging a little under 90min per era when it feels like the game should realistically only consume 60 or less per. It overstays it&apos;s welcome in that regard. The era skipping feature is neat, but it almost takes as much time to skip the first era as it does to play it... Second, there isn&apos;t much driving diversification of strategy outside when buildings come out. Why would I not try and create a brewery district late in the game or skip theaters/casinos? (sure, there is a reason, but my point of &quot;if you don&apos;t know how to leverage that, there is nothing pushing you toward finding out&quot;). That&apos;s a by product of having such a wide open playing field, and some players who are more likely to latch onto a strategy and avoid trying something else will be disappointed. This is a game that requires &quot;self-starter&quot; gamers. I do think having a set of challenges (e.g. &quot;have the most glitzy entertainment district for an additional 10pts per building&quot; would have been neat as an alternate pathway to victory or variance). Last, the lack of interaction relegates this to a 2p game at most, it&apos;s surprising what a work contract in O&amp;L can do to create a pleasant euro-style interaction aspect.Overall, I&apos;m rather happy with the game and looking forward to seeing what Puls and company do with expansions. A strong 7.edit: weak 7. I&apos;ve now played a bunch of games and I think starting in era 3 with 2p is likely the optimum one (with starting in era 4 being the alternative). It still takes like 4 hours, but it&apos;s certainly manageable then. One thing that is notable is if you start in era 3, you&apos;re playing &quot;Setup: The Boardgame&quot; for the first 90min as you make a bunch of decisions on what you&apos;re doing. We did conquer the ultimate summit once; 4p &amp; 4 era game in a little under 11 hours (2 newbies). I do still like the game, and I think it has a place on the shelf as a companion piece to Ora &amp; Labora, but it&apos;s not my preferred of the two (I think because the spatial piece here is a backseat in terms of planning focus).Oh, and I think the existing expansions/promos aren&apos;t worth it, skip them. They pull the game in a very different direction than where I think it is interesting/entertaining.edit2: now that we&apos;ve played another ~10 games of the same opponents/starting era, and tried lots of different things for setup or strategies, I think it bumps up to a strong 7/weak 8 under those circumstances.edit3: A bump up to a weak 8. I&apos;m really quite impressed with it in terms of just how much planning and forethought goes into the game compared to Ora &amp; Labora. Now I wonder just how much better I can do than 59 building points and 8 embassy points if we start in era 2 instead of 3... Second, I wonder if some of the embassies are intended for higher player counts (e.g. The Lord one) or needs to not be in play with some of the others to shine."/>
+            <comment username="4Maverick" rating="7"
+                     value="Resource management and engine building heavy euro. Several strategies to follow with different buildings, improvement cards and distant colonies. Best to play through all four eras, divided into two or three session."/>
+            <comment username="7inchsplit" rating="5"
+                     value="Enjoyed this my first play, but looking back at it, it just feels like too much. Too long, too much variability, and so much choice the whole thing ends up feeling soupy. On the other hand, my score wasn&apos;t great compared to some others I&apos;ve heard, so maybe I just don&apos;t get it. Either way, I&apos;ve decided to trade this one."/>
+            <comment username="a2b2c517" rating="7.5"
+                     value="A bit too long. like to play if have time and friends who not on AP Sidebest with 3"/>
+            <comment username="Aarkas" rating="8" value="Essen 2016"/>
+            <comment username="ABigOleBoat"
+                     rating="5"
+                     value="This game has some good ideas, and some nice mechanics - I liked marching your pieces across the different tiles to activate them, and one player getting an option on where to place the new tiles in the map really added some interesting choices to the game. But it is just too long for what it is - we&apos;ve played the full game twice now, and shorter setups a handful of times more than that. The shorter games where you cut off entire eras just feels like you&apos;re playing an incomplete game, which is very unsatisfying. The full game has a proper game arc and a lot of strategy opened up by planning for the future - but the game just plods through it, and the pace feels awful. We&apos;re quick players, and it still dragged for us. I have no problem with long games that deliver something for that length - 1830, Here I Stand, etc. - but this just feels like a regular Euro experience you could get in a 90 minute game stretched out past the breaking point.The game&apos;s speed issues also make player count problematic. I&apos;d say 3-4 is the most &apos;fun&apos; or &apos;strategic&apos; - there is more choice, more competition, etc. Yet each player adds so much to the already significant length problems, that you&apos;re left not wanting to play with the higher player counts."/>
+            <comment username="AbsZero" rating="N/A" value="$20"/>
+            <comment username="acooper1004"
+                     rating="8"
+                     value="Really enjoying the game,  complex, but the sort of euro we like"/>
+            <comment username="AdAbsurdum" rating="7"
+                     value="My rating on this one is based on 1 unfinished game. I enjoyed what I played, but I&apos;m not sure the time investment is worth it."/>
+            <comment username="adamredwoods" rating="6"
+                     value="1 play / 4 players (1 &amp; 2nd era)LIKE: I like how little engines are made in small areas on the map. To do this players need to discover the different combos. The embassy powers are pretty interesting and work well. I liked building on personal boards.DISLIKE: Fiddly, chit intensive. Tiny icons on the map tiles are difficult to read. Mostly multi-player solitaire. What a player&apos;s goal should be was not clear the first time through.OVERALL: I felt the first era could be skipped. It possibly could lead to some alternate strategy setups, but random pre-setup cards could do the same thing. I think the game is similar to Rosenberg&apos;s games, but less tight. Probably too slow of a game for me.Small comparisons to Istanbul."/>
+            <comment username="AddictedTourist" rating="7.5"
+                     value="Really good mechanics and decisions throughout the game.  Would rate this a lot higher if it wasn’t so long.  "/>
+            <comment username="adikom5777" rating="7" value="Geekmod"/>
+            <comment username="Affenberg"
+                     rating="5"
+                     value="Rating based on one play of the solo scenario: The Imperial Post.This game feels like spreadsheet juggling. Too mathy for my taste.I would like to play it once, with more players though..."/>
+            <comment username="agentpatman" rating="8"
+                     value="This rating is for the introductory game on easy map. It feels a lot like la havre but much longer. Some Uwe Rosenberg mixed in. Overall it was pretty fun and more thinky I than I first anticipated after the tutorial. How the map is built, tiles and cards come out really change your game play. It&apos;s a lot more tactical but also requiring strategy to plan at least a round in advance to pull off your moves. something like la havre packs a pretty big punch in a short time so I have concerns about the length and the games ability to deliver that experience over each round. I can&apos;t speak to any of that get but I am looking forward to finding out. I also don&apos;t expect it will take 7-8 as some claim as we went pretty quick with two at era 1. I can&apos;t speak for certainties but seems maybe around 6 or least that&apos;s what I am hoping since that is dooable. I like the saving mechanics so we can jump into the other eras exactly where we left off or convert to dollars and change strategies of we did poorly. This game is certainly more niche than most due to the length a and eras but I think it will be one we enjoy occasionally but I don&apos;t expect it to get anywhere near the play of a finely tuned game that packs a punch in a shorter time. However I still find myself thinking about the moves or how I could have better adapted or pivoted to the changing board state."/>
+            <comment username="agiese" rating="N/A" value="Storage - Box 19"/>
+            <comment username="ahalm"
+                     rating="6.8"
+                     value="Liked the mechanics but this is a long two-player game and I don&apos;t see when I would get this onto table."/>
+            <comment username="ahlund" rating="6"
+                     value="stort, lång setup torrt, men bra.  föööör långt bara o torrt"/>
+            <comment
+                    username="Aimoskeeto" rating="10" value="Demoed and purchased from UKGE Birmingham 2017."/>
+            <comment username="aivislisovskis" rating="5"
+                     value="Too long and repetitive. All games have some game loop, but this one felt 6h of doing primitive choices (choose tiles, place tiles). And theoretical &quot;skip first era of 4 for shorter game&quot; or &quot;first two for really quick game&quot; - why then designers did not set up game already like that? If first era is same for all games - it&apos;s just a disadvantage for unexperienced players who will do something weird and loose the game."/>
+            <comment username="ajewo" rating="7" value="Very long euro game (8 hours!) with a safe system."/>
+            <comment username="AlbeitarD" rating="8.3"
+                     value="Mecánica:8.5Temática:8Aspecto/Presencia:9Rejugabilidad:8.5Duración: 7.5Nota: 8.3Nanoreseña: Pura gestion de recursos que sin innovar apenas, hace un juegazo redondo. Me encanta!! Un incomprendido dentro de los euros.Viabilidad en solitario:8.3(Opinión tras 3 partidas)"/>
+            <comment username="Alcuinus" rating="N/A"
+                     value="Huge resource management game. 1 hour x player. Quite solitary."/>
+            <comment
+                    username="Aldarak" rating="9"
+                    value="A very good solo game for me. takes quit a long time but makes fun."/>
+            <comment
+                    username="alexwick" rating="N/A" value="pause and play it later option"/>
+            <comment
+                    username="alexwu69" rating="N/A" value="NOBLE KNIGHT GAMES $20"/>
+            <comment username="Alfadr"
+                     rating="8"
+                     value="Jouer en solo seulement,  on voit pas le temps passé quand on commence.  Règles pas compliquées mais un bon casse tête  pareil ?"/>
+            <comment username="alfman" rating="6" value="Repetitive till the end."/>
+            <comment
+                    username="almi" rating="N/A" value="+ The Colonists: Ante Portas (2017)"/>
+            <comment
+                    username="AlPacino11" rating="7.5"
+                    value="Huge amount of choices, excellent concepts but: Huge amount of time (including setting up and storing) and huge amount of rules. I&apos;d prefer its basic concepts simpler and faster."/>
+            <comment username="Alyiz" rating="7"
+                     value="This is a game made for me to hate. A heavy euro, point-salad game, long as hell for very little payoff, dumb obnoxious white settler theme (LITERALLY called &quot;Colonists&quot;), dumb capitalism bullshit (merchants) and on and on. AND YET.And yet.The Colonists is a really good game. It&apos;s really good. I finished one game of this and it was so fun, I immediately set up the super long epic version to plow through. Due to some unforeseen issues, I wasn&apos;t able to finish any of the longer games but I wanted to. The meeples are cool, the mechanics feel like they all flow together, exploring is like actually exploring a landscape, building your materials and tech feels awesome, and raising up your little farm is cozy. It&apos;s also cool how you advance through eras as the game goes, much like the Rise of Nations videogame. Whether this will bear out in repeat plays, I don&apos;t know. For now, &quot;The Colonists&quot; is the game on my shelf I love to point to and say &quot;that boring awfully-named game is super fun&quot; and watch peoples&apos; reaction."/>
+            <comment username="Amuk" rating="N/A" value="Purchased from genrand."/>
+            <comment
+                    username="analisisalcubo" rating="8"
+                    value="Euro de gestión de recursos y logística que se juega por eras. La mecánica es super sencilla. Las partidas son configurables pudiendo elegir jugar una sola era o más y empezar desde el principio o con un escenario ya preconstruido."/>
+            <comment username="Anconed" rating="N/A" value="Playing time (4h.)"/>
+            <comment
+                    username="Anderlef" rating="9"
+                    value="The game is really great. You have so many options with every move.You need to think ahead. But this game is only for players who like this kind of puzzle."/>
+            <comment username="anderspree" rating="N/A"
+                     value="Best: 2This intimidates me but building up a city over multiple eras just sounds amazing."/>
+            <comment username="andy61" rating="7.25"
+                     value="Played the introductory game and quite enjoyed it.  Would like to try the full game at least once but not sure the pay-off will justify the length of the game"/>
+            <comment username="Angie666" rating="N/A"
+                     value="- ANTE PORTAS (FEHLT)- Bündnis der sechs Städte (FEHLT)- Kaizo Kolonisten- Kaiserliche Post- Feudalherren (FEHLT)"/>
+            <comment username="angusbeef76" rating="8.5"
+                     value="the ultimate epic euro.  If you like epic games and like euros, you should try this game."/>
+            <comment username="anovac" rating="4.5"
+                     value="A game that starts well and it is impressive just be the shear number of components. As the game progresses, it becomes too fiddly and less fun, ending up way too long for what it has to offer. While great games generate complexity and decision through smart mechanics, Colonists does that just be number of components."/>
+            <comment username="Antomon" rating="8"
+                     value="one play, it was great fun exploring the game in its fiddly glory "/>
+            <comment username="antonick" rating="7"
+                     value="A monster-development-game, which requires to be familiar with it in order to finally enjoy it.After 4-5 plays it seems that development is an end in itself, which does not make me enthusiastic about it.Will play more."/>
+            <comment username="Apple Paul" rating="6"
+                     value="Decent, well designed euro wherein players move their steward (worker) on a variable hex board, with each hex allowing you to take an action, such that you acquire resources and build buildings that give you victory points on your player board.  Different hex/action arrangements and buildings make for some replay-ability, and presumably, multiple paths to victory.  That said, there is not much here that is not in essential every such similar euro.  (See, for example, Agricola, Caverna or Ora Labora).  Accordingly, for euro gamers looking for something new, or particularly interesting, there is not much here.  True, this game can provide for a particularly lengthy standard euro game."/>
+            <comment username="Arbuthnot" rating="6"
+                     value="A big puzzle, inducing AP, which makes game too long.. Maybe OK as solitaire. Also fiddly moving around tiny resource shits. In the end too tedious. After three era’s had enough of it. Did not care about the last era."/>
+            <comment username="Arcturian" rating="2"
+                     value="If you&apos;re playing at a high player count with people who are prone to overanalyze their moves, you had better have all the patience in the universe, or The Colonists will drive you insane, even if you don&apos;t play the full game. Far too lacking in interaction and scope to justify how brutally long it is."/>
+            <comment username="Ariadne2774" rating="N/A" value="Jens, S60"/>
+            <comment username="arod324"
+                     rating="N/A"
+                     value="Long game, but relatively straight-forward rules.  I don&apos;t think I could realistically ever get this to the table with my friends. "/>
+            <comment username="Aroquesada" rating="N/A"
+                     value="Obtenido por intercambio en una mathtrade. Vendido sin llegar a jugarlo."/>
+            <comment username="ArtEmiSa64" rating="6"
+                     value="[ESP] Entretenido, pero la inversión de tiempo es demasiada, incluso si se juega en etapas..."/>
+            <comment username="Arthus19xx" rating="10" value="Episches Aufbauspiel mit bedingter Interaktion"/>
+            <comment username="ashbane" rating="N/A" value="75$"/>
+            <comment username="asianpsycho"
+                     rating="6"
+                     value="The game gets annoyingly fiddlier as you progress through eras. Also, the decision on where to place new worker placement hexes felt irrelevant that I think it should have just been automated. "/>
+            <comment username="ataniker" rating="N/A" value="Sleeved"/>
+            <comment username="atonaltensor"
+                     rating="8.21"
+                     value="Sold at May 2023 Congress of Gamers for $10"/>
+            <comment username="atushi" rating="N/A" value="ベスト2人"/>
+            <comment
+                    username="augustusgraves" rating="N/A" value="Heavy Cardboard"/>
+            <comment username="Auyard"
+                     rating="N/A"
+                     value="Ante Portas"/>
+            <comment username="avesan" rating="8" value="rules in spanish"/>
+            <comment username="Baagism"
+                     rating="N/A"
+                     value="Golden Elephant Finalist"/>
+            <comment username="BabyfaceKiller" rating="9"
+                     value="Really epic. A lot do. If you look for something quick that&apos;s not your game. I just loved it!"/>
+            <comment username="BackIssueBacklog" rating="8"
+                     value="Really need to play more. We loved the intro to the game just haven&apos;t had a chance to revisit it. "/>
+            <comment username="Badger on the move" rating="6"
+                     value="Nice thick card components and graphics.  Box advertised worker movement as an evolution from worker placement.  Albeit it is simply restricted worker placement.  Mechanism fine but tile lay out crucial.  First game, admittedly as newbie, I had no wood, could not get wood and could not move to any other location except the base tile without having wood.  Effectively lost three turns, momentum and any chance of being competitive.  Each player gets three turns together.  Allows for combinations but painfully slow.  Especially as one tile enable players to get and select cards, which they then need to read and then decide which ones to keep.  You can plan ahead to an extent, but quite often moves scuppered as you need to use a tile another player is occupying which requires additional costs.  The changing benefits of the home tiles and the board evolution worked well.  But the game was way too slow and offered very little in the way of new ideas or mechanics."/>
+            <comment username="Balargon" rating="N/A" value="1 - 4"/>
+            <comment username="balijan2"
+                     rating="8"
+                     value="Volumenében meg a kellékek mennyiségében nekem néhány Uwe játékot idézett (Ora et Labora pl.), a mászkálós rész meg a Keyflowert, de ez a játék nagyon letisztult, a hosszú szabály ellenére sem érzem agyonbonyolítottnak. Fix 3 akció, a lépések a &quot;térképen&quot; a világ legegyszerűbb módján történnek, a kombózás mégis nagyon méllyé teszi. Ami tetszett, az a követségi rész, ami a random követségek miatt teljesen egyedivé teszi az egyes partikat (pl. egyik partiban könnyebb lesz nagyobb raktárt szerezni, a másikban az emberek színében kapunk segítséget stb.). A másik ami jó, hogy éreztem a játékban a fejlődést. Mi sajnos csak az első 2 kort játszottuk le, de a végén már éreztem, hogy a 3. korra muszáj lenne a sárga emberekre rágyúrni, és más szempontból is teljesen átjött a fejlődés, pl. ahogy az új épületek sorra jönnek be. A piac megoldása nagyon elegáns, biztosítja a változatosságot és hogy sose álljon be a játék. Szerintem 2-3 parti után egy teljes játék lemegy 2-3 óra/játékos alatt. Összességében ritka jó játéknak érzem, csupán az tart vissza a 9-10-es pontszámtól, hogy még csak fél partin vagyok túl. Nem is tudok így hirtelen hibáját mondani, talán csak a hosszú előkészület meg a nagy játékidő. A hossza meg a nagy játékdömping miatt megeshet, hogy nem is játszom már vele soha, pedig erre még talán rászánnék egyszer egy teljes napot is. Mindenkinek ajánlom, aki az összetettebb gazdálkodósakat szereti, azokból az egyik legjobb. Legalább az Uwe-féle gazdálkodósok szintjén van nekem."/>
+            <comment username="balugoci" rating="N/A" value="ME.SC.B43"/>
+            <comment username="Bankler"
+                     rating="6"
+                     value="I’ve lowered my rating after a few more plays. May write a review soon.  Rating — indifferent"/>
+            <comment username="bankrupt" rating="10" value="NFS"/>
+            <comment username="Baryon" rating="3"
+                     value="Mechanical and deterministic. Player not required"/>
+            <comment username="Base the Bass" rating="9.7"
+                     value="Excellent game. One of the resource management games of choice. As very often happens, the one thing I don&apos;t like is the innovation of worker movement. All else in the game is great: great balances, many strategies, enjoyable gameplay."/>
+            <comment username="Basinator" rating="7"
+                     value="A good game that takes some time for the strategies to start come into play. Towards the end of Era 2 you will suddenly see the importance of placing the Tiles and will feel punished for what you did in the first two Eras.It&apos;s a bit of setup work even if you are organised (10 minutes), putting everything back into the box is the worst part (about 15 minutes). Using the &quot;save game&quot; feature will certainly add to it but I haven&apos;t tried it, yet.However, it is a pretty good game. Be prepared to sacrifices a lot of table space. The real downside for me comes with the component quality. It is already in the higher price range but the Cards really are subpar standard, the Box itself feels really cheap. The Tiles (which there are plenty) are of good quality and so are the player boards. All player tokens are of acceptable quality.If only Stonemaier Games could have produced this game!!Did I regret the purchase ? Certainly not!! If you are looking for a Civilisation Building Game and don&apos;t mind longer gameplay than this is for you.Plays great solo and with 2 people. I would not recommend pushing the player count past 3."/>
+            <comment username="BastardCafe" rating="N/A" value="3 114.5"/>
+            <comment username="Bateyes"
+                     rating="N/A"
+                     value="Mit großer Erweiterung „Ante Portas“ aus Spielemesse 2017."/>
+            <comment username="bayspiel" rating="N/A" value="05.01.02.02"/>
+            <comment username="Bazelouf"
+                     rating="N/A"
+                     value="$45"/>
+            <comment username="bbhalla" rating="8"
+                     value="Initial Impression: There are a TON of components in this game, with thick cardboard used for the chunky tiles. I find the graphic design for the components are above average but nothing too stellar, as the component&apos;s size limited the amount of room the designer had to put all relevant info on. As a result, my poor aging eyes had a difficult time seeing some of the iconography. This game is an interesting mix of engine building, vp optimization, with a spacial puzzle thrown into the mix. The main board grows at the end of every round, presenting the players with new  possibilities. Imagine a worker placement game where new worker spaces open up as the game progresses. There are a fair amount of resources which can be converted to other resources but somehow this doesn&apos;t feel as overwhelming as most Rosenberg games. Overall the game has a light feeling to it, with few calculations to be performed, but the decisions have a long term impact on the players&apos; performance in the game. And by long term, I mean LONG. This game can be played through 4 phases or &quot;eras&quot;. Your production decisions in one era will directly affect your performance in the next. There&apos;s a wonderful need to balance the short and long term gains. Personally, I believe the game is probably best experienced as a 4 era game since the sense of your colony&apos;s progression is so strong in this game.  "/>
+            <comment username="bbkoene" rating="7"
+                     value="I like the way it is played, the possibilities are huge, components and artwork are great, but the game is too long to become a topgame. In fact you do 10 hours or more the same thing. On the otherhand, playing only two era&apos;s gives the game a feeling of uncompleteness. Also two minor points : you can get easily cards, but it is hard to play a card (only one place if the right colony isn&apos;t in the game) and why the choice of doing 3 actions in a row : for that reason, there&apos;s a lot of downtime especially when one of your actions is taking cards."/>
+            <comment username="bbol24" rating="7" value="DUBLIN40e"/>
+            <comment username="bbolch"
+                     rating="8"
+                     value="This is a long game but worth the investment because of all the intricate pathways and avenues you can take to build you colony different from those around you."/>
+            <comment username="Beast_of_Leisure" rating="N/A"
+                     value="Sold unplayed - too much hassle not enough excitement!&lt; March 2020&gt; August 2020"/>
+            <comment username="Bellaatje" rating="N/A" value="Hier werd veel van verwacht in Essen 2016."/>
+            <comment username="benevempress" rating="N/A" value="Own, but missing components."/>
+            <comment
+                    username="benjamingronvold" rating="N/A" value="Not interested"/>
+            <comment
+                    username="Benjaminviking" rating="N/A" value="Game Storm 22 Vendor&apos;s market"/>
+            <comment
+                    username="benme" rating="8.5"
+                    value="I played 1 game - we got about 1/3 through starting by 8 and played 2.5 hours or so.  Really enjoyed it, lots of fun.  If this could be played on Yucata or Board Game Arena it would be a perfect fit for me.  Full of interesting choices, good spacial element, hugely satisfying.  I will never play a full game of this probably as I cannot really cope with the full length and not sure I have people who want want to play it over several sittings with me.  There are rules for shortened versions and I am not sure how they would work but the game itself is so much fun, lots of interesting choices whilst at the same time being fairly simple to begin with.Really well designed although the full game is a bit long for my tastes.  Lots of different ways to play and lots of variability baked in so I can see this being a game that can just be played and played."/>
+            <comment username="BenRon" rating="N/A" value="1 to trade jgg"/>
+            <comment
+                    username="BGMafia12" rating="7.5"
+                    value="This is an amazing, epic euro. Rules are easy to digest and teach while fitting the theme very well. The variability comes from where the hex tiles will be placed and which 4  of the 9 colonies will used for the game (adding a 5th in the 3rd era). The whole game feels as though you&apos;re actually trying to build and evolve a colony making the theme feel rich. There is quite a bit of interaction mainly based in blocking positions on the hex board. I&apos;ve only played at 2 players which has actually played quite quickly for an epic game, just over 4 hrs. There are ALOT of components so an organization and set up method is very important, I use plano boxes but there is a great insert on Etsy as well. Highly recommend if you enjoy an epic evolving engine builder.**Revised**Becomes repetitive, last era doesn&apos;t feel developed"/>
+            <comment username="biasedisland" rating="5" value="Initial rating; update pending further plays."/>
+            <comment username="biczownik" rating="7"
+                     value="This is a solid game overall, however I don&apos;t think it&apos;s good enough to justify how long it takes to play it and it was the reason why we decided to sell it :) "/>
+            <comment username="BigD527" rating="8"
+                     value="Finally played this as a full four-era game; quite the experience. Really a great amount of tension and build up in this one. A solid design for sure. Obviously the length means it&apos;s not a game I&apos;ll often be playing the full four eras!"/>
+            <comment username="Bigdanorama" rating="N/A" value="Watchlist Essen 2016"/>
+            <comment
+                    username="bigf00t" rating="N/A" value="Gift from Randy and Shevaun for 2018 birthday"/>
+            <comment username="Bigft64" rating="5.5"
+                     value="I like the idea of this game but in practice it&apos;s just not for me. It&apos;s just waaaay too long while also having no arc to it. You&apos;re doing the exact same thing in Era 4 as you were in Era 1 except with a more varied set of resources. It also makes the game super fiddly. The other major issue for me is it&apos;s VERY multiplayer solitaire which for a game of this length just isn&apos;t something I&apos;m interested in. I do like the planning and varied colonies that add in new strategies. Being long and “epic” doesn’t make it better. [i]Why This Is No Longer In The Collection:[/I] Fairly self-explanatory. It’s length and extremely dry gameplay means it would never see the light of day again if it stayed in my collection. "/>
+            <comment username="bigguglie" rating="7" value="Location: D1"/>
+            <comment
+                    username="bigmac33070" rating="N/A"
+                    value="Brian and I played this and only this for our Friday game night. Brian won 237-231 but got about 25-30 extra points due to a rule error we both had about how to raze and change out buildings. I enjoyed this and would play it again, but only ever at 2-player. Our game took, after set-up (40 minutes) and going through the rules together (1 hour) about 3 and a half hours. We played the full 4 era game. It takes the basic of Euro design (upgrade workers, upgrade goods, goods are VP at end of game, etc.) and ramps up the time it takes to do these things. This works to it&apos;s detriment as it literally takes you an hour to start getting your engine going. There were things I liked about the game. I enjoyed the tile placement each round. The start player (which stays the same unless you take an action to change it) connects 3 tiles at the end of a round which were revealed at the beginning of the round. You can set up chains of useful tiles for yourself. I also liked the improvement cards. They added end game scoring, cheaper build actions and more but didn&apos;t seem game breaking like a lot of card decks I see in other Euro games. I also really liked the Guilds in the game. 4 come out in the beginning and you can earn prestige within each one which grants additional special abilities. Brian went heavy in the Trader&apos;s Guild, while I upgraded my Lords guild, which let me take any good I wanted instead of a tile action when I moved.Things I didn&apos;t like: STORAGE!!! The game forces you into a jam with storing your goods. Luckily for us, we also had the Storekeeper guild which adds storage to your board as you gain prestige with them. Some of the later buildings require 8 or 9 goods to build so you will need to get at least 2-3 storage upgrades throughout the game. Also, I wasn&apos;t a big fan of the rules about moving goods. It seemed contrived to me. You can only move goods before actions and only to certain areas of your board. Weird. I also wasn&apos;t a fan of the extremely complicated rules for upgrading and razing buildings. As I mentioned earlier, that was a big deal for Brian in our game. Essentially, you have to have a worker on the building (so not anywhere else working for you) to raze it or upgrade it. And you can only move workers back to the buildings at the end of a year. Brian&apos;s whole strategy revolved around upgrading his buildings to money making ones and this was problematic for him as well. This could have been done more elegantly. So in the end, I think I will hold onto this for now but I think I will end up trading or selling it at some point. "/>
+            <comment username="BIGXSQG" rating="9"
+                     value="Also Enjoy; Le Havre, Cave vs Cave, and Tiny Epic Western."/>
+            <comment
+                    username="birloncho" rating="N/A" value="Best: 2 (1-3)"/>
+            <comment username="Biscotti"
+                     rating="1"
+                     value="Nothing wrong with game. I&apos;m sure its a splendid affair. However after watching run through and or reading reviews, absolutely no desire to play."/>
+            <comment username="bittelsworth" rating="10" value="Long long long"/>
+            <comment
+                    username="BJOSEPHLYON" rating="9" value="Avec VF ajoutée"/>
+            <comment username="bladiator"
+                     rating="8"
+                     value="Very long, but I enjoy the variability with the action board and the different colonies that can come out.  Still not sure what my strategy should be but it still feels good to build stuff and upgrade!"/>
+
+        </comments>
+
+        <statistics page="1">
+            <ratings>
+                <usersrated value="4206"/>
+                <average value="7.5502"/>
+                <bayesaverage
+                        value="6.85543"/>
+                <ranks>
+                    <rank type="subtype" id="1" name="boardgame"
+                          friendlyname="Board Game Rank" value="633"
+                          bayesaverage="6.85543"/>
+                    <rank type="family" id="5497" name="strategygames"
+                          friendlyname="Strategy Game Rank" value="354"
+                          bayesaverage="7.00179"/>
+                </ranks>
+                <stddev value="1.44066"/>
+                <median value="0"/>
+                <owned value="8005"/>
+                <trading value="321"/>
+                <wanting value="236"/>
+                <wishing value="1584"/>
+                <numcomments
+                        value="1011"/>
+                <numweights value="231"/>
+                <averageweight value="4.0866"/>
+            </ratings>
+
+        </statistics>
+
+        <marketplacelistings>
+            <listing>
+                <listdate value="Fri, 30 Dec 2016 21:08:25 +0000"/>
+                <price currency="EUR" value="39.00"/>
+                <condition value="verygood"/>
+                <notes
+                        value="The game is in best condition, played it three times (1x only first era, 2x all eras).&amp;#10;&amp;#10;If you like I sell you too the organization boxes for 18&amp;#226;&amp;#130;&amp;#172; I bought for 19,50&amp;#226;&amp;#130;&amp;#172;. You can have a look at this link (use copy&amp;paste!):&amp;#10;http://www.smiling-monster.com/Zubehoer-und-Deck-Boxen:::9.html?MODsid=5hk11cn5r9l313kk919bgaqpb4&amp;#10;I sorted the tiles in 12xBox S, 12x Box M an 1x Box L. That shortens the setup phase enormously.&amp;#10;&amp;#10;Shipping within Germany: 6&amp;#226;&amp;#130;&amp;#172; &amp;#10;Other EU-countries: ask for informations"/>
+                <link href="https://boardgamegeek.com/market/product/1079556" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 13 May 2017 17:06:11 +0000"/>
+                <price currency="EUR" value="60.00"/>
+                <condition value="likenew"/>
+                <notes
+                        value="Only played a couple of times, not even all the cardboard is punched out yet, just enough for solo game.&amp;#10;Comes with the Expansion Ante Portas which turns the game into a Tower Defence game."/>
+                <link href="https://boardgamegeek.com/market/product/1199019" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Tue, 09 Jan 2018 19:17:48 +0000"/>
+                <price currency="USD" value="80.00"/>
+                <condition value="new"/>
+                <notes
+                        value="Please send geekmail for shipping cost. Will combine shipping for multiple items."/>
+                <link href="https://boardgamegeek.com/market/product/1392583" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 22 Oct 2018 13:58:05 +0000"/>
+                <price currency="EUR" value="59.95"/>
+                <condition value="new"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/1640833" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sun, 16 Dec 2018 23:39:44 +0000"/>
+                <price currency="USD" value="40.00"/>
+                <condition value="verygood"/>
+                <notes value="Priority hand delivery in NY city"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/1703513" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Fri, 11 Jan 2019 15:58:01 +0000"/>
+                <price currency="EUR" value="40.00"/>
+                <condition value="verygood"/>
+                <notes value="Played once!"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/1726012" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sun, 21 Jul 2019 19:26:53 +0000"/>
+                <price currency="USD" value="30.00"/>
+                <condition value="verygood"/>
+                <notes value="Great condition. Never played"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/1897837" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Thu, 25 Jul 2019 00:00:08 +0000"/>
+                <price currency="EUR" value="48.00"/>
+                <condition value="new"/>
+                <notes
+                        value="New &amp; sealed.&amp;#10;Accept Bitcoins, Paypal or Wire Transfer, worldwide shipping.&amp;#10;Check my other games to combine shipping."/>
+                <link href="https://boardgamegeek.com/market/product/1900231" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Tue, 20 Aug 2019 18:27:54 +0000"/>
+                <price currency="USD" value="40.00"/>
+                <condition value="new"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/1919977" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Thu, 22 Aug 2019 01:49:08 +0000"/>
+                <price currency="USD" value="38.00"/>
+                <condition value="likenew"/>
+                <notes value="Played once."/>
+                <link
+                        href="https://boardgamegeek.com/market/product/1921137" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 16 Sep 2019 21:13:44 +0000"/>
+                <price currency="USD" value="40.00"/>
+                <condition value="verygood"/>
+                <notes
+                        value="There is a solid ding on one box corner (see photos). Includes bead storage containers for the colonist tokens and resource bits (see photos).&amp;#10;&amp;#10;I calculated shipping to be $26 via USPS Ground. Message me if you\'d like to arrange a local hand-off in the SF Bay Area East Bay."/>
+                <link href="https://boardgamegeek.com/market/product/1950117" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 28 Dec 2019 10:30:08 +0000"/>
+                <price currency="CAD" value="65.00"/>
+                <condition value="verygood"/>
+                <notes
+                        value="If shipping outside of North America, please contact me first. Can meet in person if near Vancouver or Nanaimo."/>
+                <link href="https://boardgamegeek.com/market/product/2030599" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Fri, 03 Jan 2020 01:14:57 +0000"/>
+                <price currency="EUR" value="51.00"/>
+                <condition value="new"/>
+                <notes
+                        value="personal delivery in Greater Stuttgart or plus 5&amp;#226;&amp;#130;&amp;#172; shipping in Germany (in European Union may be more expensive)"/>
+                <link href="https://boardgamegeek.com/market/product/2034465" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Thu, 06 Aug 2020 12:39:46 +0000"/>
+                <price currency="EUR" value="60.00"/>
+                <condition value="likenew"/>
+                <notes value="Bank transfer. Ship only to Europe!"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2258530" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 10 Aug 2020 19:26:56 +0000"/>
+                <price currency="USD" value="35.00"/>
+                <condition value="new"/>
+                <notes value="New in shrink"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2267540" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 18 Jan 2021 19:40:40 +0000"/>
+                <price currency="USD" value="23.00"/>
+                <condition value="likenew"/>
+                <notes
+                        value="Played once. All components in perfect conditions. Stored in a smoke-free home. Buyer pays shipping. Please message me for a quote."/>
+                <link href="https://boardgamegeek.com/market/product/2437202" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sun, 31 Jan 2021 14:52:58 +0000"/>
+                <price currency="EUR" value="47.00"/>
+                <condition value="verygood"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2449618" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Tue, 29 Jun 2021 14:39:01 +0000"/>
+                <price currency="EUR" value="59.00"/>
+                <condition value="likenew"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2585145" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Thu, 30 Sep 2021 11:40:37 +0000"/>
+                <price currency="EUR" value="80.00"/>
+                <condition value="likenew"/>
+                <notes
+                        value="like new - played only twice&amp;#10;some tine extras and magazin scenarios included"/>
+                <link href="https://boardgamegeek.com/market/product/2659064" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Thu, 28 Oct 2021 08:19:32 +0000"/>
+                <price currency="EUR" value="40.00"/>
+                <condition value="likenew"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2688764" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Wed, 10 Nov 2021 14:54:07 +0000"/>
+                <price currency="USD" value="54.99"/>
+                <condition value="likenew"/>
+                <notes
+                        value="CLS Games - Atlanta\'s Board Game Warehouse - is the largest retailer of board games in metro Atlanta! &amp;#10;&amp;#10;THE COLONISTS: $54.99&amp;#10;Mayfair Games [MFG 3519]&amp;#10;* minor damage to the game box -- see 4 pictures with this listing&amp;#10;&amp;#10;SHIPPING&amp;#10;Continental U.S. - $16.95&amp;#10;International (Including AK &amp; HI) - TBD"/>
+                <link href="https://boardgamegeek.com/market/product/2699794" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 15 Jan 2022 13:42:06 +0000"/>
+                <price currency="EUR" value="75.00"/>
+                <condition value="new"/>
+                <notes
+                        value="The Colonists nuovo ancora incellophanato. Versione inglese&amp;#10;Pagamento paypal o bonifico&amp;#10;Spedizione in Italia 10e, per altre destinazioni europee chiedete un preventivo di spesa.&amp;#10;&amp;#10;The new Colonists still with cellophane. English version&amp;#10;Paypal payment or bank transfer&amp;#10;Shipping to Italy 10e, for other European destinations ask for a cost estimate."/>
+                <link href="https://boardgamegeek.com/market/product/2757339" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 12 Feb 2022 17:28:02 +0000"/>
+                <price currency="EUR" value="39.00"/>
+                <condition value="verygood"/>
+                <notes value="game in best condition."/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2786092" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sun, 13 Feb 2022 01:23:22 +0000"/>
+                <price currency="GBP" value="100.00"/>
+                <condition value="likenew"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2786435" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 04 Apr 2022 12:32:19 +0000"/>
+                <price currency="USD" value="50.00"/>
+                <condition value="verygood"/>
+                <notes
+                        value="EU / UK / US Regions (by Sea)&amp;#10;Under 4 lb $18.5&amp;#10;Japan / South East Asia Shipping (by Air)&amp;#10;2 lb $15&amp;#10;4 lb $20&amp;#10;US / UK Shipping (by Air)&amp;#10;2 lb $32&amp;#10;4 lb $46&amp;#10;Taiwan Shipping (by Sea)&amp;#10;2 lb $11&amp;#10;4 lb $16"/>
+                <link href="https://boardgamegeek.com/market/product/2833553" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Tue, 12 Apr 2022 13:07:01 +0000"/>
+                <price currency="EUR" value="65.00"/>
+                <condition value="verygood"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2840007" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 18 Apr 2022 21:18:49 +0000"/>
+                <price currency="EUR" value="40.00"/>
+                <condition value="likenew"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2844406" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Fri, 29 Apr 2022 00:11:19 +0000"/>
+                <price currency="EUR" value="75.00"/>
+                <condition value="new"/>
+                <notes value="Still with plastic wrap"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2858596" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Tue, 17 May 2022 14:57:39 +0000"/>
+                <price currency="EUR" value="69.99"/>
+                <condition value="new"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2871874" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 21 May 2022 03:28:02 +0000"/>
+                <price currency="USD" value="25.00"/>
+                <condition value="likenew"/>
+                <notes value="Opened, punched out, but never played."/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2874431" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 04 Jun 2022 11:19:22 +0000"/>
+                <price currency="EUR" value="47.99"/>
+                <condition value="new"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2883714" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 10 Sep 2022 22:37:53 +0000"/>
+                <price currency="USD" value="54.00"/>
+                <condition value="new"/>
+                <notes
+                        value="Brand new in shrink wrap. Game box in MINT condition. Will be packaged with extra care to ensure it arrives in perfect condition to you."/>
+                <link href="https://boardgamegeek.com/market/product/2957677" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Wed, 14 Sep 2022 15:48:22 +0000"/>
+                <price currency="USD" value="35.00"/>
+                <condition value="likenew"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/2960291" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 22 Oct 2022 23:21:59 +0000"/>
+                <price currency="EUR" value="60.00"/>
+                <condition value="likenew"/>
+                <notes
+                        value="In Excellent condition&amp;#10;&amp;#10;Comes with a Plano Box and several individual boxes to store all the tiles perfectly in the box&amp;#10;&amp;#10;-------------------------&amp;#10;[size=16][center][b][color=#e9013b]PLEASE READ THIS IT\'S WHAT DETERMINS IF WE CAN GO AHEAD WITH ANY SALE[/color][/b][/center][/size]&amp;#10;[b]Will only accept payment by:[/b]&amp;#10;- Bank Transfer in Euros - For sales to EU countries where the Euro &amp;#226;&amp;#130;&amp;#172; is the Official Currency&amp;#10;- Revolut Transfer - For Sales to countries that the Euro &amp;#226;&amp;#130;&amp;#172; isn\'t the official currency... Can also be used for sales to &amp;#226;&amp;#130;&amp;#172; countries if desired by the buyer&amp;#10;- [b]I don\'t HAVE Paypal[/b] [u]BUT you can use your Paypal Account to make a transfer to my Bank account using that option on the Paypal website[/u], If needed this allows you convert your currency to the exact amount you have to pay in Euros and sends it to my bank account&amp;#10;&amp;#10;If you can\'t make the payment as I request above, PLEASE don\'t make the Order or contact me because the sale won\'t be finalized and we\'ll both just be wasting our time!!&amp;#10;------------------------&amp;#10;&amp;#10;I have many games in the Marketplace so check them out to see if you have interest in more than one, you can probably make some savings on shipping.&amp;#10;https://boardgamegeek.com/geekmarket/user/Muse23PT?pageid=1&amp;#10;&amp;#10;Feel free to contact me by Geekmail, I\'m usually pretty fast to respond&amp;#10;&amp;#10;Shipping from Europe so buyers from outside of the EU should know there\'s a high possibility of Custom Taxes.&amp;#10;&amp;#10;[b]Will Ship Worldwide with [u]shipping costs payed by the buyer.[/u][/b]"/>
+                <link href="https://boardgamegeek.com/market/product/2993266" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Wed, 26 Oct 2022 13:05:35 +0000"/>
+                <price currency="EUR" value="50.00"/>
+                <condition value="new"/>
+                <notes
+                        value="Gioco nuovo. Mai giocato, aperto soltanto per verificare l\'interno. Tutto ancora imbustato o sullo sprue. Vendo per mancanza giocatori&amp;#10;New game, never played. Only opened once to verify content. Everytinh is still sealed or still on sprue. I\'m selling because I can\'t find anyone to play it with."/>
+                <link href="https://boardgamegeek.com/market/product/2995978" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 10 Dec 2022 15:44:22 +0000"/>
+                <price currency="EUR" value="35.00"/>
+                <condition value="new"/>
+                <notes value="Gioco in italiano, nuovo, ancora chiuso incelophanato."/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3035569" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sun, 11 Dec 2022 21:53:22 +0000"/>
+                <price currency="EUR" value="44.00"/>
+                <condition value="good"/>
+                <notes
+                        value="Ein paar Schaden an der Schachtel, Spielersheets sind laminiert."/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3036631" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Tue, 10 Jan 2023 10:31:19 +0000"/>
+                <price currency="GBP" value="42.00"/>
+                <condition value="likenew"/>
+                <notes
+                        value="Shipping &amp;#194;&amp;#163;6-8 heavy box comes with Foam insert too."/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3063187" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Wed, 01 Feb 2023 04:40:15 +0000"/>
+                <price currency="USD" value="51.39"/>
+                <condition value="verygood"/>
+                <notes
+                        value="Stored upright on a shelf with no stacking.  Smoke, Kid Free Home&amp;#10;Shipping from 24126 Zipcode.  Will use PirateShip to get best rate.  I usually turn shipments around in 48hrs of payment (I hate to wait to get mine, so why should you wait).&amp;#10;I accept Zelle, PayPal or Venmo for payments.  &amp;#10;I will offer a 10% discount on all orders over $150 or 4+ games&amp;#10;&amp;#10;If you have any questions PLEASE send me a geekmail.&amp;#10;&amp;#10;David"/>
+                <link href="https://boardgamegeek.com/market/product/3079876" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 11 Feb 2023 15:46:20 +0000"/>
+                <price currency="USD" value="40.00"/>
+                <condition value="likenew"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3087369" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Wed, 22 Feb 2023 14:48:39 +0000"/>
+                <price currency="GBP" value="55.00"/>
+                <condition value="new"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3096312" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 25 Feb 2023 20:16:37 +0000"/>
+                <price currency="USD" value="35.00"/>
+                <condition value="verygood"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3099617" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Thu, 23 Mar 2023 09:35:31 +0000"/>
+                <price currency="USD" value="20.00"/>
+                <condition value="likenew"/>
+                <notes value="shipping from 44906"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3125338" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Thu, 23 Mar 2023 16:18:13 +0000"/>
+                <price currency="USD" value="35.00"/>
+                <condition value="new"/>
+                <notes value="NIS"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3125604" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sun, 26 Mar 2023 14:26:29 +0000"/>
+                <price currency="USD" value="30.00"/>
+                <condition value="likenew"/>
+                <notes value="Excellent condition"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3127742" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Tue, 23 May 2023 10:48:50 +0000"/>
+                <price currency="EUR" value="46.00"/>
+                <condition value="new"/>
+                <notes
+                        value="Ware ist neu und in Folie eingeschwei&amp;#195;&amp;#159;t.&amp;#10;&amp;#10;Deutsche Kunden zahlen Versandkosten abh&amp;#195;&amp;#164;ngig von Gr&amp;#195;&amp;#182;&amp;#195;&amp;#159;e und Gewicht der bestellten Ware. F&amp;#195;&amp;#188;r Kunden au&amp;#195;&amp;#159;erhalb deutschlands k&amp;#195;&amp;#182;nnen weitere Kosten anfallen, abh&amp;#195;&amp;#164;nging vom Land in welches versand wird.&amp;#10;&amp;#10;Ich versende nur versichert.&amp;#10;&amp;#10;Zahlungsmethoden:&amp;#10;&amp;#10;Banktransfer oder PayPal (Freunde &amp; Familie)&amp;#10;&amp;#10;-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------&amp;#10;&amp;#10;&amp;#10;Merchandise is new and inside shrinkwrap.&amp;#10;&amp;#10;German customers pay delivery fees dependant on size and weight of the package. If you live outside of germany there may be higher payments depending on where the package is shipped.&amp;#10;&amp;#10;I only send packages insured.&amp;#10;&amp;#10;Methodes of payment:&amp;#10;&amp;#10;Bank transfer or PayPal (Friends &amp; Family)"/>
+                <link href="https://boardgamegeek.com/market/product/3174630" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 19 Jun 2023 11:22:29 +0000"/>
+                <price currency="GBP" value="40.00"/>
+                <condition value="likenew"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3193663" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 29 Jul 2023 12:30:38 +0000"/>
+                <price currency="GBP" value="35.00"/>
+                <condition value="verygood"/>
+                <notes value="Played twice from new. Counted complete before packing."/>
+                <link href="https://boardgamegeek.com/market/product/3226463" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 29 Jul 2023 22:32:48 +0000"/>
+                <price currency="CAD" value="70.00"/>
+                <condition value="likenew"/>
+                <notes
+                        value="Game is on the heavier side, so be aware shipping might be slightly higher than average."/>
+                <link href="https://boardgamegeek.com/market/product/3226788" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Tue, 08 Aug 2023 20:46:04 +0000"/>
+                <price currency="USD" value="30.00"/>
+                <condition value="verygood"/>
+                <notes value="Played 3 times."/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3233760" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 02 Sep 2023 04:34:21 +0000"/>
+                <price currency="USD" value="30.00"/>
+                <condition value="likenew"/>
+                <notes value="Unpunched. Slight box damage. Buyer pays shipping."/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3251962" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 16 Oct 2023 14:23:10 +0000"/>
+                <price currency="USD" value="32.00"/>
+                <condition value="verygood"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3283931" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Tue, 31 Oct 2023 17:19:41 +0000"/>
+                <price currency="USD" value="35.00"/>
+                <condition value="likenew"/>
+                <notes value=""/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3296048" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 13 Nov 2023 17:56:41 +0000"/>
+                <price currency="USD" value="27.00"/>
+                <condition value="verygood"/>
+                <notes
+                        value="INCLUDING 2 PLANO BOXES!  Very good condition!  From smokeless petless home.  Lovingly organized not just in baggies but in one large plano box and one small plano box to hold and serve small high-use parts! &amp;#10;&amp;#10;SHIPPING:&amp;#10;   USA: $17/$19/$21 to zip code starting with 0-2/3-7/8-9.&amp;#10;   MULTIPLE ITEMS: Save big with combined shipping!  Look at my other games for sale; the combine shipping would only be the one largest shipping cost plus about $1 to $3 per additional small to large game.&amp;#10;   MASSACHUSETTS: Local buyers may pick up orders of $25 or more in person, in Billerica or Cambridge.&amp;#10;   INTERNATIONAL: International shipping, for a normal-size game, is at least $45!  Only if you understand that, you could ask me for an exact shipping quote before ordering.&amp;#10;   INSURANCE: You may add $1.35 for optional insurance.  (Otherwise, I\'ll just get Delivery Confirmation, but in the unlikely event that USPS lost or damaged the package, it would unfortunately be your loss.)"/>
+                <link href="https://boardgamegeek.com/market/product/3313941" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Wed, 22 Nov 2023 11:41:02 +0000"/>
+                <price currency="GBP" value="25.00"/>
+                <condition value="likenew"/>
+                <notes value="Part of a well looked after collection"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3321028" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 27 Nov 2023 05:16:26 +0000"/>
+                <price currency="AUD" value="180.00"/>
+                <condition value="likenew"/>
+                <notes
+                        value="the game is still new in shrink, comes with 3D printed insert. the copy in the ad is a stock image, my game isnt opened&amp;#10;&amp;#10;pick up surry hills NSW or could post&amp;#10;&amp;#10;Accept cash, paypal family friends, payID"/>
+                <link href="https://boardgamegeek.com/market/product/3324581" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Fri, 01 Dec 2023 01:06:14 +0000"/>
+                <price currency="USD" value="150.00"/>
+                <condition value="verygood"/>
+                <notes
+                        value="Played a few times in very good condition. Includes the base game, a wooden insert, and The Colonists: Ante Portas."/>
+                <link href="https://boardgamegeek.com/market/product/3328032" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sat, 09 Dec 2023 19:42:48 +0000"/>
+                <price currency="USD" value="39.00"/>
+                <condition value="new"/>
+                <notes
+                        value="New. Still in original wrapping. Never been opened.&amp;#10;&amp;#10;Selling from Mishawaka, Indiana (46545), please contact jeremywilmot12@gmail.com to discuss payment and shipping (PayPal is preferred but willing to discuss other methods). Listed price does not include shipping. Can also arrange pickup if that is preferred.&amp;#10;&amp;#10;Check out my other listings as well &gt; https://boardgamegeek.com/market/user/jwilmo?pageid=1"/>
+                <link href="https://boardgamegeek.com/market/product/3334703" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sun, 07 Jan 2024 00:56:06 +0000"/>
+                <price currency="USD" value="41.00"/>
+                <condition value="new"/>
+                <notes
+                        value="Shipping $18 via USPS Mail, USA only.&amp;#10;&amp;#10;The Colonists, new/mint in original shrink. Pics are of item for sale.&amp;#10;&amp;#10;If interested in multiple games, contact me for a shipping price quote. It should always be less than the total of the separate shipping charges, and sometimes considerably less. Multiple game purchases will typically ship UPS Ground or USPS Ground Advantage."/>
+                <link href="https://boardgamegeek.com/market/product/3358802" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Thu, 22 Feb 2024 22:50:17 +0000"/>
+                <price currency="USD" value="40.00"/>
+                <condition value="new"/>
+                <notes value="New in shrink"/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3395940" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Tue, 19 Mar 2024 20:53:14 +0000"/>
+                <price currency="USD" value="35.00"/>
+                <condition value="likenew"/>
+                <notes value="Played once."/>
+                <link
+                        href="https://boardgamegeek.com/market/product/3415031" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Mon, 01 Apr 2024 20:57:13 +0000"/>
+                <price currency="USD" value="40.00"/>
+                <condition value="new"/>
+                <notes
+                        value="New, in shrink.&amp;#10;&amp;#10;Stored in a non-smoking home. I offer a 20% discount if you purchase 2 or more games.&amp;#10;&amp;#10;Shipping at Buyer\'s expense from 99006. Using PirateShip for best rates."/>
+                <link href="https://boardgamegeek.com/market/product/3423428" title="marketlisting"/>
+            </listing>
+
+            <listing>
+                <listdate value="Sun, 07 Apr 2024 07:50:11 +0000"/>
+                <price currency="EUR" value="45.00"/>
+                <condition value="verygood"/>
+                <notes
+                        value="In great shape. Shipping within Europe, local pick up in the Netherlands. PayPal or bank transfer"/>
+                <link href="https://boardgamegeek.com/market/product/3426955" title="marketlisting"/>
+            </listing>
+
+        </marketplacelistings>
+
+    </item>
+
+</items>

@@ -29,3 +29,11 @@ class UserApi(API):
         super().__init__()
 
         self._url = self._api_endpoint + "user"
+
+
+class PlaysApi(API):
+
+    def __init__(self):
+        super().__init__()
+
+        self._url = self._api_endpoint + "plays"
