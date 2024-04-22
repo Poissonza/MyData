@@ -1,8 +1,7 @@
-pandas
-jupyter
-matplotlib
-bs4
-tqdm
-sqlalchemy
-more_itertools
-requests
+beautifulsoup4==4.12.2
+requests==2.31.0
+sqlalchemy==2.0.22
+psycopg2-binary==2.9.9
+lxml==4.9.3
+pandas==2.1.2
+tqdm==4.66.1
