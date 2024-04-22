@@ -1,0 +1,59 @@
+[
+  {
+    "name": "game1",
+    "game_setup": {
+      "world_size": "",
+      "world_shape": "",
+      "continent_shape": "",
+      "climate": "",
+      "land_percentage": 0,
+      "number_of_continents": "",
+      "new_world": "",
+      "island_odds": "",
+      "world_wrap": "",
+      "hemispheres": "",
+      "seed": 0,
+      "continent_spread": "",
+      "contient_form": "",
+      "lake_odds": "",
+      "lake_size": "",
+      "rivers": "",
+      "ridges_and_cliffs": "",
+      "elevation": "",
+      "difficulty": "",
+      "pace": "",
+      "end_conditions": ""
+    },
+    "start_date": "",
+    "end_date": "",
+    "version": "",
+    "players": [
+      {
+        "name": "",
+        "era1civ": "",
+        "era2civ": "",
+        "era3civ": "",
+        "era4civ": "",
+        "era5civ": "",
+        "era6civ": "",
+        "endfame": 0,
+        "colour": ""
+      }
+    ],
+    "naturalwonder": [
+      ""
+    ],
+    "luxury_resource": [
+      {
+        "resource": "",
+        "quantity": 0
+      }
+    ],
+    "strategic_resource": [
+      {
+        "resource": "",
+        "quantity": 0
+      }
+    ]
+  }
+]

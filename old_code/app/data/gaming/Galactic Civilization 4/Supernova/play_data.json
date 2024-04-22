@@ -1,0 +1,27 @@
+{
+  "Game 1": {
+    "setup": {
+      "galaxy_difficulty": "",
+      "game_pacing": "",
+      "research_rate": "",
+      "minor_races": "",
+      "hostile_entities": "",
+      "galaxy_size": "",
+      "number_of_sectors": "",
+      "civilization_proximity": "",
+      "habitable_planets": "",
+      "extreme_planets": "",
+      "resources": "",
+      "version": ""
+    },
+    "victory_conditions": [],
+    "opponent": [],
+    "results": {
+      "turns": 0,
+      "result": "",
+      "score": 0,
+      "time_played": "0:0:0"
+    },
+    "complete": false
+  }
+}

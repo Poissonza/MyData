@@ -1,0 +1,37 @@
+version: "3.8"
+services:
+#  bg-db:
+#    container_name: bg-db
+#    image: postgres
+#    restart: always
+#    environment:
+#      POSTGRES_USER: root
+#      POSTGRES_PASSWORD: root
+#      POSTGRES_DB: root
+#    healthcheck:
+#      test: ["CMD", "pg_isready"]
+#      interval: 10s
+#      timeout: 10s
+#      retries: 5
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - ./db:/docker-entrypoint-initdb.d
+  md-python:
+    container_name: md-python
+    entrypoint: [ "tail", "-f", "/dev/null" ]
+    build: .
+#    env_file:
+#      - bgg_db.env
+#    depends_on:
+#      bg-db:
+#        condition: service_healthy
+    volumes:
+      - ./app:/app
+#      - ./output:/app/Output
+    networks:
+      - db_network
+
+networks:
+  db_network:
+    external: true

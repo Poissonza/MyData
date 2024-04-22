@@ -1,0 +1,27 @@
+{
+  "planet_events": [
+    {
+      "game": "Game 6",
+      "event": "Precursor Factory",
+      "choice": 1,
+      "description": "+10% Approval",
+      "turn": 7
+    },
+    {
+      "game": "Game 6",
+      "event": "Animals to Tame",
+      "choice": 1,
+      "description": "Compasion +1, +10 Approval for 1 turns",
+      "turn": 11
+    }
+  ],
+  "Survey Events": [
+    {
+      "game": "Game 6",
+      "event": "Terrible Weapon",
+      "choice": 2,
+      "description": "Compassion +1",
+      "turn": 18
+    }
+  ]
+}
