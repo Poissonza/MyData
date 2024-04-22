@@ -1,1 +1,1 @@
-from .objects import BoardGame
+from .boardgame import BoardGame
