@@ -15,9 +15,9 @@ class User:
         self._country = data["country"]
         self._trade_rating = data["trade_rating"]
 
-
     def to_dict(self):
         return self._data
+
     @property
     def id(self):
         return self._id

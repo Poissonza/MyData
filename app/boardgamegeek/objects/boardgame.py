@@ -1,5 +1,6 @@
 from .things import Thing
 
+
 class BoardGame(Thing):
 
     def __init__(self, data):
@@ -19,23 +20,20 @@ class BoardGame(Thing):
         self._boardgame_mechanic = data["boardgame_mechanic"]
         self._designer = data["designer"]
 
-
     def to_dict(self):
         return self._data
 
     @property
-    def type (self):
+    def type(self):
         return self._type
 
     @property
-    def description (self):
+    def description(self):
         return self._description
 
     @property
-    def year_published (self):
+    def year_published(self):
         return self._year_published
-
-
 
     @property
     def min_players(self):
@@ -61,7 +59,6 @@ class BoardGame(Thing):
     def min_age(self):
         return self._min_age
 
-
     @property
     def boardgame_category(self):
         return self._boardgame_category
@@ -73,5 +70,3 @@ class BoardGame(Thing):
     @property
     def designer(self):
         return self._designer
-
-

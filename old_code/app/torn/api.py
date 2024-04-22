@@ -1,5 +1,6 @@
 import requests
 
+
 class Api:
 
     def __init__(self, key, request_limit: int):
@@ -7,7 +8,6 @@ class Api:
         self._request_limit = request_limit
         self._end_point = "https://api.torn.com/"
         self._key = key
-
 
     def fetch_josn(self, params: dict):
         params.update({"key": self._key})

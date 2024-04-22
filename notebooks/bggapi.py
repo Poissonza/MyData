@@ -1,4 +1,5 @@
 import pathlib
+
 # import urllib
 import requests
 from bs4 import BeautifulSoup
@@ -51,14 +52,14 @@ class BGGAPI:
                     for classification in game.findAll("link"):
                         class_dict = {
                             "gameid": int(game["id"]),
-                            "classificationid": int(classification["id"])
+                            "classificationid": int(classification["id"]),
                         }
                         if not int(classification["id"]) in collected_classification:
                             db.insert_classification(
                                 {
                                     "id": int(classification["id"]),
                                     "type": classification["type"],
-                                    "value": classification["value"]
+                                    "value": classification["value"],
                                 }
                             )
                             collected_classification.append(int(classification["id"]))
@@ -123,14 +124,14 @@ class BGGAPI:
 
         play_url = f"https://boardgamegeek.com/xmlapi2/plays?id={game_id}"
 
-        url_data = requests.get(
-            f"{play_url}&mindate={last_date}"
-        ).content
+        url_data = requests.get(f"{play_url}&mindate={last_date}").content
 
         soup = BeautifulSoup(url_data, "html.parser")
         max_pages = math.ceil(int(soup.plays["total"]) / 100)
 
-        for page in tqdm(range(max_pages, 0, -1), maxinterval=max_pages, desc=f"{game_id}: Page"):
+        for page in tqdm(
+            range(max_pages, 0, -1), maxinterval=max_pages, desc=f"{game_id}: Page"
+        ):
             url_data = requests.get(
                 f"{play_url}&mindate={last_date}&page={page}"
             ).content

@@ -1,6 +1,7 @@
 from app.boardgamegeek.objects import BoardGame
 from app.boardgamegeek.util import XMLTools
 
+
 def get_boardgame_from_xml(xml_file):
     xml_tools = XMLTools(xml_file)
 
@@ -9,9 +10,7 @@ def get_boardgame_from_xml(xml_file):
         "name": xml_tools.fetch_element("name[@type='primary']", "value"),
         "type": xml_file.attrib["type"],
         "description": xml_tools.fetch_element("description").text,
-        "year_published": xml_tools.fetch_element(
-            "yearpublished", "value", int
-        ),
+        "year_published": xml_tools.fetch_element("yearpublished", "value", int),
         "min_players": xml_tools.fetch_element("minplayers", "value", int),
         "max_players": xml_tools.fetch_element("maxplayers", "value", int),
         "play_time": xml_tools.fetch_element("playingtime", "value", int),
@@ -29,7 +28,7 @@ def get_boardgame_from_xml(xml_file):
         ),
         "designer": xml_tools.fetch_element_list(
             "link[@type='boardgamedesigner']", "value"
-        )
+        ),
     }
 
     return BoardGame(data)

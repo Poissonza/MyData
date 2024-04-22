@@ -21,4 +21,3 @@ class GameData:
         game_dict = dict(zip(data["name"], data["id"]))
 
         return game_dict
-

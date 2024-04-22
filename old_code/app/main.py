@@ -11,8 +11,9 @@ from database import DataBaseConnection
 # Press the green button in the gutter to run the script.
 if __name__ == "__main__":
 
-    database_connection = DataBaseConnection("boardgames", "boardgames",
-                                             "db", database="boardgames", schema="bgg")
+    database_connection = DataBaseConnection(
+        "boardgames", "boardgames", "db", database="boardgames", schema="bgg"
+    )
 
     test = ThingAPI()
 
@@ -21,7 +22,6 @@ if __name__ == "__main__":
     for item in xml_data:
         boardgame = BoardGame(item)
         boardgame.to_database(database_connection)
-
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/

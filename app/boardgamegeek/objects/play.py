@@ -1,5 +1,3 @@
-
-
 class Play:
 
     def __init__(self, data):
@@ -24,7 +22,6 @@ class Play:
     def incomplete(self):
         return self._incomplete
 
-
     @property
     def length(self):
         return self._length
@@ -40,4 +37,3 @@ class Play:
     @property
     def id(self):
         return self._id
-

@@ -1,4 +1,16 @@
-from sqlalchemy import create_engine, Table, Column, MetaData, Integer, String, Date, select, func, ForeignKey, Float
+from sqlalchemy import (
+    create_engine,
+    Table,
+    Column,
+    MetaData,
+    Integer,
+    String,
+    Date,
+    select,
+    func,
+    ForeignKey,
+    Float,
+)
 
 
 class GameDB:
@@ -9,10 +21,16 @@ class GameDB:
             self.create_tables()
 
         self.plays = Table("plays", self.meta_data, autoload_with=self.engine)
-        self.playsplayer = Table("playsplayer", self.meta_data, autoload_with=self.engine)
+        self.playsplayer = Table(
+            "playsplayer", self.meta_data, autoload_with=self.engine
+        )
         self.games = Table("games", self.meta_data, autoload_with=self.engine)
-        self.classificationlink = Table("classificationgamelink", self.meta_data, autoload_with=self.engine)
-        self.classification = Table("classifications", self.meta_data, autoload_with=self.engine)
+        self.classificationlink = Table(
+            "classificationgamelink", self.meta_data, autoload_with=self.engine
+        )
+        self.classification = Table(
+            "classifications", self.meta_data, autoload_with=self.engine
+        )
         self.rank = Table("rank", self.meta_data, autoload_with=self.engine)
 
     def create_tables(self):
@@ -43,7 +61,7 @@ class GameDB:
             Column("score", Integer),
             Column("new", Integer),
             Column("rating", Integer),
-            Column("win", Integer)
+            Column("win", Integer),
         )
 
         game = Table(
@@ -70,7 +88,7 @@ class GameDB:
             Column("numcomments", Integer),
             Column("numweights", Integer),
             Column("averageweight", Float),
-            Column("description", String)
+            Column("description", String),
         )
 
         classifications = Table(
@@ -79,7 +97,7 @@ class GameDB:
             Column("internalId", Integer, primary_key=True),
             Column("id", Integer),
             Column("type", String),
-            Column("value", String)
+            Column("value", String),
         )
 
         classificationgamelink = Table(
@@ -87,7 +105,7 @@ class GameDB:
             self.meta_data,
             Column("id", Integer, primary_key=True),
             Column("gameid", Integer),
-            Column("classificationid", Integer)
+            Column("classificationid", Integer),
         )
 
         rank = Table(
@@ -100,17 +118,21 @@ class GameDB:
             Column("name", String),
             Column("friendlyname", String),
             Column("value", Integer),
-            Column("bayesaverage", Float)
+            Column("bayesaverage", Float),
         )
 
         self.meta_data.create_all(self.engine)
 
     def get_plays(self, game, date):
-        s = select(func.count(self.plays.c.game),self.plays.c.date).where(self.plays.c.game == game, self.plays.c.dare >= date).group_by(self.plays.c.date)
+        s = (
+            select(func.count(self.plays.c.game), self.plays.c.date)
+            .where(self.plays.c.game == game, self.plays.c.dare >= date)
+            .group_by(self.plays.c.date)
+        )
         return self.engine.execute(s).fetchall()
 
     def get_plays_player(self, game):
-        s = select(self.playsplayer).join(self.plays).where(self.plays.c.game==game)
+        s = select(self.playsplayer).join(self.plays).where(self.plays.c.game == game)
         return self.engine.execute(s).fetchall()
 
     def insert_play(self, data):

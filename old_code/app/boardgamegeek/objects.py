@@ -314,7 +314,6 @@ class BoardGameStatistics:
             "averageweight", "value", float
         )
 
-
     def to_dict(self):
         dict = {
             "user_rated": self._user_rated,
@@ -388,12 +387,20 @@ class BoardGameStatistics:
 
 class User:
 
-    def __init__(self, id, user_name: str, first_name: str,
-                 last_name: str, avatar_link: str,
-                 year_registered: int, last_login,
-                 state_or_province, country, webaddress,
-                 trade_rating
-                 ):
+    def __init__(
+        self,
+        id,
+        user_name: str,
+        first_name: str,
+        last_name: str,
+        avatar_link: str,
+        year_registered: int,
+        last_login,
+        state_or_province,
+        country,
+        webaddress,
+        trade_rating,
+    ):
         self._id = id
         self._user_name = user_name
         self._first_name = first_name

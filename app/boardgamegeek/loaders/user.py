@@ -2,7 +2,6 @@ from boardgamegeek.util import XMLTools
 from app.boardgamegeek.objects import User
 
 
-
 def create_user_from_xml(xml_file):
     xml_tools = XMLTools(xml_file)
 
@@ -16,7 +15,7 @@ def create_user_from_xml(xml_file):
         "last_login": xml_tools.fetch_element("lastlogin", "value"),
         "state_or_province": xml_tools.fetch_element("stateorprovince", "value"),
         "country": xml_tools.fetch_element("country", "value"),
-        "trade_rating": xml_tools.fetch_element("traderating", "value", int)
+        "trade_rating": xml_tools.fetch_element("traderating", "value", int),
     }
 
     return User(data)

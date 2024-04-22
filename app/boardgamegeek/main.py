@@ -13,5 +13,4 @@ if __name__ == "__main__":
     for item in xml_data:
         boardgame = BoardGame(item)
 
-
     # print(boardgame.to_dict())

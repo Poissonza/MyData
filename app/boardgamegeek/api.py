@@ -23,6 +23,7 @@ class ThingAPI(API):
 
         self._url = self._api_endpoint + "thing"
 
+
 class UserApi(API):
 
     def __init__(self):
