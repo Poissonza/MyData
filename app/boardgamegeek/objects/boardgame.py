@@ -3,7 +3,7 @@ from .things import Thing
 class BoardGame(Thing):
 
     def __init__(self, data):
-
+        self._data = data
         super().__init__(data)
 
         self._type = data["type"]
@@ -21,22 +21,7 @@ class BoardGame(Thing):
 
 
     def to_dict(self):
-        return {
-            "name": self._name,
-            "id": self._id,
-            "type": self._type,
-            "description": self._description,
-            "year_published": self._year_published,
-            "min_players": self._min_players,
-            "max_players": self._max_players,
-            "play_time": self._play_time,
-            "min_play_time": self._min_play_time,
-            "max_play_time": self._max_play_time,
-            "min_age": self._min_age,
-            "boardgame_category": self._boardgame_category,
-            "boardgame_mechanic": self._boardgame_mechanic,
-            "designer": self._designer
-        }
+        return self._data
 
     @property
     def type (self):

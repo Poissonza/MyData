@@ -1,4 +1,5 @@
 from boardgamegeek.util import XMLTools
+from app.boardgamegeek.objects import User
 
 
 
@@ -18,4 +19,4 @@ def create_user_from_xml(xml_file):
         "trade_rating": xml_tools.fetch_element("traderating", "value", int)
     }
 
-    print(data)
+    return User(data)
