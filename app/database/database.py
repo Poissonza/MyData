@@ -1,6 +1,5 @@
 from sqlalchemy import URL, create_engine, MetaData, Table, select
 
-
 class DatabaseTables:
 
     DATABASETABLES = {"boardgames.bgg": ["games"]}
