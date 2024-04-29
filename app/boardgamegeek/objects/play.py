@@ -2,6 +2,8 @@ class Play:
 
     def __init__(self, data):
 
+        self._data = data
+
         self._id = data["id"]
         self._date = data["date"]
         self._quantity = data["quantity"]
@@ -9,6 +11,14 @@ class Play:
         self._incomplete = data["incomplete"]
         self._now_in_stats = data["now_in_stats"]
         self._location = data["location"]
+        self._objectid = data["objectid"]
+
+    def to_dict(self):
+        return self._data
+
+    @property
+    def objectid(self):
+        return self._objectid
 
     @property
     def location(self):
@@ -37,3 +47,17 @@ class Play:
     @property
     def id(self):
         return self._id
+
+class PlayPlayer:
+
+    def __init__(self, data):
+        self._data = data
+
+        self._id = data["id"]
+        self._name = data["name"]
+        self._start_position = data["start_position"]
+        self._colour = data["colour"]
+        self._score = data["score"]
+        self._new = data["new"]
+        self._rating = data["rating"]
+        self._win = data["win"]
