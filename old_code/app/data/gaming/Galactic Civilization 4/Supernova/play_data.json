@@ -1,5 +1,5 @@
 {
-  "Game 1": {
+  "Game x": {
     "setup": {
       "galaxy_difficulty": "",
       "game_pacing": "",
@@ -23,5 +23,40 @@
       "time_played": "0:0:0"
     },
     "complete": false
+  },
+  "Game 1": {
+    "setup": {
+      "race": "Terran Alliance",
+      "galaxy_difficulty": "Easy",
+      "game_pacing": "Normal",
+      "research_rate": "Normal",
+      "minor_races": "Occasional",
+      "hostile_entities": "Occasional",
+      "galaxy_size": "Small",
+      "number_of_sectors": "Binary",
+      "civilization_proximity": "Not Too Close",
+      "habitable_planets": "Occasional",
+      "extreme_planets": "Occasional",
+      "resources": "Occasional",
+      "version": "2.51"
+    },
+    "victory_conditions": [
+      "Conquest",
+      "Influence",
+      "Month Limit",
+      "Prestige"
+    ],
+    "opponent": [
+      "Festron Hunt",
+      "Cosmic Contaminant",
+      "Karath Clan"
+    ],
+    "results": {
+      "turns": 203,
+      "result": "Conquest",
+      "score": 643000,
+      "time_played": "5:50:0"
+    },
+    "complete": true
   }
 }
