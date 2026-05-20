@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  ttt-python:
+    container_name: ttt-python
+    entrypoint: [ "python", "Update.py" ]
+    build: app/
+#    depends_on:
+#      ttt-db:
+#        condition: service_healthy
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/Output
+    networks:
+      - db_network
+    env_file: ttt.env
+networks:
+  db_network:
+    external: true
+#  ttt-db:
+#    image: postgres
+#    container_name: ttt-db
+#    restart: always
+#    environment:
+#      POSTGRES_USER: root
+#      POSTGRES_PASSWORD: root
+#      POSTGRES_DB: root
+#    healthcheck:
+#      test: ["CMD", "pg_isready"]
+#      interval: 10s
+#      timeout: 10s
+#      retries: 5
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - ./postgres:/docker-entrypoint-initdb.d
+#  pgadmin:
+#    container_name: tttpgadmin
+#    image: dpage/pgadmin4:6.11
+#    restart: always
+#    environment:
+#      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+#      PGADMIN_DEFAULT_PASSWORD: root
+#    ports:
+#      - "5050:80"

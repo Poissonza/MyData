@@ -1,0 +1,102 @@
+[
+  {
+    "winner_id": "I",
+    "colour": "#01C002",
+    "label": "Innocent"
+  },
+  {
+    "winner_id": "T",
+    "colour": "#BF0200",
+    "label": "Traitor"
+  },
+  {
+    "winner_id": "J",
+    "colour": "#A202EA",
+    "label": "Jester"
+  },
+  {
+    "winner_id": "C",
+    "colour": "black",
+    "label": "Crashed Server"
+  },
+  {
+    "winner_id": "Cl",
+    "colour": "#FFB6C1",
+    "label": "Killer Clown"
+  },
+  {
+    "winner_id": "T-OM",
+    "colour": "brown",
+    "label": "Traitor and Old Man"
+  },
+  {
+    "winner_id": "I-OM",
+    "colour": "green",
+    "label": "Innocent and Old Man"
+  },
+  {
+    "winner_id": "Z",
+    "colour": "grey",
+    "label": "Zombies"
+  },
+  {
+    "winner_id": "M",
+    "colour": "yellow",
+    "label": "Map Wins"
+  },
+  {
+    "winner_id": "T-LG",
+    "colour": "#BF0200",
+    "label": "Traitors and Loot Goblin"
+  },
+  {
+    "winner_id": "I-LG",
+    "colour": "green",
+    "label": "Innocent and Loot Goblin"
+  },
+  {
+    "winner_id": "Z-LG",
+    "colour": "grey",
+    "label": "Zombies and Loot Goblin"
+  },
+  {
+    "winner_id": "B",
+    "colour": "yellow",
+    "label": "Bees"
+  },
+  {
+    "winner_id": "E",
+    "colour": "brown",
+    "label": "Elves"
+  },
+  {
+    "winner_id": "T-L",
+    "colour": "#BF0200",
+    "label": "Traitors and the Lovers"
+  },
+  {
+    "winner_id": "L",
+    "colour": "#A202EA",
+    "label": "Lovers"
+  },
+  {
+    "winner_id": "T-LG-S",
+    "colour": "#A202EA",
+    "label": "Traitors, Loot Goblin and Shadow"
+  },
+  {
+    "winner_id": "T-S",
+    "colour": "#A202EA",
+    "label": "Traitors and Shadow"
+  },
+  {
+    "winner_id": "I-S",
+    "colour": "#A202EA",
+    "label": "Innocent and Shadow"
+  },
+  {
+    "winner_id": "T-MS",
+    "colour": "#A202EA",
+    "label": "Traitor and Mud Scientist"
+  }
+]

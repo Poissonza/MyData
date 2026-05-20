@@ -1,0 +1,6 @@
+psycopg2-binary==2.9.6
+matplotlib==3.4.2
+SQLAlchemy==1.4.22
+pathlib==1.0.1
+tqdm==4.62.2
+pandas==1.4.4
