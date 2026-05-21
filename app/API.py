@@ -18,19 +18,18 @@ class API:
         return request.json()
 
 class TornAPI(API):
-    def __init__(self, key:str, params: dict = None, **kwargs):
+    def __init__(self, key:str, category:str, params: dict = None, **kwargs):
         header = {"accept": "application/json", "Authorization": f"ApiKey {key}"}
-        base_address = "https://api.torn.com/v2/"
-        params = {}
+        base_address = "https://api.torn.com/v2/" + category + "/"
 
         if kwargs:
+            params = {}
             if "comment" in kwargs:
                 params.update({"comment": kwargs["comment"]})
 
         super().__init__(base_address, params, header, **kwargs)
 
     def get_torn_data(self, table:str, **kwargs):
-
         params = self._params.copy()
 
         if kwargs:
