@@ -6,11 +6,14 @@ import time
 # Source:
 # https://boardgamegeek.com/wiki/page/BGG_XML_API2
 
+
 class BGGUserConstants:
     USER_DB = "boardgame.boardgamegeek.src__bgg_users"
 
+
 class BGGPlayConstants:
     BGG_PLAY_DB = "boardgame.boardgamegeek.src__bgg__plays"
+
 
 class BGGThingConstants:
     BGGTHINGTYPE = ["boardgame", "boardgameexpansion", "boardgameaccessory"]
@@ -23,6 +26,7 @@ class BGGApi:
         self._base_url = "https://boardgamegeek.com/xmlapi2/"
         self._spark = SparkSession.getActiveSession()
 
+
 class BGGCollection(BGGApi):
 
     def __init__(self):
@@ -34,18 +38,16 @@ class BGGCollection(BGGApi):
         usr_df = self._spark.read.table(BGGUserConstants.USER_DB)
         row = usr_df.select("id").where(f"user_name = '{user_name}'").collect()[0].id
 
-        params = {
-            "username": user_name
-        }
-        
+        params = {"username": user_name}
+
         data = requests.get(self._url, params=params)
         while data.status_code != 200:
             print(data.status_code)
             time.sleep(2)
             data = requests.get(self._url, params=params)
-            
-        
+
         return data.text, int(row)
+
 
 class BGGPlays(BGGApi):
 
@@ -54,17 +56,25 @@ class BGGPlays(BGGApi):
         self._url = self._base_url + "plays"
 
     def get_play_last_date(self, id: int):
-        
+
         if self._spark.catalog.tableExists(BGGPlayConstants.BGG_PLAY_DB):
             df = self._spark.read.table(BGGPlayConstants.BGG_PLAY_DB)
             val = df.where(f"gameid = {id}").agg({"date": "max"}).collect()
             return val[0].asDict()["max(date)"]
         else:
             return None
-        
 
-    def get_plays_by_item(self, id: int, type: str = "thing", mindate: str = "1990-01-01", maxdate: str = (datetime.date.today()+ datetime.timedelta(days=-1)).strftime("%Y-%m-%d"), page: int = 1):
-        
+    def get_plays_by_item(
+        self,
+        id: int,
+        type: str = "thing",
+        mindate: str = "1990-01-01",
+        maxdate: str = (datetime.date.today() + datetime.timedelta(days=-1)).strftime(
+            "%Y-%m-%d"
+        ),
+        page: int = 1,
+    ):
+
         coll_date = self.get_play_last_date(id)
         if coll_date is not None:
             new_col_date = (coll_date + datetime.timedelta(days=1)).strftime("%Y-%m-%d")
@@ -75,7 +85,7 @@ class BGGPlays(BGGApi):
                 "type": type,
                 "mindate": mindate,
                 "maxdate": maxdate,
-                "page": page
+                "page": page,
             }
 
             request_data = requests.get(self._url, params=params)
@@ -102,13 +112,12 @@ class BGGUsers(BGGApi):
         else:
             return []
 
-
-    def get_data(self, name:str, buddies: int = 1, guilds: int = 1, hot: int = 1, page: int = 1):
+    def get_data(
+        self, name: str, buddies: int = 1, guilds: int = 1, hot: int = 1, page: int = 1
+    ):
         if name not in self._current_user_list:
             print(f"User {name} not found in the current user list")
-            request_param = {
-                "name": name
-            }
+            request_param = {"name": name}
 
             re_data = requests.get(self._url, params=request_param)
 

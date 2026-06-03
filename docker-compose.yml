@@ -1,4 +1,3 @@
-version: "3.8"
 services:
 #  bg-db:
 #    container_name: bg-db
@@ -21,17 +20,17 @@ services:
     container_name: md-python
     entrypoint: [ "tail", "-f", "/dev/null" ]
     build: .
-#    env_file:
-#      - bgg_db.env
+    env_file:
+      - dev.env
 #    depends_on:
 #      bg-db:
 #        condition: service_healthy
     volumes:
       - ./app:/app
 #      - ./output:/app/Output
-    networks:
-      - db_network
-
-networks:
-  db_network:
-    external: true
+#    networks:
+#      - db_network
+#
+#networks:
+#  db_network:
+#    external: true

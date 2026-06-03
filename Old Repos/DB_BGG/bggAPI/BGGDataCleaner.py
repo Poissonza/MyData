@@ -4,18 +4,21 @@ import json
 from pyspark.sql import SparkSession
 import datetime as dt
 
+
 class BGGThingConstants:
-    BGG_ATTRIBUTES_LIST = ["category",
-                               "mechanic",
-                               "family",
-                               "artist",
-                               "publisher",
-                               "expansion",
-                               "designer",
-                           ]
+    BGG_ATTRIBUTES_LIST = [
+        "category",
+        "mechanic",
+        "family",
+        "artist",
+        "publisher",
+        "expansion",
+        "designer",
+    ]
 
     BGG_ATTRIBUTES_DB = "boardgame.boardgamegeek.src__bgg__boardgame_{}"
     BGG_ATTRIBUTES_LINK_DB = "boardgame.boardgamegeek.src__bgg__boardgame_{}"
+
 
 class BGGCollectionCleaner:
 
@@ -42,13 +45,18 @@ class BGGCollectionCleaner:
                 "wishlist": item.find("status").attrib["wishlist"],
                 "preordered": item.find("status").attrib["preordered"],
                 "numplays": int(item.find("numplays").text),
-                "user_id": user_id
+                "user_id": user_id,
             }
 
-            if item.find("yearpublished") is not None :
-                item_dict.update({"yearpublished": item.find("yearpublished").text,})
+            if item.find("yearpublished") is not None:
+                item_dict.update(
+                    {
+                        "yearpublished": item.find("yearpublished").text,
+                    }
+                )
             final_data.append(item_dict)
         return final_data
+
 
 class BGGUserCleaner:
 
@@ -66,9 +74,10 @@ class BGGUserCleaner:
             "last_name": xml_data.find("lastname").attrib["value"],
             "year_registered": int(xml_data.find("yearregistered").attrib["value"]),
             "last_login": xml_data.find("lastlogin").attrib["value"],
-            "country": xml_data.find("country").attrib["value"]
+            "country": xml_data.find("country").attrib["value"],
         }
         return user_dict
+
 
 class BGGDataCleaner:
 
@@ -76,16 +85,17 @@ class BGGDataCleaner:
         self._xml_string = xml_string
         self._spark = SparkSession.getActiveSession()
         self._attribute_ids = self.get_attribute_ids()
-    
-
-    
 
     def get_attribute_ids(self):
         attribute_ids = {}
         for attribute in BGGThingConstants.BGG_ATTRIBUTES_LIST:
-            if self._spark.catalog.tableExists(BGGThingConstants.BGG_ATTRIBUTES_DB.format(attribute)):
+            if self._spark.catalog.tableExists(
+                BGGThingConstants.BGG_ATTRIBUTES_DB.format(attribute)
+            ):
                 try:
-                    att_df = self._spark.read.table(BGGThingConstants.BGG_ATTRIBUTES_DB.format(attribute))
+                    att_df = self._spark.read.table(
+                        BGGThingConstants.BGG_ATTRIBUTES_DB.format(attribute)
+                    )
                 except Exception as e:
                     attribute_ids.update({attribute: []})
                     break
@@ -96,7 +106,6 @@ class BGGDataCleaner:
                 attribute_ids.update({attribute: []})
         return attribute_ids
 
-
     def multiple_clean(self):
         xml_data = ET.fromstring(self._xml_string)
         final = []
@@ -104,7 +113,9 @@ class BGGDataCleaner:
         att_link = []
         mp_data = []
         for item in xml_data:
-            thing_data, att_data, alt_name, version_data, poll_dict, mp_data = self.clean_thing(item)
+            thing_data, att_data, alt_name, version_data, poll_dict, mp_data = (
+                self.clean_thing(item)
+            )
             final.append(thing_data)
         return final, att_data, alt_name, version_data, poll_dict, mp_data
 
@@ -181,12 +192,10 @@ class BGGDataCleaner:
             attribute_data = xml_data.findall(f"link[@type='boardgame{attribute}']")
             if len(attribute_data) > 0:
 
-                att_data, att_link = (
-                    self.get_boardgame_attribute(
-                        xml_data.findall(f"link[@type='boardgame{attribute}']"),
-                        xml_data.attrib["id"],
-                        attribute,
-                    )
+                att_data, att_link = self.get_boardgame_attribute(
+                    xml_data.findall(f"link[@type='boardgame{attribute}']"),
+                    xml_data.attrib["id"],
+                    attribute,
                 )
                 if len(att_data) > 0:
                     fin_att_data.update({attribute: att_data})
@@ -200,28 +209,23 @@ class BGGDataCleaner:
                 alternative_name_data, xml_data.attrib["id"]
             )
 
-
         poll_data = xml_data.findall("poll")
-        
-        if len(poll_data) > 0:
-            poll_dict = (
-                self.get_poll_details(poll_data, xml_data.attrib["id"])
-            )
 
+        if len(poll_data) > 0:
+            poll_dict = self.get_poll_details(poll_data, xml_data.attrib["id"])
 
         version_data = xml_data.find("versions")
-        
-        if version_data is not None:       
-            v =self.get_version_details(version_data, xml_data.attrib["id"])
+
+        if version_data is not None:
+            v = self.get_version_details(version_data, xml_data.attrib["id"])
 
             fin_version_data.update(v)
-        
 
         final_data = {"game_data": game_data, "meta_data": meta_data}
         attribute_data = {"attribute": fin_att_data, "link": fin_att_link}
 
         market_place_data = xml_data.findall("marketplacelistings")
-        if len(market_place_data) >0:
+        if len(market_place_data) > 0:
             for listing in market_place_data[0].findall("listing"):
                 mp_dict = {
                     "thing_id": int(xml_data.attrib["id"]),
@@ -231,11 +235,17 @@ class BGGDataCleaner:
                     "condition": listing.find("condition").attrib["value"],
                     "notes": listing.find("notes").attrib["value"],
                 }
-                
+
                 fin_market_place_data.append(mp_dict)
 
-
-        return game_data, attribute_data, fin_alternative_names, fin_version_data, poll_dict, fin_market_place_data
+        return (
+            game_data,
+            attribute_data,
+            fin_alternative_names,
+            fin_version_data,
+            poll_dict,
+            fin_market_place_data,
+        )
 
     def get_poll_details(self, data, game_id: str):
         language_dependence_list = []
@@ -283,8 +293,12 @@ class BGGDataCleaner:
                     language_dependence_list.append(lan_dep_dict)
             else:
                 raise ValueError(f"The Poll {poll.attrib['name']} is not supported yet")
-                 
-        return {"num_players": num_players_list, "age": player_age_list, "language": language_dependence_list}
+
+        return {
+            "num_players": num_players_list,
+            "age": player_age_list,
+            "language": language_dependence_list,
+        }
 
     def get_boardgame_alternative_name(self, data, game_id):
         alt_name_data = []
@@ -323,7 +337,7 @@ class BGGDataCleaner:
         board_game_language_link = []
         for item in data.findall("item"):
             version_id = item.attrib["id"]
-            
+
             version_dict = {
                 "game_id": game_id,
                 "version_id": version_id,
@@ -340,7 +354,7 @@ class BGGDataCleaner:
 
             for link in item.findall("link"):
                 if link.attrib["type"] == "boardgameversion":
-                    link_dict= {
+                    link_dict = {
                         "game_id": game_id,
                         "version_id": version_id,
                         "id": link.attrib["id"],
@@ -364,15 +378,15 @@ class BGGDataCleaner:
                         "value": link.attrib["value"],
                     }
                     board_game_language_link.append(link_dict)
-            
 
         final_version = {
             "version": version_data,
             "bg_version": board_game_version_link,
             "bg_publisher": board_game_publisher_link,
-            "language": board_game_language_link
+            "language": board_game_language_link,
         }
-        return  final_version
+        return final_version
+
 
 class BGGPlaysCleaner:
 
@@ -400,14 +414,14 @@ class BGGPlaysCleaner:
                 "incomplete": play.attrib["incomplete"],
                 "nowinstats": play.attrib["nowinstats"],
                 "location": play.attrib["location"],
-                "gameid": play.find("item").attrib["objectid"]
+                "gameid": play.find("item").attrib["objectid"],
             }
 
             if play.find("comments") is not None:
                 play_dict.update({"comments": play.find("comments").text})
             else:
                 play_dict.update({"comments": None})
-            
+
             if play.find("players") is not None:
                 player_data = play.find("players").findall("player")
                 for player in player_data:

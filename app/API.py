@@ -2,13 +2,15 @@ import requests as re
 
 class API:
 
-    def __init__(self, base_address: str, params: dict =None, header:dict = None, **kwargs):
+    def __init__(
+        self, base_address: str, params: dict = None, header: dict = None, **kwargs
+    ):
         self._base_address = base_address
         self._params = params
         self._header = header
         self._kwargs = kwargs
 
-    def get_data(self, table:str, params:dict = None):
+    def get_data(self, table: str, params: dict = None):
         url = self._base_address + table
         if not params:
             params = self._params.copy()
@@ -17,8 +19,9 @@ class API:
 
         return request.json()
 
+
 class TornAPI(API):
-    def __init__(self, key:str, category:str, params: dict = None, **kwargs):
+    def __init__(self, key: str, category: str, params: dict = None, **kwargs):
         header = {"accept": "application/json", "Authorization": f"ApiKey {key}"}
         base_address = "https://api.torn.com/v2/" + category + "/"
 
@@ -29,7 +32,7 @@ class TornAPI(API):
 
         super().__init__(base_address, params, header, **kwargs)
 
-    def get_torn_data(self, table:str, **kwargs):
+    def get_torn_data(self, table: str, **kwargs):
         params = self._params.copy()
 
         if kwargs:
@@ -53,8 +56,6 @@ class TornAPI(API):
 
             params.update(kwargs)
 
-
         data = self.get_data(table, params)
 
         return data
-
