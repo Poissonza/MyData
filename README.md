@@ -78,7 +78,7 @@ app/
 │       └── (each has loader.py + data/*.json)
 │
 ├── boardgamegeek/      # BGG XML API
-├── tabletoptactics/    # TTT video data
+├── tabletoptactics/    # TTT (Trouble in Terrorist Town) session data
 └── pcgaming/           # PC game collection (Steam/GOG)
 
 notebooks/              # Jupyter notebooks for analysis
