@@ -31,4 +31,5 @@ services:
     env_file:
       - .env
     volumes:
+      - ./data/delta:/data/delta
       - ./app:/app

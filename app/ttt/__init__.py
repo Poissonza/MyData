@@ -1,3 +1,3 @@
-from .dbaccess import DBAccess
+from .loader import load_all
 
-__all__ = ["DBAccess"]
+__all__ = ["load_all"]
