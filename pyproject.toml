@@ -9,6 +9,7 @@ dependencies = [
     "black>=24.0",
     "delta-spark>=3.2",
     "duckdb>=0.10",
+    "duckdb-cli>=1.5",
     "lxml>=5.0",
     "matplotlib>=3.8",
     "pandas>=2.0",
