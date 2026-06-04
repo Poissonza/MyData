@@ -1,36 +1,32 @@
 services:
-#  bg-db:
-#    container_name: bg-db
-#    image: postgres
-#    restart: always
-#    environment:
-#      POSTGRES_USER: root
-#      POSTGRES_PASSWORD: root
-#      POSTGRES_DB: root
-#    healthcheck:
-#      test: ["CMD", "pg_isready"]
-#      interval: 10s
-#      timeout: 10s
-#      retries: 5
-#    ports:
-#      - "5432:5432"
-#    volumes:
-#      - ./db:/docker-entrypoint-initdb.d
+  spark:
+    image: bitnami/spark:3.5
+    environment:
+      - SPARK_MODE=master
+    volumes:
+      - ./data/delta:/data/delta
+      - ./app:/app
+    env_file:
+      - .env
+
+  jupyter:
+    image: jupyter/pyspark-notebook:spark-3.5.0
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data/delta:/data/delta
+      - ./notebooks:/home/jovyan/work
+      - ./app:/home/jovyan/app
+    env_file:
+      - .env
+    depends_on:
+      - spark
+
   md-python:
     container_name: md-python
-    entrypoint: [ "tail", "-f", "/dev/null" ]
+    entrypoint: ["tail", "-f", "/dev/null"]
     build: .
     env_file:
-      - dev.env
-#    depends_on:
-#      bg-db:
-#        condition: service_healthy
+      - .env
     volumes:
       - ./app:/app
-#      - ./output:/app/Output
-#    networks:
-#      - db_network
-#
-#networks:
-#  db_network:
-#    external: true

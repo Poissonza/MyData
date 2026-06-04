@@ -1,7 +1,12 @@
+class Serialisable:
+
+    def to_dict(self) -> dict:
+        raise NotImplementedError
+
+
 class Thing:
 
     def __init__(self, data):
-
         self._id = data["id"]
         self._name = data["name"]
 

@@ -1,4 +1,7 @@
-class User:
+from .things import Serialisable
+
+
+class User(Serialisable):
 
     def __init__(self, data):
 

@@ -1,4 +1,7 @@
-class Play:
+from .things import Serialisable
+
+
+class Play(Serialisable):
 
     def __init__(self, data):
 

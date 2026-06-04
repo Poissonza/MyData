@@ -1,13 +1,20 @@
 [project]
 name = "mydata"
 version = "0.1.0"
-description = "Add your description here"
+description = "Personal game data collection and analysis"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 dependencies = [
-    "beautifulsoup4>=4.14.3",
-    "black>=26.5.1",
-    "pandas>=3.0.3",
-    "requests>=2.34.2",
-    "tqdm>=4.67.3",
+    "beautifulsoup4>=4.12",
+    "black>=24.0",
+    "delta-spark>=3.2",
+    "duckdb>=0.10",
+    "lxml>=5.0",
+    "matplotlib>=3.8",
+    "pandas>=2.0",
+    "psycopg2-binary>=2.9",
+    "pyspark>=3.5",
+    "requests>=2.31",
+    "sqlalchemy>=2.0",
+    "tqdm>=4.66",
 ]

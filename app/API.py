@@ -1,61 +1,21 @@
-import requests as re
+import requests
+
 
 class API:
 
     def __init__(
-        self, base_address: str, params: dict = None, header: dict = None, **kwargs
+        self, base_address: str, params: dict = None, header: dict = None
     ):
         self._base_address = base_address
-        self._params = params
+        self._params = params or {}
         self._header = header
-        self._kwargs = kwargs
 
-    def get_data(self, table: str, params: dict = None):
-        url = self._base_address + table
-        if not params:
-            params = self._params.copy()
+    def get(self, path: str, params: dict = None) -> requests.Response:
+        url = self._base_address + path
+        merged = {**self._params, **(params or {})}
+        return requests.get(
+            url, headers=self._header, params=merged if merged else None
+        )
 
-        request = re.get(url, headers=self._header, params=params)
-
-        return request.json()
-
-
-class TornAPI(API):
-    def __init__(self, key: str, category: str, params: dict = None, **kwargs):
-        header = {"accept": "application/json", "Authorization": f"ApiKey {key}"}
-        base_address = "https://api.torn.com/v2/" + category + "/"
-
-        if kwargs:
-            params = {}
-            if "comment" in kwargs:
-                params.update({"comment": kwargs["comment"]})
-
-        super().__init__(base_address, params, header, **kwargs)
-
-    def get_torn_data(self, table: str, **kwargs):
-        params = self._params.copy()
-
-        if kwargs:
-            if "filters" in kwargs:
-                assert kwargs["filters"] in [
-                    "incoming",
-                    "outgoing",
-                ], "Filter type is not one of the accepted values."
-
-            if "sort" in kwargs:
-                assert kwargs["sort"] in [
-                    "ASC",
-                    "DESC",
-                ], "Sort type is not one of the accepted values."
-
-            if "striptags" in kwargs:
-                assert kwargs["striptags"] in [
-                    "true",
-                    "false",
-                ], "Striptags is not one of the accepted values."
-
-            params.update(kwargs)
-
-        data = self.get_data(table, params)
-
-        return data
+    def get_json(self, path: str, params: dict = None) -> dict:
+        return self.get(path, params).json()
