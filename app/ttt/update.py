@@ -1,4 +1,4 @@
-from app.tabletoptactics.dbaccess import DBAccess
+from app.ttt.dbaccess import DBAccess
 
 if __name__ == "__main__":
     dba = DBAccess()
