@@ -1,0 +1,849 @@
+{
+  "expansion": [
+    {
+      "expansion": "Original Game",
+      "release_date": "2016-10-16"
+    },
+    {
+      "expansion": "Vikings Scenario Pack",
+      "release_date": "2016-12-21"
+    },
+    {
+      "expansion": "Poland Civilization",
+      "release_date": "2016-12-21"
+    },
+    {
+      "expansion": "Australia Civilization",
+      "release_date": "2017-02-24"
+    },
+    {
+      "expansion": "Persia and Macedon Civilization",
+      "release_date": "2017-03-28"
+    },
+    {
+      "expansion": "Nubia Civilization",
+      "release_date": "2017-07-27"
+    },
+    {
+      "expansion": "Khmer and Indonesia Civilization",
+      "release_date": "2017-10-19"
+    },
+    {
+      "expansion": "Rise and Fall",
+      "release_date": "2018-02-08"
+    },
+    {
+      "expansion": "Gathering Storm",
+      "release_date": "2019-02-14"
+    },
+    {
+      "expansion": "Maya & Gran Columbia",
+      "release_date": "2020-05-21"
+    },
+    {
+      "expansion": "New Frontier Pass",
+      "release_date": "2020-05-21"
+    },
+    {
+      "expansion": "Ethiopia Pack",
+      "release_date": "2020-07-23"
+    },
+    {
+      "expansion": "Byzantium & Gaul",
+      "release_date": "2020-09-24"
+    },
+    {
+      "expansion": "Babylon Pack",
+      "release_date": "2020-11-19"
+    },
+    {
+      "expansion": "Vietnam & Kublai Khan Pack",
+      "release_date": "2021-01-28"
+    },
+    {
+      "expansion": "Portugal Pack",
+      "release_date": "2021-03-25"
+    },
+    {
+      "expansion": "Great Negotiators",
+      "release_date": "2022-11-21"
+    },
+    {
+      "expansion": "Great Commanders",
+      "release_date": "2022-12-15"
+    }
+
+  ],
+  "civilization": [
+    {
+      "leader": "Abraham Lincoln",
+      "country": "America",
+      "expansion": "Great Negotiators"
+    },
+    {
+      "leader": "Alexander",
+      "country": "Macedonian",
+      "expansion": "Persia and Macedon Civilization"
+    },
+    {
+      "leader": "Amanitore",
+      "country": "Nubian",
+      "expansion": "Nubia Civilization"
+    },
+    {
+      "leader": "Ba Triue",
+      "country": "Vietnam",
+      "expansion": "Vietnam & Kublai Khan Pack"
+    },
+    {
+      "leader": "Basil II",
+      "country": "Byzantine",
+      "expansion": "Byzantium & Gaul"
+    },
+    {
+      "leader": "Catherine de Medici",
+      "country": "France",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Catherine de Medici (Magnificence)",
+      "country": "France",
+      "expansion": "New Frontier Pass"
+    },
+    {
+      "leader": "Chandragupta",
+      "country": "India",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "leader": "Cleopatra",
+      "country": "Egypt",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Cyrus",
+      "country": "Persia",
+      "expansion": "Persia and Macedon Civilization"
+    },
+    {
+      "leader": "Dido",
+      "country": "Phoenician",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "leader": "Eleanor of Aquitaine (French)",
+      "country": "France",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "leader": "Eleanor of Aquitaine (England)",
+      "country": "England",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "leader": "Frederick Barbarossa",
+      "country": "Germany",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Gandhi",
+      "country": "India",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Genghis Khan",
+      "country": "Mongolian",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "leader": "Gilgamesh",
+      "country": "Sumerian",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Gitarja",
+      "country": "Indonesian",
+      "expansion": "Khmer and Indonesia Civilization"
+    },
+    {
+      "leader": "Gorgo",
+      "country": "Greece",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Hammurabi",
+      "country": "Babylonian",
+      "expansion": "Babylon Pack"
+    },
+    {
+      "leader": "Harald Hardrada",
+      "country": "Norwegian",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Hojo Tokimune",
+      "country": "Japan",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Jadwiga",
+      "country": "Poland",
+      "expansion": "Poland Civilization"
+    },
+    {
+      "leader": "Jayavarman",
+      "country": "Khmer",
+      "expansion": "Khmer and Indonesia Civilization"
+    },
+    {
+      "leader": "John Curtin",
+      "country": "Australia",
+      "expansion": "Australia Civilization"
+    },
+    {
+      "leader": "Kristina",
+      "country": "Sweden",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "leader": "Kupe",
+      "country": "Maori",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "leader": "Lady Six Sky",
+      "country": "Mayan",
+      "expansion": "Maya & Gran Columbia"
+    },
+    {
+      "leader": "Lautaro",
+      "country": "Mapuche",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "leader": "Mansa Musa",
+      "country": "Malian",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "leader": "Matthias Corvinus",
+      "country": "Hungary",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "leader": "Menelik II",
+      "country": "Ethiopia",
+      "expansion": "Ethiopia Pack"
+    },
+    {
+      "leader": "Montezuma",
+      "country": "Aztec",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Mvemba a Nzinga",
+      "country": "Kongo",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Nzinga Mbande",
+      "country": "Kongo",
+      "expansion": "Great Negotiators"
+    },
+    {
+      "leader": "Pachacuti",
+      "country": "Incan",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "leader": "Pedro II",
+      "country": "Brazil",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Pericles",
+      "country": "Greece",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Peter",
+      "country": "Russia",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Philip II",
+      "country": "Spain",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Poundmaker",
+      "country": "Cree",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "leader": "Qin Shi Huang",
+      "country": "China",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Robert the Bruce",
+      "country": "Scottland",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "leader": "Saladin",
+      "country": "Arabia",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Seondeok",
+      "country": "Korea",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "leader": "Simón Bolívar",
+      "country": "Gran Columbia",
+      "expansion": "Maya & Gran Columbia"
+    },
+    {
+      "leader": "Shaka",
+      "country": "Zulu",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "leader": "Suleiman",
+      "country": "Ottoman",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "leader": "Sultan Saladin",
+      "country": "Arabia",
+      "expansion": "Great Negotiators"
+    },
+    {
+      "leader": "Tamar",
+      "country": "Gergian",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "leader": "Teddy Roosevelt",
+      "country": "America",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Teddy Roosevelt (Bull)",
+      "country": "America",
+      "expansion": "New Frontier Pass"
+    },
+    {
+      "leader": "Tomyris",
+      "country": "Scythian",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Trajan",
+      "country": "Rome",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Victoria",
+      "country": "England",
+      "expansion": "Original Game"
+    },
+    {
+      "leader": "Wilfrid Laurier",
+      "country": "Canada",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "leader": "Wilhelmina",
+      "country": "Dutch",
+      "expansion": "Rise and Fall"
+    }
+  ],
+  "wonder": [
+    {
+      "wonder": "Bermuda Triangle",
+      "expansion": "Maya & Gran Columbia"
+    },
+    {
+      "wonder": "Chocolate Hills",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "wonder": "Cliffs of Dover",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Crater Lake",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Dead Sea",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Delicate Arch",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "wonder": "Eye of the Sahara",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "wonder": "Eyjafjallajokull",
+      "expansion": "Vikings Scenario Pack"
+    },
+    {
+      "wonder": "Fountain of Youth",
+      "expansion": "Maya & Gran Columbia"
+    },
+    {
+      "wonder": "Galapagos Islands",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Giant's Causway",
+      "expansion": "Vikings Scenario Pack"
+    },
+    {
+      "wonder": "Gobustan",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "wonder": "Great Barrier Reef",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Ha Long Bay",
+      "expansion": "Khmer and Indonesia Civilization"
+    },
+    {
+      "wonder": "Ik-Kil",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "wonder": "Lake Retba",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "wonder": "Lysefjord",
+      "expansion": "Vikings Scenario Pack"
+    },
+    {
+      "wonder": "Mato Tipila",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "wonder": "Matterhorn",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "wonder": "Mount Everest",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Mount Kilimanjaro",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Mount Roraima",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "wonder": "Mount Vesuvius",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "wonder": "Paititi",
+      "expansion": "Maya & Gran Columbia"
+    },
+    {
+      "wonder": "Pamukkale",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "wonder": "Pantanal",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Piopiotahi",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Sahara el Beyda",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "wonder": "Torres del Paine",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Tsingy de Bemaraha",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Ubsunur Hollow",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "wonder": "Uluru",
+      "expansion": "Australia Civilization"
+    },
+    {
+      "wonder": "Yosemite",
+      "expansion": "Original Game"
+    },
+    {
+      "wonder": "Zhangye Danxia",
+      "expansion": "Rise and Fall"
+    }
+  ],
+  "gamemode": [
+    "Apocalypse",
+    "Secret Societies",
+    "Dramatic Ages",
+    "Heroes & Legends",
+    "Monopolies and Corporations"
+  ],
+  "gamespeed": [
+    "Online",
+    "Quick",
+    "Standard",
+    "Epic",
+    "Marathon"
+  ],
+  "maptype": [
+    "4-Leaf Clover",
+    "6-Armed Snowflake",
+    "Archipelago",
+    "Continents",
+    "Continents and Islands",
+    "Earth",
+    "East Asia",
+    "Europe",
+    "Fractal",
+    "Inland Sea",
+    "Island Plates",
+    "Lakes",
+    "Mirror",
+    "Pangea",
+    "Primordial",
+    "Seven Seas",
+    "Shuffle",
+    "Small Continents",
+    "Splintered Fractal",
+    "Terra",
+    "Tilted Axis",
+    "True Start Location Earth",
+    "True Start Location East Asia",
+    "True Start Location Europe"
+  ],
+  "mapfeature": [
+    {
+      "feature": "Volcano",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "feature": "GeoThermal Fissure",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "feature": "Ley Lines",
+      "expansion": "Ethiopia Pack"
+    }
+  ],
+  "secret_society": [
+    "Owls of Minerva",
+    "Hermetic Order",
+    "Voidsingers",
+    "Sanguine Pact"
+  ],
+  "citystate": [
+    {
+      "city_state": "Babylon",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "city_state": "Bandar Brunel",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Fez",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "city_state": "Hattusa",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Mohenjo-Daro",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Rapa Nui",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "city_state": "Auckland",
+      "expansion": "Vikings Scenario Pack"
+    },
+    {
+      "city_state": "Zanzibar",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Ngazargamu",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "city_state": "Vatican City",
+      "expansion": "Maya & Gran Columbia"
+    },
+    {
+      "city_state": "Brussels",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Buenos Aires",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Yerevan",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Armagh",
+      "expansion": "Vikings Scenario Pack"
+    },
+    {
+      "city_state": "Vilinius",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Muscat",
+      "expansion": "Vikings Scenario Pack"
+    },
+    {
+      "city_state": "Kabul",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Jerusalem",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Mitla",
+      "expansion": "Maya & Gran Columbia"
+    },
+    {
+      "city_state": "Lisbon",
+      "expansion": "Portugal Pack"
+    },
+    {
+      "city_state": "Singapore",
+      "expansion": "Maya & Gran Columbia"
+    },
+    {
+      "city_state": "Cahokia",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "city_state": "Cardiff",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "city_state": "Valletta",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Hong Kong",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Geneva",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Granada",
+      "expansion": "Vikings Scenario Pack"
+    },
+    {
+      "city_state": "La Venta",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Caguana",
+      "expansion": "Maya & Gran Columbia"
+    },
+    {
+      "city_state": "Akkad",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "city_state": "Amsterdam",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Antananarivo",
+      "expansion": "Vikings Scenario Pack"
+    },
+    {
+      "city_state": "Antioch",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "city_state": "Armagh",
+      "expansion": "Vikings Scenario Pack"
+    },
+    {
+      "city_state": "Bandar Brunei",
+      "expansion": "Khmer and Indonesia Civilization"
+    },
+    {
+      "city_state": "Bolgna",
+      "expansion": "Gathering Storm"
+    },
+    {
+      "city_state": "Nan Madol",
+      "expansion": "Original Game"
+    },
+    {
+      "city_state": "Ayutthaya",
+      "expansion": "Babylon Pack"
+    },
+    {
+      "city_state": "Wolin",
+      "expansion": "Babylon Pack"
+    },
+    {
+      "city_state": "Anshan",
+      "expansion": "Babylon Pack"
+    },
+    {
+      "city_state": "Nalanda",
+      "expansion": "Babylon Pack"
+    }
+  ],
+  "luxuryresource": [
+    {
+      "luxury_resource": "Jade",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Gypsum",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Coffee",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Spices",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Truffles",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Pearls",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Citrus",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Furs",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Ivory",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Tea",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Whales",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Dyes",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Cotton",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Amber",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "luxury_resource": "Silver",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Salt",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Olives",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "luxury_resource": "Turtles",
+      "expansion": "Rise and Fall"
+    },
+    {
+      "luxury_resource": "Sugar",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Diamond",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Honey",
+      "expansion": "Maya & Gran Columbia"
+    },
+    {
+      "luxury_resource": "Tobacco",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Cocoa",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Incense",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Silk",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Mercury",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Wine",
+      "expansion": "Original Game"
+    },
+    {
+      "luxury_resource": "Marble",
+      "expansion": "Original Game"
+    }
+  ],
+  "VicoryCondition": {
+    "R": "Religious",
+    "S": "Science",
+    "C": "Cultural",
+    "D": "Diplomatic",
+    "F": "Conquest"
+  }
+}

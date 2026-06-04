@@ -1,0 +1,21 @@
+version: 2
+
+
+
+sources:
+  - name: torn_faction
+    database: torn
+    schema: faction
+    tables:
+      - name: armouryusage
+        tags: ['faction']
+  - name: torn_user
+    database: torn
+    schema: user
+    tables:
+      - name: attacks
+        tags: ['torn']
+      - name: base
+        tags: ['torn']
+      - name: basic
+        tags: ['torn']
