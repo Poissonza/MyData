@@ -26,13 +26,9 @@ APP_ENV=dev
 DELTA_BASE_PATH=file:///data/delta
 
 TORN_API_KEY=your_torn_api_key
-
-DB_HOST=localhost
-DB_PORT=5432
-DB_USER=your_user
-DB_PASSWORD=your_password
-DB_NAME=your_db
 ```
+
+The `DB_*` variables (`DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`) are legacy and only needed if using the old SQLAlchemy-based `dbaccess.py` directly. TTT data is now loaded via Delta Lake.
 
 ### 2. Start services
 
@@ -41,7 +37,7 @@ docker-compose up
 ```
 
 This starts:
-- **spark** — Spark master (bitnami/spark:3.5)
+- **spark** — Spark master (`apache/spark:3.5.0`) at `spark://localhost:7077`, UI at http://localhost:8080
 - **jupyter** — Jupyter with PySpark kernel at http://localhost:8888
 - **md-python** — plain Python container for running scripts
 
@@ -227,6 +223,48 @@ df.show()
 
 ---
 
+## Loading TTT data
+
+TTT (Trouble in Terrorist Town) session data lives in `app/ttt/data/` as static JSON files. Run the loader to write all tables to Delta Lake:
+
+```bash
+# Inside the md-python container
+docker exec -e PYTHONPATH=/ md-python python -m app.ttt.update
+```
+
+Or from a local Python environment with `PYTHONPATH` set to the repo root:
+
+```bash
+PYTHONPATH=. python -m app.ttt.update
+```
+
+This writes six Delta tables (all under `ttt/`):
+
+| Table | Rows (approx) | Notes |
+|-------|--------------|-------|
+| `ttt/video` | 672 | One row per YouTube video |
+| `ttt/rounds` | 4,104 | One row per round, partitioned by `video_link` |
+| `ttt/players` | 30 | Player roster |
+| `ttt/roles` | 49 | Role definitions (name, team, description) |
+| `ttt/winnerchartdetails` | 20 | Colours/labels for the win-rate chart |
+| `ttt/plays` | 13,950 | Flattened: `(video_id, round_number, player, role)`, partitioned by `video_id` |
+
+The loader always runs with `mode="overwrite"` — safe to re-run.
+
+### Reading TTT data back
+
+```python
+from app.ttt.storage import TTTPlaysWriter, TTTVideoWriter
+
+plays = TTTPlaysWriter().read()
+plays.show(5)
+
+videos = TTTVideoWriter().read()
+videos.show(5)
+```
+
+---
+
 ## Delta Lake table paths
 
 All tables are stored under `DELTA_BASE_PATH` (default `file:///data/delta`).
@@ -242,6 +280,12 @@ All tables are stored under `DELTA_BASE_PATH` (default `file:///data/delta`).
 | Humankind | `gameanalysis/humankind` |
 | Age of Wonders 4 | `gameanalysis/aow4` |
 | Northgard | `gameanalysis/northgard` |
+| TTT videos | `ttt/video` |
+| TTT rounds | `ttt/rounds` |
+| TTT players | `ttt/players` |
+| TTT roles | `ttt/roles` |
+| TTT winner chart | `ttt/winnerchartdetails` |
+| TTT plays | `ttt/plays` |
 
 ---
 
@@ -292,7 +336,7 @@ dbt/models/
 ├── staging/
 │   ├── torn/       # Unnest raw Torn API responses by endpoint
 │   ├── games/      # Passthrough + type casting for flat game data
-│   └── ttt/        # Join TTT PostgreSQL tables into clean views
+│   └── ttt/        # Stage TTT Delta Lake tables into clean views
 └── marts/
     ├── torn/       # War attacks, travel spend analysis
     └── games/      # Win rates and difficulty breakdown across all games
