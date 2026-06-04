@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: ttt
+    description: Trouble in Terrorist Town session data (PostgreSQL, ttt schema).
+    database: "{{ env_var('DB_NAME') }}"
+    schema: ttt
+    tables:
+      - name: video
+        columns:
+          - name: id
+            tests: [unique, not_null]
+      - name: round
+        columns:
+          - name: id
+            tests: [unique, not_null]
+      - name: player
+      - name: role
+      - name: play
+      - name: winnerchartdetails

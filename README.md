@@ -242,3 +242,60 @@ All tables are stored under `DELTA_BASE_PATH` (default `file:///data/delta`).
 | Humankind | `gameanalysis/humankind` |
 | Age of Wonders 4 | `gameanalysis/aow4` |
 | Northgard | `gameanalysis/northgard` |
+
+---
+
+## dbt transformations
+
+The `dbt/` directory contains the transformation layer. Raw Delta Lake data is staged and cleaned, then aggregated into mart models for analysis.
+
+### Setup
+
+```bash
+cd dbt
+pip install dbt-core dbt-duckdb dbt-databricks
+dbt deps
+```
+
+`profiles.yml` is in `dbt/` and has two targets:
+
+| Target | Adapter | When to use |
+|--------|---------|-------------|
+| `dev` (default) | `dbt-duckdb` | Local development — reads Delta files directly via DuckDB |
+| `prod` | `dbt-databricks` | Databricks — reads Unity Catalog tables |
+
+Set `DATABRICKS_HOST`, `DATABRICKS_HTTP_PATH`, and `DATABRICKS_TOKEN` in `.env` for the prod target.
+
+### Running models
+
+```bash
+cd dbt
+
+# Run everything
+dbt run
+
+# Run a specific domain
+dbt run --select staging.torn
+dbt run --select marts.games
+
+# Run a single model
+dbt run --select stg__torn_user__attacks
+
+# Test
+dbt test
+```
+
+### Model structure
+
+```
+dbt/models/
+├── staging/
+│   ├── torn/       # Unnest raw Torn API responses by endpoint
+│   ├── games/      # Passthrough + type casting for flat game data
+│   └── ttt/        # Join TTT PostgreSQL tables into clean views
+└── marts/
+    ├── torn/       # War attacks, travel spend analysis
+    └── games/      # Win rates and difficulty breakdown across all games
+```
+
+The `delta_source('path')` macro handles the difference between DuckDB (`delta_scan(...)`) and Databricks (Unity Catalog reference) automatically based on the active target.
