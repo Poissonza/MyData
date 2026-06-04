@@ -1,0 +1,319 @@
+{
+  "Game 1": {
+    "setup": {
+      "race": "Festron Hunt",
+      "galaxy_difficulty": "Normal",
+      "civilization_proximity": "Others in Sector",
+      "game_pacing": "Normal",
+      "research_rate": "Normal",
+      "number_of_sectors": "A Few",
+      "starting_sector_size": "Small",
+      "star_frequency": "Occasional",
+      "planets_frequency": "Common",
+      "habitable_planets": "Occasional",
+      "extreme_planets": "Occasional",
+      "minor_races": "Occasional",
+      "hostile_entities": "Occasional",
+      "anomolies": "Occasional",
+      "relics": "Occasional",
+      "ascension_crystals": "Occasional",
+      "resources": "Occasional",
+      "asteroid": "Occasional",
+      "nebulas": "Occasional",
+      "black_holes": "Occasional",
+      "disable_tech_trading": false,
+      "disable_tech_brokering": false,
+      "disable_ai_surrendering": false,
+      "surrendered_colonies": true,
+      "no_fow_in_territory": true,
+      "number_of_players": 6,
+      "version": "version 1.03"
+    },
+    "opponent": [
+      "Xeloxi",
+      "Terran Alliance",
+      "Corporate Sector",
+      "Navigators",
+      "Drath Freehold"
+    ],
+    "victory_conditions": [
+      "Conquest",
+      "Influence",
+      "Month Limit",
+      "Prestige"
+    ],
+    "results": {
+      "turns": 261,
+      "result": "Prestige",
+      "score": 1041250,
+      "time_played": "07:20:00"
+    },
+    "complete": true
+  },
+  "Game 2": {
+    "setup": {
+      "race": "Navigators",
+      "galaxy_difficulty": "Bright",
+      "civilization_proximity": "Others in Sector",
+      "game_pacing": "Fast",
+      "research_rate": "Fast",
+      "number_of_sectors": "A Few",
+      "starting_sector_size": "Small",
+      "star_frequency": "Occasional",
+      "planets_frequency": "Common",
+      "habitable_planets": "Occasional",
+      "extreme_planets": "Occasional",
+      "minor_races": "Occasional",
+      "hostile_entities": "Occasional",
+      "anomolies": "Occasional",
+      "relics": "Occasional",
+      "ascension_crystals": "Occasional",
+      "resources": "Occasional",
+      "asteroid": "Occasional",
+      "nebulas": "Occasional",
+      "black_holes": "Occasional",
+      "disable_tech_trading": false,
+      "disable_tech_brokering": false,
+      "disable_ai_surrendering": false,
+      "surrendered_colonies": true,
+      "no_fow_in_territory": true,
+      "number_of_players": 6,
+      "version": "version 1.03"
+    },
+    "opponent": [
+      "Drath Freehold",
+      "Festron Hunt",
+      "Xeloxi",
+      "Arcean Republic",
+      "Terran Resistance"
+    ],
+    "victory_conditions": [
+      "Conquest",
+      "Influence",
+      "Alliance",
+      "Month Limit",
+      "Prestige"
+    ],
+    "results": {
+      "turns": 197,
+      "result": "Defeat",
+      "score": 1033,
+      "time_played": "04:53:00"
+    },
+    "complete": true
+  },
+  "Game 3": {
+    "setup": {
+      "race": "Mimot Brotherhood",
+      "galaxy_difficulty": "Normal",
+      "civilization_proximity": "Others in Sector",
+      "game_pacing": "Fast",
+      "research_rate": "Fast",
+      "number_of_sectors": "A Few",
+      "starting_sector_size": "Small",
+      "star_frequency": "Occasional",
+      "planets_frequency": "Common",
+      "habitable_planets": "Occasional",
+      "extreme_planets": "Occasional",
+      "minor_races": "Occasional",
+      "hostile_entities": "Occasional",
+      "anomolies": "Occasional",
+      "relics": "Occasional",
+      "ascension_crystals": "Occasional",
+      "resources": "Occasional",
+      "asteroid": "Occasional",
+      "nebulas": "Occasional",
+      "black_holes": "Occasional",
+      "disable_tech_trading": false,
+      "disable_tech_brokering": false,
+      "disable_ai_surrendering": false,
+      "surrendered_colonies": true,
+      "no_fow_in_territory": true,
+      "number_of_players": 6,
+      "version": "version 1.03"
+    },
+    "opponent": [
+      "Drengin Empire",
+      "Corporate Sector",
+      "Iconian Refuge",
+      "Torian Regime",
+      "Altarian Republic"
+    ],
+    "victory_conditions": [
+      "Conquest",
+      "Influence",
+      "Alliance",
+      "Month Limit",
+      "Prestige"
+    ],
+    "results": {
+      "turns": 187,
+      "result": "Prestige",
+      "score": 2481150,
+      "time_played": "08:06:00"
+    },
+    "complete": true
+  },
+  "Game 4": {
+    "setup": {
+      "race": "Xeloxi",
+      "galaxy_difficulty": "Normal",
+      "civilization_proximity": "Others in Sector",
+      "game_pacing": "Very Fast",
+      "research_rate": "Very Fast",
+      "number_of_sectors": "A Few",
+      "starting_sector_size": "Small",
+      "star_frequency": "Occasional",
+      "planets_frequency": "Common",
+      "habitable_planets": "Occasional",
+      "extreme_planets": "Occasional",
+      "minor_races": "Occasional",
+      "hostile_entities": "Occasional",
+      "anomolies": "Occasional",
+      "relics": "Occasional",
+      "ascension_crystals": "Occasional",
+      "resources": "Occasional",
+      "asteroid": "Occasional",
+      "nebulas": "Occasional",
+      "black_holes": "Occasional",
+      "disable_tech_trading": false,
+      "disable_tech_brokering": false,
+      "disable_ai_surrendering": false,
+      "surrendered_colonies": true,
+      "no_fow_in_territory": true,
+      "number_of_players": 6,
+      "version": "version 1.03"
+    },
+    "opponent": [
+      "Terran Alliance",
+      "Navigators",
+      "Yor Singularity",
+      "Terran Resistance",
+      "Arcean Republic"
+    ],
+    "victory_conditions": [
+      "Conquest",
+      "Influence",
+      "Month Limit",
+      "Prestige",
+      "Alliance"
+    ],
+    "results": {
+      "turns": 281,
+      "result": "Prestige",
+      "score": 1873900,
+      "time_played": "08:21:00"
+    },
+    "complete": true
+  },
+  "Game 5": {
+    "setup": {
+      "race": "Arcean Republic",
+      "galaxy_difficulty": "Normal",
+      "civilization_proximity": "Others in Sector",
+      "game_pacing": "Very Fast",
+      "research_rate": "Very Fast",
+      "number_of_sectors": "A Few",
+      "starting_sector_size": "Medium",
+      "star_frequency": "Occasional",
+      "planets_frequency": "Common",
+      "habitable_planets": "Occasional",
+      "extreme_planets": "Occasional",
+      "minor_races": "Occasional",
+      "hostile_entities": "Occasional",
+      "anomolies": "Occasional",
+      "relics": "Occasional",
+      "ascension_crystals": "Occasional",
+      "resources": "Occasional",
+      "asteroid": "Occasional",
+      "nebulas": "Occasional",
+      "black_holes": "Occasional",
+      "disable_tech_trading": false,
+      "disable_tech_brokering": false,
+      "disable_ai_surrendering": false,
+      "surrendered_colonies": true,
+      "no_fow_in_territory": true,
+      "number_of_players": 6,
+      "version": "version 1.04"
+    },
+    "opponent": [
+      "Navigators",
+      "Mimot Brotherhood",
+      "Onyx Hive",
+      "Festron Hunt",
+      "Terran Resistance"
+    ],
+    "victory_conditions": [
+      "Conquest",
+      "Influence",
+      "Month Limit",
+      "Prestige",
+      "Alliance"
+    ],
+    "results": {
+      "turns": 219,
+      "result": "Alliance",
+      "score": 1752800,
+      "time_played": "07:29:00"
+    },
+    "complete": true
+  },
+  "Game 6": {
+    "setup": {
+      "race": "Drengin Empire",
+      "galaxy_difficulty": "Normal",
+      "civilization_proximity": "Others in Sector",
+      "game_pacing": "Very Fast",
+      "research_rate": "Very Fast",
+      "number_of_sectors": "A Few",
+      "starting_sector_size": "Large",
+      "star_frequency": "Occasional",
+      "planets_frequency": "Common",
+      "habitable_planets": "Occasional",
+      "extreme_planets": "Occasional",
+      "minor_races": "Occasional",
+      "hostile_entities": "Occasional",
+      "anomolies": "Occasional",
+      "relics": "Occasional",
+      "ascension_crystals": "Occasional",
+      "resources": "Occasional",
+      "asteroid": "Occasional",
+      "nebulas": "Occasional",
+      "black_holes": "Occasional",
+      "disable_tech_trading": false,
+      "disable_tech_brokering": false,
+      "disable_ai_surrendering": false,
+      "surrendered_colonies": true,
+      "no_fow_in_territory": true,
+      "number_of_players": 12,
+      "version": "version 1.04"
+    },
+    "opponent": [
+      "Xeloxi",
+      "Yor Singularity",
+      "Manti Cluster",
+      "Mimot Brotherhood",
+      "Baratak Grove",
+      "Terran Resistance",
+      "Onyx Hive",
+      "Krynn Syndicate",
+      "Altarian Republic",
+      "Festron Hunt",
+      "Drath Freehold"
+    ],
+    "victory_conditions": [
+      "Conquest",
+      "Influence",
+      "Month Limit",
+      "Prestige",
+      "Alliance"
+    ],
+    "results": {
+      "turns": 225,
+      "result": "Prestige",
+      "score": 1098650,
+      "time_played": "07:48:00"
+    },
+    "complete": true
+  }
+}

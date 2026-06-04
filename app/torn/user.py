@@ -55,3 +55,24 @@ class User(TornAPI):
 
     def get_job_points(self, timestamp: int = None) -> dict:
         return self.get_torn_data("jobpoints", timestamp=timestamp)
+
+    def get_logs(
+        self,
+        log: int = None,
+        category: int = None,
+        title: int = None,
+        ts_from: int = None,
+        to: int = None,
+        sort: str = None,
+        limit: int = None,
+    ) -> dict:
+        return self.get_torn_data(
+            "log",
+            log=log,
+            category=category,
+            title=title,
+            **{"from": ts_from} if ts_from else {},
+            to=to,
+            sort=sort,
+            limit=limit,
+        )

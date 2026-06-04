@@ -25,3 +25,15 @@ class TornUserWriter(TornEntityWriter):
 
 class TornFactionWriter(TornEntityWriter):
     TABLE_NAME = "torn/faction"
+
+
+class TornTravelWriter(DeltaWriter):
+    TABLE_NAME = "torn/travel"
+    PARTITION_BY = ["category"]
+
+    def write_travel_data(self, cleaned: dict[str, list]) -> None:
+        for category, rows in cleaned.items():
+            if rows:
+                for row in rows:
+                    row["category"] = category
+                self.write(rows, mode="append")
