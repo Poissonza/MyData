@@ -5,7 +5,7 @@ from app.gameanalysis.civ6.storage import (Civ6CityStateLoader,
                                            Civ6CivilizationsLoader,
                                            Civ6WondersLoader,
                                            Civ6GameModeLoader, Civ6GameSpeedLoader, Civ6MapTypeLoader,
-                                           Civ6LuxuryResourcesLoader)
+                                           Civ6LuxuryResourcesLoader, Civ6PlayedGame)
 
 DATA_DIR = pathlib.Path(__file__).parent / "data"
 
@@ -25,6 +25,7 @@ def __load_all():
     __load_wonders()
     # __load_map_types()
     # __load_victory_condition()
+    __load_played_game()
 
 
 def __load_city_states():
@@ -72,6 +73,14 @@ def __load_luxury_resource(mode: str = "overwrite"):
         mode=mode,
     )
     print(f"Wrote {len(data['luxuryresource'])} luxury resource rows")
+
+def __load_played_game(mode: str = "overwrite"):
+    data = _load_json("game_played.json")
+    Civ6PlayedGame().write(
+        data,
+        mode=mode,
+    )
+    print(f"Wrote {len(data)} played game rows")
 
 def __load_wonders(mode: str = "overwrite"):
     data = _load_json("default_data.json")

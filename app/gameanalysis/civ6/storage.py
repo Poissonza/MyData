@@ -31,3 +31,6 @@ class Civ6CityStateLoader(DeltaWriter):
 
 class Civ6LuxuryResourcesLoader(DeltaWriter):
     TABLE_NAME = "civ6/luxuryresources"
+
+class Civ6PlayedGame(DeltaWriter):
+    TABLE_NAME = "civ6/playedgame"
