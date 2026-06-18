@@ -18,7 +18,8 @@ class StorageConfig:
         from delta import configure_spark_with_delta_pip
 
         builder = (
-            SparkSession.builder.appName("MyData")
+            SparkSession.builder.master(Config.SPARK_MASTER_URL)
+            .appName("MyData")
             .config(
                 "spark.sql.extensions",
                 "io.delta.sql.DeltaSparkSessionExtension",

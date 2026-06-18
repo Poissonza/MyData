@@ -11,6 +11,19 @@ services:
     env_file:
       - .env
 
+  spark-worker:
+    build: .
+    entrypoint: ["/usr/local/lib/python3.11/site-packages/pyspark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark:7077"]
+    volumes:
+      - ./data/delta:/data/delta
+      - ./app:/app
+    env_file:
+      - .env
+    environment:
+      - PYSPARK_PYTHON=python3
+    depends_on:
+      - spark
+
   jupyter:
     image: jupyter/pyspark-notebook:spark-3.5.0
     ports:
@@ -30,6 +43,10 @@ services:
     build: .
     env_file:
       - .env
+    environment:
+      - PYSPARK_PYTHON=python3
+    depends_on:
+      - spark
     volumes:
       - ./data/delta:/data/delta
       - ./app:/app

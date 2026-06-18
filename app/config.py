@@ -8,6 +8,9 @@ class Config:
     # Storage: local volume for dev, DBFS/Unity Catalog path for prod
     DELTA_BASE_PATH: str = os.getenv("DELTA_BASE_PATH", "file:///data/delta")
 
+    # Spark master URL (dev only — omit for prod/Databricks)
+    SPARK_MASTER_URL: str = os.getenv("SPARK_MASTER_URL", "spark://spark:7077")
+
     # Databricks (prod only)
     DATABRICKS_HOST: str = os.getenv("DATABRICKS_HOST", "")
     DATABRICKS_TOKEN: str = os.getenv("DATABRICKS_TOKEN", "")

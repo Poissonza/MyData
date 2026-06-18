@@ -12,6 +12,7 @@ RUN pip install --upgrade pip
 COPY requirements.txt requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-
+ENV SPARK_HOME=/usr/local/lib/python3.11/site-packages/pyspark
+ENV PYSPARK_PYTHON=python3
 
 #COPY /python .
