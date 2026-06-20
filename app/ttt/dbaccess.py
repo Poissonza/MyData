@@ -31,11 +31,21 @@ class DBAccess:
         self.engine = create_engine(Config.db_url(), echo=False)
         self.metadata = MetaData()
 
-        self.video = Table("video", self.metadata, autoload_with=self.engine, schema="ttt")
-        self.round = Table("round", self.metadata, autoload_with=self.engine, schema="ttt")
-        self.player = Table("player", self.metadata, autoload_with=self.engine, schema="ttt")
-        self.role = Table("role", self.metadata, autoload_with=self.engine, schema="ttt")
-        self.play = Table("play", self.metadata, autoload_with=self.engine, schema="ttt")
+        self.video = Table(
+            "video", self.metadata, autoload_with=self.engine, schema="ttt"
+        )
+        self.round = Table(
+            "round", self.metadata, autoload_with=self.engine, schema="ttt"
+        )
+        self.player = Table(
+            "player", self.metadata, autoload_with=self.engine, schema="ttt"
+        )
+        self.role = Table(
+            "role", self.metadata, autoload_with=self.engine, schema="ttt"
+        )
+        self.play = Table(
+            "play", self.metadata, autoload_with=self.engine, schema="ttt"
+        )
         self.winnerchartdetails = Table(
             "winnerchartdetails", self.metadata, autoload_with=self.engine, schema="ttt"
         )
@@ -55,7 +65,9 @@ class DBAccess:
         self.playersdata = playerdata or str(self.DATA_DIR / "players.json")
         self.roledata = roledata or str(self.DATA_DIR / "role.json")
         self.playdata = playdata or str(self.DATA_DIR / "playdata.json")
-        self.winchartdata = winchartdata or str(self.DATA_DIR / "WinnerChartColours.json")
+        self.winchartdata = winchartdata or str(
+            self.DATA_DIR / "WinnerChartColours.json"
+        )
 
     def update_tables(self) -> None:
         self.fill_video(self.videodata)
@@ -84,7 +96,9 @@ class DBAccess:
     def _insert_video(self, video_data: dict) -> None:
         if "date" in video_data:
             parts = video_data["date"].split("/")
-            video_data["date"] = datetime.date(int(parts[0]), int(parts[1]), int(parts[2]))
+            video_data["date"] = datetime.date(
+                int(parts[0]), int(parts[1]), int(parts[2])
+            )
         if "video_play_time" in video_data:
             parts = video_data["video_play_time"].split(":")
             video_data["video_play_time"] = datetime.time(
@@ -99,7 +113,9 @@ class DBAccess:
             if self.get_round_id(rnd["round_number"], rnd["video_link"]) is None:
                 if "time_stamp" in rnd:
                     parts = rnd["time_stamp"].split(":")
-                    rnd["time_stamp"] = datetime.time(int(parts[0]), int(parts[1]), int(parts[2]))
+                    rnd["time_stamp"] = datetime.time(
+                        int(parts[0]), int(parts[1]), int(parts[2])
+                    )
                 self.conn.execute(self.round.insert(), rnd)
                 count += 1
         print(f"Inserted {count} rounds")
@@ -158,7 +174,11 @@ class DBAccess:
                 if self.check_play(round_id, player_link, role_link) is None:
                     self.conn.execute(
                         self.play.insert(),
-                        {"player_link": player_link, "round_link": round_id, "role_link": role_link},
+                        {
+                            "player_link": player_link,
+                            "round_link": round_id,
+                            "role_link": role_link,
+                        },
                     )
                     count += 1
         print(f"Inserted {count} role links")
@@ -217,7 +237,12 @@ class DBAccess:
             [
                 data,
                 pd.DataFrame(
-                    {"Count": data_small["Count"].sum(), "Team": "Other", "Colour": "darkblue", "Label": "Other"},
+                    {
+                        "Count": data_small["Count"].sum(),
+                        "Team": "Other",
+                        "Colour": "darkblue",
+                        "Label": "Other",
+                    },
                     index=[0],
                 ),
             ],

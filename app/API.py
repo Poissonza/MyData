@@ -3,9 +3,7 @@ import requests
 
 class API:
 
-    def __init__(
-        self, base_address: str, params: dict = None, header: dict = None
-    ):
+    def __init__(self, base_address: str, params: dict = None, header: dict = None):
         self._base_address = base_address
         self._params = params or {}
         self._header = header

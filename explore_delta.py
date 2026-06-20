@@ -51,8 +51,12 @@ def _print_table_list(tables: dict[str, Path]) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Explore Delta Lake tables via DuckDB")
-    parser.add_argument("--list", action="store_true", help="List available tables and exit")
-    parser.add_argument("--query", "-q", metavar="SQL", help="Run a single SQL query and exit")
+    parser.add_argument(
+        "--list", action="store_true", help="List available tables and exit"
+    )
+    parser.add_argument(
+        "--query", "-q", metavar="SQL", help="Run a single SQL query and exit"
+    )
     args = parser.parse_args()
 
     tables = _discover_tables(DELTA_ROOT)

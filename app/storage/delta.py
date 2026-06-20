@@ -1,4 +1,6 @@
 from __future__ import annotations
+from pyspark.sql.functions import row_number
+from pyspark.sql.window import Window
 
 from app.storage.config import StorageConfig
 
@@ -11,8 +13,13 @@ class DeltaWriter:
         self._spark = spark or StorageConfig.get_spark()
         self._path = StorageConfig.table_path(self.TABLE_NAME)
 
-    def write(self, data: list[dict], mode: str = "append") -> None:
+    def write(
+        self, data: list[dict], mode: str = "append", make_id: bool = False, id_col : str = ""
+    ) -> None:
         df = self._spark.createDataFrame(data)
+        if make_id:
+            window = Window.orderBy(id_col)
+            df = df.withColumn("id", row_number().over(window))
         writer = df.write.format("delta").mode(mode)
         if self.PARTITION_BY:
             writer = writer.partitionBy(*self.PARTITION_BY)

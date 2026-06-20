@@ -1,11 +1,16 @@
 import pathlib
 import json
-from app.gameanalysis.civ6.storage import (Civ6CityStateLoader,
-                                           Civ6ExpansionLoader,
-                                           Civ6CivilizationsLoader,
-                                           Civ6WondersLoader,
-                                           Civ6GameModeLoader, Civ6GameSpeedLoader, Civ6MapTypeLoader,
-                                           Civ6LuxuryResourcesLoader, Civ6PlayedGame)
+from app.gameanalysis.civ6.storage import (
+    Civ6CityStateLoader,
+    Civ6ExpansionLoader,
+    Civ6CivilizationsLoader,
+    Civ6WondersLoader,
+    Civ6GameModeLoader,
+    Civ6GameSpeedLoader,
+    Civ6MapTypeLoader,
+    Civ6LuxuryResourcesLoader,
+    Civ6PlayedGame,
+)
 
 DATA_DIR = pathlib.Path(__file__).parent / "data"
 
@@ -39,6 +44,8 @@ def __load_civilizations(mode: str = "overwrite"):
     Civ6CivilizationsLoader().write(
         data["civilization"],
         mode=mode,
+        make_id=True,
+        id_col="country",
     )
     print(f"Wrote {len(data['civilization'])} civilization rows")
 
@@ -51,6 +58,7 @@ def __load_expansions(mode: str = "overwrite"):
     )
     print(f"Wrote {len(data['expansion'])} expansion rows")
 
+
 def __load_game_mode(mode: str = "overwrite"):
     data = _load_json("default_data.json")
     Civ6GameModeLoader().write(
@@ -59,12 +67,14 @@ def __load_game_mode(mode: str = "overwrite"):
     )
     print(f"Wrote {len(data['gamemode'])} gamemode rows")
 
+
 def __load_game_speed(mode: str = "overwrite"):
     data = _load_json("default_data.json")
     Civ6GameSpeedLoader().write(
         data["gamespeed"],
     )
     print(f"Wrote {len(data['gamespeed'])} gamespeed rows")
+
 
 def __load_luxury_resource(mode: str = "overwrite"):
     data = _load_json("default_data.json")
@@ -74,6 +84,7 @@ def __load_luxury_resource(mode: str = "overwrite"):
     )
     print(f"Wrote {len(data['luxuryresource'])} luxury resource rows")
 
+
 def __load_played_game(mode: str = "overwrite"):
     data = _load_json("game_played.json")
     Civ6PlayedGame().write(
@@ -81,6 +92,7 @@ def __load_played_game(mode: str = "overwrite"):
         mode=mode,
     )
     print(f"Wrote {len(data)} played game rows")
+
 
 def __load_wonders(mode: str = "overwrite"):
     data = _load_json("default_data.json")
@@ -90,6 +102,7 @@ def __load_wonders(mode: str = "overwrite"):
     )
     print(f"Wrote {len(data['wonder'])} wonder rows")
 
+
 def __load_map_types(mode: str = "overwrite"):
     data = _load_json("default_data.json")
     Civ6MapTypeLoader().write(
@@ -97,6 +110,7 @@ def __load_map_types(mode: str = "overwrite"):
         mode=mode,
     )
     print(f"Wrote {len(data['maptype'])} maptype rows")
+
 
 def __load_victory_condition(mode: str = "overwrite"):
     data = _load_json("default_data.json")

@@ -25,8 +25,7 @@ class Civ6Loader(JsonDeltaLoader):
                 "game_modes": game.get("game_modes", []),
                 "wonders": game.get("wonders", []),
                 "opponents": [
-                    f"{o['leader']} ({o['country']})"
-                    for o in game.get("opponents", [])
+                    f"{o['leader']} ({o['country']})" for o in game.get("opponents", [])
                 ],
                 "city_states": game.get("citystates", []),
                 "luxury_resources": game.get("luxuryresources", []),
