@@ -26,6 +26,6 @@ class API:
     def store_request(self, path: str, folder_path: str, params: dict = None) -> None:
         data = self.get_json(path, params)
 
-        os.makedirs(folder_path, exist_ok=True)
-        with open(folder_path + f"{path}_" + dt.today().strftime("%Y-%m-%d_%H-%M-%S") + ".json", "w") as f:
+        os.makedirs(folder_path + f"/{path}", exist_ok=True)
+        with open(folder_path + f"/{path}" + f"/{path}_" + dt.today().strftime("%Y-%m-%d_%H-%M-%S") + ".json", "w") as f:
             json.dump(data, f)
