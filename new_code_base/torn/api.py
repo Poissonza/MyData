@@ -25,6 +25,8 @@ class TornAPI(API):
                 assert v in ["true", "false"], f"Invalid striptags value: {v}"
             elif k == "from_ts":
                 k = "from"
+            elif k == "to_ts":
+                k = "to"
             params[k] = v
 
         return params
