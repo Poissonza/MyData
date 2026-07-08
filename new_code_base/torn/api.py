@@ -1,4 +1,4 @@
-from app.API.api import API
+from API.api import API
 
 class TornAPI(API):
 
