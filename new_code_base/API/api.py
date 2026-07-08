@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime as dt
 import json
+import os
 
 class API:
     def __init__(self, base_url: str, params: dict = None, header: dict = None) -> None:
@@ -25,5 +26,6 @@ class API:
     def store_request(self, path: str, folder_path: str, params: dict = None) -> None:
         data = self.get_json(path, params)
 
+        os.makedirs(folder_path, exist_ok=True)
         with open(folder_path + f"{path}_" + dt.today().strftime("%Y-%m-%d_%H-%M-%S") + ".json", "w") as f:
             json.dump(data, f)
