@@ -1,15 +1,23 @@
 from API.api import API
+from config import Config
+
 
 class TornAPI(API):
 
-    def __init__(self, key: str, category:str ,params: dict = None):
+    def __init__(self, category: str, params: dict | None = None):
 
+        if params is None:
+            params = {}
         base_address = f"https://api.torn.com/v2/{category}/"
-        header = {"accept": "application/json", "Authorization": f"ApiKey {key}"}
+        header = {
+            "accept": "application/json",
+            "Authorization": f"ApiKey {Config.TORN_API_KEY}",
+        }
 
         super().__init__(base_address, params, header)
 
-    def prep_params(self, **kwargs) -> dict:
+    @staticmethod
+    def prep_params(**kwargs) -> dict:
         params = {}
         for k, v in kwargs.items():
             if v is None:

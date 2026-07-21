@@ -1,6 +1,7 @@
 import json
 from pyspark.sql.functions import from_json, col
 
+
 class storage:
 
     def __init__(self, spark):
@@ -14,7 +15,9 @@ class storage:
 
         schema = df_strings.selectExpr("schema_of_json_agg(json_str)").collect()[0][0]
 
-        data_df = df_strings.select(from_json(col("json_str"), schema).alias("parsed")).select("parsed.*")
+        data_df = df_strings.select(
+            from_json(col("json_str"), schema).alias("parsed")
+        ).select("parsed.*")
 
         data_df.write.format("delta").mode("append").save(f"/Volumes/{volume_path}")
 

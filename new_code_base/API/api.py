@@ -3,6 +3,7 @@ from datetime import datetime as dt
 import json
 import os
 
+
 class API:
     def __init__(self, base_url: str, params: dict = None, header: dict = None) -> None:
         self._base_url = base_url
@@ -22,10 +23,16 @@ class API:
     def get_json(self, path: str, params: dict = None) -> dict:
         return self.get(path, params).json()
 
-
     def store_request(self, path: str, folder_path: str, params: dict = None) -> None:
         data = self.get_json(path, params)
 
         os.makedirs(folder_path + f"/{path}", exist_ok=True)
-        with open(folder_path + f"/{path}" + f"/{path}_" + dt.today().strftime("%Y-%m-%d_%H-%M-%S") + ".json", "w") as f:
+        with open(
+            folder_path
+            + f"/{path}"
+            + f"/{path}_"
+            + dt.today().strftime("%Y-%m-%d_%H-%M-%S")
+            + ".json",
+            "w",
+        ) as f:
             json.dump(data, f)
