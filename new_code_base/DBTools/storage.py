@@ -1,5 +1,6 @@
 import json
 from pyspark.sql.functions import from_json, col
+from pyspark.sql.utils import AnalysisException
 
 
 class storage:
@@ -7,18 +8,27 @@ class storage:
     def __init__(self, spark):
         self.spark = spark
 
-    def store(self, data: dict, volume_path: str):
+    def store(self, data: dict, volume_path: str, merge_schema: bool = False):
 
         json_str = json.dumps(data)
 
         df_strings = self.spark.createDataFrame([(json_str,)], ["json_str"])
 
-        schema = df_strings.selectExpr("schema_of_json_agg(json_str)").collect()[0][0]
+        # Try to use existing table schema if available
+        try:
+            existing_df = self.spark.read.format("delta").load(f"/Volumes/{volume_path}")
+            schema = existing_df.schema
+        except AnalysisException:
+            # Table doesn't exist, infer schema from data
+            schema = df_strings.selectExpr("schema_of_json_agg(json_str)").collect()[0][0]
 
         data_df = df_strings.select(
             from_json(col("json_str"), schema).alias("parsed")
         ).select("parsed.*")
 
-        data_df.write.format("delta").mode("append").save(f"/Volumes/{volume_path}")
+        writer = data_df.write.format("delta").mode("append")
+        if merge_schema:
+            writer = writer.option("mergeSchema", "true")
+        writer.save(f"/Volumes/{volume_path}")
 
         print("data Written")
