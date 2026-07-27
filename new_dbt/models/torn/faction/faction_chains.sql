@@ -9,6 +9,3 @@ FROM (
         explode(chains) AS chains
     FROM delta.`/Volumes/torn/faction/faction_api_files/chains/`
 )
-{%if is_incremental()}
-WHERE chains.start > (select max(start) from {{this}})
-{%end}

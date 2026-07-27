@@ -16,5 +16,5 @@ SELECT
     attack.modifiers as modifiers
 FROM (
   SELECT explode(attacks) as attack
-  FROM delta.`/Volumes/torn/faction/faction_api_files/faction_attacks/`
+  FROM delta.`/Volumes/torn/faction/faction_api_files/attacks/`
 )
