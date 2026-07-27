@@ -1,17 +1,17 @@
 from API.api import API
-from config import Config
+
 
 
 class TornAPI(API):
 
-    def __init__(self, category: str, params: dict | None = None):
+    def __init__(self, key:str,  category: str, params: dict | None = None):
 
         if params is None:
             params = {}
         base_address = f"https://api.torn.com/v2/{category}/"
         header = {
             "accept": "application/json",
-            "Authorization": f"ApiKey {Config.TORN_API_KEY}",
+            "Authorization": f"ApiKey {key}",
         }
 
         super().__init__(base_address, params, header)
