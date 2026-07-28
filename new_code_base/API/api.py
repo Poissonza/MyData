@@ -23,6 +23,9 @@ class API:
     def get_json(self, path: str, params: dict = None) -> dict:
         return self.get(path, params).json()
 
+    def get_text(self, path: str, params: dict = None) -> str:
+        return self.get(path, params).text
+
     def store_request(self, path: str, folder_path: str, params: dict = None) -> None:
         data = self.get_json(path, params)
 
