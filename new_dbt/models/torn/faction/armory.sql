@@ -12,5 +12,5 @@ FROM (
 SELECT EXPLODE(news) as news FROM delta.`/Volumes/torn/faction/faction_api_files/news`
 )
 {% if is_incremental() %}
-WHERE timestamp > (SELECT max(timestamp) FROM {{this}})
+WHERE news.timestamp > (SELECT max(timestamp) FROM {{this}})
 {% endif %}
