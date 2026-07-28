@@ -1,3 +1,10 @@
+{{
+    config(
+        materialized='incremental',
+        unique_key='id',
+    )
+}}
+
 SELECT
     chains.id AS id,
     chains.chain AS chain,
@@ -9,3 +16,6 @@ FROM (
         explode(chains) AS chains
     FROM delta.`/Volumes/torn/faction/faction_api_files/chains/`
 )
+{% if is_incremental()%}
+WHERE chains.start > (SELECT max(start) FROM {{this}})
+{% endif %}

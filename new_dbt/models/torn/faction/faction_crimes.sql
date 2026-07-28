@@ -1,3 +1,11 @@
+{{
+    config(
+        materialized='incremental',
+        unique_key='id',
+        incremental_strategy = 'merge',
+    )
+}}
+
 SELECT
     crimes.created_at AS created_at,
     crimes.difficulty AS difficulty,
@@ -16,3 +24,14 @@ FROM (
         EXPLODE(crimes) AS crimes
     FROM delta.`/Volumes/torn/faction/faction_api_files/crimes/`
 )
+QUALIFY ROW_NUMBER() OVER (
+    PARTITION BY crimes.id 
+    ORDER BY 
+        GREATEST(
+            COALESCE(crimes.executed_at, 60000),
+            COALESCE(crimes.expired_at, 60000),
+            COALESCE(crimes.ready_at, 60000),
+            COALESCE(crimes.planning_at, 60000),
+            COALESCE(crimes.created_at, 60000)
+        ) DESC
+) = 1

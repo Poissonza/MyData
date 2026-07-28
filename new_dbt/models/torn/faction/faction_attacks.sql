@@ -1,3 +1,10 @@
+{{
+    config(
+        materialized='incremental',
+        unique_key='id',
+    )
+}}
+
 SELECT
     attack.id as id,
     attack.code as code,
@@ -18,3 +25,6 @@ FROM (
   SELECT explode(attacks) as attack
   FROM delta.`/Volumes/torn/faction/faction_api_files/attacks/`
 )
+{% if is_incremental()%}
+WHERE attack.started > (SELECT max(started) FROM {{this}})
+{% endif %}
