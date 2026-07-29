@@ -8,7 +8,7 @@ class storage:
     def __init__(self, spark):
         self.spark = spark
 
-    def store(self, data: dict, volume_path: str, merge_schema: bool = False, add_ts: bool = False):
+    def store(self, data: dict, volume_path: str, merge_schema: bool = False, add_date: bool = False):
 
         json_str = json.dumps(data)
 
@@ -24,7 +24,7 @@ class storage:
             from_json(col("json_str"), schema).alias("parsed")
         ).select("parsed.*")
 
-        if add_ts:
+        if add_date:
             data_df = data_df.withColumn("ts", current_date())
 
         writer = data_df.write.format("delta").mode("append")
