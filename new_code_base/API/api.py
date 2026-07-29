@@ -1,7 +1,4 @@
 import requests
-from datetime import datetime as dt
-import json
-import os
 
 
 class API:
@@ -13,29 +10,12 @@ class API:
     def get(self, path: str, params: dict = None) -> requests.Response:
         url = self._base_url + path
         merged = {**self._params, **(params or {})}
-        try:
-            response = requests.get(url, headers=self._header, params=merged)
-            response.raise_for_status()
-            return response
-        except requests.exceptions.RequestException as e:
-            raise e
+        response = requests.get(url, headers=self._header, params=merged)
+        response.raise_for_status()
+        return response
 
     def get_json(self, path: str, params: dict = None) -> dict:
         return self.get(path, params).json()
 
     def get_text(self, path: str, params: dict = None) -> str:
         return self.get(path, params).text
-
-    def store_request(self, path: str, folder_path: str, params: dict = None) -> None:
-        data = self.get_json(path, params)
-
-        os.makedirs(folder_path + f"/{path}", exist_ok=True)
-        with open(
-            folder_path
-            + f"/{path}"
-            + f"/{path}_"
-            + dt.today().strftime("%Y-%m-%d_%H-%M-%S")
-            + ".json",
-            "w",
-        ) as f:
-            json.dump(data, f)
