@@ -5,7 +5,8 @@ from pyspark.sql.utils import AnalysisException
 
 logger = logging.getLogger(__name__)
 
-class storage:
+
+class Storage:
 
     def __init__(self, spark):
         self.spark = spark
