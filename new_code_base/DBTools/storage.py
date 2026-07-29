@@ -1,7 +1,9 @@
 import json
+import logging
 from pyspark.sql.functions import from_json, col, current_date
 from pyspark.sql.utils import AnalysisException
 
+logger = logging.getLogger(__name__)
 
 class storage:
 
@@ -32,4 +34,4 @@ class storage:
             writer = writer.option("mergeSchema", "true")
         writer.save(f"/Volumes/{volume_path}")
 
-        print("data Written")
+        logger.info("Data written to %s", volume_path)
