@@ -1,0 +1,43 @@
+roles:
+  - name: Imp
+    alignment: Demon
+    description: "This is a basic demon"
+    set: Trouble Brewing
+  - name: Slayer
+    alignment: Townsfolk
+    description: "Can shoot a player"
+    set: Trouble Brewing
+players:
+  - lewis
+  - Ravs
+videos:
+  - name: Our First Game
+    length: 01:20:00
+    id: 10126
+    date: 01/01/2026
+    members_only: True
+  - name: our Second Game
+    length: 01:22:00
+    id: 20126
+    date: 02/01/2026
+    members_only: False
+playdata:
+  - video_id: 10126
+    players:
+      - player: Lewis
+        role: Imp
+      - player: Ravs
+        role: Slayer
+daydata:
+  - video_id: 10126
+    events:
+      - day: 1
+        execution: Lewis
+        murder: Ravs
+      - day: 2
+        execution: Lewis
+        murder: Ravs
+
+
+
+
