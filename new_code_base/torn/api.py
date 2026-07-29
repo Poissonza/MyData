@@ -23,14 +23,14 @@ class TornAPI(API):
             if v is None:
                 continue
             if k == "filters":
-                assert v in [
-                    "incoming",
-                    "outgoing",
-                ], f"Invalid filter value: {v}"
+                if v not in ["incoming", "outgoing"]:
+                    raise ValueError(f"Invalid filter value: {v}")
             elif k == "sort":
-                assert v in ["ASC", "DESC"], f"Invalid sort value: {v}"
+                if v not in ["ASC", "DESC"]:
+                    raise ValueError(f"Invalid sort value: {v}")
             elif k == "striptags":
-                assert v in ["true", "false"], f"Invalid striptags value: {v}"
+                if v not in ["true", "false"]:
+                    raise ValueError(f"Invalid striptags value: {v}")
             elif k == "from_ts":
                 k = "from"
             elif k == "to_ts":
