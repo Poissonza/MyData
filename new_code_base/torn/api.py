@@ -1,10 +1,9 @@
 from API.api import API
 
 
-
 class TornAPI(API):
 
-    def __init__(self, key:str,  category: str, params: dict | None = None):
+    def __init__(self, key: str, category: str, params: dict | None = None):
 
         if params is None:
             params = {}

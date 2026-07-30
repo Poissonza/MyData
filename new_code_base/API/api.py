@@ -2,7 +2,9 @@ import requests
 
 
 class API:
-    def __init__(self, base_url: str, params: dict | None = None, header: dict | None = None) -> None:
+    def __init__(
+        self, base_url: str, params: dict | None = None, header: dict | None = None
+    ) -> None:
         self._base_url = base_url
         self._params = params or {}
         self._header = header or {}

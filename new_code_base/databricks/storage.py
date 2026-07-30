@@ -11,17 +11,27 @@ class Storage:
     def __init__(self, spark):
         self.spark = spark
 
-    def store(self, data: dict, volume_path: str, merge_schema: bool = False, add_date: bool = False):
+    def store(
+        self,
+        data: dict,
+        volume_path: str,
+        merge_schema: bool = False,
+        add_date: bool = False,
+    ):
 
         json_str = json.dumps(data)
 
         df_strings = self.spark.createDataFrame([(json_str,)], ["json_str"])
 
         try:
-            existing_df = self.spark.read.format("delta").load(f"/Volumes/{volume_path}")
+            existing_df = self.spark.read.format("delta").load(
+                f"/Volumes/{volume_path}"
+            )
             schema = existing_df.schema
         except AnalysisException:
-            schema = df_strings.selectExpr("schema_of_json_agg(json_str)").collect()[0][0]
+            schema = df_strings.selectExpr("schema_of_json_agg(json_str)").collect()[0][
+                0
+            ]
 
         data_df = df_strings.select(
             from_json(col("json_str"), schema).alias("parsed")
