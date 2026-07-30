@@ -7,23 +7,30 @@ logger = logging.getLogger(__name__)
 class WatermarkManager:
 
     CONFIG = {
-        "attacks": {"spark_table": "torn.faction.faction_attacks", "column": "started",   "wm_type": "epoch"},
-        "chains":  {"spark_table": "torn.faction.faction_chains",  "column": "start",     "wm_type": "epoch"},
-        "balance": {"spark_table": "torn.faction.faction_balance", "column": "ts",        "wm_type": "date"},
-        "basic":   {"spark_table": "torn.faction.faction_basic",   "column": "ts",        "wm_type": "date"},
-        "members": {"spark_table": "torn.faction.faction_members", "column": "ts",        "wm_type": "date"},
-        "news":    {"spark_table": "torn.faction.faction_armory",  "column": "timestamp", "wm_type": "epoch"},
+        "faction": {
+            "attacks": {"spark_table": "torn.faction.faction_attacks", "column": "started",   "wm_type": "epoch"},
+            "chains":  {"spark_table": "torn.faction.faction_chains",  "column": "start",     "wm_type": "epoch"},
+            "balance": {"spark_table": "torn.faction.faction_balance", "column": "ts",        "wm_type": "date"},
+            "basic":   {"spark_table": "torn.faction.faction_basic",   "column": "ts",        "wm_type": "date"},
+            "members": {"spark_table": "torn.faction.faction_members", "column": "ts",        "wm_type": "date"},
+            "news":    {"spark_table": "torn.faction.faction_armory",  "column": "timestamp", "wm_type": "epoch"},
+        },
+        "user": {
+            "attacks": {"spark_table": "torn.user.user_attacks", "column": "started", "wm_type": "epoch"},
+        },
     }
 
-    def __init__(self, spark, default_from_ts: int):
+    def __init__(self, spark, default_from_ts: int, category: str):
         self.spark = spark
         self.default_from_ts = default_from_ts
+        self.category = category
 
     def get_run_params(self, table: str, params: dict) -> tuple[bool, dict]:
-        if table not in self.CONFIG:
+        category_config = self.CONFIG.get(self.category, {})
+        if table not in category_config:
             return True, params
 
-        cfg = self.CONFIG[table]
+        cfg = category_config[table]
         spark_table, column, wm_type = cfg["spark_table"], cfg["column"], cfg["wm_type"]
 
         if not self.spark.catalog.tableExists(spark_table):
