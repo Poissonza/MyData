@@ -17,6 +17,7 @@ class WatermarkManager:
         },
         "user": {
             "attacks": {"spark_table": "torn.user.user_attacks", "column": "started", "wm_type": "epoch"},
+            "basic": {"spark_table": "torn.user.user_basic",   "column": "ts",        "wm_type": "date"},
         },
     }
 
