@@ -20,6 +20,7 @@ class WatermarkManager:
             "basic": {"spark_table": "torn.user.user_basic",   "column": "ts",        "wm_type": "date"},
             "battlestats": {"spark_table": "torn.user.user_battlestats",   "column": "ts",        "wm_type": "date"},
             "education": {"spark_table": "torn.user.user_education",   "column": "ts",        "wm_type": "date"},
+            "enlistedcars": {"spark_table": "torn.user.user_battlestats",   "column": "ts",        "wm_type": "date"},
         },
     }
 
