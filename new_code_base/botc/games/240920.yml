@@ -1,0 +1,85 @@
+video:
+  id: 240920
+  name: We play Blood on the Clocktower in Minecraft
+  date: 2024-09-20
+  length: "1:05:42"
+  members: false
+
+result:
+  outcome: Evil
+  number_of_days: 3
+
+players:
+  - name: Duncan
+    role: Soldier
+    position: 1
+  - name: Rythian
+    role: Investigator
+    position: 2
+  - name: Briony
+    role: Imp
+    position: 3
+  - name: Ben
+    role: Drunk
+    drunk_role: Empath
+    position: 4
+  - name: Nilsey
+    role: Washerwoman
+    position: 5
+  - name: Ravs
+    role: Fortune Teller
+    position: 6
+  - name: Zylus
+    role: Spy
+    position: 7
+  - name: Osie
+    role: Virgin
+    position: 8
+
+days:
+  - day: 0
+    extra_info:
+      - role: Washerwoman
+        info: Duncan or Zylus is the Soldier
+      - role: Investigator
+        info: Ravs or Zylus is the Spy
+      - role: Fortune Teller
+        info: Zylus or Briony are a Demon or Red Herring
+      - role: Drunk Empath
+        info: Got a 0
+
+  - day: 1
+    night_kill: Ravs
+    execution: Nilsey
+    extra_info:
+      - role: Drunk Empath
+        info: Got a 0
+    nominations:
+      - nominate: Nilsey
+        nominator: Nilsey
+        votes: 8
+        ghost_votes: 0
+        result: Executed
+
+  - day: 2
+    night_kill: Rythian
+    execution: Osie
+    extra_info:
+      - role: Drunk Empath
+        info: Got a 0
+    nominations:
+      - nominate: Zylus
+        nominator: Duncan
+        votes: 3
+        ghost_votes:
+        result: Marked
+      - nominate: Duncan
+        nominator: Zylus
+        votes: 1
+        ghost_votes:
+        result: Not enough votes
+      - nominate: Osie
+        nominator: Osie
+        votes:
+        ghost_votes:
+        result: Virgin Execution

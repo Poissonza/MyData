@@ -1,0 +1,106 @@
+video:
+  id: 2409202
+  name: A Terrifying Test
+  date: 2024-09-20
+  length: 00:56:20
+  members: true
+result:
+  outcome: Good
+  number_of_days: 3
+players:
+- name: Kirsty
+  role: Monk
+  position: 1
+- name: Briony
+  role: Imp
+  position: 2
+- name: Ravs
+  role: Fortune Teller
+  position: 3
+- name: Osie
+  role: Virgin
+  position: 4
+- name: Nilsey
+  role: Washerwoman
+  position: 5
+- name: Rythian
+  role: Investigator
+  position: 6
+- name: Duncan
+  role: Soldier
+  position: 7
+- name: Zylus
+  role: Spy
+  position: 8
+days:
+- day: 0
+  extra_info:
+  - role: Chef
+    info: Not sat next to each other
+  - role: Washerwoman
+    info: Briony or Rythian are the Slayer
+  - role: Fortune Teller
+    info: Briony and Kirsty are not the Demon
+  - role: Imp
+    info: Bluff Investigator, Recluse, Empath
+  minion_action:
+  - role: Poisoner
+    player: Nilsey
+- day: 1
+  night_kill: Kirsty
+  execution: null
+  extra_info:
+  - role: Fortune Teller
+    info: Nilsey and Osie are not the Demon
+  nominations:
+  - nominate: null
+    nominator: null
+    votes: null
+    ghost_votes: null
+    result: null
+  minion_action:
+  - role: Poisoner
+    player: Nilsey
+  townsfolk_action:
+  - role: Monk
+    player: Briony
+- day: 2
+  night_kill: null
+  execution: null
+  extra_info:
+  - role: null
+    info: null
+  nominations:
+  - nominate: null
+    nominator: null
+    votes: null
+    ghost_votes: null
+    result: null
+  minion_action:
+  - role: null
+    player: null
+  townsfolk_action:
+  - role: null
+    player: null
+- day: 3
+  night_kill: null
+  execution: Ravs
+  nominations:
+  - nominate: Nilsey
+    nominator: Ravs
+    votes: 1
+    ghost_votes: null
+    result: Not Enough Votes
+  - nominate: Ravs
+    nominator: Briony
+    votes: 4
+    ghost_votes: null
+    result: Marked
+  - nominate: Briony
+    nominator: Rythian
+    votes: 2
+    ghost_votes: null
+    result: null
+  townsfolk_action:
+  - role: Slayer
+    player: Rythian

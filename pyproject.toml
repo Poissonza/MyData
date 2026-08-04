@@ -22,4 +22,5 @@ dependencies = [
     "dbt-duckdb>=1.8",
     "dbt-databricks>=1.8",
     "isort>=8.0.1",
+    "streamlit>=1.60.0",
 ]

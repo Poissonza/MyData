@@ -1,0 +1,276 @@
+extra_info:
+  - videoid: 240920
+    role: Washerwoman
+    info: Duncan or Zylus is the soldier
+  - videoid: 240920
+    role: Investigator
+    info: Ravs or Zylus is the Spy
+  - videoid: 2409202
+    role: Chef
+    info: Not sat next to each other
+  - videoid: 2409202
+    role: Washerwoman
+    info: Briony or Rythian are the Slayer
+  - videoid: 2409202
+    role: Imp
+    info: Bluff Investigator, Recluse, Empath
+day:
+  - videoid: 240920
+    day: 0
+    extra_info:
+      - role: Fortune Teller
+        info: Zylus or Briony are a Demon or Red Herring
+      - role: Drunk Empath
+        info: Got a 0
+  - videoid: 240920
+    day: 1
+    night_kill: Ravs
+    execution: Nilsey
+    extra_info:
+      - role: Drunk Empath
+        info: Got a 0
+    nominations:
+      - nominate: Nilsey
+        nominator: Nilsey
+        votes: 8
+        ghost_votes: 0
+        result: Executed
+  - videoid: 240920
+    day: 2
+    night_kill: Rythian
+    execution: Osie
+    extra_info:
+      - role: Drunk Empath
+        info: Got a 0
+    nominations:
+      - nominate: Zylus
+        nominator: Duncan
+        votes: 3
+        result: Marked
+      - nominate: Duncan
+        nominator: Zylus
+        votes: 1
+        ghost_votes:
+        result: Not enough votes
+      - nominate: Osie
+        nominator: Osie
+        result: Virgin Execution
+
+  - videoid: 2409202
+    day: 0
+    night_kill:
+    execution:
+    extra_info:
+      - role: Fortune Teller
+        info: Briony and Kirsty are not the Demon
+    nominations:
+      - nominate:
+        nominator:
+        votes:
+        ghost_votes:
+        result:
+  - videoid: 2409202
+    day: 0
+    night_kill:
+    execution:
+    extra_info:
+      - role: Fortune Teller
+        info: Briony and Kirsty are not the Demon
+    nominations:
+      - nominate:
+        nominator:
+        votes:
+        ghost_votes:
+        result:
+    minion_action:
+      - role: Posioner
+        player: Nilsey
+  - videoid: 2409202
+    day: 1
+    night_kill: Kirsty
+    execution:
+    extra_info:
+      - role: Fortune Teller
+        info: Nilsey and Osie are not the Demon.
+    nominations:
+      - nominate:
+        nominator:
+        votes:
+        ghost_votes:
+        result:
+    minion_action:
+      - role: Poisoner
+        player: Nilsey
+    townsfolk_action:
+      - role: Monk
+        player: Briony
+  - videoid: 2409202
+    day: 2
+    night_kill: Duncan
+    execution:
+    extra_info:
+      - role:
+        info:
+    nominations:
+      - nominate: Ravs
+        nominator: Nilsey
+        votes: 3
+        ghost_votes:
+        result: Not Enough votes
+      - nominate: Osie
+        nominator: Ravs
+        votes: 1
+        ghost_votes:
+        result: Not Enough Votes
+      - nominate: Nilsey
+        nominator: Rythian
+        votes: 1
+        ghost_votes:
+        result:
+    minion_action:
+      - role: Poisoner
+        player: Briony
+    townsfolk_action:
+      - role:
+        player:
+
+
+played_player:
+  - videoid: 240920
+    player: Nilsey
+    role: Washerwoman
+    position: 5
+  - videoid: 240920
+    player: Duncan
+    role: Soldier
+    position: 1
+  - videoid: 240920
+    player: Rythian
+    role: Investigator
+    position: 2
+  - videoid: 240920
+    player: Ravs
+    role: Fortune Teller
+    position: 6
+  - videoid: 240920
+    player: Osie
+    role: Virgin
+    position: 8
+  - videoid: 240920
+    player: Briony
+    role: Imp
+    position: 3
+  - videoid: 240920
+    player: Ben
+    role: Drunk
+    drunk_role: Empath
+    position: 4
+  - videoid: 240920
+    player: Zylus
+    role: Spy
+    position: 7
+  - videoid: 2409202
+    player: Zylus
+    role: Chef
+    position: 8
+  - videoid: 2409202
+    player: Duncan
+    role: Fortune Teller
+    position: 7
+  - videoid: 2409202
+    player: Kirsty
+    role: Monk
+    position: 1
+  - videoid: 2409202
+    player: Osie
+    role: Washer Woman
+    position: 4
+  - videoid: 2409202
+    player: Briony
+    role: Slayer
+    position: 2
+  - videoid: 2409202
+    player: Rythian
+    role: Poisoner
+    position: 6
+  - videoid: 2409202
+    player: Nilsey
+    role: Saint
+    position: 5
+  - videoid: 2409202
+    player: Ravs
+    role: Imp
+    position: 3
+player:
+  - Ben
+  - Briony
+  - Lewis
+  - Osie
+  - Nilsey
+  - Ravs
+  - Rythian
+  - Zylus
+
+result:
+  - video: 240920
+    outcome: Evil
+    number_of_days: 3
+  - video:
+    outcome:
+    number_of_days:
+
+role:
+  - name: Drunk
+    alignment: Outsider
+    description: Thinks they are a regular Townsfolk but their ability doesn't function well.
+    set: Trouble Brewing
+  - name: Fortune Teller
+    alignment: Townsfolk
+    description:
+    set: Trouble Brewing
+  - name: Imp
+    alignment: Demon
+    description: Kills a player every night. Can kill themselved to turn a Minion into the Imp.
+    set: Trouble Brewing
+  - name: Investigator
+    alignment: Townsfolk
+    description: Starts knowing 1 or 2 players is a particular Minion.
+    set: Trouble Brewing
+
+  - name: Soldier
+    alignment: Townsfolk
+    description: Cannot be killed by the Demon.
+    set: Trouble Brewing
+
+  - name: Spy
+    alignment: Minion
+    description: Gets to see the Grimoire every night. Can register as good even when they are good.
+    set: Trouble Brewing
+
+
+  - name: Washerwoman
+    alignment: Townsfolk
+    description:
+    set: Trouble Brewing
+
+  - name: Virgin
+    alignment: Townsfolk
+    description: When nominated for the first time, if by a townsfolk they are executed.
+    set: Trouble Brewing
+
+
+video:
+  - id: 240920
+    name: We play Blood on the Clocktower in Minecraft
+    date: 20/09/2024
+    length: 1:05:42
+    members: False
+  - id: 2409202
+    name: A Terrifying Test
+    date: 20/09/2024
+    length: 00:56:20
+    members: True
+
+
+
+

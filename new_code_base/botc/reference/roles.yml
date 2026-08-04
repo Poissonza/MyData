@@ -1,0 +1,100 @@
+roles:
+  - name: Butler
+    alignment: Outsider
+    set: Trouble Brewing
+    description: Each night, pick a player. Tomorrow, you may only vote if they do.
+
+  - name: Chef
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: Starts knowing how many pairs of evil players sit adjacent to each other.
+
+  - name: Drunk
+    alignment: Outsider
+    set: Trouble Brewing
+    description: Thinks they are a Townsfolk but their ability does not work.
+
+  - name: Empath
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: Each night, learns how many of their two alive neighbours are evil.
+
+  - name: Fortune Teller
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: Each night, pick two players. Learns if either is the Demon, but one might register as the Demon falsely.
+
+  - name: Imp
+    alignment: Demon
+    set: Trouble Brewing
+    description: Kills a player each night. Can kill themselves to pass the Imp to a Minion.
+
+  - name: Investigator
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: Starts knowing one of two players is a particular Minion.
+
+  - name: Mayor
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: If only 3 players are alive and no execution occurs, Good wins. If you die at night, another player might die instead.
+
+  - name: Monk
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: Each night (except the first), pick a player (not yourself). The Demon cannot kill them tonight.
+
+  - name: Poisoner
+    alignment: Minion
+    set: Trouble Brewing
+    description: Each night, pick a player. Their ability is poisoned until dusk the next night.
+
+  - name: Ravenkeeper
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: If you die at night, you may choose a player and learn their role.
+
+  - name: Recluse
+    alignment: Outsider
+    set: Trouble Brewing
+    description: Might register as evil or as a Minion or Demon, even if dead.
+
+  - name: Saint
+    alignment: Outsider
+    set: Trouble Brewing
+    description: If you are executed, your team loses.
+
+  - name: Scarlet Woman
+    alignment: Minion
+    set: Trouble Brewing
+    description: If there are 5 or more players alive and the Demon dies, you become the Demon.
+
+  - name: Slayer
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: Once per game, during the day, publicly choose a player. If they are the Demon, they die.
+
+  - name: Soldier
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: Cannot be killed by the Demon.
+
+  - name: Spy
+    alignment: Minion
+    set: Trouble Brewing
+    description: Sees the Grimoire each night. May register as good or as a Townsfolk or Outsider.
+
+  - name: Undertaker
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: Each night (except the first), learns which role the player executed today was.
+
+  - name: Virgin
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: The first time you are nominated, if the nominator is a Townsfolk, they are immediately executed.
+
+  - name: Washerwoman
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: Starts knowing one of two players is a particular Townsfolk.
