@@ -1,0 +1,15 @@
+session_id: '906076619'
+game: Civolution
+platform: BGA
+date: '2026-08-28'
+players:
+- name: Adam
+  color: Yellow
+  starting_goal_chip: '14'
+  starting_module_upgraded: Transport
+- name: Jez
+  color: null
+  starting_goal_chip: '42'
+  starting_module_upgraded: Production
+eras: []
+result: {}

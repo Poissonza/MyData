@@ -1,0 +1,189 @@
+game: Civolution
+min_players: 1
+max_players: 4
+eras: 4
+phases_per_era: 8
+
+phases:
+  - number: 1
+    name: New Cards
+    record: false
+  - number: 2
+    name: New Goals
+    record: true
+    type: per_player
+    fields:
+      - name: goal_chip_taken
+        type: boolean
+        label: "Took goal chip?"
+  - number: 3
+    name: Extra Find
+    record: true
+    type: per_player
+    fields:
+      - name: territory_type
+        type: choice
+        label: "Territory type"
+        options: [Forest, Grassland, Hills, Swamp, Mountains, Desert]
+  - number: 4
+    name: Action Phase
+    record: true
+    type: turns
+  - number: 5
+    name: Site Phase
+    record: false
+  - number: 6
+    name: Feeding Phase
+    record: true
+    type: per_player
+    fields:
+      - name: tribes_died
+        type: number
+        label: "Tribes that died"
+  - number: 7
+    name: Event Phase
+    record: true
+    type: shared
+    fields:
+      - name: category_scored
+        type: choice
+        label: "Scoring category this era"
+        options:
+          - Technology
+          - Prestige
+          - Knowledge
+          - Construction
+          - Culture
+          - Evolution
+          - Prosperity
+          - Population
+          - Expansion
+  - number: 8
+    name: Income Phase
+    record: false
+
+# The 15 upgradeable main modules (L1 / L2 / L3)
+main_modules:
+  - Migration
+  - Procreation
+  - Production
+  - Transport
+  - Sustenance
+  - Exploration
+  - Building
+  - Planning
+  - Research
+  - Achievement
+  - Insight
+  - Mutation
+  - Invention
+  - Trade
+  - Activity
+
+# 6 feature modules (each places a feature marker of that type)
+# TODO: fill in actual feature type names from the overview booklet
+feature_modules:
+  - Feature 1
+  - Feature 2
+  - Feature 3
+  - Feature 4
+  - Feature 5
+  - Feature 6
+
+module_levels:
+  - I
+  - II
+  - III
+
+# A = primary option, B = secondary option, Both = modules that let you do both
+action_choices:
+  - A
+  - B
+  - Both A & B
+
+# 5 research card types (installed into the stage partition)
+card_types:
+  - Achievement
+  - Building
+  - Insight
+  - Mutation
+  - Invention
+
+# 5 progress tracks (also scoring categories)
+progress_tracks:
+  - Technology
+  - Prestige
+  - Knowledge
+  - Construction
+  - Culture
+
+# 9 scoring categories (4 scored during eras, all 9 in final scoring)
+scoring_categories:
+  - Technology
+  - Prestige
+  - Knowledge
+  - Construction
+  - Culture
+  - Evolution
+  - Prosperity
+  - Population
+  - Expansion
+
+# Per-player setup choices recorded at session start
+player_attributes:
+  - name: color
+    type: choice
+    label: "Color"
+    options: [Red, Blue, Yellow, Green]
+  - name: starting_goal_chip
+    type: text
+    label: "Starting goal chip"
+  - name: starting_module_upgraded
+    type: choice
+    label: "Starting module upgraded"
+    options:
+      - Migration
+      - Procreation
+      - Production
+      - Transport
+      - Sustenance
+      - Exploration
+      - Building
+      - Planning
+      - Research
+      - Achievement
+      - Insight
+      - Mutation
+      - Invention
+      - Trade
+      - Activity
+
+result_fields:
+  - name: scores
+    type: player_scores
+  - name: winner
+    type: player
+
+# Snapshot recorded at the end of each era (after Income phase)
+era_checkpoint:
+  progress_tracks:
+    - name: technology
+      label: Technology
+      max: 12
+    - name: prestige
+      label: Prestige
+      max: 12
+    - name: knowledge
+      label: Knowledge
+      max: 12
+    - name: construction
+      label: Construction
+      max: 12
+    - name: culture
+      label: Culture
+      max: 12
+  resources:
+    - name: food
+      label: Food markers
+    - name: money
+      label: Money markers

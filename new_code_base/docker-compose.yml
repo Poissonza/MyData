@@ -1,0 +1,11 @@
+services:
+  board-games:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./board_games/sessions:/app/board_games/sessions
+      - ./data:/app/data
+    restart: unless-stopped
