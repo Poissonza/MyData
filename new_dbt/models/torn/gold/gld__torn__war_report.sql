@@ -6,8 +6,8 @@
 }}
 
 WITH current_members as (
-    SELECT fm.id as xid,
-        fm.name as name
+    SELECT fm.id AS xid,
+        fm.name AS name
     FROM {{ref('members')}} AS fm WHERE ts = (SELECT max(ts) FROM {{ref('members')}})
 ),
 attacks(
@@ -25,7 +25,6 @@ SELECT CM.xid,
  FROM current_members as CM
 LEFT JOIN attacks AS attacks ON attacks.AttackerID = CM.xid
 GROUP BY xid, name
-;
 
 
 
