@@ -6,6 +6,7 @@ Run with:  streamlit run botc/app.py
 from copy import deepcopy
 from pathlib import Path
 
+import pandas as pd
 import streamlit as st
 import yaml
 
@@ -16,13 +17,66 @@ REF_DIR = BOTC_DIR / "reference"
 
 # ─── Data helpers ────────────────────────────────────────────────────────────
 
+ALIGNMENTS = ["Townsfolk", "Outsider", "Minion", "Demon", "Traveller", "Fabled"]
+GOOD_ALIGNMENTS = {"Townsfolk", "Outsider"}
+EVIL_ALIGNMENTS = {"Minion", "Demon"}
+
+
+@st.cache_data
+def load_roles_full() -> list[dict]:
+    with open(REF_DIR / "roles.yml") as f:
+        return yaml.safe_load(f)["roles"]
+
+
 @st.cache_data
 def load_ref() -> tuple[list, list]:
     with open(REF_DIR / "players.yml") as f:
         players = yaml.safe_load(f)["players"]
-    with open(REF_DIR / "roles.yml") as f:
-        roles = [r["name"] for r in yaml.safe_load(f)["roles"]]
+    roles = [r["name"] for r in load_roles_full()]
     return players, roles
+
+
+def save_players(players: list[str]) -> None:
+    lines = [f"  - {p}" for p in sorted(players, key=str.lower)]
+    with open(REF_DIR / "players.yml", "w") as f:
+        f.write("players:\n" + "\n".join(lines) + "\n")
+    load_ref.clear()
+
+
+def save_roles(roles: list[dict]) -> None:
+    # One block per role separated by blank lines, matching the hand-written file layout
+    blocks = [
+        yaml.dump([r], sort_keys=False, allow_unicode=True, width=1000).rstrip()
+        for r in sorted(roles, key=lambda r: r["name"].lower())
+    ]
+    indented = ["\n".join(f"  {line}" for line in b.splitlines()) for b in blocks]
+    with open(REF_DIR / "roles.yml", "w") as f:
+        f.write("roles:\n" + "\n\n".join(indented) + "\n")
+    load_roles_full.clear()
+    load_ref.clear()
+
+
+def flash(msg: str) -> None:
+    """Queue a success message that survives st.rerun()."""
+    st.session_state["_flash"] = msg
+
+
+def show_flash() -> None:
+    if msg := st.session_state.pop("_flash", None):
+        st.success(msg)
+
+
+def load_all_games() -> list[dict]:
+    return [load_game(gid) for gid in list_game_ids()]
+
+
+def player_team(player: dict, role_alignment: dict[str, str]) -> str | None:
+    alignment = role_alignment.get(player.get("role") or "")
+    if alignment in GOOD_ALIGNMENTS:
+        return "Good"
+    if alignment in EVIL_ALIGNMENTS:
+        return "Evil"
+    return None
 
 
 def list_game_ids() -> list[str]:
@@ -60,7 +114,11 @@ players_ref, roles_ref = load_ref()
 roles_blank = [""] + roles_ref
 players_blank = [""] + players_ref
 
-tab_new, tab_day, tab_reveal = st.tabs(["New Game", "Add Day", "Reveal"])
+show_flash()
+
+tab_new, tab_day, tab_reveal, tab_games, tab_players, tab_roles = st.tabs(
+    ["New Game", "Add Day", "Reveal", "Games", "Players", "Roles"]
+)
 
 
 # ─── Tab: New Game ────────────────────────────────────────────────────────────
@@ -374,3 +432,188 @@ with tab_reveal:
             }
             save_game(sel_game_r, game_data_r)
             st.success(f"Reveal saved for {sel_game_r}")
+
+
+# ─── Tab: Games ──────────────────────────────────────────────────────────────
+
+with tab_games:
+    st.header("Captured Games")
+
+    all_games = load_all_games()
+    if not all_games:
+        st.warning("No games found.")
+    else:
+        role_alignment = {r["name"]: r["alignment"] for r in load_roles_full()}
+
+        overview = pd.DataFrame([
+            {
+                "Video ID":  str(g["video"]["id"]),
+                "Name":      g["video"].get("name"),
+                "Date":      str(g["video"].get("date") or ""),
+                "Length":    g["video"].get("length"),
+                "Members":   bool(g["video"].get("members")),
+                "Players":   len(g.get("players") or []),
+                "Days":      (g.get("result") or {}).get("number_of_days"),
+                "Outcome":   (g.get("result") or {}).get("outcome"),
+            }
+            for g in all_games
+        ]).sort_values(["Date", "Video ID"], ascending=False)
+        st.dataframe(overview, hide_index=True, width="stretch")
+
+        # Summary statistics
+        st.subheader("Summary")
+        outcomes = overview["Outcome"].value_counts()
+        m1, m2, m3, m4 = st.columns(4)
+        m1.metric("Games", len(overview))
+        m2.metric("Good wins", int(outcomes.get("Good", 0)))
+        m3.metric("Evil wins", int(outcomes.get("Evil", 0)))
+        avg_days = overview["Days"].dropna().mean()
+        m4.metric("Avg days", f"{avg_days:.1f}" if pd.notna(avg_days) else "—")
+
+        appearances = pd.DataFrame([
+            {
+                "player":  p["name"],
+                "role":    p.get("role"),
+                "team":    player_team(p, role_alignment),
+                "outcome": (g.get("result") or {}).get("outcome"),
+            }
+            for g in all_games
+            for p in g.get("players") or []
+        ])
+        if not appearances.empty:
+            appearances["won"] = appearances["team"].notna() & (appearances["team"] == appearances["outcome"])
+            decided = appearances[appearances["outcome"].notna() & appearances["team"].notna()]
+
+            c1, c2 = st.columns(2)
+            player_stats = (
+                appearances.groupby("player")
+                .agg(Games=("player", "size"), Evil=("team", lambda s: (s == "Evil").sum()))
+                .join(decided.groupby("player")["won"].agg(Wins="sum", Decided="size"))
+                .fillna(0)
+            )
+            player_stats["Win %"] = (100 * player_stats["Wins"] / player_stats["Decided"].where(player_stats["Decided"] > 0)).round(0)
+            player_stats = player_stats.drop(columns="Decided").astype({"Wins": int}).sort_values("Games", ascending=False)
+            c1.write("**Players**")
+            c1.dataframe(player_stats, width="stretch")
+
+            role_stats = (
+                appearances.dropna(subset=["role"])
+                .groupby("role")
+                .agg(Played=("role", "size"), Wins=("won", "sum"))
+                .sort_values("Played", ascending=False)
+            )
+            role_stats.insert(0, "Alignment", role_stats.index.map(role_alignment))
+            c2.write("**Roles**")
+            c2.dataframe(role_stats, width="stretch")
+
+        # Game detail
+        st.subheader("Game Detail")
+        games_by_id = {str(g["video"]["id"]): g for g in all_games}
+        labels = {
+            gid: f"{gid} — {g['video'].get('name') or 'Untitled'} ({g['video'].get('date') or 'no date'})"
+            for gid, g in games_by_id.items()
+        }
+        sel_detail = st.selectbox("Game", list(labels), format_func=labels.get, key="gm_detail")
+        g = games_by_id[sel_detail]
+        video, result = g["video"], g.get("result") or {}
+
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Date", str(video.get("date") or "—"))
+        c2.metric("Length", video.get("length") or "—")
+        c3.metric("Outcome", result.get("outcome") or "—")
+        c4.metric("Days", result.get("number_of_days") or "—")
+        if video.get("members"):
+            st.caption("Members-only video")
+
+        players_df = pd.DataFrame([
+            {
+                "Position":   p.get("position"),
+                "Name":       p["name"],
+                "Role":       p.get("role"),
+                "Drunk role": p.get("drunk_role"),
+                "Alignment":  role_alignment.get(p.get("role") or ""),
+            }
+            for p in g.get("players") or []
+        ]).sort_values("Position")
+        st.dataframe(players_df, hide_index=True, width="stretch")
+
+        for day in g.get("days") or []:
+            with st.expander(f"Day {day['day']}"):
+                c1, c2 = st.columns(2)
+                c1.write(f"**Night kill:** {day.get('night_kill') or '—'}")
+                c2.write(f"**Execution:** {day.get('execution') or '—'}")
+                extra = [e for e in day.get("extra_info") or [] if e.get("role") or e.get("info")]
+                if extra:
+                    st.write("**Extra info**")
+                    st.dataframe(pd.DataFrame(extra), hide_index=True, width="stretch")
+                if day.get("nominations"):
+                    st.write("**Nominations**")
+                    st.dataframe(pd.DataFrame(day["nominations"]), hide_index=True, width="stretch")
+                for key, title in [("minion_action", "Minion actions"), ("townsfolk_action", "Townsfolk actions")]:
+                    if day.get(key):
+                        st.write(f"**{title}**")
+                        st.dataframe(pd.DataFrame(day[key]), hide_index=True, width="stretch")
+
+
+# ─── Tab: Players ────────────────────────────────────────────────────────────
+
+with tab_players:
+    st.header("Players")
+
+    with st.form("pl_add", clear_on_submit=True):
+        new_player = st.text_input("New player name")
+        submitted = st.form_submit_button("Add Player")
+    if submitted:
+        name = new_player.strip()
+        if not name:
+            st.error("Player name is required.")
+        elif name.lower() in {p.lower() for p in players_ref}:
+            st.error(f"{name} already exists.")
+        else:
+            save_players(players_ref + [name])
+            flash(f"Added player {name}")
+            st.rerun()
+
+    st.dataframe(pd.DataFrame({"Player": players_ref}), hide_index=True, width="stretch")
+
+
+# ─── Tab: Roles ──────────────────────────────────────────────────────────────
+
+with tab_roles:
+    st.header("Roles")
+
+    roles_full = load_roles_full()
+    existing_sets = sorted({r["set"] for r in roles_full if r.get("set")})
+
+    with st.form("rl_add", clear_on_submit=True):
+        c1, c2 = st.columns(2)
+        r_name      = c1.text_input("Role name")
+        r_alignment = c2.selectbox("Alignment", ALIGNMENTS)
+        r_set       = c1.selectbox("Set", existing_sets + ["Other…"])
+        r_set_new   = c2.text_input("New set name (if Other…)")
+        r_desc      = st.text_area("Description")
+        submitted_r = st.form_submit_button("Add Role")
+    if submitted_r:
+        name = r_name.strip()
+        set_name = r_set_new.strip() if r_set == "Other…" else r_set
+        if not name:
+            st.error("Role name is required.")
+        elif name.lower() in {r["name"].lower() for r in roles_full}:
+            st.error(f"{name} already exists.")
+        elif not set_name:
+            st.error("Enter a set name.")
+        else:
+            save_roles(roles_full + [{
+                "name":        name,
+                "alignment":   r_alignment,
+                "set":         set_name,
+                "description": r_desc.strip() or None,
+            }])
+            flash(f"Added role {name}")
+            st.rerun()
+
+    st.dataframe(
+        pd.DataFrame(roles_full).rename(columns=str.title),
+        hide_index=True,
+        width="stretch",
+    )

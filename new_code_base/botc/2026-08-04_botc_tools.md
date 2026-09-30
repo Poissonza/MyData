@@ -82,6 +82,9 @@ Opens at `http://localhost:8501` in your browser.
 | **New Game** | Form for video metadata and player/role assignment. Click **Create Game** to write the file. |
 | **Add Day** | Pick a game and day number, fill in night kill, execution, extra info rows, and nomination rows. Click **Save Day** to append. |
 | **Reveal** | Pick a game, update player roles, fill in minion/townsfolk action placeholders, set the result. Click **Save Reveal** to write. |
+| **Games** | Overview table of all captured games (video name, date, length, outcome), summary stats (win split, avg days, per-player and per-role win rates), and a per-game drill-down of players and days. |
+| **Players** | Add a new player to `reference/players.yml` (duplicate names rejected, case-insensitive). |
+| **Roles** | Add a new role (name, alignment, set, description) to `reference/roles.yml`. |
 
 ### Dynamic rows
 
@@ -91,6 +94,6 @@ Use the **+ Extra info row** and **+ Nomination row** buttons to add as many ent
 
 ## Reference files
 
-Add a new player to `reference/players.yml` before creating a game that includes them — both tools load this list for validation.
+Add a new player (via the **Players** tab or by editing `reference/players.yml`) before creating a game that includes them — both tools load this list for validation.
 
-Add a new role to `reference/roles.yml` (with `alignment` and `set`) before using it in a game.
+Add a new role (via the **Roles** tab or by editing `reference/roles.yml`, with `alignment` and `set`) before using it in a game.
