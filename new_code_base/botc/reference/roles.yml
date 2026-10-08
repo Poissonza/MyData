@@ -24,6 +24,16 @@ roles:
     set: Trouble Brewing
     description: Each night, pick two players. Learns if either is the Demon, but one might register as the Demon falsely.
 
+  - name: Grandmother
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: Starts Knowing the Role of one good player. If the demon kills their Grandchild they die too.
+
+  - name: Harpy
+    alignment: Minion
+    set: Experimental Characters
+    description: Pick two players, the first must pretend that the second is evil or one or both may die.
+
   - name: Imp
     alignment: Demon
     set: Trouble Brewing
@@ -34,6 +44,11 @@ roles:
     set: Trouble Brewing
     description: Starts knowing one of two players is a particular Minion.
 
+  - name: Lycanthrope
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Attacks Every night and if Good they die, but they are the only character that dies today
+
   - name: Mayor
     alignment: Townsfolk
     set: Trouble Brewing
@@ -43,6 +58,11 @@ roles:
     alignment: Townsfolk
     set: Trouble Brewing
     description: Each night (except the first), pick a player (not yourself). The Demon cannot kill them tonight.
+
+  - name: Noble
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Starts knowing three players. 1 and only 1 is Evil.
 
   - name: Poisoner
     alignment: Minion
@@ -68,6 +88,11 @@ roles:
     alignment: Minion
     set: Trouble Brewing
     description: If there are 5 or more players alive and the Demon dies, you become the Demon.
+
+  - name: Seamstress
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: Once per Game can learn if two players are on the same team.
 
   - name: Slayer
     alignment: Townsfolk

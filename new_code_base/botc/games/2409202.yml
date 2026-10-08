@@ -95,7 +95,7 @@ days:
     nominator: Briony
     votes: 4
     ghost_votes: null
-    result: Marked
+    result: Executed
   - nominate: Briony
     nominator: Rythian
     votes: 2
