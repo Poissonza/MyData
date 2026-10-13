@@ -1,0 +1,146 @@
+games:
+  1:
+    game_options:
+      faction_played: Sandshapers
+      map: Continents
+      world_size: Tiny
+      game_speed: Normal
+      difficulty: Novice
+      number_of_players: 2
+    general_settings:
+      ai_simultaneous_turns: No
+      allow_fortress_instant_resolve: Yes
+      force_instant_resolve: No
+      peaceful_mode: No
+      initial_peace_duration: No Duration
+      pre_founding_scouting_bonus: Bonuses On
+      allow_optional_events: Yes
+      score_victory: Yes
+      conquest_victory: Yes
+      worship_victory_path: Yes
+      impress_victory_path: Yes
+      master_victory_path: Yes
+    world_settings:
+      seed: 1
+      world_wrap: Yes
+      lake_odds: Average
+      lake_size: Average
+      rivers: Some
+      ridges_and_cliffes: Average
+      territory_resource_amount: Normal
+      monsoon_curiosities: Default
+    opponents:
+      - Kin of Sheredyn
+    results:
+      number_of_turns:
+      score:
+      victory_conditions:
+    minor_factions:
+      - Green Scion
+      - Gorog
+      - Mangrove of Harmony
+    discoveries:
+      - type: Obelisks
+        turn: 2
+        reward: 20 Influence
+      - type: Abandoned Sites
+        turn: 3
+        reward: World Quest (Nightmarish Visions!)
+      - type: Charts
+        turn: 4
+        reward: 20 Influence
+      - type: Abandoned Site
+        turn: 5
+        reward: World Quest(The Nose Knows!)
+      - type: Mud Collectible
+        turn: 7
+        reward: Nothing Discovered
+      - type: Abandoned Site
+        turn: 8
+        reward: World Quest(Dust Hunters!)
+      - type: Mud Collectible
+        turn: 9
+        reward: Nothing Discovered
+      - type: Charts
+        turn: 9
+        reward: 10 Influence and 2 Movement
+      - type:
+        turn:
+        reward:
+      - type:
+        turn:
+        reward:
+    story_events:
+      - type: World Quest
+        name: Nightmarish Visions!
+        turn: 3
+        reward: 50 Science
+        requirements: Search the Mysterious Shack
+      - type: Faction Quest
+        name: "Chapter 1: The Omen"
+        turn: 5
+        reward: 20 Science, +20% Science on Capital for 10 turns
+        requirements: Have 3 Raised Ruins
+        completed:
+          condition: True
+          turn: 20
+      - type: World Quest
+        name: The Nose Knows!
+        turn: 5
+        reward: 75 Dust
+        requirements: Collect 3 Mud Collectible
+      - type: World Quest
+        name: Dust Hunters!
+        turn: 8
+        reward: 10 Titanium
+        requirements: Search Dust Sifter hideout
+        completed:
+          condition: True
+          turn: 11
+      - type: Pacification Quest
+        name: Rotted Flowers
+        faction: Green Scion
+        turn: 12
+        reward: 1 Population, Pacification
+        requirements: Defeat Intruders Army
+        completed:
+          condition: True
+          turn: 13
+      - type: Pacification Quest
+        name: A Special Crop
+        faction: Foundling
+        turn: 19
+        reward: Whispering Spell (Uncommon Accessory), Pacifiaction
+        requirements: Defeat Wretched Creatures Army
+        completed:
+          condition: True
+          turn: 20
+      - type: Faction Quest
+        name: "Chapter 1: the Omen (2)"
+        faction:
+        turn: 20
+        reward: 30% more Industry for 10 turns
+        requirements: Build 1 Sandweaver
+        completed:
+          condition: True
+          turn: 22
+
+      - type: Event
+        name: Green Menace
+        faction:
+        turn: 20
+        paths:
+          - Eject
+          - Imprison
+          - Negotiate
+        selected_path: Eject
+        reward: 1 Green Scion Population, +10 Approval for 10 turns
+        completed:
+          condition: True
+          turn: 20
+
+    extra_notes:
+      -
+
+
+
