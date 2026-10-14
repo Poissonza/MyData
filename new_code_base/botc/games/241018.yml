@@ -1,0 +1,39 @@
+video:
+  id: '241018'
+  name: Marionette Madness
+  date: '2024-10-18'
+  length: 01:33:58
+  members: false
+result:
+  outcome: null
+  number_of_days: null
+players:
+- name: Osie
+  position: 1
+  role: Fang Gu
+- name: Ben
+  position: 2
+  role: Marionette
+- name: Rythian
+  position: 3
+  role: Recluse
+- name: Kirsty
+  position: 4
+  role: Fortune Teller
+- name: Duncan
+  position: 5
+  role: Lunatic
+- name: Sophie
+  position: 6
+  role: Seamstress
+- name: Tom Clark
+  position: 7
+  role: Oracle
+- name: RTGame
+  position: 8
+  role: Noble
+days:
+- day: 0
+  extra_info:
+  - role: null
+    info: null

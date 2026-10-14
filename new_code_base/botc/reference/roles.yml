@@ -74,6 +74,11 @@ roles:
     set: Experimental Characters
     description: Attacks Every night and if Good they die, but they are the only character that dies today
 
+  - name: Marionette
+    alignment: Minion
+    set: Experimental Characters
+    description: Thinks they are a good character but is actually evil
+
   - name: Mayor
     alignment: Townsfolk
     set: Trouble Brewing
@@ -88,6 +93,11 @@ roles:
     alignment: Townsfolk
     set: Experimental Characters
     description: Starts knowing three players. 1 and only 1 is Evil.
+
+  - name: Oracle
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: Each night learns how many dead players are evil.
 
   - name: Pixie
     alignment: Townsfolk
