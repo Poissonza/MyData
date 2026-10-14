@@ -8,5 +8,5 @@ game_options:
     - name: Continents
       expansion: Original Game
   world_size:
-    name: Tiny
-    number_of_players: 2
+    - name: Tiny
+      number_of_players: 2
