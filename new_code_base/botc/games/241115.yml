@@ -1,0 +1,152 @@
+video:
+  id: '241115'
+  name: ' Librarians and Lunatics'
+  date: '2024-11-15'
+  length: 01:22:56
+  members: false
+result:
+  outcome: Good
+  number_of_days: 4
+players:
+- name: Ben
+  position: 1
+  role: Lunatic
+- name: Breeh
+  position: 2
+  role: Librarian
+- name: Briony
+  position: 3
+  role: Imp
+  drunk_role: Fortune Teller
+- name: Osie
+  position: 4
+  role: Virgin
+- name: Nilsey
+  position: 5
+  role: Washerwoman
+- name: Tom Clark
+  position: 6
+  role: Pixie
+- name: Kirsty
+  position: 7
+  role: Monk
+- name: Boba
+  position: 8
+  role: Fang Gu
+days:
+- day: 0
+  extra_info:
+  - role: null
+    info: null
+- day: 1
+  night_kill: null
+  execution: Breeh
+  extra_info:
+  - role: Pixie
+    info: 'Pretend to be the Librarian '
+  - role: Librarian
+    info: Knows that Either Briony or Osie is a Drunk
+  - role: Drunk
+    info: One of Tom and Breeh is the Demon or Red Herring
+  - role: Empath
+    info: 0 neighbours are evil
+  - role: Cerenovus
+    info: Nilsey thinks they are the Cannibal
+  - role: Noble
+    info: Either Kirsty, Briony or Ben is Evil
+  - role: Fang Gu
+    info: Your Bluffs are Lycanthrope, Seamstress or Cannibal
+  - role: Lunatic
+    info: 'Thinks they are the Imp, Tom is his minion with the bluffs: Empath, Noble,
+      Cannibal'
+  nominations:
+  - nominate: Breeh
+    nominator: Nilsey
+    votes: 6
+    ghost_votes: 0
+    result: Executed
+  - nominate: Tom Clark
+    nominator: Breeh
+    votes: 1
+    ghost_votes: 0
+    result: Not Enough Votes
+  minion_action:
+  - role: Cerenovus
+    player: Nilsey
+- day: 2
+  night_kill: Briony
+  execution: Nilsey
+  extra_info:
+  - role: Cerenovus
+    info: Nilsey thinks they are a Cannibal
+  - role: Lunatic
+    info: Kills Nilesy
+  - role: Drunk
+    info: You are now the Fang Yu
+  - role: Empath
+    info: 1 is Evil
+  - role: Pixie
+    info: You are successful you learn Ben or Nilsey is the Lunatic
+  nominations:
+  - nominate: Kirsty
+    nominator: Nilsey
+    votes: 3
+    ghost_votes: 0
+    result: Tied
+  - nominate: Osie
+    nominator: Briony
+    votes: 2
+    ghost_votes: 1
+    result: Tied
+  - nominate: Nilsey
+    nominator: Tom Clark
+    votes: 4
+    ghost_votes: 0
+    result: Executed
+  minion_action:
+  - role: Cerenovus
+    player: null
+- day: 3
+  night_kill: Osie
+  execution: null
+  extra_info:
+  - role: Cerenovus
+    info: Nilsey thinks they are a Cannibal
+  - role: Lunatic
+    info: Kills Osie
+  nominations:
+  - nominate: Kirsty
+    nominator: Ben
+    votes: 1
+    ghost_votes: null
+    result: Not Enough Votes
+  - nominate: Tom Clark
+    nominator: Briony
+    votes: 0
+    ghost_votes: null
+    result: Not Enough Votes
+  - nominate: Kirsty
+    nominator: Briony
+    votes: null
+    ghost_votes: null
+    result: null
+  minion_action:
+  - role: Cerenovus
+    player: Nilsey
+- day: 4
+  night_kill: Tom Clark
+  execution: Briony
+  extra_info:
+  - role: Cerenovus
+    info: Nilsey is Mad that they are the Cannibal
+  - role: Lunatic
+    info: Wants to kill Kirsty
+  nominations:
+  - nominate: Briony
+    nominator: Ben
+    votes: 1
+    ghost_votes: 3
+    result: Executed
+  minion_action:
+  - role: Cerenovus
+    player: Nilsey

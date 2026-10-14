@@ -4,6 +4,16 @@ roles:
     set: Trouble Brewing
     description: Each night, pick a player. Tomorrow, you may only vote if they do.
 
+  - name: Cannibal
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Gains the ability of the person that was most recently executed if they where good.
+
+  - name: Cerenovus
+    alignment: Minion
+    set: Sects & Violets
+    description: Each night pick a player and force them to pretend to be another character
+
   - name: Chef
     alignment: Townsfolk
     set: Trouble Brewing
@@ -18,6 +28,11 @@ roles:
     alignment: Townsfolk
     set: Trouble Brewing
     description: Each night, learns how many of their two alive neighbours are evil.
+
+  - name: Fang Gu
+    alignment: Demon
+    set: Sects & Violets
+    description: Kills every night, the first outsider to be killed by the Fan Gu becomes them and they die!
 
   - name: Fortune Teller
     alignment: Townsfolk
@@ -44,6 +59,16 @@ roles:
     set: Trouble Brewing
     description: Starts knowing one of two players is a particular Minion.
 
+  - name: Librarian
+    alignment: Townsfolk
+    set: Trouble Brewing
+    description: Starts knowing 1 of 2 players is a particular Outsider
+
+  - name: Lunatic
+    alignment: Outsider
+    set: Bad Moon Rising
+    description: Think they are the Demon but they are actually in fact Good
+
   - name: Lycanthrope
     alignment: Townsfolk
     set: Experimental Characters
@@ -63,6 +88,11 @@ roles:
     alignment: Townsfolk
     set: Experimental Characters
     description: Starts knowing three players. 1 and only 1 is Evil.
+
+  - name: Pixie
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Starts knowing 1 Townsfolk, if they pretend to be that character they get the ability when the original dies.
 
   - name: Poisoner
     alignment: Minion
