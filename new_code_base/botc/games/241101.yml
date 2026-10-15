@@ -5,8 +5,8 @@ video:
   length: 00:55:01
   members: false
 result:
-  outcome: null
-  number_of_days: null
+  outcome: Good
+  number_of_days: 3
 players:
 - name: Osie
   position: 1
@@ -37,3 +37,43 @@ days:
   extra_info:
   - role: null
     info: null
+- day: 1
+  night_kill: null
+  execution: Kirsty
+  extra_info:
+  - role: Lunatic
+    info: RTGame is your Minion, Bluffs are Seamstress, Cannibal and Oracle
+  - role: Empath
+    info: '0'
+  - role: Vigormortis
+    info: 'Bluffs: Saint, Mayor, Fortune Teller'
+- day: 2
+  night_kill: Rythian
+  execution: null
+  extra_info:
+  - role: Lunatic
+    info: Wants to kill Rythian.
+  - role: Oracle
+    info: 0 Evil players are dead.
+- day: 3
+  night_kill: RTGame
+  execution: null
+  extra_info:
+  - role: Lunatic
+    info: Wants to kill Kirsty
+  - role: Oracle
+    info: Both the players dead are both Good (Poisoned from RT Death)
+  nominations:
+  - nominate: Zylus
+    nominator: Zylus
+    votes: 1
+    ghost_votes: null
+    result: Not Enough Votes
+  - nominate: Tom Clark
+    nominator: Tom Clark
+    votes: null
+    ghost_votes: null
+    result: Disrupted by a Slayer shot on the Demon
+  townsfolk_action:
+  - role: Slayer
+    player: Kirsty
