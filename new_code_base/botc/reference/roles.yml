@@ -244,3 +244,43 @@ roles:
     set: Bad Moon Rising
     description: When you learn that you died, publicly choose 1 alive player. Tonight, if it was a good player they die.
 
+  - name: Godfather
+    alignment: Minion
+    set: Bad Moon Rising
+    description: You start knowing which outsiders are in play. If 1 Died today, choose a player tonight, they die. You add or subtract one minion.
+
+  - name: Devil's Advocate
+    alignment: Minion
+    set: Bad Moon Rising
+    description: Each night, choose a living player (different from last night). If executed tomorrow, they don't die.
+
+  - name: Assassin
+    alignment: Minion
+    set: Bad Moon Rising
+    description: Once per game, at night, choose a player. They die, even if for some reason they could not.
+
+  - name: Mastermind
+    alignment: Minion
+    set: Bad Moon Rising
+    description: If the demon dies by execution, play for 1 more day. If a player is then executed their team loses.
+
+  - name: Zombuul
+    alignment: Demon
+    set: Bad Moon Rising
+    description: Each night, if no-one died today, choose a player, they die. The 1st time you die, you live but register as dead.
+
+  - name: Pukka
+    alignment: Demon
+    set: Bad Moon Rising
+    description: Each night, choose a player, they are poisoned. The previously poisoned player dies then becomes healthy.
+
+  - name: Shabaloth
+    alignment: Demon
+    set: Bad Moon Rising
+    description: Each night, choose 2 players, they die. A dead player you choose last night might be regurgitated.
+
+  - name: Po
+    alignment: Demon
+    set: Bad Moon Rising
+    description: Each night, you may choose a player, they die. If your last choice was no-one, choose 3 players tonight.
+
