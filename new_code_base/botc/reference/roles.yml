@@ -284,3 +284,107 @@ roles:
     set: Bad Moon Rising
     description: Each night, you may choose a player, they die. If your last choice was no-one, choose 3 players tonight.
 
+  - name: Clockmaker
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: You start knowing how many steps from the Demon to its nearest Minion.
+
+  - name: Dreamer
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: Each night, choose a player (Not yourself or Travellers). You learn one good and one evil character, 1 of which is correct.
+
+  - name: Snake Charmer
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: Each night, choose an alive player, A chosen Demon swaps characters & alignments with you & is then poisoned.
+
+  - name: Mathematician
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: Each night, you learn how many player's abilities worked abnormally(Since Dawn) due to another characters ability.
+
+  - name: Flowergirl
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: Each night, you learn if a Demon voted today.
+
+  - name: Town Crier
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: Each night, you learn if a Minion nominated today.
+
+  - name: Savant
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: Each day, you may visit the storyteller to learn 2 things in private. 1 is true and 1 is false.
+
+  - name: Philosopher
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: Once per game, at night, choose a good character. gain that ability. If this character is in play they are drunk.
+
+  - name: Artist
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: Once per game, during the day, privately ask the story any yes/no question.
+
+  - name: Juggler
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: On your 1st day, publically guess up to 5 player's characters. That night you learn how many you got correct.
+
+  - name: Sage
+    alignment: Townsfolk
+    set: Sects & Violets
+    description: If the Demon kills you, you learn that it is 1 or 2 players.
+
+  - name: Mutant
+    alignment: Outsider
+    set: Sects & Violets
+    description: If you are mad about being an OUtsider, you might be executed.
+
+  - name: Sweetheart
+    alignment: Outsider
+    set: Sects & Violets
+    description: When you die, 1 player is drunk from now on.
+
+  - name: Barber
+    alignment: Outsider
+    set: Sects & Violets
+    description: If you died today or tonight, the demon may choose 2 players(Not another Demon) to swap characters.
+
+  - name: Klutz
+    alignment: Outsider
+    set: Sects & Violets
+    description: When you learn that you died, publicaly choose 1 alive player, if they are evil your team loses.
+
+  - name: Evil Twin
+    alignment: Minion
+    set: Sects & Violets
+    description: You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.
+
+  - name: Witch
+    alignment: Minion
+    set: Sects & Violets
+    description: Each night, choose a player. If they nominate tomorrow, they die. If just 3 players live, you lose this ability.
+
+  - name: Pit-Hag
+    alignment: Minion
+    set: Sects & Violets
+    description: Each night, choose a player & a character they become (If not in play). If a Demon is made, deaths tonight are arbitrary.
+
+  - name: Vigormortis
+    alignment: Demon
+    set: Sects & Violets
+    description: Each night, choose a player they die. Minions you kill keep their ability & poison 1 Townsfolk neighbour. 1 less Outsider.
+
+  - name: No Dashii
+    alignment: Demon
+    set: Sects & Violets
+    description: Each night, choose a player, they die. Your 2 Townsfolk neighbors are poisoned.
+
+  - name: Vortox
+    alignment: Demon
+    set: Sects & Violets
+    description: Each night, choose a player, they die. Townsfolk abilities yield false info. Each day if no-one is executed, evil wins.
