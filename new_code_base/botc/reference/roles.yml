@@ -163,3 +163,84 @@ roles:
     alignment: Townsfolk
     set: Trouble Brewing
     description: Starts knowing one of two players is a particular Townsfolk.
+
+  - name: Baron
+    alignment: Minion
+    set: Trouble Brewing
+    description: They add 2 Outisiders to the game.
+
+  - name: Sailor
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: Each night pick an alive player, either you or they are drunk until dusk. You can't die.
+
+  - name: Chambermaid
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: Each night, Choose 2 alive players (Not yourself). You learn how many work tonight due to their ability.
+
+  - name: Exorcist
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: Each night, choose a player (Different to last night), the demon, if chosen, learns who you are then doesn't wake tonight.
+
+  - name: Innkeeper
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: Each night, choose 2 players, they can't die tonight, but 1 is drunk until dusk.
+
+  - name: Gambler
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: Each night, choose a player and guess their character. if you guess wrong you die.
+
+  - name: Gossip
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: Each day, you may make a public statement. Tonight if it was true, a player dies.
+
+  - name: Cortier
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: Once per game, at night, choose a character. They are drunk for 3 nights & 3 days.
+
+  - name: Professor
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: Once per game, at night. choose a dead player. If they are townsfold, they are resurrected.
+
+  - name: Minstrel
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: When a minion dies by execution, all other players (Except Travellers) are drunk until Dusk tomorrow.
+
+  - name: Tea Lady
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: If both your alive neighbours are good, they can't die.
+
+  - name: Pacifist
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: Executed good players might not die.
+
+  - name: Fool
+    alignment: Townsfolk
+    set: Bad Moon Rising
+    description: The first time you die, you don't.
+
+  - name: Goon
+    alignment: Outsider
+    set: Bad Moon Rising
+    description: Each night, the 1st player to choose you with their ability is drunk until Dusk. You become their alignment.
+
+  - name: Tinker
+    alignment: Outsider
+    set: Bad Moon Rising
+    description: You might die at any time.
+
+  - name: Moonchild
+    alignment: Outsider
+    set: Bad Moon Rising
+    description: When you learn that you died, publicly choose 1 alive player. Tonight, if it was a good player they die.
+
