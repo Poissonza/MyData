@@ -1,0 +1,39 @@
+video:
+  id: '241101'
+  name: Vengeful Vigormortis
+  date: '2024-11-01'
+  length: 00:55:01
+  members: false
+result:
+  outcome: null
+  number_of_days: null
+players:
+- name: Osie
+  position: 1
+  role: Oracle
+- name: Zylus
+  position: 2
+  role: Recluse
+- name: Duncan
+  position: 3
+  role: Cannibal
+- name: Sophie
+  position: 4
+  role: Slayer
+- name: Rythian
+  position: 5
+  role: Empath
+- name: RTGame
+  position: 6
+  role: Baron
+- name: Kirsty
+  position: 7
+  role: Vigormortis
+- name: Tom Clark
+  position: 8
+  role: Lunatic
+days:
+- day: 0
+  extra_info:
+  - role: null
+    info: null
