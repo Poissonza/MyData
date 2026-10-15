@@ -388,3 +388,283 @@ roles:
     alignment: Demon
     set: Sects & Violets
     description: Each night, choose a player, they die. Townsfolk abilities yield false info. Each day if no-one is executed, evil wins.
+
+  - name: Acrobat
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Each night, chose a player, if they are or become drunk or poisoned tonight you die.
+
+  - name: Alchemist
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: You have a Minion ability. When using this, the storyteller may prompt you to choose differently.
+
+  - name: Alsaahir
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Each day, if you publicly guess which players are Minions and which are Demons, good wins.
+
+  - name: Amnesiac
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: You do not know what your ability is. Each day, privately guess what it is. You learn how accurate you are.
+
+  - name: Atheist
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: The Storyteller can break the game rules, and if executed, good wins even if you are dead.
+
+  - name: Balloonist
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Each night, you learn a player of a different character type than last night (May add 0 or 1 Outsiders).
+
+  - name: Banshee
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: If the Demon kills you, all players learn this. From now on, you may nominate twice per day and vote twice per nomination.
+
+  - name: Bounty Hunter
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight(1 Townsfolk is Evil).
+
+  - name: Choirboy
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: If the Demon kills the king, you learn which player is the Demon (+ the King).
+
+  - name: Cult Leader
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Each night, you vecome the alignment of an alive neighbor. If all good players choose to join your cult, your team wins.
+
+  - name: Engineer
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Once per game, at night, choose which Minions or which Demon is in play.
+
+  - name: Farmer
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: When you die at night, an alive good player becomes a Farmer.
+
+  - name: Fisherman
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Once per game, during the day, visit the Storyteller for some advice to help your team win.
+
+  - name: General
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Each Night, you learn which alignment the Storyteller believes is winning, wither good, evil or neither.
+
+  - name: Nightwatchman
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Once per game, at night, choose a player. They learn you are the Nightwatchman.
+
+  - name: Poppy Grower
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Minons & Demons do not know each other. If you die, they learn who each other are that night.
+
+  - name: Preacher
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Each night, choose a player. A Minion, if chosen, learns this. All chosen Minions have no ability.
+
+  - name: Princess
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: On your 1st day, if you nominated and executed a player, the demon doesn't kill tonight.
+
+  - name: Shugenja
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: You start knowing if your closest evil playeris clockwise or anti-clockwise.
+
+  - name: Steward
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: You start knowing 1 good player.
+
+  - name: Village Idiot
+    alignment: Townsfolk
+    set: Experimental Characters
+    description: Each night choose a player, you learn their alignment. There can be up to 3 Village idiots in the town. If their are more, 1  is drunk.
+
+  - name: Damsel
+    alignment: Outsider
+    set: Experimental Characters
+    description: All Minions know a Damsel is in play. If a Minion publicly guesses you (once), your team loses.
+
+  - name: Golem
+    alignment: Outsider
+    set: Experimental Characters
+    description: You may nominate once per game. When you do, if they nominee is not the Demon, they die.
+
+  - name: Hatter
+    alignment: Outsider
+    set: Experimental Characters
+    description: If you died today or tonight, the Minion & Demon players may choose new Minion & Demon characters to be.
+
+  - name: Heretic
+    alignment: Outsider
+    set: Experimental Characters
+    description: Whoever wins, loses & whoever loses, wins, even if you are dead.
+
+  - name: Hermit
+    alignment: Outsider
+    set: Experimental Characters
+    description: You have all Outsider abilities(Can reduce outsides by 0 or 1).
+
+  - name: Ogre
+    alignment: Outsider
+    set: Experimental Characters
+    description: On your 1st night, choose a player (Not yourself), you become their alignment even if drunk or poisoned.
+
+  - name: Plague Doctor
+    alignment: Outsider
+    set: Experimental Characters
+    description: When you die, the Storyteller gains a Minion ability.
+
+  - name: Politician
+    alignment: Outsider
+    set: Experimental Characters
+    description: If you were the player most responsible for your team losing, you change alignment & win, even if dead.
+
+  - name: Damsel
+    alignment: Outsider
+    set: Experimental Characters
+    description: All Minions know a Damsel is in play. If a Minion publicly guesses you (once), your team loses.
+
+  - name: Puzzlemaster
+    alignment: Outsider
+    set: Experimental Characters
+    description: 1 play is drunk, even if you die. If you guess(once) who it is, learn the Demon player, but guess wrong & get false info.
+
+  - name: Snitch
+    alignment: Outsider
+    set: Experimental Characters
+    description: Each Minion gets 3 bluffs.
+
+  - name: Zealot
+    alignment: Outsider
+    set: Experimental Characters
+    description: If there are 5 or more players alive, you must vote for every nomination.
+
+  - name: Boffin
+    alignment: Minion
+    set: Experimental Characters
+    description: The Demon (even if drunk or poisoned) has a not-in-play good characters ability. You both know which.
+
+  - name: Boomdandy
+    alignment: Minion
+    set: Experimental Characters
+    description: If you are executed, all but 3 players die. After a 10 to 1 countdown, the player with the most players pointing at them, dies.
+
+  - name: Fearmonger
+    alignment: Minion
+    set: Experimental Characters
+    description: Each night, choose a player. If they nominate & execute them, their team loses. All players know if you choose a new player.
+
+  - name: Goblin
+    alignment: Minion
+    set: Experimental Characters
+    description: If you publicly claim to be the Goblin when nominated & are executed that day, your team wins.
+
+  - name: Mezepheles
+    alignment: Minion
+    set: Experimental Characters
+    description: You start knowing a secret word. The 1st good player to say this word becomes evil that night.
+
+  - name: Organ Grinder
+    alignment: Minion
+    set: Experimental Characters
+    description: All players keep their eyes closed when voting and the vote tally is secret. each night choose if you are drunk until Dusk.
+
+  - name: Psychopath
+    alignment: Minion
+    set: Experimental Characters
+    description: Each day, before nominations, you may publicly chose a player, they die. If executed you only die if you lose Rock paper scissors.
+
+  - name: Summoner
+    alignment: Minion
+    set: Experimental Characters
+    description: You get 3 bluffs. On the 3rd night, choose a player, they become an evil Demon of your choice (No Demon).
+
+  - name: Vizier
+    alignment: Minion
+    set: Experimental Characters
+    description: All players know you are the Vizier, you cannot die during the day. If good voted, you may choose to execute immediately.
+
+  - name: Widow
+    alignment: Minion
+    set: Experimental Characters
+    description: On your 1st Night, look at the Grimoire & choose a player. They are poisoned. 1 good player knows the widow is in play.
+
+  - name: Wizard
+    alignment: Minion
+    set: Experimental Characters
+    description: Once per game, choose to make a wish. If granted it might have a price and leave a clue to its nature.
+
+  - name: Wraith
+    alignment: Minion
+    set: Experimental Characters
+    description: You may choose to open your eyes at night. You wake when other evil players do.
+
+  - name: Xaan
+    alignment: Minion
+    set: Experimental Characters
+    description: On Night X, all Townsfolk are poisoned until Dusk (X Outsiders).
+
+  - name: Al-Hadikhia
+    alignment: Demon
+    set: Experimental Characters
+    description: Each night, you may choose 3 players(All players learn who). Each silently chooses to live or die. but if all live, all die.
+
+  - name: Kazali
+    alignment: Demon
+    set: Experimental Characters
+    description: Each Night, choose a player, they die. You choose which players are which Minions. - ? to +? Outsiders.
+
+  - name: Legion
+    alignment: Demon
+    set: Experimental Characters
+    description: Each night a player might die. Executions fail if only evil voted. You register as a Minion too. (Most players are Legion)
+
+  - name: Leviathan
+    alignment: Demon
+    set: Experimental Characters
+    description: If more than 1 good playeris executed, evil wins. All players know you are in play. After day 5, evil wins.
+
+  - name: Lil' Monsta
+    alignment: Demon
+    set: Experimental Characters
+    description: Each night, Minions choose who babysit Lil' Monsta & is the demon. Each night a player might die (+1 Minion).
+
+  - name: Lleech
+    alignment: Demon
+    set: Experimental Characters
+    description: Each night, choose a player, they die. You start by choosing a player that becomes poisoned. You die if and only if they are dead.
+
+  - name: Lord of Typhon
+    alignment: Demon
+    set: Experimental Characters
+    description: Each night, choose a player, they die. Evil characters are in a line with you being in the middle. (+1 Minion) -? to +? Outsiders.
+
+  - name: Ojo
+    alignment: Demon
+    set: Experimental Characters
+    description: Each night, choose a character. They die, if they are not in play the Storyteller chooses who dies.
+
+  - name: Riot
+    alignment: Demon
+    set: Experimental Characters
+    description: On day 3, Minions become Riot & nominees die but nominate an alive player immediately. This must happen.
+
+  - name: Yaggababble
+    alignment: Demon
+    set: Experimental Characters
+    description: You start knowing a secret phrase. For each time you said it publicly today, a player might die.
