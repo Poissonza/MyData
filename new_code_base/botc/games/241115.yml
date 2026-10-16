@@ -34,10 +34,6 @@ players:
   position: 8
   role: Fang Gu
 days:
-- day: 0
-  extra_info:
-  - role: null
-    info: null
 - day: 1
   night_kill: null
   execution: Breeh
