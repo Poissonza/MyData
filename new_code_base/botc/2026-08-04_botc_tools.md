@@ -42,7 +42,7 @@ uv run python botc/botc_cli.py
 
 | Command | What it does |
 |---------|-------------|
-| `new-game` | Prompts for video info and players, creates a new `games/<id>.yml` with a day 0 scaffold |
+| `new-game` | Prompts for video info and players, creates a new `games/<id>.yml` with no days (start with Add Day for day 1) |
 | `add-day` | Appends a new day entry to an existing game — night kill, execution, extra info, nominations, optional action scaffolds |
 | `reveal` | Fills in end-of-game data on an existing game — evil player roles, minion/townsfolk actions, result |
 | `quit` | Exits |

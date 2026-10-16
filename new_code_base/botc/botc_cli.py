@@ -112,9 +112,7 @@ def cmd_new_game(players_ref: list, roles_ref: list) -> None:
         },
         "result": {"outcome": None, "number_of_days": None},
         "players": players,
-        "days": [
-            {"day": 0, "extra_info": [{"role": None, "info": None}]}
-        ],
+        "days": [],
     }
     save_game(video_id, data)
 
@@ -233,6 +231,7 @@ def cmd_reveal(players_ref: list, roles_ref: list) -> None:
                 player["drunk_role"] = drunk_role
 
     # Fill in night actions on existing scaffolds
+    first_day = min((d["day"] for d in data["days"]), default=None)
     for day_entry in data["days"]:
         day_num = day_entry["day"]
 
@@ -252,8 +251,8 @@ def cmd_reveal(players_ref: list, roles_ref: list) -> None:
                 if not action.get("player"):
                     action["player"] = pick(game_players, "  Player (Enter to skip)", allow_blank=True)
 
-        if day_num == 0:
-            print(f"\nDay 0 — Add reveal extra info (e.g. Imp bluffs)?")
+        if day_num == first_day:
+            print(f"\nDay {day_num} — Add reveal extra info (e.g. Imp bluffs)?")
             while input("Add entry? (y/n): ").strip().lower() == "y":
                 role = pick(roles_ref, "  Role", allow_blank=True)
                 if role:

@@ -156,6 +156,8 @@ with tab_new:
             st.error("Video ID is required.")
         elif (GAMES_DIR / f"{video_id}.yml").exists():
             st.error(f"Game {video_id} already exists.")
+        elif len({p["name"] for p in player_rows}) < len(player_rows):
+            st.error("Each player can only appear once.")
         else:
             data = {
                 "video": {
@@ -167,7 +169,7 @@ with tab_new:
                 },
                 "result": {"outcome": None, "number_of_days": None},
                 "players": player_rows,
-                "days": [{"day": 0, "extra_info": [{"role": None, "info": None}]}],
+                "days": [],
             }
             save_game(video_id, data)
             st.success(f"Created games/{video_id}.yml")
@@ -193,8 +195,8 @@ with tab_day:
         day_num = st.number_input("Day number", min_value=1, value=next_day, key=f"ad_day_{sel_game}")
 
         c1, c2 = st.columns(2)
-        night_kill = c1.selectbox("Night kill",  gp_blank, key="ad_nk")
-        execution  = c2.selectbox("Execution",   gp_blank, key="ad_ex")
+        night_kill = c1.selectbox("Night kill",  gp_blank, key=f"ad_nk_{sel_game}")
+        execution  = c2.selectbox("Execution",   gp_blank, key=f"ad_ex_{sel_game}")
 
         # Extra info rows — key namespaced by game so row count resets on switch
         st.subheader("Extra Info")
@@ -311,7 +313,7 @@ with tab_reveal:
         # Player roles
         st.subheader("Player Roles")
         updated_players = []
-        for player in game_data_r["players"]:
+        for pi, player in enumerate(game_data_r["players"]):
             entry = deepcopy(player)
             current_role  = player.get("role", "")
             current_drunk = player.get("drunk_role", "")
@@ -322,7 +324,7 @@ with tab_reveal:
                 "Role",
                 roles_blank,
                 index=roles_blank.index(current_role) if current_role in roles_blank else 0,
-                key=f"rev_{player['name']}_role",
+                key=f"rev_{sel_game_r}_p{pi}_role",
             )
             if role:
                 entry["role"] = role
@@ -331,7 +333,7 @@ with tab_reveal:
                     "Drunk thinks",
                     roles_blank,
                     index=roles_blank.index(current_drunk) if current_drunk in roles_blank else 0,
-                    key=f"rev_{player['name']}_drunk",
+                    key=f"rev_{sel_game_r}_p{pi}_drunk",
                 )
                 if drunk:
                     entry["drunk_role"] = drunk
@@ -339,6 +341,9 @@ with tab_reveal:
 
         # Night actions
         st.subheader("Night Actions")
+        first_day = min((d["day"] for d in game_data_r["days"]), default=None)
+        if first_day is None:
+            st.info("No days recorded yet — use Add Day first to record bluffs / first-night info.")
         updated_days = []
         for day_entry in game_data_r["days"]:
             day_num = day_entry["day"]
@@ -354,13 +359,13 @@ with tab_reveal:
                         "Role",
                         roles_blank,
                         index=roles_blank.index(cur_role) if cur_role in roles_blank else 0,
-                        key=f"rev_d{day_num}_ma{j}_r",
+                        key=f"rev_{sel_game_r}_d{day_num}_ma{j}_r",
                     )
                     player = c2.selectbox(
                         "Player",
                         gp_r_blank,
                         index=gp_r_blank.index(cur_player) if cur_player in gp_r_blank else 0,
-                        key=f"rev_d{day_num}_ma{j}_p",
+                        key=f"rev_{sel_game_r}_d{day_num}_ma{j}_p",
                     )
                     updated["minion_action"][j] = {
                         "role": none_if_empty(role),
@@ -377,31 +382,32 @@ with tab_reveal:
                         "Role",
                         roles_blank,
                         index=roles_blank.index(cur_role) if cur_role in roles_blank else 0,
-                        key=f"rev_d{day_num}_ta{j}_r",
+                        key=f"rev_{sel_game_r}_d{day_num}_ta{j}_r",
                     )
                     player = c2.selectbox(
                         "Player",
                         gp_r_blank,
                         index=gp_r_blank.index(cur_player) if cur_player in gp_r_blank else 0,
-                        key=f"rev_d{day_num}_ta{j}_p",
+                        key=f"rev_{sel_game_r}_d{day_num}_ta{j}_p",
                     )
                     updated["townsfolk_action"][j] = {
                         "role": none_if_empty(role),
                         "player": none_if_empty(player),
                     }
 
-            if day_num == 0:
-                st.write("**Day 0 — Add reveal extra info (e.g. Imp bluffs)**")
-                if "rev_ei0_n" not in st.session_state:
-                    st.session_state.rev_ei0_n = 0
-                if st.button("+ Add entry", key="rev_ei0_add"):
-                    st.session_state.rev_ei0_n += 1
+            if day_num == first_day:
+                st.write(f"**Day {day_num} — Add reveal extra info (e.g. Imp bluffs)**")
+                first_ei_key = f"rev_first_ei_n_{sel_game_r}"
+                if first_ei_key not in st.session_state:
+                    st.session_state[first_ei_key] = 0
+                if st.button("+ Add entry", key="rev_first_ei_add"):
+                    st.session_state[first_ei_key] += 1
 
                 new_entries = []
-                for k in range(st.session_state.rev_ei0_n):
+                for k in range(st.session_state[first_ei_key]):
                     c1, c2 = st.columns([2, 4])
-                    ei_role = c1.selectbox("Role", roles_blank, key=f"rev_ei0_{k}_r")
-                    ei_info = c2.text_input("Info",             key=f"rev_ei0_{k}_i")
+                    ei_role = c1.selectbox("Role", roles_blank, key=f"rev_{sel_game_r}_first_ei_{k}_r")
+                    ei_info = c2.text_input("Info",             key=f"rev_{sel_game_r}_first_ei_{k}_i")
                     if ei_role and ei_info:
                         new_entries.append({"role": ei_role, "info": ei_info})
                 if new_entries:
@@ -419,9 +425,9 @@ with tab_reveal:
             "Outcome",
             outcomes_blank,
             index=outcomes_blank.index(current_outcome) if current_outcome in outcomes_blank else 0,
-            key="rev_outcome",
+            key=f"rev_{sel_game_r}_outcome",
         )
-        n_days = c2.number_input("Number of days", min_value=0, value=int(current_n_days), key="rev_ndays")
+        n_days = c2.number_input("Number of days", min_value=0, value=int(current_n_days), key=f"rev_{sel_game_r}_ndays")
 
         if st.button("Save Reveal", key="rev_save"):
             game_data_r["players"] = updated_players
@@ -431,7 +437,10 @@ with tab_reveal:
                 "number_of_days": int(n_days) if n_days else None,
             }
             save_game(sel_game_r, game_data_r)
-            st.success(f"Reveal saved for {sel_game_r}")
+            # Clear the new first-day rows so a second save doesn't append them again
+            st.session_state[f"rev_first_ei_n_{sel_game_r}"] = 0
+            flash(f"Reveal saved for {sel_game_r}")
+            st.rerun()
 
 
 # ─── Tab: Games ──────────────────────────────────────────────────────────────
