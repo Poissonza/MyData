@@ -24,3 +24,28 @@ extra_info:
     day: 3
     role_id: 29
     info: Got a 0
+  - id: 6
+    game_id: 2
+    day: 1
+    role_id: 21
+    info: The evil team is not sitting next to each other
+  - id: 7
+    game_id: 2
+    day: 1
+    role_id: 126
+    info: Briony or Rythian are the Slayer
+  - id: 8
+    game_id: 2
+    day: 1
+    role_id: 40
+    info: Briony and Kirsty are not the Demon
+  - id: 9
+    game_id: 2
+    day: 1
+    role_id: 54
+    info: 'Bluffs:  Investigator, Recluse, Empath'
+  - id: 10
+    game_id: 2
+    day: 2
+    role_id: 40
+    info: Nilsey and Osie are not the Demon

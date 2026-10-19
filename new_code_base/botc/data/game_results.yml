@@ -3,3 +3,7 @@ game_results:
     game_id: 1
     winning_team: Evil
     win_condition_id: 4
+  - id: 2
+    game_id: 2
+    winning_team: Good
+    win_condition_id: 1

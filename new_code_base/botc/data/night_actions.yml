@@ -1,2 +1,36 @@
-# columns: id, game_id, day, role_id, player_id, target_player_id, target_role_id
-night_actions: []
+night_actions:
+  - id: 1
+    game_id: 2
+    day: 1
+    role_id: 90
+    player_id: 2
+    target_player_id: 6
+    target_role_id: null
+  - id: 2
+    game_id: 2
+    day: 2
+    role_id: 90
+    player_id: 2
+    target_player_id: 6
+    target_role_id: null
+  - id: 3
+    game_id: 2
+    day: 2
+    role_id: 74
+    player_id: 9
+    target_player_id: 4
+    target_role_id: null
+  - id: 4
+    game_id: 2
+    day: 3
+    role_id: 90
+    player_id: 2
+    target_player_id: 4
+    target_role_id: null
+  - id: 5
+    game_id: 2
+    day: 3
+    role_id: 109
+    player_id: 4
+    target_player_id: 2
+    target_role_id: null

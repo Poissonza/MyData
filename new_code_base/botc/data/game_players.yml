@@ -1,49 +1,97 @@
 game_players:
   - id: 1
-    starting_role_id: 112
     player_id: 3
+    starting_role_id: 112
     game_id: 1
     seat: 1
     believed_role_id: null
   - id: 2
-    starting_role_id: 56
     player_id: 2
+    starting_role_id: 56
     game_id: 1
     seat: 2
     believed_role_id: null
   - id: 3
-    starting_role_id: 54
     player_id: 4
+    starting_role_id: 54
     game_id: 1
     seat: 3
     believed_role_id: null
   - id: 4
-    starting_role_id: 29
     player_id: 5
+    starting_role_id: 29
     game_id: 1
     seat: 4
     believed_role_id: 30
   - id: 5
-    starting_role_id: 126
     player_id: 6
+    starting_role_id: 126
     game_id: 1
     seat: 5
     believed_role_id: null
   - id: 6
-    starting_role_id: 40
     player_id: 7
+    starting_role_id: 40
     game_id: 1
     seat: 6
     believed_role_id: null
   - id: 7
-    starting_role_id: 113
     player_id: 1
+    starting_role_id: 113
     game_id: 1
     seat: 7
     believed_role_id: null
   - id: 8
-    starting_role_id: 123
     player_id: 8
+    starting_role_id: 123
     game_id: 1
+    seat: 8
+    believed_role_id: null
+  - id: 9
+    player_id: 9
+    starting_role_id: 74
+    game_id: 2
+    seat: 1
+    believed_role_id: null
+  - id: 10
+    player_id: 4
+    starting_role_id: 109
+    game_id: 2
+    seat: 2
+    believed_role_id: null
+  - id: 11
+    player_id: 7
+    starting_role_id: 54
+    game_id: 2
+    seat: 3
+    believed_role_id: null
+  - id: 12
+    player_id: 8
+    starting_role_id: 126
+    game_id: 2
+    seat: 4
+    believed_role_id: null
+  - id: 13
+    player_id: 6
+    starting_role_id: 103
+    game_id: 2
+    seat: 5
+    believed_role_id: null
+  - id: 14
+    player_id: 2
+    starting_role_id: 90
+    game_id: 2
+    seat: 6
+    believed_role_id: null
+  - id: 15
+    player_id: 3
+    starting_role_id: 40
+    game_id: 2
+    seat: 7
+    believed_role_id: null
+  - id: 16
+    player_id: 1
+    starting_role_id: 21
+    game_id: 2
     seat: 8
     believed_role_id: null

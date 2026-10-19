@@ -4,3 +4,8 @@ videos:
     date: '2024-09-20'
     length: '01:05:42'
     members: false
+  - id: 2
+    name: A Terrifying Test
+    date: '2024-09-20'
+    length: '00:56:20'
+    members: true
