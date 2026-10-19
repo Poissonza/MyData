@@ -1,5 +1,6 @@
 nominations:
   - id: 1
+    game_id: 1
     day: 3
     nominator_id: 1
     nominee_id: 1

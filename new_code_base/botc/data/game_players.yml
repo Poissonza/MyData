@@ -3,4 +3,5 @@ game_players:
     starting_role_id: 2
     player_id: 1
     game_id: 1
-    believed_role: null
+    seat:
+    believed_role_id: null

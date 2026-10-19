@@ -1,5 +1,5 @@
 game_results:
   - id: 1
-    video_id: 1
+    game_id: 1
     winning_team: Good
     win_condition_id: 1
