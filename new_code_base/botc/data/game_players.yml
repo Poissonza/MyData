@@ -1,0 +1,6 @@
+game_players:
+  - id: 1
+    starting_role_id: 2
+    player_id: 1
+    game_id: 1
+    believed_role: null

@@ -1,0 +1,4 @@
+nomination_results:
+  - id: 1
+    name: Not Enough Votes
+    counts_as_execution: False

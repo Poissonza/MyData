@@ -1,0 +1,13 @@
+roles:
+  - id: 1
+    name: Acrobat
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Each night, chose a player, if they are or become drunk or poisoned tonight you die.
+  - id: 2
+    name: Recluse
+    character_type: Outsider
+    alignment: Good
+    set: Trouble Brewing
+    description: Might register as evil or as a Minion or Demon, even if dead.

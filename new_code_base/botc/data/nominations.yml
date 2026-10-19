@@ -1,0 +1,8 @@
+nominations:
+  - id: 1
+    day: 3
+    nominator_id: 1
+    nominee_id: 1
+    votes: 1
+    ghost_votes: null
+    result_id: 1

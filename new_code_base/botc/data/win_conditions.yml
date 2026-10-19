@@ -1,0 +1,110 @@
+win_conditions:
+  - id: 1
+    name: Demon executed
+    winning_team: Good
+    role:
+    description: The Demon was executed and no other Demon took over.
+
+  - id: 2
+    name: Demon killed by an ability
+    winning_team: Good
+    role:
+    description: The Demon died to an ability rather than execution, e.g. a Slayer shot or a Golem nomination.
+
+  - id: 3
+    name: Demon died with no successor
+    winning_team: Good
+    role:
+    description: The Demon died some other way (e.g. killed itself at night) and no Minion could take over.
+
+  - id: 4
+    name: Final two
+    winning_team: Evil
+    role:
+    description: Only two players are left alive and the Demon is one of them.
+
+  # ── Character-specific endings ─────────────────────────────────────────────
+  - id: 5
+    name: Mayor win
+    winning_team: Good
+    role: Mayor
+    description: Only 3 players are alive and no execution occurs.
+
+  - id: 6
+    name: Saint executed
+    winning_team: Evil
+    role: Saint
+    description: The Saint was executed, so their team loses.
+
+  - id: 7
+    name: Klutz chose evil
+    winning_team: Evil
+    role: Klutz
+    description: The Klutz died and publicly chose an evil player, so their team loses.
+
+  - id: 8
+    name: Evil Twin - good twin executed
+    winning_team: Evil
+    role: Evil Twin
+    description: The good twin was executed. (Good can't win while both twins are alive.)
+
+  - id: 9
+    name: Vortox - no execution
+    winning_team: Evil
+    role: Vortox
+    description: A day ended with no execution while the Vortox was in play.
+
+  - id: 10
+    name: Leviathan - good players executed
+    winning_team: Evil
+    role: Leviathan
+    description: More than 1 good player was executed while the Leviathan was in play.
+
+  - id: 11
+    name: Leviathan - survived day 5
+    winning_team: Evil
+    role: Leviathan
+    description: The Leviathan was still alive after day 5.
+
+  - id: 12
+    name: Damsel guessed
+    winning_team: Evil
+    role: Damsel
+    description: A Minion publicly guessed the Damsel correctly, so good loses.
+
+  - id: 13
+    name: Goblin executed after claiming
+    winning_team: Evil
+    role: Goblin
+    description: The Goblin publicly claimed when nominated and was executed that day.
+
+  - id: 14
+    name: Mastermind - extra day execution
+    winning_team: either
+    role: Mastermind
+    description: The Demon was executed, the game went on 1 more day, and the team of the player executed that day lost.
+
+  - id: 15
+    name: Atheist - Storyteller executed
+    winning_team: Good
+    role: Atheist
+    description: The players executed the Storyteller in an Atheist game (no evil characters).
+
+  - id: 16
+    name: Cult Leader - cult win
+    winning_team: either
+    role: Cult Leader
+    description: All good players joined the Cult Leader's cult, so the Cult Leader's team wins.
+
+  - id: 17
+    name: Fiddler vote
+    winning_team: either
+    role: Fiddler
+    description: The Demon chose an opposing player and all players voted on which of the two wins.
+
+  # ── Catch-all ───────────────────────────────────────────────────────────────
+  - id: 18
+    name: Other
+    winning_team: either
+    role:
+    description: An ending not listed here (house rule, Storyteller ruling, custom character). Note the details in extra information.

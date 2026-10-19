@@ -1,0 +1,8 @@
+night_actions:
+  - id:
+    game_id: 1
+    day:
+    role_id:
+    player_id:
+    target_player_id:
+    target_role_id:

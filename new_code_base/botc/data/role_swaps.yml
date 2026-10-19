@@ -1,0 +1,8 @@
+role_swaps:
+  - id:
+    game_id:
+    day:
+    player_id:
+    new_role_id:
+    new_team:
+    cause:

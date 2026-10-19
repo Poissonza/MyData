@@ -1,0 +1,8 @@
+deaths:
+  - id: 1
+    game_id: 1
+    day: 2
+    player_id: 2
+    timing: Night
+    cause: Demon
+

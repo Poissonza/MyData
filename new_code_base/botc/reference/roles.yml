@@ -467,7 +467,7 @@ roles:
   - name: Professor
     alignment: Townsfolk
     set: Bad Moon Rising
-    description: Once per game, at night. choose a dead player. If they are townsfold, they are resurrected.
+    description: Once per game, at night. choose a dead player. If they are townsfold, they are resurted.
 
   - name: Psychopath
     alignment: Minion
