@@ -5,6 +5,8 @@ import pandas as pd
 
 EL_2_DIR = Path(__file__).parent
 REFERENCE_DIR = EL_2_DIR / "reference"
+GAME_DIR = EL_2_DIR / "data"
+
 REFERENCE_TABLE_1 = [
     {
         "c1_label": "Speed Options",
@@ -94,7 +96,9 @@ def load_ref_data():
     with open(REFERENCE_DIR / "reference.yml") as f:
         return yaml.safe_load(f)
 
-
+def load_game_data():
+    with open(GAME_DIR / "games.yml") as f:
+        return yaml.safe_load(f)
 
 def faction_page():
     ref_data = load_ref_data()
@@ -103,7 +107,14 @@ def faction_page():
     st.dataframe(pd.DataFrame(ref_data["faction"]), hide_index=True, width="stretch")
 
 def game_page():
-    pass
+    ref_data = load_ref_data()
+    game_data = load_game_data()["games"]
+
+    st.header("Add new Game")
+
+    st.table(game_data)
+
+
 
 
 def reference_page():
