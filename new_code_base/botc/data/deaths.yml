@@ -1,9 +1,2 @@
-deaths:
-  - id: 1
-    game_id: 1
-    day: 2
-    player_id: 2
-    timing: Night
-    cause_type: Demon
-    cause_role_id: 121
-
+# columns: id, game_id, day, player_id, timing, cause_type, cause_role_id
+deaths: []
