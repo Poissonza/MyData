@@ -1,2 +1,49 @@
-# columns: id, starting_role_id, player_id, game_id, seat, believed_role_id
-game_players: []
+game_players:
+  - id: 1
+    starting_role_id: 112
+    player_id: 3
+    game_id: 1
+    seat: 1
+    believed_role_id: null
+  - id: 2
+    starting_role_id: 56
+    player_id: 2
+    game_id: 1
+    seat: 2
+    believed_role_id: null
+  - id: 3
+    starting_role_id: 54
+    player_id: 4
+    game_id: 1
+    seat: 3
+    believed_role_id: null
+  - id: 4
+    starting_role_id: 29
+    player_id: 5
+    game_id: 1
+    seat: 4
+    believed_role_id: 30
+  - id: 5
+    starting_role_id: 126
+    player_id: 6
+    game_id: 1
+    seat: 5
+    believed_role_id: null
+  - id: 6
+    starting_role_id: 40
+    player_id: 7
+    game_id: 1
+    seat: 6
+    believed_role_id: null
+  - id: 7
+    starting_role_id: 113
+    player_id: 1
+    game_id: 1
+    seat: 7
+    believed_role_id: null
+  - id: 8
+    starting_role_id: 123
+    player_id: 8
+    game_id: 1
+    seat: 8
+    believed_role_id: null

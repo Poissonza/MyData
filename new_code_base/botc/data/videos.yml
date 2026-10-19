@@ -1,2 +1,6 @@
-# columns: id, name, date, length, members
-videos: []
+videos:
+  - id: 1
+    name: We play Blood on the Clocktower in Minecraft
+    date: '2024-09-20'
+    length: '01:05:42'
+    members: false
