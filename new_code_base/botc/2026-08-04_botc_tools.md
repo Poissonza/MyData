@@ -90,7 +90,8 @@ Opens at `http://localhost:8501` in your browser.
 ### Forms and grids
 
 - Fields marked `*` are required; everything else can be left empty and filled in later. Empty means "not entered yet"; enter 0 for zero.
-- Player fields in event forms only offer the players in that game, so add players to the game first.
+- Player fields in event forms only offer the players in that game, so add players (with their starting roles) to the game first.
+- The role on a night action, an extra info entry or a cause of death only offers roles in that game: starting roles, believed roles (e.g. the Drunk's Townsfolk) and roles gained through a role swap. A night action's target role and a role swap's new role still offer every role, because the Pit-Hag, Cerenovus and Philosopher can choose characters not in play.
 - In a grid, edit cells or select rows and delete them, then click **Save changes**. Nothing is written until you save, and all rows are checked first.
 - A row can't be deleted while something else still uses it (e.g. a player who has a nomination in that game).
 - A role swap needs a new role, a new team, or both. A result's winning team fills in from the win condition, unless it is `Either`.

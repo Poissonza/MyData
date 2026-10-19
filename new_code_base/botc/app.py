@@ -37,7 +37,7 @@ class Col:
     ref: str | None = None
     choices: tuple = ()
     required: bool = False
-    in_game: bool = False  # player ref limited to the players in this game
+    in_game: bool = False  # player/role ref limited to the players or roles in this game
     label: str | None = None
 
     @property
@@ -83,8 +83,8 @@ TABLES: dict[str, list[Col]] = {
     ],
     "game_players": [
         ID,
-        Col("starting_role_id", "ref", ref="roles"),
         Col("player_id", "ref", ref="players", required=True),
+        Col("starting_role_id", "ref", ref="roles"),
         Col("game_id", "ref", ref="games", required=True),
         Col("seat", "int"),
         Col("believed_role_id", "ref", ref="roles", label="Believes they are"),
@@ -102,7 +102,7 @@ TABLES: dict[str, list[Col]] = {
         Col("player_id", "ref", ref="players", in_game=True, required=True),
         Col("timing", "choice", choices=TIMINGS),
         Col("cause_type", "choice", choices=CAUSE_TYPES),
-        Col("cause_role_id", "ref", ref="roles", label="Caused by role"),
+        Col("cause_role_id", "ref", ref="roles", in_game=True, label="Caused by role"),
     ],
     "nominations": [
         ID,
@@ -118,7 +118,7 @@ TABLES: dict[str, list[Col]] = {
         ID,
         Col("game_id", "ref", ref="games", required=True),
         Col("day", "int", required=True),
-        Col("role_id", "ref", ref="roles", required=True),
+        Col("role_id", "ref", ref="roles", in_game=True, required=True),
         Col("player_id", "ref", ref="players", in_game=True, label="Used by"),
         Col("target_player_id", "ref", ref="players", in_game=True, label="Target player"),
         Col("target_role_id", "ref", ref="roles", label="Target role"),
@@ -127,7 +127,7 @@ TABLES: dict[str, list[Col]] = {
         ID,
         Col("game_id", "ref", ref="games", required=True),
         Col("day", "int", required=True),
-        Col("role_id", "ref", ref="roles"),
+        Col("role_id", "ref", ref="roles", in_game=True),
         Col("info", "long_text", required=True),
     ],
     "role_swaps": [
@@ -246,10 +246,29 @@ def game_player_ids(db: dict, game_id) -> list[int]:
     return [gp["player_id"] for gp in db["game_players"] if gp.get("game_id") == game_id]
 
 
-def ref_options(db: dict, c: Col, game_id=None) -> list[int]:
+def game_role_ids(db: dict, game_id, day: int | None = None) -> list[int]:
+    """Roles in play: starting and believed roles, plus roles gained through a swap on or before `day`
+    (any day if `day` is None). Swapped-out roles stay in the list, since they can still come up."""
+    ids = set()
+    for gp in db["game_players"]:
+        if gp.get("game_id") == game_id:
+            ids.update(v for v in (gp.get("starting_role_id"), gp.get("believed_role_id")) if v is not None)
+    ids.update(
+        s["new_role_id"] for s in db["role_swaps"]
+        if s.get("game_id") == game_id and s.get("new_role_id") is not None
+        and (day is None or (s.get("day") or 0) <= day)
+    )
+    return list(ids)
+
+
+def game_ids_for(db: dict, c: Col, game_id, day: int | None = None) -> list[int]:
+    return game_role_ids(db, game_id, day) if c.ref == "roles" else game_player_ids(db, game_id)
+
+
+def ref_options(db: dict, c: Col, game_id=None, day: int | None = None) -> list[int]:
     names = labels(db, c.ref)
     if c.in_game and game_id is not None:
-        ids = game_player_ids(db, game_id)
+        ids = game_ids_for(db, c, game_id, day)
     else:
         ids = list(names)
     return sorted(ids, key=lambda i: names.get(i, "").lower())
@@ -302,8 +321,9 @@ def validate(db: dict, table: str, row: dict, others: list[dict]) -> list[str]:
             continue
         if c.kind == "ref" and v not in {r["id"] for r in db[c.ref]}:
             errors.append(f"{c.title}: #{v} doesn't exist in {c.ref}.")
-        elif c.kind == "ref" and c.in_game and v not in game_player_ids(db, row.get("game_id")):
-            errors.append(f"{c.title}: {labels(db, 'players').get(v, v)} isn't a player in this game.")
+        elif c.kind == "ref" and c.in_game and v not in game_ids_for(db, c, row.get("game_id"), row.get("day")):
+            what = "a player in this game" if c.ref == "players" else f"in play on day {row.get('day')}"
+            errors.append(f"{c.title}: {labels(db, c.ref).get(v, v)} isn't {what}.")
         if c.kind == "choice" and v not in c.choices:
             errors.append(f"{c.title}: '{v}' must be one of {', '.join(c.choices)}.")
         if c.kind == "int" and v < (1 if c.name in ("day", "seat", "game_number") else 0):
@@ -357,6 +377,8 @@ def references_to(db: dict, table: str, row_id: int) -> list[str]:
         for other in EVENT_TABLES:
             for c in TABLES[other]:
                 if c.in_game:
+                    if c.ref != "players":
+                        continue
                     n = sum(1 for r in game_rows(db, other, gp.get("game_id")) if r.get(c.name) == gp.get("player_id"))
                     if n:
                         found.append(f"{other}.{c.name} ({n})")
@@ -365,10 +387,10 @@ def references_to(db: dict, table: str, row_id: int) -> list[str]:
 
 # ─── Widgets ─────────────────────────────────────────────────────────────────
 
-def input_widget(db: dict, c: Col, container, key: str, game_id=None):
+def input_widget(db: dict, c: Col, container, key: str, game_id=None, day: int | None = None):
     title = c.title + (" *" if c.required else "")
     if c.kind == "ref":
-        options = ref_options(db, c, game_id)
+        options = ref_options(db, c, game_id, day)
         return container.selectbox(title, [None, *options], format_func=formatter(labels(db, c.ref)), key=key)
     if c.kind == "choice":
         return container.selectbox(title, [None, *c.choices], format_func=lambda v: "—" if v is None else v, key=key)
@@ -392,14 +414,15 @@ def entry_form(db: dict, table: str, key: str, fixed: dict | None = None) -> Non
     short = [c for c in cols if c.kind != "long_text"]
     long = [c for c in cols if c.kind == "long_text"]
     game_id = fixed.get("game_id")
+    day = fixed.get("day")
 
     with st.form(key, clear_on_submit=True):
         values = {}
         grid = st.columns(min(3, len(short))) if short else []
         for i, c in enumerate(short):
-            values[c.name] = input_widget(db, c, grid[i % len(grid)], f"{key}_{c.name}", game_id)
+            values[c.name] = input_widget(db, c, grid[i % len(grid)], f"{key}_{c.name}", game_id, day)
         for c in long:
-            values[c.name] = input_widget(db, c, st, f"{key}_{c.name}", game_id)
+            values[c.name] = input_widget(db, c, st, f"{key}_{c.name}", game_id, day)
         submitted = st.form_submit_button(f"Add {SINGULAR[table]}", type="primary")
 
     if submitted:
@@ -611,7 +634,7 @@ with tab_entry:
 
         with sub[0]:
             st.subheader("Players in this game")
-            st.caption("Add each player with their seat and starting role. The role can be filled in at the reveal.")
+            st.caption("Add each player with their seat and starting role. Day actions only offer the roles entered here.")
             if not db["players"]:
                 st.info("Add players in **Reference → Players** first.")
             entry_form(db, "game_players", f"f_gp_{game_id}", fixed={"game_id": game_id})
@@ -629,6 +652,8 @@ with tab_entry:
                 st.caption(hint)
                 if not gps and any(c.in_game for c in TABLES[table]):
                     st.warning("Add players to this game first.")
+                elif any(c.in_game and c.ref == "roles" for c in TABLES[table]) and not game_role_ids(db, game_id):
+                    st.warning("Role fields only offer roles in this game. Add starting roles on the Players tab first.")
                 entry_form(db, table, f"f_{table}_{game_id}_{day}", fixed={"game_id": game_id, "day": day})
                 rows = sorted(day_rows(table), key=lambda r: (r.get("day") or 0, r["id"]))
                 edit_grid(db, table, rows, f"g_{table}_{game_id}", hide=("game_id",), game_id=game_id)
