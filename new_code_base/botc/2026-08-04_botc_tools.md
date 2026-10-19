@@ -112,7 +112,7 @@ The relational tables live in `data/`, one YAML file per table. As of 2026-10-19
 - **Day is not stored.** It is derived in silver (see below). A `days.yml` would only be worth adding to record facts about the day itself, such as the video time each day starts.
 - **One video is one game.** The rare video with more than one game gets one Video row and a Game row per game (`game_number`), never a made-up second video.
 - **A player's starting team comes from their role** (`roles.alignment`). No team column at setup. Any exception (a setup effect such as Bounty Hunter, or a Traveller if one ever appears) is recorded as a Day 1 role swap with `cause: setup`.
-- **Extra information stays free text.** What is revealed, and how much, depends on the role, and it can refer to players or to roles. The player behind an entry can be found by joining its role to the player's role on that day; a Drunk's info joins on their *believed* role.
+- **Extra information stays free text.** What is revealed, and how much, depends on the role, and it can refer to players or to roles. The player behind an entry can be found by joining its role to the player's role on that day. **A Drunk's (or Lunatic's, Marionette's) info is recorded under their real role** (e.g. `Drunk`, not `Empath`), so it always points at one player, even if the game also has a real Empath, and is clearly marked as unreliable. Their believed role is on `game_players.believed_role_id`.
 - **No `seq` column.** Row IDs are assigned in entry order, so `id` already gives the order within a game and day. Add `seq` only if events ever need reordering after entry.
 - **Fixed values are capitalised:** `Good` / `Evil` / `Either`, `Night` / `Day`, `Demon`.
 - **Empty tables are `[]`**, with the columns listed in a comment at the top of the file, never a row of nulls.
@@ -208,6 +208,8 @@ Run these whenever data is added (a check script exists and passes on the curren
 - Every player in deaths, nominations, night actions and role swaps is in `game_players` for that game.
 - Seats are unique within a game.
 - No nomination follows an immediate execution (Virgin) on the same day.
+- A Tied result only follows a Marked one on the same day (there must be someone on the block to tie with).
+- Every nomination has a vote count, except an immediate execution (Virgin), which has no vote. Ghost votes are 0 when nobody voted from the dead, and empty only when not known.
 - Flagged for checking: an executed player with no death row, and a death by execution of a player the nominations don't put on the block.
 
 ### YAML gotchas

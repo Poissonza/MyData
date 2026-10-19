@@ -619,8 +619,20 @@ def unfinished(db: dict) -> list[str]:
         noms = game_rows(db, "nominations", gid)
         if missing := [n for n in noms if n.get("result_id") is None]:
             out.append(f"{name}: {len(missing)} nomination(s) with no result")
-        if missing := [n for n in noms if n.get("votes") is None]:
+        effects = block_effects(db)
+        # An immediate execution (Virgin) has no vote, so it never needs a vote count
+        if missing := [n for n in noms if n.get("votes") is None and effects.get(n.get("result_id")) != "executes_nominator"]:
             out.append(f"{name}: {len(missing)} nomination(s) with no vote count")
+        for d in sorted({n.get("day") for n in noms if n.get("day") is not None}):
+            on_block = None
+            for n in sorted((n for n in noms if n.get("day") == d), key=lambda n: n["id"]):
+                effect = effects.get(n.get("result_id"))
+                if effect == "clears" and on_block is None:
+                    out.append(f"{name}: day {d} — nomination #{n['id']} is a tie, but nobody was on the block to tie with")
+                if effect == "marks":
+                    on_block = n.get("nominee_id")
+                elif effect == "clears":
+                    on_block = None
         if missing := [d for d in game_rows(db, "deaths", gid) if d.get("cause_type") is None]:
             out.append(f"{name}: {len(missing)} death(s) with no cause")
         players = labels(db, "players")

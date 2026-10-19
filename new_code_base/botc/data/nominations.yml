@@ -5,7 +5,7 @@ nominations:
     nominator_id: 6
     nominee_id: 6
     votes: 8
-    ghost_votes: null
+    ghost_votes: 0
     result_id: 2
   - id: 2
     game_id: 1
@@ -14,7 +14,7 @@ nominations:
     nominee_id: 1
     votes: 2
     ghost_votes: 1
-    result_id: 3
+    result_id: 2
   - id: 3
     game_id: 1
     day: 2
