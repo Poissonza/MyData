@@ -1,4 +1,13 @@
 nomination_results:
   - id: 1
     name: Not Enough Votes
-    counts_as_execution: False
+    block_effect: none
+  - id: 2
+    name: Marked
+    block_effect: marks
+  - id: 3
+    name: Tied
+    block_effect: clears
+  - id: 4
+    name: Virgin triggered
+    block_effect: executes_nominator
