@@ -1,2 +1,43 @@
-# columns: id, game_id, day, player_id, timing, cause_type, cause_role_id
-deaths: []
+deaths:
+  - id: 1
+    game_id: 1
+    day: 1
+    player_id: 6
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 2
+    game_id: 1
+    day: 2
+    player_id: 7
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 3
+    game_id: 1
+    day: 2
+    player_id: 8
+    timing: Day
+    cause_type: Execution
+    cause_role_id: 123
+  - id: 4
+    game_id: 1
+    day: 3
+    player_id: 2
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 5
+    game_id: 1
+    day: 3
+    player_id: 1
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 6
+    game_id: 1
+    day: 4
+    player_id: 5
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54

@@ -1,2 +1,5 @@
-# columns: id, game_id, winning_team, win_condition_id
-game_results: []
+game_results:
+  - id: 1
+    game_id: 1
+    winning_team: Evil
+    win_condition_id: 4

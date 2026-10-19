@@ -1,2 +1,26 @@
-# columns: id, game_id, day, role_id, info
-extra_info: []
+extra_info:
+  - id: 1
+    game_id: 1
+    day: 1
+    role_id: 126
+    info: Duncan or Zylus is the Soldier
+  - id: 2
+    game_id: 1
+    day: 1
+    role_id: 56
+    info: Ravs or Zylus is the Spy
+  - id: 3
+    game_id: 1
+    day: 1
+    role_id: 29
+    info: Got a 0
+  - id: 4
+    game_id: 1
+    day: 2
+    role_id: 29
+    info: Got a 0
+  - id: 5
+    game_id: 1
+    day: 3
+    role_id: 29
+    info: Got a 0
