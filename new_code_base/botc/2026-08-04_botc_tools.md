@@ -123,7 +123,7 @@ The relational tables live in `data/`, one YAML file per table. As of 2026-10-19
 |---|---|---|---|
 | `players.yml` | Reference | id, name | |
 | `roles.yml` | Reference | id, name, character_type (Townsfolk / Outsider / Minion / Demon / Traveller / Fabled), alignment (Good / Evil, the default team), set, description | |
-| `nomination_results.yml` | Reference | id, name, counts_as_execution | |
+| `nomination_results.yml` | Reference | id, name, block_effect (marks / clears / none / executes_nominator) | |
 | `win_conditions.yml` | Reference | id, name, winning_team (Good / Evil / Either), role_id, description | role_id → roles |
 | `videos.yml` | Dimension | id, name, date, length, members | |
 | `games.yml` | Dimension | id, game_number, video_id | video_id → videos |
@@ -143,7 +143,18 @@ Notes:
 - **Deaths** replace the single `night_kill` / `execution` fields, so several deaths in a night, ability deaths (Slayer, Virgin, Lunatic), resurrections and failed kills can all be recorded. `cause_type` is how they died (Demon / Execution / Ability); `cause_role_id` is the role responsible, where there is one.
 - **Night actions:** `player_id` is who used the ability. `target_role_id` is for abilities that choose a role (Pit-Hag, Cerenovus, Philosopher).
 - **Role swaps** cover role changes (Imp star-pass, Fang Gu jump, Pit-Hag, Barber, Snake Charmer) and team-only changes (Goon, Cult Leader), so `new_role_id` and `new_team` are both optional. A derived **player_state** table (`valid_from_day` / `valid_to_day`, built with a `lead()` window, the SCD2 pattern) gives each player's role and team on any day. Win stats should use the final state, not the starting role.
-- **Nomination results** replace the free-text values in the old files, e.g. `Not Enough Votes` (15) vs `Not enough votes` (1), plus `Marked`, `Tied`, `Executed`, `Virgin Execution` and `Disrupted by a Slayer shot on the Demon`. Only `Not Enough Votes` has been added so far.
+- **Nomination results** record what happened at that vote, never "Executed", so a nomination row is written once and never updated. Each result has a `block_effect`:
+
+  | block_effect | Meaning | Results |
+  |---|---|---|
+  | `marks` | The nominee goes on the block, replacing anyone already there | Marked |
+  | `clears` | The block is emptied | Tied |
+  | `none` | No change | Not Enough Votes (add others such as a Slayer shot ending the game here) |
+  | `executes_nominator` | The nominator is executed at once and the day ends | Virgin triggered |
+
+- **Executions are worked out, not stored.** If a day has an `executes_nominator` nomination, its nominator was executed and no nominations may follow it that day. Otherwise the day's nominations are replayed in entry order: `marks` puts the nominee on the block, `clears` empties it, and whoever is on the block at the end of the day was executed. A player marked and then out-voted is just two Marked rows; the last one wins.
+- **Execution and death are separate.** The execution comes from the nominations; whether the player died goes in `deaths.yml` (`cause_type: Execution`, with `cause_role_id` set to the Virgin for a Virgin execution). Some executed players don't die (Fool, Pacifist, Zombuul, Sailor, a Tea Lady neighbour), so an execution with no death row is flagged for checking rather than treated as an error. A death by execution of someone the nominations don't put on the block is flagged too.
+- **Not executions:** a Witch-cursed nominator *dies* (`cause_type: Ability`, `cause_role_id` Witch) and the nomination carries on normally. A Virgin that doesn't trigger (non-Townsfolk nominator, Virgin drunk, poisoned or already used) is an ordinary nomination.
 
 Example rows:
 
@@ -196,6 +207,8 @@ Run these whenever data is added (a check script exists and passes on the curren
 - Every `*_id` column points at an existing row in the table it references.
 - Every player in deaths, nominations, night actions and role swaps is in `game_players` for that game.
 - Seats are unique within a game.
+- No nomination follows an immediate execution (Virgin) on the same day.
+- Flagged for checking: an executed player with no death row, and a death by execution of a player the nominations don't put on the block.
 
 ### YAML gotchas
 
@@ -205,7 +218,7 @@ Run these whenever data is added (a check script exists and passes on the curren
 ### Still to do
 
 - Move the remaining games across from `games/` (240920, 2409202, 241018, 241115, 241129), then retire `games/`, `reference/` and the CLI (or move the CLI onto `data/`).
-- Add the remaining players, nomination results (Executed, Marked, Tied, Virgin Execution, …) and game 1's other players and events.
+- Add the remaining players, any other nomination results you need, and game 1's events.
 - **240920 and 2409202 still have a Day 0** with real first-night info; renumber or merge into Day 1 when moving them across.
 - **241115:** Briony is stored as `role: Imp, drunk_role: Fortune Teller`, but there is no Imp in that game and Day 2 says the Drunk became the Fang Gu. Record this with a role swap when moving it.
 - **Game 1's win condition** is 1 (Demon executed), but Kirsty (Vigormortis) was executed on Day 1 and the game ran to Day 3. Check whether "Demon killed by an ability" or another ending is right.

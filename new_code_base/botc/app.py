@@ -26,6 +26,8 @@ CHARACTER_TYPES = ("Townsfolk", "Outsider", "Minion", "Demon", "Traveller", "Fab
 DEFAULT_TEAM = {"Townsfolk": "Good", "Outsider": "Good", "Minion": "Evil", "Demon": "Evil"}
 TIMINGS = ("Night", "Day")
 CAUSE_TYPES = ("Demon", "Execution", "Ability", "Other")
+# What a nomination result does to the block (who will be executed at the end of the day)
+BLOCK_EFFECTS = ("marks", "clears", "none", "executes_nominator")
 
 
 # ─── Table definitions ───────────────────────────────────────────────────────
@@ -61,7 +63,11 @@ TABLES: dict[str, list[Col]] = {
         Col("set"),
         Col("description", "long_text"),
     ],
-    "nomination_results": [ID, Col("name", required=True), Col("counts_as_execution", "bool")],
+    "nomination_results": [
+        ID,
+        Col("name", required=True),
+        Col("block_effect", "choice", choices=BLOCK_EFFECTS, required=True),
+    ],
     "win_conditions": [
         ID,
         Col("name", required=True),
@@ -294,6 +300,42 @@ def games_by_date(db: dict) -> list[int]:
     ]
 
 
+# ─── Executions ──────────────────────────────────────────────────────────────
+
+def block_effects(db: dict) -> dict[int, str]:
+    return {r["id"]: r.get("block_effect") for r in db["nomination_results"]}
+
+
+def day_ended_by(db: dict, game_id, day, nominations: list[dict] | None = None) -> dict | None:
+    """The first nomination that executed its nominator immediately (e.g. the Virgin), ending the day."""
+    effects = block_effects(db)
+    noms = nominations if nominations is not None else db["nominations"]
+    enders = [n for n in noms if n.get("game_id") == game_id and n.get("day") == day
+              and effects.get(n.get("result_id")) == "executes_nominator"]
+    return min(enders, key=lambda n: n["id"], default=None)
+
+
+def day_execution(db: dict, game_id, day) -> tuple[int | None, str | None]:
+    """Who was executed on a day, worked out from the nominations, and how.
+
+    An immediate execution (Virgin) ends the day: the nominator is executed. Otherwise the block
+    is replayed in entry order: 'marks' puts the nominee on it, 'clears' empties it, and whoever
+    is left at the end of the day is executed."""
+    effects = block_effects(db)
+    on_block = None
+    for n in sorted(game_rows(db, "nominations", game_id), key=lambda n: n["id"]):
+        if n.get("day") != day:
+            continue
+        effect = effects.get(n.get("result_id"))
+        if effect == "executes_nominator":
+            return n.get("nominator_id"), "immediate"
+        if effect == "marks":
+            on_block = n.get("nominee_id")
+        elif effect == "clears":
+            on_block = None
+    return (on_block, "block") if on_block is not None else (None, None)
+
+
 # ─── Validation ──────────────────────────────────────────────────────────────
 
 def prepare(db: dict, table: str, row: dict) -> dict:
@@ -357,6 +399,10 @@ def validate(db: dict, table: str, row: dict, others: list[dict]) -> list[str]:
         wc = next((w for w in db["win_conditions"] if w["id"] == row.get("win_condition_id")), None)
         if wc and wc.get("winning_team") in TEAMS and row.get("winning_team") not in (None, wc["winning_team"]):
             errors.append(f"'{wc['name']}' is a {wc['winning_team']} win.")
+    if table == "nominations":
+        ender = day_ended_by(db, row.get("game_id"), row.get("day"), others)
+        if ender is not None and row.get("id", 0) > ender["id"]:
+            errors.append(f"Day {row.get('day')} already ended with an immediate execution (nomination #{ender['id']}).")
     if table == "role_swaps" and row.get("new_role_id") is None and row.get("new_team") is None:
         errors.append("A role swap needs a new role, a new team, or both.")
     return errors
@@ -577,6 +623,17 @@ def unfinished(db: dict) -> list[str]:
             out.append(f"{name}: {len(missing)} nomination(s) with no vote count")
         if missing := [d for d in game_rows(db, "deaths", gid) if d.get("cause_type") is None]:
             out.append(f"{name}: {len(missing)} death(s) with no cause")
+        players = labels(db, "players")
+        for d in range(1, (max_day(db, gid) or 0) + 1):
+            executed, _ = day_execution(db, gid, d)
+            exec_deaths = {x.get("player_id") for x in game_rows(db, "deaths", gid)
+                           if x.get("day") == d and x.get("cause_type") == "Execution"}
+            if executed is not None and executed not in exec_deaths:
+                out.append(f"{name}: day {d} — {players.get(executed, '?')} was executed but has no death row "
+                           f"(fine if they survived, e.g. Fool or Pacifist)")
+            for pid in exec_deaths - {executed}:
+                out.append(f"{name}: day {d} — {players.get(pid, '?')} died by execution, but the nominations "
+                           f"don't put them on the block (check the nomination results)")
         if not result_of(db, gid):
             out.append(f"{name}: no result yet (in progress)")
     return out
@@ -642,7 +699,8 @@ with tab_entry:
 
         for tab, table, hint in [
             (sub[1], "deaths", "Who died, when, and what killed them."),
-            (sub[2], "nominations", "Add the nomination when it happens; votes and result can be filled in afterwards."),
+            (sub[2], "nominations", "Record each vote's result as it happens: Marked, Tied, Not enough votes… Don't record 'Executed': "
+                                    "the execution is worked out from the block at the end of the day, and its death goes on the Deaths tab."),
             (sub[3], "night_actions", "Who used an ability and who or what they chose."),
             (sub[4], "extra_info", "What a role learned, demon bluffs, or anything else worth noting."),
             (sub[5], "role_swaps", "Role or team changes: star-pass, Fang Gu jump, Pit-Hag, Goon… Use cause 'setup' for changes at the start."),
@@ -654,6 +712,14 @@ with tab_entry:
                     st.warning("Add players to this game first.")
                 elif any(c.in_game and c.ref == "roles" for c in TABLES[table]) and not game_role_ids(db, game_id):
                     st.warning("Role fields only offer roles in this game. Add starting roles on the Players tab first.")
+                if table == "nominations":
+                    executed, how = day_execution(db, game_id, day)
+                    if how == "immediate":
+                        st.info(f"Day {day} ended: **{player_names.get(executed, '?')}** was executed immediately. No more nominations today.")
+                    elif executed is not None:
+                        st.info(f"On the block: **{player_names.get(executed, '?')}**")
+                    if not db["nomination_results"]:
+                        st.warning("Add nomination results in **Reference → Nomination Results** first.")
                 entry_form(db, table, f"f_{table}_{game_id}_{day}", fixed={"game_id": game_id, "day": day})
                 rows = sorted(day_rows(table), key=lambda r: (r.get("day") or 0, r["id"]))
                 edit_grid(db, table, rows, f"g_{table}_{game_id}", hide=("game_id",), game_id=game_id)
@@ -784,7 +850,6 @@ with tab_summary:
 
             # Derived day table: alive count, deaths and nominations per day
             last = max_day(db, gid) or 0
-            execution_results = {r["id"] for r in db["nomination_results"] if r.get("counts_as_execution")}
             n_players = len(game_rows(db, "game_players", gid))
             day_summary = []
             for d in range(1, last + 1):
@@ -794,8 +859,8 @@ with tab_summary:
                     "Day": d,
                     "Deaths": ", ".join(player_names.get(x.get("player_id"), "?") for x in died) or None,
                     "Nominations": len(noms),
-                    "Execution": any(x.get("cause_type") == "Execution" for x in died)
-                    or any(n.get("result_id") in execution_results for n in noms),
+                    "Executed": (lambda e: f"{player_names.get(e[0], '?')}" + (" (immediate)" if e[1] == "immediate" else "")
+                                 if e[0] is not None else None)(day_execution(db, gid, d)),
                     "Alive at end": n_players - sum(1 for x in deaths if (x.get("day") or 0) <= d),
                 })
             if day_summary:
@@ -833,7 +898,8 @@ with tab_ref:
     for tab, table, hint in [
         (ref_tabs[0], "players", "Everyone who has played. Names must be unique."),
         (ref_tabs[1], "roles", "Default team fills in from the character type if left empty."),
-        (ref_tabs[2], "nomination_results", "Tick 'counts as execution' for results where the nominee is executed."),
+        (ref_tabs[2], "nomination_results", "Block effect: 'marks' puts the nominee on the block, 'clears' empties it (a tie), "
+                                             "'none' changes nothing, 'executes_nominator' executes the nominator at once and ends the day (Virgin)."),
         (ref_tabs[3], "win_conditions", "Possible endings. Use 'Either' where the ending can go to both teams."),
     ]:
         with tab:
