@@ -3,5 +3,11 @@ game_players:
     starting_role_id: 2
     player_id: 1
     game_id: 1
-    seat:
+    seat: 2
+    believed_role_id: null
+  - id: 2
+    starting_role_id: 30
+    player_id: 2
+    game_id: 1
+    seat: 5
     believed_role_id: null

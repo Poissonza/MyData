@@ -4,5 +4,6 @@ deaths:
     day: 2
     player_id: 2
     timing: Night
-    cause: Demon
+    cause_type: Demon
+    cause_role_id: 121
 

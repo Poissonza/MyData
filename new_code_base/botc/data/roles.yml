@@ -11,3 +11,801 @@ roles:
     alignment: Good
     set: Trouble Brewing
     description: Might register as evil or as a Minion or Demon, even if dead.
+  - id: 3
+    name: Al-Hadikhia
+    character_type: Demon
+    alignment: Evil
+    set: Experimental Characters
+    description: Each night, you may choose 3 players(All players learn who). Each silently chooses to live or die. but if all live, all die.
+  - id: 4
+    name: Alchemist
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: You have a Minion ability. When using this, the storyteller may prompt you to choose differently.
+  - id: 5
+    name: Alsaahir
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Each day, if you publicly guess which players are Minions and which are Demons, good wins.
+  - id: 6
+    name: Amnesiac
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: You do not know what your ability is. Each day, privately guess what it is. You learn how accurate you are.
+  - id: 7
+    name: Artist
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: Once per game, during the day, privately ask the story any yes/no question.
+  - id: 8
+    name: Assassin
+    character_type: Minion
+    alignment: Evil
+    set: Bad Moon Rising
+    description: Once per game, at night, choose a player. They die, even if for some reason they could not.
+  - id: 9
+    name: Atheist
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: The Storyteller can break the game rules, and if executed, good wins even if you are dead.
+  - id: 10
+    name: Balloonist
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Each night, you learn a player of a different character type than last night (May add 0 or 1 Outsiders).
+  - id: 11
+    name: Banshee
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: If the Demon kills you, all players learn this. From now on, you may nominate twice per day and vote twice per nomination.
+  - id: 12
+    name: Barber
+    character_type: Outsider
+    alignment: Good
+    set: Sects & Violets
+    description: If you died today or tonight, the demon may choose 2 players(Not another Demon) to swap characters.
+  - id: 13
+    name: Baron
+    character_type: Minion
+    alignment: Evil
+    set: Trouble Brewing
+    description: They add 2 Outisiders to the game.
+  - id: 14
+    name: Boffin
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: The Demon (even if drunk or poisoned) has a not-in-play good characters ability. You both know which.
+  - id: 15
+    name: Boomdandy
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: If you are executed, all but 3 players die. After a 10 to 1 countdown, the player with the most players pointing at them, dies.
+  - id: 16
+    name: Bounty Hunter
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: You start knowing 1 evil player. If the player you know dies, you learn another evil player tonight(1 Townsfolk is Evil).
+  - id: 17
+    name: Butler
+    character_type: Outsider
+    alignment: Good
+    set: Trouble Brewing
+    description: Each night, pick a player. Tomorrow, you may only vote if they do.
+  - id: 18
+    name: Cannibal
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Gains the ability of the person that was most recently executed if they where good.
+  - id: 19
+    name: Cerenovus
+    character_type: Minion
+    alignment: Evil
+    set: Sects & Violets
+    description: Each night pick a player and force them to pretend to be another character
+  - id: 20
+    name: Chambermaid
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: Each night, Choose 2 alive players (Not yourself). You learn how many work tonight due to their ability.
+  - id: 21
+    name: Chef
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: Starts knowing how many pairs of evil players sit adjacent to each other.
+  - id: 22
+    name: Choirboy
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: If the Demon kills the king, you learn which player is the Demon (+ the King).
+  - id: 23
+    name: Clockmaker
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: You start knowing how many steps from the Demon to its nearest Minion.
+  - id: 24
+    name: Cortier
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: Once per game, at night, choose a character. They are drunk for 3 nights & 3 days.
+  - id: 25
+    name: Cult Leader
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Each night, you vecome the alignment of an alive neighbor. If all good players choose to join your cult, your team wins.
+  - id: 26
+    name: Damsel
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: All Minions know a Damsel is in play. If a Minion publicly guesses you (once), your team loses.
+  - id: 27
+    name: Devil's Advocate
+    character_type: Minion
+    alignment: Evil
+    set: Bad Moon Rising
+    description: Each night, choose a living player (different from last night). If executed tomorrow, they don't die.
+  - id: 28
+    name: Dreamer
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: Each night, choose a player (Not yourself or Travellers). You learn one good and one evil character, 1 of which is correct.
+  - id: 29
+    name: Drunk
+    character_type: Outsider
+    alignment: Good
+    set: Trouble Brewing
+    description: Thinks they are a Townsfolk but their ability does not work.
+  - id: 30
+    name: Empath
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: Each night, learns how many of their two alive neighbours are evil.
+  - id: 31
+    name: Engineer
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Once per game, at night, choose which Minions or which Demon is in play.
+  - id: 32
+    name: Evil Twin
+    character_type: Minion
+    alignment: Evil
+    set: Sects & Violets
+    description: You & an opposing player know each other. If the good player is executed, evil wins. Good can't win if you both live.
+  - id: 33
+    name: Exorcist
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: Each night, choose a player (Different to last night), the demon, if chosen, learns who you are then doesn't wake tonight.
+  - id: 34
+    name: Fang Gu
+    character_type: Demon
+    alignment: Evil
+    set: Sects & Violets
+    description: Kills every night, the first outsider to be killed by the Fan Gu becomes them and they die!
+  - id: 35
+    name: Farmer
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: When you die at night, an alive good player becomes a Farmer.
+  - id: 36
+    name: Fearmonger
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: Each night, choose a player. If they nominate & execute them, their team loses. All players know if you choose a new player.
+  - id: 37
+    name: Fisherman
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Once per game, during the day, visit the Storyteller for some advice to help your team win.
+  - id: 38
+    name: Flowergirl
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: Each night, you learn if a Demon voted today.
+  - id: 39
+    name: Fool
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: The first time you die, you don't.
+  - id: 40
+    name: Fortune Teller
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: Each night, pick two players. Learns if either is the Demon, but one might register as the Demon falsely.
+  - id: 41
+    name: Gambler
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: Each night, choose a player and guess their character. if you guess wrong you die.
+  - id: 42
+    name: General
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Each Night, you learn which alignment the Storyteller believes is winning, wither good, evil or neither.
+  - id: 43
+    name: Goblin
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: If you publicly claim to be the Goblin when nominated & are executed that day, your team wins.
+  - id: 44
+    name: Godfather
+    character_type: Minion
+    alignment: Evil
+    set: Bad Moon Rising
+    description: You start knowing which outsiders are in play. If 1 Died today, choose a player tonight, they die. You add or subtract one minion.
+  - id: 45
+    name: Golem
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: You may nominate once per game. When you do, if they nominee is not the Demon, they die.
+  - id: 46
+    name: Goon
+    character_type: Outsider
+    alignment: Good
+    set: Bad Moon Rising
+    description: Each night, the 1st player to choose you with their ability is drunk until Dusk. You become their alignment.
+  - id: 47
+    name: Gossip
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: Each day, you may make a public statement. Tonight if it was true, a player dies.
+  - id: 48
+    name: Grandmother
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: Starts Knowing the Role of one good player. If the demon kills their Grandchild they die too.
+  - id: 49
+    name: Harpy
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: Pick two players, the first must pretend that the second is evil or one or both may die.
+  - id: 50
+    name: Hatter
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: If you died today or tonight, the Minion & Demon players may choose new Minion & Demon characters to be.
+  - id: 51
+    name: Heretic
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: Whoever wins, loses & whoever loses, wins, even if you are dead.
+  - id: 52
+    name: Hermit
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: You have all Outsider abilities(Can reduce outsides by 0 or 1).
+  - id: 53
+    name: Huntsman
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Once per game guess who the Damsel is. If you are correct the Damsel becomes a Townsfolk.
+  - id: 54
+    name: Imp
+    character_type: Demon
+    alignment: Evil
+    set: Trouble Brewing
+    description: Kills a player each night. Can kill themselves to pass the Imp to a Minion.
+  - id: 55
+    name: Innkeeper
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: Each night, choose 2 players, they can't die tonight, but 1 is drunk until dusk.
+  - id: 56
+    name: Investigator
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: Starts knowing one of two players is a particular Minion.
+  - id: 57
+    name: Juggler
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: On your 1st day, publically guess up to 5 player's characters. That night you learn how many you got correct.
+  - id: 58
+    name: Kazali
+    character_type: Demon
+    alignment: Evil
+    set: Experimental Characters
+    description: Each Night, choose a player, they die. You choose which players are which Minions. - ? to +? Outsiders.
+  - id: 59
+    name: Klutz
+    character_type: Outsider
+    alignment: Good
+    set: Sects & Violets
+    description: When you learn that you died, publicaly choose 1 alive player, if they are evil your team loses.
+  - id: 60
+    name: Legion
+    character_type: Demon
+    alignment: Evil
+    set: Experimental Characters
+    description: Each night a player might die. Executions fail if only evil voted. You register as a Minion too. (Most players are Legion)
+  - id: 61
+    name: Leviathan
+    character_type: Demon
+    alignment: Evil
+    set: Experimental Characters
+    description: If more than 1 good playeris executed, evil wins. All players know you are in play. After day 5, evil wins.
+  - id: 62
+    name: Librarian
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: Starts knowing 1 of 2 players is a particular Outsider
+  - id: 63
+    name: Lil' Monsta
+    character_type: Demon
+    alignment: Evil
+    set: Experimental Characters
+    description: Each night, Minions choose who babysit Lil' Monsta & is the demon. Each night a player might die (+1 Minion).
+  - id: 64
+    name: Lleech
+    character_type: Demon
+    alignment: Evil
+    set: Experimental Characters
+    description: Each night, choose a player, they die. You start by choosing a player that becomes poisoned. You die if and only if they are dead.
+  - id: 65
+    name: Lord of Typhon
+    character_type: Demon
+    alignment: Evil
+    set: Experimental Characters
+    description: Each night, choose a player, they die. Evil characters are in a line with you being in the middle. (+1 Minion) -? to +? Outsiders.
+  - id: 66
+    name: Lunatic
+    character_type: Outsider
+    alignment: Good
+    set: Bad Moon Rising
+    description: Think they are the Demon but they are actually in fact Good
+  - id: 67
+    name: Lycanthrope
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Attacks Every night and if Good they die, but they are the only character that dies today
+  - id: 68
+    name: Marionette
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: Thinks they are a good character but is actually evil
+  - id: 69
+    name: Mastermind
+    character_type: Minion
+    alignment: Evil
+    set: Bad Moon Rising
+    description: If the demon dies by execution, play for 1 more day. If a player is then executed their team loses.
+  - id: 70
+    name: Mathematician
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: Each night, you learn how many player's abilities worked abnormally(Since Dawn) due to another characters ability.
+  - id: 71
+    name: Mayor
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: If only 3 players are alive and no execution occurs, Good wins. If you die at night, another player might die instead.
+  - id: 72
+    name: Mezepheles
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: You start knowing a secret word. The 1st good player to say this word becomes evil that night.
+  - id: 73
+    name: Minstrel
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: When a minion dies by execution, all other players (Except Travellers) are drunk until Dusk tomorrow.
+  - id: 74
+    name: Monk
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: Each night (except the first), pick a player (not yourself). The Demon cannot kill them tonight.
+  - id: 75
+    name: Moonchild
+    character_type: Outsider
+    alignment: Good
+    set: Bad Moon Rising
+    description: When you learn that you died, publicly choose 1 alive player. Tonight, if it was a good player they die.
+  - id: 76
+    name: Mutant
+    character_type: Outsider
+    alignment: Good
+    set: Sects & Violets
+    description: If you are mad about being an OUtsider, you might be executed.
+  - id: 77
+    name: Nightwatchman
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Once per game, at night, choose a player. They learn you are the Nightwatchman.
+  - id: 78
+    name: No Dashii
+    character_type: Demon
+    alignment: Evil
+    set: Sects & Violets
+    description: Each night, choose a player, they die. Your 2 Townsfolk neighbors are poisoned.
+  - id: 79
+    name: Noble
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Starts knowing three players. 1 and only 1 is Evil.
+  - id: 80
+    name: Ogre
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: On your 1st night, choose a player (Not yourself), you become their alignment even if drunk or poisoned.
+  - id: 81
+    name: Ojo
+    character_type: Demon
+    alignment: Evil
+    set: Experimental Characters
+    description: Each night, choose a character. They die, if they are not in play the Storyteller chooses who dies.
+  - id: 82
+    name: Oracle
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: Each night learns how many dead players are evil.
+  - id: 83
+    name: Organ Grinder
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: All players keep their eyes closed when voting and the vote tally is secret. each night choose if you are drunk until Dusk.
+  - id: 84
+    name: Pacifist
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: Executed good players might not die.
+  - id: 85
+    name: Philosopher
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: Once per game, at night, choose a good character. gain that ability. If this character is in play they are drunk.
+  - id: 86
+    name: Pit-Hag
+    character_type: Minion
+    alignment: Evil
+    set: Sects & Violets
+    description: Each night, choose a player & a character they become (If not in play). If a Demon is made, deaths tonight are arbitrary.
+  - id: 87
+    name: Pixie
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Starts knowing 1 Townsfolk, if they pretend to be that character they get the ability when the original dies.
+  - id: 88
+    name: Plague Doctor
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: When you die, the Storyteller gains a Minion ability.
+  - id: 89
+    name: Po
+    character_type: Demon
+    alignment: Evil
+    set: Bad Moon Rising
+    description: Each night, you may choose a player, they die. If your last choice was no-one, choose 3 players tonight.
+  - id: 90
+    name: Poisoner
+    character_type: Minion
+    alignment: Evil
+    set: Trouble Brewing
+    description: Each night, pick a player. Their ability is poisoned until dusk the next night.
+  - id: 91
+    name: Politician
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: If you were the player most responsible for your team losing, you change alignment & win, even if dead.
+  - id: 92
+    name: Poppy Grower
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Minons & Demons do not know each other. If you die, they learn who each other are that night.
+  - id: 93
+    name: Preacher
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Each night, choose a player. A Minion, if chosen, learns this. All chosen Minions have no ability.
+  - id: 94
+    name: Princess
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: On your 1st day, if you nominated and executed a player, the demon doesn't kill tonight.
+  - id: 95
+    name: Professor
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: Once per game, at night. choose a dead player. If they are Townsfolk, they are resurrected.
+  - id: 96
+    name: Psychopath
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: Each day, before nominations, you may publicly chose a player, they die. If executed you only die if you lose Rock paper scissors.
+  - id: 97
+    name: Pukka
+    character_type: Demon
+    alignment: Evil
+    set: Bad Moon Rising
+    description: Each night, choose a player, they are poisoned. The previously poisoned player dies then becomes healthy.
+  - id: 98
+    name: Puzzlemaster
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: 1 play is drunk, even if you die. If you guess(once) who it is, learn the Demon player, but guess wrong & get false info.
+  - id: 99
+    name: Ravenkeeper
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: If you die at night, you may choose a player and learn their role.
+  - id: 100
+    name: Riot
+    character_type: Demon
+    alignment: Evil
+    set: Experimental Characters
+    description: On day 3, Minions become Riot & nominees die but nominate an alive player immediately. This must happen.
+  - id: 101
+    name: Sage
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: If the Demon kills you, you learn that it is 1 or 2 players.
+  - id: 102
+    name: Sailor
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: Each night pick an alive player, either you or they are drunk until dusk. You can't die.
+  - id: 103
+    name: Saint
+    character_type: Outsider
+    alignment: Good
+    set: Trouble Brewing
+    description: If you are executed, your team loses.
+  - id: 104
+    name: Savant
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: Each day, you may visit the storyteller to learn 2 things in private. 1 is true and 1 is false.
+  - id: 105
+    name: Scarlet Woman
+    character_type: Minion
+    alignment: Evil
+    set: Trouble Brewing
+    description: If there are 5 or more players alive and the Demon dies, you become the Demon.
+  - id: 106
+    name: Seamstress
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: Once per Game can learn if two players are on the same team.
+  - id: 107
+    name: Shabaloth
+    character_type: Demon
+    alignment: Evil
+    set: Bad Moon Rising
+    description: Each night, choose 2 players, they die. A dead player you choose last night might be regurgitated.
+  - id: 108
+    name: Shugenja
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: You start knowing if your closest evil playeris clockwise or anti-clockwise.
+  - id: 109
+    name: Slayer
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: Once per game, during the day, publicly choose a player. If they are the Demon, they die.
+  - id: 110
+    name: Snake Charmer
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: Each night, choose an alive player, A chosen Demon swaps characters & alignments with you & is then poisoned.
+  - id: 111
+    name: Snitch
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: Each Minion gets 3 bluffs.
+  - id: 112
+    name: Soldier
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: Cannot be killed by the Demon.
+  - id: 113
+    name: Spy
+    character_type: Minion
+    alignment: Evil
+    set: Trouble Brewing
+    description: Sees the Grimoire each night. May register as good or as a Townsfolk or Outsider.
+  - id: 114
+    name: Steward
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: You start knowing 1 good player.
+  - id: 115
+    name: Summoner
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: You get 3 bluffs. On the 3rd night, choose a player, they become an evil Demon of your choice (No Demon).
+  - id: 116
+    name: Sweetheart
+    character_type: Outsider
+    alignment: Good
+    set: Sects & Violets
+    description: When you die, 1 player is drunk from now on.
+  - id: 117
+    name: Tea Lady
+    character_type: Townsfolk
+    alignment: Good
+    set: Bad Moon Rising
+    description: If both your alive neighbours are good, they can't die.
+  - id: 118
+    name: Tinker
+    character_type: Outsider
+    alignment: Good
+    set: Bad Moon Rising
+    description: You might die at any time.
+  - id: 119
+    name: Town Crier
+    character_type: Townsfolk
+    alignment: Good
+    set: Sects & Violets
+    description: Each night, you learn if a Minion nominated today.
+  - id: 120
+    name: Undertaker
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: Each night (except the first), learns which role the player executed today was.
+  - id: 121
+    name: Vigormortis
+    character_type: Demon
+    alignment: Evil
+    set: Sects & Violets
+    description: Each night, choose a player they die. Minions you kill keep their ability & poison 1 Townsfolk neighbour. 1 less Outsider.
+  - id: 122
+    name: Village Idiot
+    character_type: Townsfolk
+    alignment: Good
+    set: Experimental Characters
+    description: Each night choose a player, you learn their alignment. There can be up to 3 Village idiots in the town. If their are more, 1  is drunk.
+  - id: 123
+    name: Virgin
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: The first time you are nominated, if the nominator is a Townsfolk, they are immediately executed.
+  - id: 124
+    name: Vizier
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: All players know you are the Vizier, you cannot die during the day. If good voted, you may choose to execute immediately.
+  - id: 125
+    name: Vortox
+    character_type: Demon
+    alignment: Evil
+    set: Sects & Violets
+    description: Each night, choose a player, they die. Townsfolk abilities yield false info. Each day if no-one is executed, evil wins.
+  - id: 126
+    name: Washerwoman
+    character_type: Townsfolk
+    alignment: Good
+    set: Trouble Brewing
+    description: Starts knowing one of two players is a particular Townsfolk.
+  - id: 127
+    name: Widow
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: On your 1st Night, look at the Grimoire & choose a player. They are poisoned. 1 good player knows the widow is in play.
+  - id: 128
+    name: Witch
+    character_type: Minion
+    alignment: Evil
+    set: Sects & Violets
+    description: Each night, choose a player. If they nominate tomorrow, they die. If just 3 players live, you lose this ability.
+  - id: 129
+    name: Wizard
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: Once per game, choose to make a wish. If granted it might have a price and leave a clue to its nature.
+  - id: 130
+    name: Wraith
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: You may choose to open your eyes at night. You wake when other evil players do.
+  - id: 131
+    name: Xaan
+    character_type: Minion
+    alignment: Evil
+    set: Experimental Characters
+    description: On Night X, all Townsfolk are poisoned until Dusk (X Outsiders).
+  - id: 132
+    name: Yaggababble
+    character_type: Demon
+    alignment: Evil
+    set: Experimental Characters
+    description: You start knowing a secret phrase. For each time you said it publicly today, a player might die.
+  - id: 133
+    name: Zealot
+    character_type: Outsider
+    alignment: Good
+    set: Experimental Characters
+    description: If there are 5 or more players alive, you must vote for every nomination.
+  - id: 134
+    name: Zombuul
+    character_type: Demon
+    alignment: Evil
+    set: Bad Moon Rising
+    description: Each night, if no-one died today, choose a player, they die. The 1st time you die, you live but register as dead.
+  - id: 135
+    name: Fiddler
+    character_type: Fabled
+    alignment: null
+    set: Fabled
+    description: 'Once per game, the Demon secretly chooses an opposing player: all players choose which of these 2 players win.'
