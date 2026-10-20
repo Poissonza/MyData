@@ -23,7 +23,7 @@ Data for a game is captured one row at a time while watching, in roughly this or
 |------|------|------|
 | Before the video | Video, game, and the players with their seats | **Videos & Games**, then **Game Entry → Players** |
 | As you watch | Deaths, nominations (votes and result can follow), extra info | **Game Entry**, with the current day set at the top |
-| At the reveal | Starting roles, believed roles, night actions, role swaps | **Game Entry** (edit the Players grid, add actions and swaps) |
+| At the reveal | Starting roles, believed roles, actions, role swaps | **Game Entry** (edit the Players grid, add actions and swaps) |
 | At the end | Winning team and win condition | **Game Entry → Result** |
 
 ---
@@ -81,7 +81,7 @@ Opens at `http://localhost:8501` in your browser.
 
 | Tab | Sub-tabs | What it does |
 |-----|----------|-------------|
-| **Game Entry** | Players, Deaths, Nominations, Night Actions, Extra Info, Role Swaps, Result | Pick a game and the current day (defaults to the last day recorded). Each sub-tab has an **Add** form for one row and a grid of that game's rows. The toggle limits the grids to the current day. |
+| **Game Entry** | Players, Deaths, Nominations, Actions, Extra Info, Role Swaps, Result | Pick a game and the current day (defaults to the last day recorded). Each sub-tab has an **Add** form for one row and a grid of that game's rows. The toggle limits the grids to the current day. |
 | **Games Summary** | Games, Players, Roles & endings, Game detail | Headline numbers (games, finished, Good/Evil wins, average days), an overview of every game, player win rates (using the final team after role swaps), starting-role stats, how games ended, and a per-game drill-down with a day-by-day table and expanders. |
 | **Videos & Games** | Videos, Games | Add and edit videos, and the games in them. A game's number fills in as the next one for that video if left empty. |
 | **Reference** | Players, Roles, Nomination Results, Win Conditions | Add and edit the lookup tables. A role's default team fills in from its character type if left empty. |
@@ -91,7 +91,7 @@ Opens at `http://localhost:8501` in your browser.
 
 - Fields marked `*` are required; everything else can be left empty and filled in later. Empty means "not entered yet"; enter 0 for zero.
 - Player fields in event forms only offer the players in that game, so add players (with their starting roles) to the game first.
-- The role on a night action, an extra info entry or a cause of death only offers roles in play on the current day: starting roles, believed roles (e.g. the Drunk's Townsfolk), and roles gained through a role swap on that day or earlier. Swapped-out roles stay in the list, since they can still come up (e.g. as the cause of that day's death). Grids show rows from several days, so their dropdowns list every role the game has had, but each row is checked against its own day when saved. A night action's target role and a role swap's new role still offer every role, because the Pit-Hag, Cerenovus and Philosopher can choose characters not in play.
+- The role on an action, an extra info entry or a cause of death only offers roles in play on the current day: starting roles, believed roles (e.g. the Drunk's Townsfolk), and roles gained through a role swap on that day or earlier. Swapped-out roles stay in the list, since they can still come up (e.g. as the cause of that day's death). Grids show rows from several days, so their dropdowns list every role the game has had, but each row is checked against its own day when saved. An action's target role and a role swap's new role still offer every role, because the Pit-Hag, Cerenovus and Philosopher can choose characters not in play.
 - In a grid, edit cells or select rows and delete them, then click **Save changes**. Nothing is written until you save, and all rows are checked first.
 - A row can't be deleted while something else still uses it (e.g. a player who has a nomination in that game).
 - A role swap needs a new role, a new team, or both. A result's winning team fills in from the win condition, unless it is `Either`.
@@ -131,7 +131,7 @@ The relational tables live in `data/`, one YAML file per table. As of 2026-10-19
 | `game_results.yml` | Event | id, game_id, winning_team, win_condition_id | games, win_conditions |
 | `deaths.yml` | Event | id, game_id, day, player_id, timing, cause_type, cause_role_id | games, players, roles |
 | `nominations.yml` | Event | id, game_id, day, nominator_id, nominee_id, votes, ghost_votes, result_id | games, players, nomination_results |
-| `night_actions.yml` | Event | id, game_id, day, role_id, player_id, target_player_id, target_role_id | games, roles, players |
+| `actions.yml` | Event | id, game_id, day, timing (Night / Day), role_id, target_player_id, target_role_id | games, roles, players |
 | `extra_info.yml` | Event | id, game_id, day, role_id, info | games, roles |
 | `role_swaps.yml` | Event | id, game_id, day, player_id, new_role_id, new_team, cause | games, players, roles |
 
@@ -141,7 +141,10 @@ Notes:
 - **Game results:** one row per game, added when the game ends, so `games.yml` never needs editing after setup. A game with no result row is still in progress, and win-rate queries join to `game_results`, so unfinished games drop out instead of counting as losses. The final day is not stored; it is the highest `day` across the event tables for that game.
 - **Win conditions:** 18 endings. 4 come from the core rules (demon executed, demon killed by an ability, demon died with no successor, final two), 13 from specific characters (with `role_id` set, e.g. Mayor, Saint, Klutz, Evil Twin, Vortox, Leviathan, Damsel, Goblin, Mastermind, Atheist, Cult Leader, Fiddler), plus `Other`. `winning_team` is the usual winner for that ending; where it is `Either`, the result row's `winning_team` decides. The Heretic isn't listed because it flips the result rather than being an ending: record the actual ending and the real winner.
 - **Deaths** replace the single `night_kill` / `execution` fields, so several deaths in a night, ability deaths (Slayer, Virgin, Lunatic), resurrections and failed kills can all be recorded. `cause_type` is how they died (Demon / Execution / Ability); `cause_role_id` is the role responsible, where there is one.
-- **Night actions:** `player_id` is who used the ability. `target_role_id` is for abilities that choose a role (Pit-Hag, Cerenovus, Philosopher).
+- **Actions** are any ability use, at night or during the day (`timing`): Poisoner, Monk, Slayer shot, Gossip, Juggler, Savant, Artist, Golem… `target_role_id` is for abilities that choose a role (Pit-Hag, Cerenovus, Philosopher). If an ability kills, the death also goes in `deaths.yml` (e.g. a Slayer hitting the Demon: `cause_type: Ability`, `cause_role_id` Slayer, timing Day). A missed Slayer shot is only an action.
+- **Who used an action isn't stored.** It's whoever held the role then, worked out from `game_players` plus role swaps (the app shows it as "Used by"). Day N covers the night before it, and swaps happen during that night, so a **Night** action on day N was used by whoever held the role *before* that night's swaps (the star-passing Imp, the jumping Fang Gu), and a **Day** action uses the roles after them. If several players still hold the role (e.g. a dead Imp after a star-pass), players who had already died are left out. This only works if role swaps are recorded.
+- **Roles held by several players** don't need a player column on actions: Legion makes no choices (its kills are death rows caused by Legion), the Village Idiot's result is extra info (name the player in the text, since one of them is drunk; a player column can be added later if needed), and Riot has no actions or info. **Riot is not supported yet:** on Day 3 every nominee is executed straight away and nominations continue, but the block rules allow only one execution per day, so Checks would flag the extra executions. When a Riot game comes up, add a block effect `executes_nominee` (nominee executed immediately, day continues) and allow several executions per day.
+- **Borrowed abilities** (Philosopher, Cannibal, Alchemist, Boffin): recorded under the player's own role, with the ability used noted in extra info. Drunk, Lunatic and Marionette actions are recorded under their real role.
 - **Role swaps** cover role changes (Imp star-pass, Fang Gu jump, Pit-Hag, Barber, Snake Charmer) and team-only changes (Goon, Cult Leader), so `new_role_id` and `new_team` are both optional. A derived **player_state** table (`valid_from_day` / `valid_to_day`, built with a `lead()` window, the SCD2 pattern) gives each player's role and team on any day. Win stats should use the final state, not the starting role.
 - **Nomination results** record what happened at that vote, never "Executed", so a nomination row is written once and never updated. Each result has a `block_effect`:
 
@@ -196,7 +199,7 @@ deaths:
 - **Each table defines its required columns:** only the keys and the minimum that makes the row mean something. For nominations that's `game_id, day, nominator_id, nominee_id`; `votes`, `ghost_votes` and `result_id` can be added later by editing the same row.
 - **Empty means "not entered yet"; 0 means zero.** This matters most for votes and ghost votes.
 - **Show what's unfinished rather than storing a status.** The app lists incomplete rows (e.g. "3 nominations with no result", "players with no seat"). The same check is a data-quality query in silver.
-- **Order of entry:** the video, the game and its players must exist first. After that, deaths, nominations, info, night actions and role swaps can be added in any order. The game result is added last.
+- **Order of entry:** the video, the game and its players must exist first. After that, deaths, nominations, info, actions and role swaps can be added in any order (record a role swap before the actions that depend on it). The game result is added last.
 
 ### Checks
 
@@ -205,7 +208,8 @@ Run these whenever data is added (a check script exists and passes on the curren
 - Each file's top-level key matches its file name.
 - IDs are present and unique in every table.
 - Every `*_id` column points at an existing row in the table it references.
-- Every player in deaths, nominations, night actions and role swaps is in `game_players` for that game.
+- Every player in deaths, nominations, actions (targets) and role swaps is in `game_players` for that game.
+- Flagged for checking: an action whose role was held by nobody, or by several players, at that time (usually a missing role swap).
 - Seats are unique within a game.
 - No nomination follows an immediate execution (Virgin) on the same day.
 - A Tied result only follows a Marked one on the same day (there must be someone on the block to tie with).

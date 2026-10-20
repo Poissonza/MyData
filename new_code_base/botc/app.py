@@ -120,12 +120,13 @@ TABLES: dict[str, list[Col]] = {
         Col("ghost_votes", "int"),
         Col("result_id", "ref", ref="nomination_results"),
     ],
-    "night_actions": [
+    # Who used the ability isn't stored: it's whoever held the role that day (see role_holders)
+    "actions": [
         ID,
         Col("game_id", "ref", ref="games", required=True),
         Col("day", "int", required=True),
+        Col("timing", "choice", choices=TIMINGS, required=True),
         Col("role_id", "ref", ref="roles", in_game=True, required=True),
-        Col("player_id", "ref", ref="players", in_game=True, label="Used by"),
         Col("target_player_id", "ref", ref="players", in_game=True, label="Target player"),
         Col("target_role_id", "ref", ref="roles", label="Target role"),
     ],
@@ -151,10 +152,10 @@ SINGULAR = {
     "players": "player", "roles": "role", "nomination_results": "nomination result",
     "win_conditions": "win condition", "videos": "video", "games": "game",
     "game_players": "player to game", "game_results": "result", "deaths": "death",
-    "nominations": "nomination", "night_actions": "night action",
+    "nominations": "nomination", "actions": "action",
     "extra_info": "extra info", "role_swaps": "role swap",
 }
-EVENT_TABLES = ["deaths", "nominations", "night_actions", "extra_info", "role_swaps"]
+EVENT_TABLES = ["deaths", "nominations", "actions", "extra_info", "role_swaps"]
 UNIQUE_NAME_TABLES = {"players", "roles", "nomination_results", "win_conditions"}
 
 
@@ -523,17 +524,26 @@ def from_cell(c: Col, v):
     return v or None
 
 
+# Read-only columns worked out from other tables (looked up at call time: used_by is defined further down)
+DERIVED = {"actions": {"Used by": lambda db, row: used_by(db, row)}}
+
+
 def edit_grid(db: dict, table: str, rows: list[dict], key: str, hide: tuple = (), game_id=None) -> None:
     """Editable table: change cells or delete rows, then Save changes."""
     if not rows:
         st.caption("Nothing recorded yet.")
         return
     cols = [c for c in TABLES[table] if c.name not in hide]
+    derived = DERIVED.get(table, {})
+    frame = to_frame(rows, cols)
+    for title, fn in derived.items():
+        frame[title] = [fn(db, r) for r in rows]
     ver = st.session_state.get(f"_ver_{key}", 0)
     edited = st.data_editor(
-        to_frame(rows, cols),
-        column_config={c.name: column_config(db, c, game_id) for c in cols},
-        column_order=[c.name for c in cols],
+        frame,
+        column_config={c.name: column_config(db, c, game_id) for c in cols}
+        | {title: st.column_config.TextColumn(title, disabled=True) for title in derived},
+        column_order=[c.name for c in cols] + list(derived),
         num_rows="delete",
         hide_index=True,
         key=f"{key}_{ver}",
@@ -570,8 +580,9 @@ def edit_grid(db: dict, table: str, rows: list[dict], key: str, hide: tuple = ()
 
 # ─── Game state & summaries ──────────────────────────────────────────────────
 
-def final_states(db: dict, game_id) -> dict[int, dict]:
-    """Each player's role and team after all role swaps, keyed by player_id."""
+def final_states(db: dict, game_id, day: int | None = None) -> dict[int, dict]:
+    """Each player's role and team after role swaps up to and including `day` (all swaps if None),
+    keyed by player_id."""
     team_of = {r["id"]: r.get("alignment") for r in db["roles"]}
     state = {
         gp["player_id"]: {"role_id": gp.get("starting_role_id"), "team": team_of.get(gp.get("starting_role_id"))}
@@ -579,6 +590,8 @@ def final_states(db: dict, game_id) -> dict[int, dict]:
     }
     swaps = sorted(game_rows(db, "role_swaps", game_id), key=lambda s: (s.get("day") or 0, s["id"]))
     for s in swaps:
+        if day is not None and (s.get("day") or 0) > day:
+            continue
         p = state.setdefault(s.get("player_id"), {"role_id": None, "team": None})
         if s.get("new_role_id") is not None:
             p["role_id"] = s["new_role_id"]
@@ -586,6 +599,34 @@ def final_states(db: dict, game_id) -> dict[int, dict]:
         if s.get("new_team"):
             p["team"] = s["new_team"]
     return state
+
+
+def role_holders(db: dict, game_id, role_id, day, timing: str | None = None) -> list[int]:
+    """Players holding `role_id` when an ability was used on `day`.
+
+    Day N covers the night before it, and role swaps (star-pass, Fang Gu jump, Pit-Hag) happen during
+    that night, so a Night action on day N was used by whoever held the role *before* that night's swaps;
+    a Day action uses the roles after them. If several players still hold the role (e.g. a dead Imp after
+    a star-pass), players who had already died are left out: on an earlier day, or that day's night for
+    a Day action."""
+    as_of = day - 1 if timing == "Night" and isinstance(day, int) else day
+    holders = [pid for pid, s in final_states(db, game_id, as_of).items() if s.get("role_id") == role_id]
+    if len(holders) > 1 and isinstance(day, int):
+        died_before = {
+            d.get("player_id") for d in game_rows(db, "deaths", game_id)
+            if (d.get("day") or 0) < day or (d.get("day") == day and d.get("timing") == "Night" and timing == "Day")
+        }
+        holders = [h for h in holders if h not in died_before]
+    return holders
+
+
+def used_by(db: dict, row: dict) -> str | None:
+    """Display name for whoever used an action's ability ('?' if the role matches nobody or several)."""
+    holders = role_holders(db, row.get("game_id"), row.get("role_id"), row.get("day"), row.get("timing"))
+    names = labels(db, "players")
+    if len(holders) == 1:
+        return names.get(holders[0])
+    return "?" if not holders else "? (" + ", ".join(names.get(h, "?") for h in holders) + ")"
 
 
 def result_of(db: dict, game_id) -> dict | None:
@@ -646,6 +687,13 @@ def unfinished(db: dict) -> list[str]:
             for pid in exec_deaths - {executed}:
                 out.append(f"{name}: day {d} — {players.get(pid, '?')} died by execution, but the nominations "
                            f"don't put them on the block (check the nomination results)")
+        roles = labels(db, "roles")
+        for a in game_rows(db, "actions", gid):
+            holders = role_holders(db, gid, a.get("role_id"), a.get("day"), a.get("timing"))
+            if len(holders) != 1:
+                who = "nobody" if not holders else f"{len(holders)} players"
+                out.append(f"{name}: action #{a['id']} ({roles.get(a.get('role_id'), '?')}, day {a.get('day')}) — "
+                           f"{who} held that role that day (missing role swap?)")
         if not result_of(db, gid):
             out.append(f"{name}: no result yet (in progress)")
     return out
@@ -657,6 +705,7 @@ def names_frame(db: dict, table: str, rows: list[dict], hide: tuple = ("id", "ga
     lookups = {c.name: labels(db, c.ref) for c in cols if c.kind == "ref"}
     return pd.DataFrame([
         {c.title: (lookups[c.name].get(r.get(c.name)) if c.name in lookups else r.get(c.name)) for c in cols}
+        | {title: fn(db, r) for title, fn in DERIVED.get(table, {}).items()}
         for r in rows
     ])
 
@@ -699,7 +748,7 @@ with tab_entry:
             rows = game_rows(db, table, game_id)
             return [r for r in rows if r.get("day") == day] if only_day else rows
 
-        sub = st.tabs(["Players", "Deaths", "Nominations", "Night Actions", "Extra Info", "Role Swaps", "Result"])
+        sub = st.tabs(["Players", "Deaths", "Nominations", "Actions", "Extra Info", "Role Swaps", "Result"])
 
         with sub[0]:
             st.subheader("Players in this game")
@@ -713,7 +762,9 @@ with tab_entry:
             (sub[1], "deaths", "Who died, when, and what killed them."),
             (sub[2], "nominations", "Record each vote's result as it happens: Marked, Tied, Not enough votes… Don't record 'Executed': "
                                     "the execution is worked out from the block at the end of the day, and its death goes on the Deaths tab."),
-            (sub[3], "night_actions", "Who used an ability and who or what they chose."),
+            (sub[3], "actions", "An ability used at night or during the day (e.g. a Slayer shot) and who or what it chose. "
+                                "Who used it is worked out from the role, so record role swaps (star-pass, Fang Gu jump) as they happen. "
+                                "If the ability kills someone, add the death on the Deaths tab too."),
             (sub[4], "extra_info", "What a role learned, demon bluffs, or anything else worth noting."),
             (sub[5], "role_swaps", "Role or team changes: star-pass, Fang Gu jump, Pit-Hag, Goon… Use cause 'setup' for changes at the start."),
         ]:
@@ -881,7 +932,7 @@ with tab_summary:
             for d in range(1, last + 1):
                 with st.expander(f"Day {d}"):
                     for table, title in [("deaths", "Deaths"), ("nominations", "Nominations"),
-                                         ("night_actions", "Night actions"), ("extra_info", "Extra info"),
+                                         ("actions", "Actions"), ("extra_info", "Extra info"),
                                          ("role_swaps", "Role swaps")]:
                         rows = [r for r in game_rows(db, table, gid) if r.get("day") == d]
                         if rows:
