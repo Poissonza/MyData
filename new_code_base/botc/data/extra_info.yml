@@ -49,3 +49,23 @@ extra_info:
     day: 2
     role_id: 40
     info: Nilsey and Osie are not the Demon
+  - id: 11
+    game_id: 3
+    day: 1
+    role_id: 62
+    info: Osie or Briony is the Butler
+  - id: 12
+    game_id: 3
+    day: 1
+    role_id: 56
+    info: Either Duncan or Ravs is the Poisoner.
+  - id: 13
+    game_id: 3
+    day: 1
+    role_id: 54
+    info: Bluffs are Empath, Soldier and Slayer
+  - id: 14
+    game_id: 3
+    day: 4
+    role_id: 99
+    info: Ben is the Slayer

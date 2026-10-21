@@ -9,3 +9,28 @@ videos:
     date: '2024-09-20'
     length: '00:56:20'
     members: true
+  - id: 3
+    name: The Poisoned Peril
+    date: '2024-10-04'
+    length: '01:18:10'
+    members: false
+  - id: 4
+    name: Marionette Madness
+    date: '2024-10-18'
+    length: '01:33:58'
+    members: false
+  - id: 5
+    name: Vengeful Vigormortis
+    date: '2024-11-01'
+    length: '00:55:01'
+    members: false
+  - id: 6
+    name: Librarians and Lunatics
+    date: '2024-11-15'
+    length: '01:22:56'
+    members: false
+  - id: 7
+    name: Harpy Havoc
+    date: '2024-11-29'
+    length: '01:42:54'
+    members: false

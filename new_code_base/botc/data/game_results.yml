@@ -7,3 +7,7 @@ game_results:
     game_id: 2
     winning_team: Good
     win_condition_id: 1
+  - id: 3
+    game_id: 3
+    winning_team: Good
+    win_condition_id: 5

@@ -62,3 +62,38 @@ deaths:
     timing: Day
     cause_type: Execution
     cause_role_id: null
+  - id: 10
+    game_id: 3
+    day: 2
+    player_id: 6
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 11
+    game_id: 3
+    day: 3
+    player_id: 4
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 12
+    game_id: 3
+    day: 4
+    player_id: 7
+    timing: Night
+    cause_type: Demon Mayor Bounce
+    cause_role_id: 54
+  - id: 13
+    game_id: 3
+    day: 4
+    player_id: 3
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 14
+    game_id: 3
+    day: 5
+    player_id: 8
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
