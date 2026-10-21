@@ -25,7 +25,7 @@ WIN_TEAMS = ("Good", "Evil", "Either")
 CHARACTER_TYPES = ("Townsfolk", "Outsider", "Minion", "Demon", "Traveller", "Fabled")
 DEFAULT_TEAM = {"Townsfolk": "Good", "Outsider": "Good", "Minion": "Evil", "Demon": "Evil"}
 TIMINGS = ("Night", "Day")
-CAUSE_TYPES = ("Demon", "Execution", "Ability", "Other")
+CAUSE_TYPES = ("Demon", "Execution", "Ability", "Demon Mayor Bounce", "Other")
 # What a nomination result does to the block (who will be executed at the end of the day)
 BLOCK_EFFECTS = ("marks", "clears", "none", "executes_nominator")
 
