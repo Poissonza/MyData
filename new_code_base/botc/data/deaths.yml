@@ -97,3 +97,45 @@ deaths:
     timing: Night
     cause_type: Demon
     cause_role_id: 54
+  - id: 15
+    game_id: 4
+    day: 2
+    player_id: 11
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 34
+  - id: 16
+    game_id: 4
+    day: 2
+    player_id: 12
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 17
+    game_id: 4
+    day: 3
+    player_id: 8
+    timing: Night
+    cause_type: Fang Gu killing Outsider
+    cause_role_id: 34
+  - id: 18
+    game_id: 4
+    day: 3
+    player_id: 10
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 19
+    game_id: 4
+    day: 4
+    player_id: 3
+    timing: Night
+    cause_type: Fang Gu killing Outsider
+    cause_role_id: 34
+  - id: 20
+    game_id: 4
+    day: 4
+    player_id: 9
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null

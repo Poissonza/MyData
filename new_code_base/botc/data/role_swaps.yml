@@ -1,2 +1,15 @@
-# columns: id, game_id, day, player_id, new_role_id, new_team, cause
-role_swaps: []
+role_swaps:
+  - id: 1
+    game_id: 4
+    day: 3
+    player_id: 3
+    new_role_id: 34
+    new_team: Evil
+    cause: Fang  Gu Killing Outsider
+  - id: 2
+    game_id: 4
+    day: 4
+    player_id: 2
+    new_role_id: 34
+    new_team: Evil
+    cause: Fang Gu Killing outsider (This was a game mistake as it was the second time)
