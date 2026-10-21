@@ -1,51 +1,24 @@
-FROM python:3.15.0-bookworm AS spark-base
-
-RUN apt-get upgrade
-RUN apt-get update
-
-RUN mkdir test
-WORKDIR test
-
-RUN pip install pyspark==4.1.0
-
-EXPOSE 4040
-# ENV SPARK_HOME=${SPARK_HOME:-"/opt/spark"}
-# ENV HADOOP_HOME=${HADOOP_HOME:-"/opt/hadoop"}
-
-# RUN mkdir -p ${HADOOP_HOME} && mkdir -p ${SPARK_HOME}
-# WORKDIR ${SPARK_HOME}
-
+FROM python:3.11-slim
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-      sudo \
+      default-jre-headless \
+      procps \
       curl \
-      vim \
-      unzip \
-      rsync \
-      openjdk-17-jdk \
-      build-essential \
-      software-properties-common \
-      ssh && \
+      bash && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*do
+    rm -rf /var/lib/apt/lists/*
 
+ENV JAVA_HOME=/usr/lib/jvm/default-java
+ENV PYSPARK_PYTHON=python3
+ENV PYSPARK_DRIVER_PYTHON=python3
 
+RUN pip install --no-cache-dir pyspark==3.5.4 delta-spark==3.2.1
 
-# ENV CATALOG_NAME=unity
-# ENV UC_SERVER_URL=http://localhost:8080
-# export UC_TOKEN=
+WORKDIR /app
 
-# $SPARK_HOME/bin/pyspark \
-#   --packages io.delta:delta-spark_4.2_2.13:4.4.0,io.unitycatalog:unitycatalog-spark_4.2_2.13:0.6.0 \
+# pyspark \
+#   --packages io.delta:delta-spark_2.13:4.0.0 \
 #   --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension" \
 #   --conf "spark.sql.catalog.spark_catalog=org.apache.spark.sql.delta.catalog.DeltaCatalog" \
-#   --conf "spark.sql.catalog.${CATALOG_NAME}=io.unitycatalog.spark.UCSingleCatalog" \
-#   --conf "spark.sql.catalog.${CATALOG_NAME}.uri=${UC_SERVER_URL}" \
-#   --conf "spark.sql.catalog.${CATALOG_NAME}.token=${UC_TOKEN}" \
-#   --conf "spark.sql.defaultCatalog=${CATALOG_NAME}"
-
-
-
-
-# pyspark --packages io.delta:delta-spark_4.2_2.13:4.4.0,io.unitycatalog:unitycatalog-spark_4.2_2.13:0.6.0   --conf "spark.sql.extensions=io.delta.sql.DeltaSparkSessionExtension"
+#   --conf "spark.sql.warehouse.dir=/app/data/delta"
