@@ -13,4 +13,4 @@ nomination_results:
     block_effect: executes_nominator
   - id: 5
     name: Disrupted by Slayer Shot
-    block_effect: clears
+    block_effect: none
