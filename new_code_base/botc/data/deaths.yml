@@ -216,3 +216,52 @@ deaths:
     timing: Day
     cause_type: Execution
     cause_role_id: null
+  - id: 32
+    game_id: 6
+    day: 1
+    player_id: 14
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 33
+    game_id: 6
+    day: 2
+    player_id: 15
+    timing: Night
+    cause_type: Fang Gu killing Outsider
+    cause_role_id: 34
+  - id: 34
+    game_id: 6
+    day: 2
+    player_id: 6
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 35
+    game_id: 6
+    day: 3
+    player_id: 8
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 34
+  - id: 36
+    game_id: 6
+    day: 3
+    player_id: 6
+    timing: Day
+    cause_type: Breaking Madness
+    cause_role_id: 19
+  - id: 37
+    game_id: 6
+    day: 4
+    player_id: 11
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 34
+  - id: 38
+    game_id: 6
+    day: 4
+    player_id: 4
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null

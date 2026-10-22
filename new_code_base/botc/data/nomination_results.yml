@@ -14,3 +14,6 @@ nomination_results:
   - id: 5
     name: Disrupted by Slayer Shot
     block_effect: none
+  - id: 6
+    name: Disrupted
+    block_effect: clears

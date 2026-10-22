@@ -20,3 +20,10 @@ role_swaps:
     new_role_id: 129
     new_team: Evil
     cause: Kazaali Picks Minion
+  - id: 4
+    game_id: 6
+    day: 2
+    player_id: 4
+    new_role_id: 34
+    new_team: Evil
+    cause: Fang Gu Killing Outsider
