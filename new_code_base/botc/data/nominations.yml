@@ -439,3 +439,99 @@ nominations:
     votes: 1
     ghost_votes: 3
     result_id: 2
+  - id: 56
+    game_id: 7
+    day: 1
+    nominator_id: 7
+    nominee_id: 7
+    votes: 3
+    ghost_votes: null
+    result_id: 1
+  - id: 57
+    game_id: 7
+    day: 2
+    nominator_id: 5
+    nominee_id: 11
+    votes: 2
+    ghost_votes: null
+    result_id: 1
+  - id: 58
+    game_id: 7
+    day: 2
+    nominator_id: 7
+    nominee_id: 10
+    votes: 1
+    ghost_votes: null
+    result_id: null
+  - id: 59
+    game_id: 7
+    day: 2
+    nominator_id: 11
+    nominee_id: 5
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 60
+    game_id: 7
+    day: 3
+    nominator_id: 5
+    nominee_id: 16
+    votes: 2
+    ghost_votes: null
+    result_id: 1
+  - id: 61
+    game_id: 7
+    day: 3
+    nominator_id: 12
+    nominee_id: 10
+    votes: 6
+    ghost_votes: null
+    result_id: 2
+  - id: 62
+    game_id: 7
+    day: 4
+    nominator_id: 7
+    nominee_id: 12
+    votes: 2
+    ghost_votes: 2
+    result_id: 2
+  - id: 63
+    game_id: 7
+    day: 4
+    nominator_id: 5
+    nominee_id: 7
+    votes: 3
+    ghost_votes: null
+    result_id: 1
+  - id: 64
+    game_id: 7
+    day: 4
+    nominator_id: 12
+    nominee_id: 5
+    votes: 2
+    ghost_votes: 2
+    result_id: 3
+  - id: 65
+    game_id: 7
+    day: 5
+    nominator_id: 5
+    nominee_id: 11
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 66
+    game_id: 7
+    day: 5
+    nominator_id: 11
+    nominee_id: 7
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 67
+    game_id: 7
+    day: 5
+    nominator_id: 7
+    nominee_id: 5
+    votes: 1
+    ghost_votes: 1
+    result_id: 2

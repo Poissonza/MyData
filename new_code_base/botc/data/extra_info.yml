@@ -314,3 +314,68 @@ extra_info:
     day: 4
     role_id: 66
     info: Wants to kill Kirsty
+  - id: 64
+    game_id: 7
+    day: 1
+    role_id: 40
+    info: Ravs and Gee are not the Demon or Red herring
+  - id: 65
+    game_id: 7
+    day: 1
+    role_id: 48
+    info: Ravs is your Grandchild, He is the Noble
+  - id: 66
+    game_id: 7
+    day: 1
+    role_id: 79
+    info: One of Ben, Sophie or RTGamer is Evil
+  - id: 67
+    game_id: 7
+    day: 1
+    role_id: 54
+    info: Bluffs are Empath, Fool and Mayor
+  - id: 68
+    game_id: 7
+    day: 1
+    role_id: 49
+    info: Boba thinks Pedguin is Evil
+  - id: 69
+    game_id: 7
+    day: 1
+    role_id: 56
+    info: Either Tom or Pedguin is the Harpy
+  - id: 70
+    game_id: 7
+    day: 2
+    role_id: 49
+    info: Boba is mad that Ben is evil
+  - id: 71
+    game_id: 7
+    day: 2
+    role_id: 29
+    info: Wants to kill Ravs
+  - id: 72
+    game_id: 7
+    day: 2
+    role_id: 106
+    info: Tom and Gee are not on the same team
+  - id: 73
+    game_id: 7
+    day: 3
+    role_id: 49
+    info: Make Ben mad that Gee is bad
+  - id: 74
+    game_id: 7
+    day: 3
+    role_id: 29
+    info: Wants to kill Tom
+  - id: 75
+    game_id: 7
+    day: 4
+    role_id: 49
+    info: Ben is mad that Ravs is evil
+  - id: 76
+    game_id: 7
+    day: 5
+    role_id: 49
+    info: Ben is mad that Tom is Evil
