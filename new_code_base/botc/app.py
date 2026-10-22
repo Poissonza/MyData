@@ -146,6 +146,11 @@ TABLES: dict[str, list[Col]] = {
         Col("new_team", "choice", choices=TEAMS),
         Col("cause"),
     ],
+    "fabled": [
+        ID,
+        Col("name", required=True),
+        Col("description", "long_text")
+    ],
 }
 
 SINGULAR = {
@@ -154,6 +159,7 @@ SINGULAR = {
     "game_players": "player to game", "game_results": "result", "deaths": "death",
     "nominations": "nomination", "actions": "action",
     "extra_info": "extra info", "role_swaps": "role swap",
+    "fabled": "fabled",
 }
 EVENT_TABLES = ["deaths", "nominations", "actions", "extra_info", "role_swaps"]
 UNIQUE_NAME_TABLES = {"players", "roles", "nomination_results", "win_conditions"}
@@ -957,13 +963,14 @@ with tab_videos:
 # ─── Tab: Reference ──────────────────────────────────────────────────────────
 
 with tab_ref:
-    ref_tabs = st.tabs(["Players", "Roles", "Nomination Results", "Win Conditions"])
+    ref_tabs = st.tabs(["Players", "Roles", "Nomination Results", "Win Conditions", "Fabled"])
     for tab, table, hint in [
         (ref_tabs[0], "players", "Everyone who has played. Names must be unique."),
         (ref_tabs[1], "roles", "Default team fills in from the character type if left empty."),
         (ref_tabs[2], "nomination_results", "Block effect: 'marks' puts the nominee on the block, 'clears' empties it (a tie), "
                                              "'none' changes nothing, 'executes_nominator' executes the nominator at once and ends the day (Virgin)."),
         (ref_tabs[3], "win_conditions", "Possible endings. Use 'Either' where the ending can go to both teams."),
+        (ref_tabs[4], "fabled", "Fabled characters for the Storyteller")
     ]:
         with tab:
             st.caption(hint)
