@@ -23,3 +23,12 @@ games:
   - id: 8
     game_number: 1
     video_id: 8
+  - id: 9
+    game_number: 1
+    video_id: 13
+  - id: 10
+    game_number: 1
+    video_id: 14
+  - id: 11
+    game_number: 1
+    video_id: 15

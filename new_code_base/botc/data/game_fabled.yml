@@ -1,0 +1,7 @@
+game_fabled:
+  - id: 1
+    game_id: 9
+    fabled_id: 1
+  - id: 2
+    game_id: 11
+    fabled_id: 1

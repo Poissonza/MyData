@@ -154,3 +154,38 @@ extra_info:
     day: 3
     role_id: 82
     info: There is 0 Evil Dead Players (Poisoned)
+  - id: 32
+    game_id: 9
+    day: 1
+    role_id: 81
+    info: Kirsty is your Marionette. Bluffs are Shugenja, Drunk, Lunatic
+  - id: 33
+    game_id: 9
+    day: 1
+    role_id: 56
+    info: Kirsty or NIlsey is the Marionette
+  - id: 34
+    game_id: 9
+    day: 2
+    role_id: 41
+    info: Gambled Rythian is the Investigator
+  - id: 35
+    game_id: 9
+    day: 3
+    role_id: 41
+    info: Gambled Nilsey as the Gambler
+  - id: 36
+    game_id: 9
+    day: 3
+    role_id: 81
+    info: Allowed to Kill two tonight due to House swap between Briony and Nilsey
+  - id: 37
+    game_id: 10
+    day: 1
+    role_id: 64
+    info: The Lleech host is Ravs
+  - id: 38
+    game_id: 10
+    day: 1
+    role_id: 104
+    info: Either one Evil player knows the other or someone is currently drunk
