@@ -1,0 +1,1471 @@
+[
+  {
+    "descriptor": "game1",
+    "game_setup": {
+      "world_size": "Large",
+      "world_shape": "Custom",
+      "continent_shape": "Average",
+      "climate": "Standard",
+      "land_percentage": 40,
+      "number_of_continents": "3 Continents",
+      "new_world": "Yes",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 1001,
+      "continent_spread": "Chaotic",
+      "continent_form": "Regular",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Normal",
+      "end_conditions": "Default"
+    },
+    "start_date": "2021-08-17",
+    "end_date": "2021-08-18",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Babylonians",
+        "era2civ": "Greeks",
+        "era3civ": "Norsemen",
+        "era4civ": "Edo Japanese",
+        "era5civ": "Austro-Hungarians",
+        "era6civ": "Japanese",
+        "endfame": 3681
+      },
+      {
+        "name": "Agamemnon",
+        "era1civ": "Hittites",
+        "era2civ": "Persians",
+        "era3civ": "Ghanaians",
+        "era4civ": "",
+        "era5civ": "British",
+        "endfame": 4138
+      },
+      {
+        "name": "Mama Ocllo",
+        "era1civ": "Nubians",
+        "era2civ": "Maya",
+        "era5civ": "Persians",
+        "endfame": 3082
+      },
+      {
+        "name": "Midas",
+        "era1civ": "Harappans",
+        "era2civ": "Celts",
+        "era3civ": "English",
+        "era4civ": "Haudenosaunee",
+        "era5civ": "Mexicans",
+        "era6civ": "Brazilians",
+        "endfame": 7214
+      },
+      {
+        "name": "Arjuna",
+        "era1civ": "Olmecs",
+        "era2civ": "Mauryans",
+        "era3civ": "Aztecs",
+        "era4civ": "Poles",
+        "era5civ": "Zulu",
+        "era6civ": "Zulu",
+        "endfame": 7098
+      },
+      {
+        "name": "Mu Guiying",
+        "era3civ": "Mongols",
+        "era4civ": "Mongols",
+        "era5civ": "Mongols",
+        "endfame": 2493
+      }
+    ],
+    "natural_wonder": [
+      "Lake Hillier",
+      "Gunung Mulu",
+      "Ha Long Bay",
+      "Mount Roraima",
+      "Lake Baikal"
+    ],
+    "version": "1.0.01.0034-S10(build: 163265)"
+  },
+  {
+    "descriptor": "game2",
+    "game_setup": {
+      "world_size": "Small",
+      "world_shape": "Few Continents",
+      "continent_shape": "Average",
+      "climate": "Hot & Wet",
+      "land_percentage": 50,
+      "number_of_continents": "2 - 4 Continents",
+      "new_world": "Yes",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 5050,
+      "continent_spread": "Regular",
+      "continent_form": "Regular",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Blitz",
+      "end_conditions": "Default"
+    },
+    "start_date": "2021-08-18",
+    "end_date": "2021-08-18",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Egyptians",
+        "era2civ": "Celts",
+        "era3civ": "English",
+        "era4civ": "Dutch",
+        "endfame": 5110
+      },
+      {
+        "name": "Lucy",
+        "era1civ": "Nubians",
+        "era2civ": "Persians",
+        "era3civ": "Ghanaians",
+        "era4civ": "Poles",
+        "endfame": 5600,
+        "colour": "Black"
+      },
+      {
+        "name": "Quill18",
+        "era1civ": "Harappans",
+        "era2civ": "Greeks",
+        "era3civ": "Greeks",
+        "era4civ": "Haudenosaunee",
+        "era5civ": "Mexicans",
+        "endfame": 5850,
+        "Colour": "Pink"
+      },
+      {
+        "name": "Elissa",
+        "era1civ": "Mycenaeans",
+        "era2civ": "Huns",
+        "era3civ": "Aztecs",
+        "era4civ": "Edo Japanese",
+        "endfame": 5050,
+        "Colour": "Lime"
+      }
+    ],
+    "natural_wonder": [
+      "Danakil Desert",
+      "Great Blue Hole",
+      "Ha Long Bay"
+    ],
+    "version": "1.0.01.0058-S10(build: 164540)"
+  },
+  {
+    "descriptor": "game3",
+    "game_setup": {
+      "world_size": "Tiny",
+      "world_shape": "Pangea",
+      "continent_shape": "Custom",
+      "climate": "Standard",
+      "land_percentage": 70,
+      "number_of_continents": "1 Continent",
+      "new_world": "No",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 12147,
+      "continent_spread": "Regular",
+      "continent_form": "Regular",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Normal",
+      "end_conditions": "Default"
+    },
+    "start_date": "2021-08-18",
+    "end_date": "2021-08-19",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Harappans",
+        "era2civ": "Maya",
+        "era3civ": "English",
+        "era4civ": "Joseon",
+        "era5civ": "French",
+        "era6civ": "Turks",
+        "endfame": 7344
+      },
+      {
+        "name": "Lucy",
+        "era1civ": "Nubians",
+        "era2civ": "Greeks",
+        "era3civ": "Ghanaians",
+        "era4civ": "Edo Japanese",
+        "era5civ": "Austro-Hungarians",
+        "era6civ": "Indians",
+        "endfame": 4488,
+        "colour": "Lime"
+      }
+    ],
+    "natural_wonder": [
+      "Lake Hillier"
+    ],
+    "version": "1.0.01.0058-S10(build: 164540)"
+  },
+  {
+    "descriptor": "game4",
+    "game_setup": {
+      "world_size": "Tiny",
+      "world_shape": "Few Continents",
+      "continent_shape": "Custom",
+      "climate": "Standard",
+      "land_percentage": 50,
+      "number_of_continents": "2 - 4 Continents",
+      "new_world": "No",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 314,
+      "continent_spread": "Regular",
+      "continent_form": "Regular",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Blitz",
+      "end_conditions": "Default"
+    },
+    "start_date": "2021-08-19",
+    "end_date": "2021-08-19",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Harappans",
+        "era2civ": "Maya",
+        "era3civ": "Teutons",
+        "era4civ": "Haudenosaunee ",
+        "era5civ": "French",
+        "endfame": 6560
+      },
+      {
+        "name": "Lucy",
+        "era1civ": "Nubian",
+        "era2civ": "Greeks",
+        "era3civ": "Ghanaians",
+        "era4civ": "Edo Japanese",
+        "era5civ": "Zulu",
+        "endfame": 5500,
+        "colour": "Black"
+      }
+    ],
+    "natural_wonder": [
+      "Ha Long Bay"
+    ],
+    "version": "1.0.01.0058-S10(build: 164540)"
+  },
+  {
+    "descriptor": "game5",
+    "game_setup": {
+      "world_size": "Small",
+      "world_shape": "Few Continents",
+      "continent_shape": "Custom",
+      "climate": "Hot & Dry",
+      "land_percentage": 50,
+      "number_of_continents": "2 - 4 Continents",
+      "new_world": "Yes",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 71676,
+      "continent_spread": "Regular",
+      "continent_form": "Regular",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Blitz",
+      "end_conditions": "Default"
+    },
+    "start_date": "2021-08-19",
+    "end_date": "2021-08-19",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Egyptians",
+        "era2civ": "Celts",
+        "era3civ": "Teutons",
+        "era4civ": "Joseon",
+        "era5civ": "Mexicans",
+        "era6civ": "Soviets",
+        "endfame": 7510
+      },
+      {
+        "name": "Lucy",
+        "era1civ": "Nubians",
+        "era2civ": "Carthaginians",
+        "era3civ": "Ghanains",
+        "era4civ": "Haudenosaunee",
+        "era5civ": "Zulu",
+        "endfame": 7300,
+        "colour": "Brown"
+      },
+      {
+        "name": "Quill18",
+        "era1civ": "Harappans",
+        "era2civ": "Greeks",
+        "era3civ": "English",
+        "era4civ": "English",
+        "era5civ": "French",
+        "endfame": 6495,
+        "colour": "Yellow"
+      }
+    ],
+    "natural_wonder": [
+      "Ha Long Bay",
+      "Great Blue Hole",
+      "Danakil Desert"
+    ],
+    "version": "1.0.01.0058-S10(build: 164540)"
+  },
+  {
+    "descriptor": "game6",
+    "game_setup": {
+      "world_size": "Small",
+      "world_shape": "Pangea",
+      "continent_shape": "Custom",
+      "climate": "Cold & Wet",
+      "land_percentage": 70,
+      "number_of_continents": "1 Continent",
+      "new_world": "No",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 510430,
+      "continent_spread": "Regular",
+      "continent_form": "Regular",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Fast",
+      "end_conditions": "Default"
+    },
+    "start_date": "2021-08-19",
+    "end_date": "2021-08-19",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Assyrians",
+        "era2civ": "Maya",
+        "era3civ": "Umayyads",
+        "era4civ": "Mughals",
+        "era5civ": "French",
+        "era6civ": "Turks",
+        "endfame": 12080
+      },
+      {
+        "name": "Lucy",
+        "era1civ": "Nubians",
+        "era2civ": "Carthaginians",
+        "era3civ": "Byzantines",
+        "era4civ": "Ottomans",
+        "endfame": 3810,
+        "colour": "Black"
+      },
+      {
+        "name": "Quil18",
+        "era1civ": "Harappans",
+        "era2civ": "Celts",
+        "era3civ": "English",
+        "era4civ": "Haudenosaunee",
+        "era5civ": "Mexicans",
+        "era6civ": "Brazillians",
+        "endfame": 9000,
+        "colour": "Orange"
+      },
+      {
+        "name": "Xephos",
+        "era1civ": "Mycenaeans",
+        "era2civ": "Huns",
+        "endfame": 1550,
+        "colour": "Lime"
+      }
+    ],
+    "natural_wonder": [
+      "Lake Baikal",
+      "Great Blue Hole",
+      "Mount Roraima"
+    ],
+    "version": "1.0.01.0058-S10(build: 164540)",
+    "strategic_resource": [
+      {
+        "resource": "Horses",
+        "quantity": 10
+      },
+      {
+        "resource": "Copper",
+        "quantity": 9
+      },
+      {
+        "resource": "Iron",
+        "quantity": 10
+      },
+      {
+        "resource": "Saltpetre",
+        "quantity": 3
+      },
+      {
+        "resource": "Coal",
+        "quantity": 10
+      },
+      {
+        "resource": "Oil",
+        "quantity": 2
+      },
+      {
+        "resource": "Aluminium",
+        "quantity": 5
+      },
+      {
+        "resource": "Uranium",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "descriptor": "game7",
+    "game_setup": {
+      "world_size": "Small",
+      "world_shape": "Few Continents",
+      "continent_shape": "Custom",
+      "climate": "Standard",
+      "land_percentage": 50,
+      "number_of_continents": "2 - 4 Continents",
+      "new_world": "No",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 967429771,
+      "continent_spread": "Chaotic",
+      "continent_form": "Chaotic",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Fast",
+      "end_conditions": "Default"
+    },
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Egyptians",
+        "era2civ": "Carthaginians",
+        "era3civ": "English",
+        "era4civ": "Edo Japenese",
+        "era5civ": "British",
+        "era6civ": "Japenese",
+        "endfame": 7010
+      },
+      {
+        "name": "Lucy",
+        "era1civ": "Nubians",
+        "era2civ": "Greek",
+        "era3civ": "Ghanaians",
+        "era4civ": "Haudenosaunee",
+        "era5civ": "French",
+        "endfame": 6100,
+        "colour": "Black"
+      },
+      {
+        "name": "Quil18",
+        "era1civ": "Harappans",
+        "era2civ": "Celts",
+        "era3civ": "Celts",
+        "era4civ": "Celts",
+        "endfame": 5110,
+        "colour": "Orange"
+      },
+      {
+        "name": "Xephos",
+        "era1civ": "Mycenaeans",
+        "era2civ": "Huns",
+        "era3civ": "Mongols",
+        "era4civ": "Poles",
+        "era5civ": "Zulu",
+        "endfame": 5550,
+        "colour": "Lime"
+      }
+    ],
+    "natural_wonder": [
+      "Lake Hillier",
+      "Gunung Mulu",
+      "Mount Roraima"
+    ],
+    "version": "1.0.01.0059-S10(build: 165210)",
+    "start_date": "2021-08-20",
+    "end_date": "2021-08-20",
+    "strategic_resource": [
+      {
+        "resource": "Horses",
+        "quantity": 9
+      },
+      {
+        "resource": "Copper",
+        "quantity": 10
+      },
+      {
+        "resource": "Iron",
+        "quantity": 9
+      },
+      {
+        "resource": "Saltpetre",
+        "quantity": 6
+      },
+      {
+        "resource": "Coal",
+        "quantity": 9
+      },
+      {
+        "resource": "Oil",
+        "quantity": 2
+      },
+      {
+        "resource": "Aluminium",
+        "quantity": 5
+      },
+      {
+        "resource": "Uranium",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "descriptor": "game8",
+    "game_setup": {
+      "world_size": "Small",
+      "world_shape": "Few Continents",
+      "continent_shape": "Custom",
+      "climate": "Standard",
+      "land_percentage": 50,
+      "number_of_continents": "2 - 4 Continents",
+      "new_world": "No",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 1000,
+      "continent_spread": "Chaotic",
+      "continent_form": "Chaotic",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Fast",
+      "end_conditions": "Default"
+    },
+    "start_date": "2021-08-22",
+    "end_date": "2021-08-22",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Egyptian",
+        "era2civ": "Greeks",
+        "era3civ": "English",
+        "era4civ": "Spanish",
+        "era5civ": "Mexicans",
+        "era6civ": "Swedes",
+        "endfame": 12125
+      },
+      {
+        "name": "Quil18",
+        "era1civ": "Harappans",
+        "era2civ": "Celts",
+        "era3civ": "Celts",
+        "era4civ": "Haudenosaunee",
+        "endfame": 3915,
+        "colour": "Yellow"
+      },
+      {
+        "name": "Elissa",
+        "era1civ": "Mycenaeans",
+        "era2civ": "Huns",
+        "era3civ": "Mongols",
+        "era4civ": "Edo Japenese",
+        "era5civ": "Italians",
+        "endfame": 5950,
+        "colour": "Green"
+      },
+      {
+        "name": "Lomadiah",
+        "era1civ": "Nubians",
+        "era2civ": "Maya",
+        "era3civ": "Maya",
+        "era4civ": "Mughals",
+        "era5civ": "Siamese",
+        "endfame": 4983,
+        "colour": "Orange"
+      }
+    ],
+    "natural_wonder": [
+      "Gunung Mulu",
+      "Mount Roraima",
+      "Lake Hillier"
+    ],
+    "version": "1.0.01.0059-S10(build: 165210)",
+    "strategic_resource": [
+      {
+        "resource": "Horses",
+        "quantity": 9
+      },
+      {
+        "resource": "Copper",
+        "quantity": 10
+      },
+      {
+        "resource": "Iron",
+        "quantity": 8
+      },
+      {
+        "resource": "Saltpetre",
+        "quantity": 5
+      },
+      {
+        "resource": "Coal",
+        "quantity": 9
+      },
+      {
+        "resource": "Oil",
+        "quantity": 2
+      },
+      {
+        "resource": "Aluminium",
+        "quantity": 5
+      },
+      {
+        "resource": "Uranium",
+        "quantity": 5
+      }
+    ]
+  },
+  {
+    "descriptor": "game9",
+    "game_setup": {
+      "world_size": "Small",
+      "world_shape": "Few Continents",
+      "continent_shape": "Custom",
+      "climate": "Standard",
+      "land_percentage": 50,
+      "number_of_continents": "2 - 4 Continents",
+      "new_world": "No",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 788042,
+      "continent_spread": "Regular",
+      "continent_form": "Regular",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Fast",
+      "end_conditions": "Default"
+    },
+    "start_date": "2021-08-28",
+    "end_date": "2021-08-29",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Harappans",
+        "era2civ": "Maya",
+        "era3civ": "Umayyads",
+        "era4civ": "Dutch",
+        "era5civ": "Persians",
+        "era6civ": "Americans",
+        "endfame": 7880
+      },
+      {
+        "name": "Spiffing Brit",
+        "era1civ": "Mycenaeans",
+        "era2civ": "Huns",
+        "era3civ": "Mongols",
+        "era4civ": "Mongols",
+        "era5civ": "Zulu",
+        "endfame": 5826,
+        "colour": "Orange"
+      },
+      {
+        "name": "Quill18",
+        "era1civ": "Nubians",
+        "era2civ": "Celts",
+        "era3civ": "English",
+        "era4civ": "Haudenosaunee",
+        "endfame": 5050,
+        "colour": "Yellow"
+      },
+      {
+        "name": "Lewis",
+        "era1civ": "Hittites",
+        "era2civ": "Persians",
+        "era3civ": "Aztecs",
+        "era4civ": "Poles",
+        "endfame": 4750,
+        "colour": "Green"
+      }
+    ],
+    "natural_wonder": [
+      "Kawah Ijen",
+      "Ha Long Bay",
+      "Great Blue Hole"
+    ],
+    "version": "1.0.02.0116-s10(build: 165851)",
+    "strategic_resource": [
+      {
+        "resource": "Horses",
+        "quantity": 10
+      },
+      {
+        "resource": "Copper",
+        "quantity": 9
+      },
+      {
+        "resource": "Iron",
+        "quantity": 8
+      },
+      {
+        "resource": "Saltpetre",
+        "quantity": 4
+      },
+      {
+        "resource": "Coal",
+        "quantity": 9
+      },
+      {
+        "resource": "Oil",
+        "quantity": 6
+      },
+      {
+        "resource": "Aluminium",
+        "quantity": 5
+      },
+      {
+        "resource": "Uranium",
+        "quantity": 5
+      }
+    ],
+    "luxury_resource": [
+      {
+        "resource": "Incense",
+        "quantity": 8
+      },
+      {
+        "resource": "Silk",
+        "quantity": 5
+      },
+      {
+        "resource": "Obsidian",
+        "quantity": 3
+      },
+      {
+        "resource": "Porcelain",
+        "quantity": 2
+      },
+      {
+        "resource": "Ambergris",
+        "quantity": 4
+      },
+      {
+        "resource": "Gemstone",
+        "quantity": 6
+      },
+      {
+        "resource": "Mercury",
+        "quantity": 4
+      },
+      {
+        "resource": "Sage",
+        "quantity": 0
+      },
+      {
+        "resource": "Saffron",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "descriptor": "game10",
+    "game_setup": {
+      "world_size": "Normal",
+      "world_shape": "Pangea",
+      "continent_shape": "Custom",
+      "climate": "Standard",
+      "land_percentage": 70,
+      "number_of_continents": "1 Continent",
+      "new_world": "No",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 1,
+      "continent_spread": "Regular",
+      "continent_form": "Regular",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Normal",
+      "end_conditions": "Default"
+    },
+    "start_date": "2021-08-29",
+    "end_date": "2021-08-29",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Harappans",
+        "era2civ": "Maya",
+        "era3civ": "Khmer",
+        "era4civ": "Ming",
+        "era5civ": "French",
+        "era6civ": "Swedes",
+        "endfame": 9068
+      },
+      {
+        "name": "Spiffing Brit",
+        "era1civ": "Mycenaeans",
+        "era2civ": "Archaemenid Persians",
+        "era3civ": "Mongols",
+        "era4civ": "Edo Japanese",
+        "endfame": 2701,
+        "colour": "Black"
+      },
+      {
+        "name": "Quill18",
+        "era1civ": "Nubians",
+        "era2civ": "Celts",
+        "era3civ": "English",
+        "era4civ": "Haudenosaunee",
+        "era5civ": "Mexicans",
+        "endfame": 4372,
+        "colour": "Yellow"
+      },
+      {
+        "name": "Lewis",
+        "era1civ": "Hittities",
+        "era2civ": "Huns",
+        "endfame": 721,
+        "colour": "Green"
+      },
+      {
+        "name": "Beowulf",
+        "era1civ": "Assyrians",
+        "era2civ": "Greeks",
+        "era3civ": "Ghanains",
+        "era4civ": "Spanish",
+        "endfame": 2098,
+        "colour": "Blue"
+      },
+      {
+        "name": "Mu Guiying",
+        "era1civ": "Olmecs",
+        "era2civ": "Mauryans",
+        "era3civ": "Aztecs",
+        "era4civ": "Poles",
+        "era5civ": "Zulu",
+        "endfame": 4536,
+        "colour": "Brown"
+      }
+    ],
+    "natural_wonder": [
+      "Kawah Ijen",
+      "Great Blue Hole",
+      "Lake Baikal",
+      "Ha Long Bay",
+      "Danakil Desert"
+    ],
+    "version": "1.0.02.0116-s10(build: 165851)",
+    "strategic_resource": [
+      {
+        "resource": "Horses",
+        "quantity": 13
+      },
+      {
+        "resource": "Copper",
+        "quantity": 13
+      },
+      {
+        "resource": "Iron",
+        "quantity": 11
+      },
+      {
+        "resource": "Saltpetre",
+        "quantity": 8
+      },
+      {
+        "resource": "Coal",
+        "quantity": 12
+      },
+      {
+        "resource": "Oil",
+        "quantity": 9
+      },
+      {
+        "resource": "Aluminium",
+        "quantity": 8
+      },
+      {
+        "resource": "Uranium",
+        "quantity": 8
+      }
+    ],
+    "luxury_resource": [
+      {
+        "resource": "Coffee",
+        "quantity": 2
+      },
+      {
+        "resource": "Ebony",
+        "quantity": 2
+      },
+      {
+        "resource": "Marble",
+        "quantity": 4
+      },
+      {
+        "resource": "Incense",
+        "quantity": 8
+      },
+      {
+        "resource": "Dye",
+        "quantity": 8
+      },
+      {
+        "resource": "Tea",
+        "quantity": 4
+      },
+      {
+        "resource": "Gold",
+        "quantity": 2
+      },
+      {
+        "resource": "Silver",
+        "quantity": 5
+      },
+      {
+        "resource": "Saffron",
+        "quantity": 6
+      },
+      {
+        "resource": "Gemstone",
+        "quantity": 6
+      },
+      {
+        "resource": "Sage",
+        "quantity": 6
+      }
+    ]
+  },
+  {
+    "descriptor": "game11",
+    "game_setup": {
+      "world_size": "Small",
+      "world_shape": "Few Continents",
+      "continent_shape": "Custom",
+      "climate": "Standard",
+      "land_percentage": 50,
+      "number_of_continents": "2 - 4 Continents",
+      "new_world": "No",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemisphere": "Both",
+      "seed": 2,
+      "continent_spread": "Regular",
+      "continent_form": "Regular",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Nation",
+      "pace": "Normal",
+      "end_conditions": "Default"
+    },
+    "start_date": "2021-08-29",
+    "end_date": "2021-08-30",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Egyptians",
+        "era2civ": "Celts",
+        "era3civ": "Umayyads",
+        "era4civ": "Venetians",
+        "era5civ": "Mexicans",
+        "era6civ": "Swedes",
+        "endfame": 8876
+      },
+      {
+        "name": "Spiffing Brit",
+        "era1civ": "Nubians",
+        "era2civ": "Huns",
+        "era3civ": "Aztecs",
+        "era4civ": "Poles",
+        "era5civ": "Zulu",
+        "endfame": 5093,
+        "colour": "Black"
+      },
+      {
+        "name": "Quill18",
+        "era1civ": "Harappans",
+        "era2civ": "Greeks",
+        "era3civ": "English",
+        "era4civ": "Haudenosaunee",
+        "era5civ": "French",
+        "endfame": 4555,
+        "colour": "Yellow"
+      },
+      {
+        "name": "Lewis",
+        "era1civ": "Mycenaeans",
+        "era2civ": "Achaemenid Persians",
+        "era3civ": "Mongols",
+        "endfame": 2281,
+        "colour": "Green"
+      }
+    ],
+    "natural_wonder": [
+      "Ha Long Bay",
+      "Mount Roraima",
+      "Great Blue Hole"
+    ],
+    "version": "1.0.02.0132-s10(build: 166806)",
+    "strategic_resource": [
+      {
+        "resource": "Horses",
+        "quantity": 14
+      },
+      {
+        "resource": "Copper",
+        "quantity": 15
+      },
+      {
+        "resource": "Iron",
+        "quantity": 13
+      },
+      {
+        "resource": "Saltpetre",
+        "quantity": 8
+      },
+      {
+        "resource": "Coal",
+        "quantity": 13
+      },
+      {
+        "resource": "Oil",
+        "quantity": 8
+      },
+      {
+        "resource": "Aluminium",
+        "quantity": 9
+      },
+      {
+        "resource": "Uranium",
+        "quantity": 5
+      }
+    ],
+    "luxury_resource": [
+      {
+        "resource": "Ebony",
+        "quantity": 5
+      },
+      {
+        "resource": "Porcelain",
+        "quantity": 3
+      },
+      {
+        "resource": "Pearls",
+        "quantity": 3
+      },
+      {
+        "resource": "Ambergris",
+        "quantity": 2
+      },
+      {
+        "resource": "Mercury",
+        "quantity": 0
+      },
+      {
+        "resource": "Silver",
+        "quantity": 0
+      },
+      {
+        "resource": "Saffron",
+        "quantity": 0
+      }
+    ]
+  },
+  {
+    "name": "game12",
+    "game_setup": {
+      "world_size": "Small",
+      "world_shape": "4 Continents",
+      "continent_shape": "Average",
+      "climate": "Standard",
+      "land_percentage": 50,
+      "number_of_continents": "4 Continents",
+      "new_world": "Yes",
+      "island_odds": "Some",
+      "world_wrap": "On",
+      "hemispheres": "Both",
+      "seed": 4251,
+      "continent_spread": "Chaotic",
+      "contient_form": "Regular",
+      "lake_odds": "Average",
+      "lake_size": "Average",
+      "rivers": "Some",
+      "ridges_and_cliffs": "Average",
+      "elevation": "Standard",
+      "difficulty": "Metropolis",
+      "pace": "Normal",
+      "end_conditions": "Default"
+    },
+    "start_date": "14/11/2022",
+    "end_date": "18/11/2022",
+    "version": "264005",
+    "players": [
+      {
+        "name": "Poisson",
+        "era1civ": "Phoenicians",
+        "era2civ": "Greeks",
+        "era3civ": "English",
+        "era4civ": "Joseon",
+        "era5civ": "Zulu",
+        "era6civ": "Swedes",
+        "endfame": 4822,
+        "colour": "Orange"
+      },
+      {
+        "name": "Semiramis",
+        "colour": "Purple",
+        "era1civ": "Nubians",
+        "era2civ": "Carthaginians",
+        "era3civ": "Ghanaians",
+        "era4civ": "Ghanaians",
+        "era5civ": "French",
+        "endfame": 2879
+      },
+      {
+        "name": "Mu Guiying",
+        "colour": "Green",
+        "era1civ": "Zhou",
+        "era2civ": "Aksumites",
+        "era3civ": "Umayyads",
+        "endfame": 1643
+      },
+      {
+        "name": "Gilgamesh",
+        "colour": "Black",
+        "era1civ": "Egyptians",
+        "era2civ": "Mauryans",
+        "era3civ": "Byzantines",
+        "era4civ": "Dutch",
+        "era5civ": "Siamese",
+        "era6civ": "Japanese",
+        "endfame": 8249
+      }
+    ],
+    "naturalwonder": [
+      "Yellowstone",
+      "Lake Hillier",
+      "Kawah Ijen"
+    ],
+        "luxury_resource": [
+      {
+        "resource": "",
+        "quantity": 0
+      }
+    ],
+    "strategic_resource": [
+      {
+        "resource": "",
+        "quantity": 0
+      }
+    ],
+    "events": [
+      {
+        "turn": 5,
+        "event": "Seed of an Idea",
+        "selected": "Grind"
+      },
+      {
+        "turn": 9,
+        "event": "A World Aflame",
+        "selected": "Chase"
+      },
+      {
+        "turn": 10,
+        "event": "A Tribes Legacy",
+        "selected": "Storytellers"
+      },
+      {
+        "turn": 33,
+        "event": "The Darkest Depths",
+        "selected": "Dismiss"
+      },
+      {
+        "turn": 36,
+        "event": "A Game of Prophecy",
+        "selected": "Heed"
+      },
+      {
+        "turn": 38,
+        "event": "Division By Zero",
+        "selected": "Tithe Collectors"
+      },
+      {
+        "turn": 44,
+        "event": "The Pecking of Poultry",
+        "selected": "Reason"
+      },
+      {
+        "turn": 53,
+        "event": "The First Calendar",
+        "selected": "Solar"
+      },
+      {
+        "turn": 59,
+        "event": "The Flooded Lands",
+        "selected": "Protect"
+      },
+      {
+        "turn": 63,
+        "event": "The Flooded Lands II",
+        "selected": "Saved"
+      },
+      {
+        "turn": 69,
+        "event": "Animal Magic",
+        "selected": "Ferrets"
+      },
+      {
+        "turn": 79,
+        "event": "The Last of their Line",
+        "selected": "Accept"
+      },
+      {
+        "turn": 82,
+        "event": "Myths And Monsters",
+        "selected": "Enlighten"
+      },
+      {
+        "turn": 83,
+        "event": "The Only Game in Town",
+        "selected": "Mind"
+      },
+      {
+        "turn": 87,
+        "event": "The Descendeds of Kings",
+        "selected": "Belittle"
+      },
+      {
+        "turn": 94,
+        "event": "A Map of the Heavens",
+        "selected": "Educate"
+      },
+      {
+        "turn": 100,
+        "event": "The Priest of Nature",
+        "selected": "Establish"
+      },
+      {
+        "turn": 103,
+        "event": "The Descendeds of Kings II",
+        "selected": "Reminisce"
+      },
+      {
+        "turn": 106,
+        "event": "Pox on the Wind",
+        "selected": "Heed"
+      },
+      {
+        "turn": 116,
+        "event": "The Human Cost",
+        "selected": "Welcome"
+      },
+      {
+        "turn": 122,
+        "event": "The Human Cost II",
+        "selected": "Harmony"
+      },
+      {
+        "turn": 126,
+        "event": "A Merchant From Afar",
+        "selected": "Consent"
+      },
+      {
+        "turn": 131,
+        "event": "A Blossoming of Beliefs",
+        "selected": "Influence"
+      },
+      {
+        "turn": 132,
+        "event": "A Merchant From Afar II",
+        "selected": "Profit"
+      },
+      {
+        "turn": 137,
+        "event": "The Battle for the Mind",
+        "selected": "Study"
+      },
+      {
+        "turn": 146,
+        "event": "The Defiant Canvas",
+        "selected": "Encourage"
+      },
+      {
+        "turn": 156,
+        "event": "The Herecy of Science",
+        "selected": "Embrace"
+      },
+      {
+        "turn": 165,
+        "event": "I Come Bearing Steam",
+        "selected": "Naturalize"
+      },
+      {
+        "turn": 170,
+        "event": "A Watery Grave",
+        "selected": "Contact"
+      },
+      {
+        "turn": 177,
+        "event": "The Sands of Time",
+        "selected": "Preach"
+      },
+      {
+        "turn": 191,
+        "event": "Hardtack and Weevils",
+        "selected": "Overhaul"
+      },
+      {
+        "turn": 196,
+        "event": "A Weave Iron and Blood",
+        "selected": "Sell"
+      },
+      {
+        "turn": 197,
+        "event": "A Weave Iron and Blood II",
+        "selected": "Outcry"
+      },
+      {
+        "turn": 202,
+        "event": "Based on a True Story I",
+        "selected": "Pass"
+      },
+      {
+        "turn": 212,
+        "event": "Thieves of the Seas",
+        "selected": "Recruit"
+      },
+      {
+        "turn": 224,
+        "event": "An Artifact of War",
+        "selected": "Commander"
+      },
+      {
+        "turn": 225,
+        "event": "An Artifact of War II",
+        "selected": "Study"
+      },
+      {
+        "turn": 226,
+        "event": "An Artifact of War III",
+        "selected": "Baffled"
+      },
+      {
+        "turn": 233,
+        "event": "Overseas Interest",
+        "selected": "Accept"
+      },
+      {
+        "turn": 245,
+        "event": "Nightstalker",
+        "selected": "Illuminate"
+      },
+      {
+        "turn": 252,
+        "event": "The Fate of Veterans",
+        "selected": "Honour"
+      },
+      {
+        "turn": 254,
+        "event": "The Walking Wounded",
+        "selected": "Ignore"
+      },
+      {
+        "turn": 263,
+        "event": "Angel Wings",
+        "selected": "Educate"
+      },
+      {
+        "turn": 267,
+        "event": "Inconvient Truths (I)",
+        "selected": "Act"
+      },
+      {
+        "turn": 278,
+        "event": "The Human Carnival",
+        "selected": "Educate"
+      },
+      {
+        "turn": 287,
+        "event": "Moving Pictures",
+        "selected": "Entertain"
+      },
+      {
+        "turn": 293,
+        "event": "Moving Pictures II",
+        "selected": "Relaxed"
+      },
+      {
+        "turn": 304,
+        "event": "The Hard-Knock Life",
+        "selected": "Compel"
+      },
+      {
+        "turn": 305,
+        "event": "The Combine",
+        "selected": "Wait"
+      },
+      {
+        "turn": 313,
+        "event": "A Common Curriculum",
+        "selected": "Intergrate"
+      },
+      {
+        "turn": 330,
+        "event": "We Become Death",
+        "selected": "Educate"
+      },
+      {
+        "turn": 343,
+        "event": "A City for Everyone",
+        "selected": "Ignore"
+      }
+    ]
+  }
+]

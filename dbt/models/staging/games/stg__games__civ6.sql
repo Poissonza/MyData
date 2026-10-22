@@ -1,0 +1,21 @@
+SELECT
+    game_name,
+    civ_leader,
+    civ_country,
+    map_type,
+    map_size,
+    game_speed,
+    difficulty,
+    game_version,
+    secret_society,
+    game_modes,
+    wonders,
+    opponents,
+    city_states,
+    luxury_resources,
+    map_features,
+    turns,
+    score,
+    victory_condition,
+    'civ6'                          AS game
+FROM {{ delta_source('gameanalysis/civ6') }}

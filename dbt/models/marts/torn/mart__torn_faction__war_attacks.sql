@@ -1,0 +1,26 @@
+SELECT
+    attack_id,
+    code,
+    started_at,
+    ended_at,
+    chain,
+    result,
+    attacker_id,
+    attacker_name,
+    attacker_faction_id,
+    attacker_faction_name,
+    defender_id,
+    defender_name,
+    defender_faction_id,
+    defender_faction_name,
+    respect_gain,
+    respect_loss,
+    modifier_fair_fight,
+    modifier_war,
+    modifier_retaliation,
+    modifier_group,
+    modifier_overseas,
+    modifier_chain,
+    modifier_warlord
+FROM {{ ref('stg__torn_faction__attacks') }}
+WHERE is_ranked_war = TRUE

@@ -1,0 +1,693 @@
+[
+  {
+    "game_name": "Game 1",
+    "game_seed": 1,
+    "map_seed": 1,
+    "map_size": "Tiny",
+    "map_type": "4-Leaf Clover",
+    "civ_leader": "Chandragupta",
+    "civ_country": "India",
+    "difficulty": "Prince",
+    "game_speed": "Standard",
+    "game_version": "1.0.2.39",
+    "game_modes": [
+      "Apocalypse"
+    ],
+    "wonders": [
+      "Mount Everest",
+      "Galapagos Islands",
+      "Great Barrier Reef"
+    ],
+    "opponents": [
+      {
+        "leader": "Kristina",
+        "country": "Sweden"
+      },
+      {
+        "leader": "Qin Shi Huang",
+        "country": "China"
+      },
+      {
+        "leader": "Tamar",
+        "country": "Gergian"
+      }
+    ],
+    "citystates": [
+      "Babylon",
+      "Bandar Brunel",
+      "Fez",
+      "Hattusa",
+      "Mohenjo-Daro",
+      "Rapa Nui"
+    ],
+    "results": {
+      "number_of_turns": 158,
+      "score": 340,
+      "victory_condition": "R"
+    },
+    "luxuryresources": [
+      "Jade",
+      "Coffee",
+      "Spices",
+      "Truffles",
+      "Pearls",
+      "Citrus",
+      "Furs",
+      "Ivory",
+      "Tea",
+      "Whales"
+    ]
+  },
+  {
+    "game_name": "Game 2",
+    "game_seed": 2,
+    "map_seed": 2,
+    "map_size": "Tiny",
+    "map_type": "4-Leaf Clover",
+    "civ_leader": "Hojo Tokimune",
+    "civ_country": "Japan",
+    "difficulty": "Prince",
+    "game_speed": "Standard",
+    "game_version": "1.0.3.31",
+    "game_modes": [
+      "Apocalypse",
+      "Secret Societies"
+    ],
+    "wonders": [
+      "Mount Everest",
+      "Galapagos Islands",
+      "Great Barrier Reef"
+    ],
+    "opponents": [
+      {
+        "leader": "Seondeok",
+        "country": "Korea"
+      },
+      {
+        "leader": "Wilhelmina",
+        "country": "Dutch"
+      },
+      {
+        "leader": "Tomyris",
+        "country": "Scythian"
+      }
+    ],
+    "citystates": [
+      "Hattusa",
+      "Auckland",
+      "Zanzibar",
+      "Ngazargamu",
+      "Vatican City",
+      "Brussels"
+    ],
+    "results": {
+      "number_of_turns": 373,
+      "score": 1260,
+      "victory_condition": "D"
+    },
+    "luxuryresources": [
+      "Truffles",
+      "Coffee",
+      "Spices",
+      "Jade",
+      "Furs",
+      "Tea",
+      "Ivory",
+      "Citrus",
+      "Pearls",
+      "Whales"
+    ],
+    "secretsociety": "Hermetic Order"
+  },
+  {
+    "game_name": "Game 3",
+    "game_seed": -1059404165,
+    "map_seed": -1059404166,
+    "map_size": "Small",
+    "map_type": "Continents",
+    "civ_leader": "Genghis Khan",
+    "civ_country": "Mongolian",
+    "difficulty": "Prince",
+    "game_speed": "Standard",
+    "game_version": "1.0.3.31",
+    "game_modes": [
+      "Apocalypse",
+      "Secret Societies"
+    ],
+    "wonders": [
+      "Pamukkale",
+      "Zhangye Danxia",
+      "Paititi"
+    ],
+    "opponents": [
+      {
+        "leader": "Menelik II",
+        "country": "Ethiopia"
+      },
+      {
+        "leader": "Kupe",
+        "country": "Maori"
+      },
+      {
+        "leader": "Tomyris",
+        "country": "Scythian"
+      },
+      {
+        "leader": "Pericles",
+        "country": "Greece"
+      },
+      {
+        "leader": "Catherine de Medici (Magnificence)",
+        "country": "France"
+      }
+    ],
+    "citystates": [
+      "Buenos Aires",
+      "Yerevan",
+      "Armagh",
+      "Zanzibar",
+      "Vilinius",
+      "Muscat",
+      "Kabul",
+      "Vatican City",
+      "Jerusalem"
+    ],
+    "results": {
+      "number_of_turns": 353,
+      "score": 1289,
+      "victory_condition": "D"
+    },
+    "mapfeatures": [
+      {
+        "map_feature": "Volcano",
+        "feature_count": 1
+      },
+      {
+        "map_feature": "GeoThermal Fissure",
+        "feature_count": 2
+      }
+    ],
+    "luxuryresources": [
+      "Whales",
+      "Silver",
+      "Salt",
+      "Dyes",
+      "Furs",
+      "Olives",
+      "Turtles",
+      "Sugar",
+      "Diamond",
+      "Silk",
+      "Citrus",
+      "Incense",
+      "Cocoa",
+      "Tobacco"
+    ],
+    "secretsociety": "Sanguine Pact"
+  },
+  {
+    "game_name": "Game 4",
+    "game_seed": -979245686,
+    "map_seed": -979245687,
+    "map_type": "Shuffle",
+    "map_size": "Small",
+    "civ_leader": "Gilgamesh",
+    "civ_country": "Sumerian",
+    "difficulty": "Prince",
+    "game_speed": "Standard",
+    "game_version": "1.0.3.31",
+    "game_modes": [
+      "Secret Societies"
+    ],
+    "wonders": [
+      "Galapagos Islands",
+      "Giant's Causway",
+      "Gobustan",
+      "Great Barrier Reef"
+    ],
+    "opponents": [
+      {
+        "leader": "Cyrus",
+        "country": "Persia"
+      },
+      {
+        "leader": "John Curtin",
+        "country": "Australia"
+      },
+      {
+        "leader": "Suleiman",
+        "country": "Ottoman"
+      },
+      {
+        "leader": "Trajan",
+        "country": "Rome"
+      },
+      {
+        "leader": "Matthias Corvinus",
+        "country": "Hungary"
+      }
+    ],
+    "citystates": [
+      "Mohenjo-Daro",
+      "Rapa Nui",
+      "Muscat",
+      "Mitla",
+      "Buenos Aires",
+      "Lisbon",
+      "Singapore",
+      "Ngazargamu",
+      "Cahokia"
+    ],
+    "results": {
+      "number_of_turns": 405,
+      "score": 1192,
+      "victory_condition": "C"
+    },
+    "mapfeatures": [
+      {
+        "map_feature": "Volcano",
+        "feature_count": 6
+      },
+      {
+        "map_feature": "GeoThermal Fissure",
+        "feature_count": 6
+      },
+      {
+        "map_feature": "Ley Lines",
+        "feature_count": 30
+      }
+    ],
+    "luxuryresources": [
+      "Truffles",
+      "Amber",
+      "Turtles",
+      "Cotton",
+      "Spices",
+      "Pearls",
+      "Salt",
+      "Silk",
+      "Jade",
+      "Furs",
+      "Sugar",
+      "Citrus",
+      "Mercury"
+    ],
+    "secretsociety": "Hermetic Order"
+  },
+  {
+    "game_name": "Game 5",
+    "game_seed": 1101408943,
+    "map_seed": 1101408944,
+    "map_type": "Fractal",
+    "map_size": "Small",
+    "civ_leader": "Gitarja",
+    "civ_country": "Indonesian",
+    "difficulty": "Prince",
+    "game_speed": "Standard",
+    "game_version": "1.0.3.31",
+    "game_modes": [
+      "Secret Societies"
+    ],
+    "wonders": [
+      "Ha Long Bay",
+      "Ik-Kil",
+      "Lake Retba",
+      "Lysefjord"
+    ],
+    "opponents": [
+      {
+        "leader": "Hojo Tokimune",
+        "country": "Japan"
+      },
+      {
+        "leader": "Eleanor of Aquitaine (England)",
+        "country": "England"
+      },
+      {
+        "leader": "Saladin",
+        "country": "Arabia"
+      },
+      {
+        "leader": "Harald Hardrada",
+        "country": "Norwegian"
+      },
+      {
+        "leader": "Philip II",
+        "country": "Spain"
+      }
+    ],
+    "citystates": [
+      "Bandar Brunel",
+      "Rapa Nui",
+      "Cardiff",
+      "Valletta",
+      "Hong Kong",
+      "Geneva",
+      "Mohenjo-Daro",
+      "La Venta",
+      "Caguana"
+    ],
+    "results": {
+      "number_of_turns": 421,
+      "score": 1227,
+      "victory_condition": "D"
+    },
+    "mapfeatures": [
+      {
+        "map_feature": "Volcano",
+        "feature_count": 6
+      },
+      {
+        "map_feature": "GeoThermal Fissure",
+        "feature_count": 6
+      }
+    ],
+    "luxuryresources": [
+      "Cotton",
+      "Cocoa",
+      "Spices",
+      "Diamond",
+      "Sugar",
+      "Tea",
+      "Ivory",
+      "Truffles",
+      "Silver",
+      "Mercury",
+      "Wine",
+      "Amber"
+    ],
+    "secretsociety": "Voidsingers"
+  },
+  {
+    "game_name": "Game 6",
+    "game_seed": 1001,
+    "map_size": "Small",
+    "map_seed": 1001,
+    "map_type": "Terra",
+    "civ_leader": "Victoria",
+    "civ_country": "England",
+    "difficulty": "Prince",
+    "game_speed": "Online",
+    "game_version": "1.0.12.9",
+    "game_modes": [
+      "Heroes & Legends",
+      "Monopolies and Corporations",
+      "Secret Societies"
+    ],
+    "wonders": [
+      "Delicate Arch",
+      "Eye of the Sahara",
+      "Gobustan",
+      "Crater Lake"
+    ],
+    "opponents": [
+      {
+        "leader": "Wilfrid Laurier",
+        "country": "Canada"
+      },
+      {
+        "leader": "Chandragupta",
+        "country": "India"
+      },
+      {
+        "leader": "Cleopatra",
+        "country": "Egypt"
+      },
+      {
+        "leader": "Poundmaker",
+        "country": "Cree"
+      },
+      {
+        "leader": "Montezuma",
+        "country": "Aztec"
+      }
+    ],
+    "citystates": [
+      "Nan Madol",
+      "Cardiff",
+      "Yerevan",
+      "Ayutthaya",
+      "Wolin",
+      "Bolgna",
+      "Vilinius",
+      "Anshan",
+      "Brussels"
+    ],
+    "results": {
+      "number_of_turns": 223,
+      "score": 1749,
+      "victory_condition": "S"
+    },
+    "mapfeatures": [
+      {
+        "map_feature": "Volcano",
+        "feature_count": 6
+      },
+      {
+        "map_feature": "GeoThermal Fissure",
+        "feature_count": 6
+      },
+      {
+        "map_feature": "Ley Lines",
+        "feature_count": 33
+      }
+    ],
+    "luxuryresources": [
+      "Dyes",
+      "Silk",
+      "Amber",
+      "Incense",
+      "Tea",
+      "Turtles",
+      "Mercury",
+      "Silver",
+      "Ivory",
+      "Cocoa",
+      "Diamond",
+      "Coffee",
+      "Marble"
+    ],
+    "secretsociety": "Hermetic Order"
+  },
+  {
+    "game_name": "Game 7",
+    "game_seed": 12567,
+    "map_seed": 12567,
+    "map_size": "Tiny",
+    "map_type": "Archipelago",
+    "civ_leader": "Trajan",
+    "civ_country": "Rome",
+    "difficulty": "Prince",
+    "game_speed": "Online",
+    "game_version": "1.0.1.12.9",
+    "game_modes": [
+      "Heroes & Legends",
+      "Secret Societies",
+      "Monopolies and Corporations"
+    ],
+    "wonders": [
+      "Mount Vesuvius",
+      "Great Barrier Reef",
+      "Mount Kilimanjaro"
+    ],
+    "opponents": [
+      {
+        "leader": "Menelik II",
+        "country": "Ethiopia"
+      },
+      {
+        "leader": "Robert the Bruce",
+        "country": "Scottland"
+      },
+      {
+        "leader": "Hammurabi",
+        "country": "Babylonian"
+      }
+    ],
+    "citystates": [
+      "Zanzibar",
+      "Armagh",
+      "Cardiff",
+      "Brussels",
+      "Nalanda",
+      "Vatican City"
+    ],
+    "results": {
+      "number_of_turns": 179,
+      "score": 1340,
+      "victory_condition": "C"
+    },
+    "mapfeatures": [
+      {
+        "map_feature": "Volcano",
+        "feature_count": 3
+      },
+      {
+        "map_feature": "GeoThermal Fissure",
+        "feature_count": 3
+      }
+    ],
+    "luxuryresources": [
+      "Coffee",
+      "Cotton",
+      "Dyes",
+      "Furs",
+      "Gypsum",
+      "Jade",
+      "Tea",
+      "Turtles",
+      "Whales"
+    ],
+    "secretsociety": "Owls of Minerva"
+  },
+  {
+    "game_name": "Game 8",
+    "game_seed": 1331,
+    "map_seed": 14641,
+    "map_size": "Small",
+    "map_type": "Tilted Axis",
+    "civ_leader": "Frederick Barbarossa",
+    "civ_country": "Germany",
+    "difficulty": "Prince",
+    "game_speed": "Quick",
+    "game_version": "1.0.12.9",
+    "game_modes": [
+      "Secret Societies"
+    ],
+    "wonders": [
+      "Yosemite",
+      "Gobustan",
+      "Zhangye Danxia",
+      "Lake Retba"
+    ],
+    "opponents": [
+      {
+        "leader": "Ba Triue",
+        "country": "Vietnam"
+      },
+      {
+        "leader": "Harald Hardrada",
+        "country": "Norwegian"
+      },
+      {
+        "leader": "Cyrus",
+        "country": "Persia"
+      },
+      {
+        "leader": "Basil II",
+        "country": "Byzantine"
+      }
+    ],
+    "citystates": [
+    ],
+    "results": {
+      "number_of_turns": 266,
+      "score": 1439,
+      "victory_condition": "D"
+    },
+    "mapfeatures": [
+      {
+        "map_feature": "Volcano",
+        "feature_count": 7
+      },
+      {
+        "map_feature": "Ley Lines",
+        "feature_count": 39
+      }
+    ],
+    "luxuryresources": [
+      "Citrus",
+      "Dyes",
+      "Olives",
+      "Pearls",
+      "Salt",
+      "Spices",
+      "Tobacco",
+      "Whales",
+      "Wine"
+    ],
+    "secretsociety": "Hermetic Order"
+  },
+  {
+    "game_name": "Game 9",
+    "game_seed": -1730784512,
+    "map_seed": -1730784511,
+    "map_size": "Small",
+    "map_type": "Shuffle",
+    "civ_leader": "Cleopatra",
+    "civ_country": "Egypt",
+    "difficulty": "Prince",
+    "game_speed": "Online",
+    "game_version": "1.0.12.9",
+    "game_modes": [
+      "Secret Societies",
+      "Monopolies and Corporations"
+    ],
+    "wonders": [
+      "Mount Kilimanjaro",
+      "Mount Vesuvius",
+      "Mount Roraima",
+      "Uluru"
+    ],
+    "opponents": [
+      {
+        "leader": "Kristina",
+        "country": "Sweden"
+      },
+      {
+        "leader": "Kupe",
+        "country": "Maori"
+      },
+      {
+        "leader": "John Curtin",
+        "country": "Australia"
+      },
+      {
+        "leader": "Tomyris",
+        "country": "Scythian"
+      },
+      {
+        "leader": "Genghis Khan",
+        "country": "Mongolian"
+      }
+    ],
+    "citystates": [
+      "Hattusa",
+      "Nan Madol",
+      "Hong Kong",
+      "Caguana",
+      "Brussels",
+      "Cardiff",
+      "Granada",
+      "Valletta",
+      "Muscat"
+    ],
+    "results": {
+      "number_of_turns": 208,
+      "score": 2341,
+      "victory_condition": "F"
+    },
+    "mapfeatures": [
+      {
+        "map_feature": "Volcano",
+        "feature_count": 7
+      },
+      {
+        "map_feature": "GeoThermal Fissure",
+        "feature_count": 6
+      }
+    ],
+    "luxuryresources": [
+      "Amber",
+      "Cotton",
+      "Ivory",
+      "Mercury",
+      "Salt",
+      "Spices",
+      "Tea",
+      "Truffles",
+      "Whales"
+    ],
+    "secretsociety": "Owls of Minerva"
+  }
+]

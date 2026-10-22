@@ -1,0 +1,243 @@
+[
+  {
+    "name": "Detective",
+    "team": "I",
+    "description": "Can check the role of the dead players and has access to the Buy menu"
+  },
+  {
+    "name": "Innocent",
+    "team": "I",
+    "description": "No Special access to Buy Menus but is there as the innoncent"
+  },
+  {
+    "name": "Phantom",
+    "team": "I",
+    "description": "Haunts the person that kills them and can come back to life once the haunted player dies"
+  },
+  {
+    "name": "Traitor",
+    "team": "T",
+    "description": "Wants to kill the innocent team to win"
+  },
+  {
+    "name": "Jester",
+    "team": "J",
+    "decription": "If the Role is killed they win"
+  },
+  {
+    "name": "Swapper",
+    "team": "J",
+    "description": "If the role dies they takes the role of the person that kills them"
+  },
+  {
+    "name": "Assasin",
+    "team": "T"
+  },
+  {
+    "name": "Hypnotist",
+    "team": "T",
+    "descption": "Can res a dead player and turn them into a traitor"
+  },
+  {
+    "name": "Glitch",
+    "team": "I",
+    "description": "Appears to the Traitors as a Traitor"
+  },
+  {
+    "name": "Banned",
+    "team": "N"
+  },
+  {
+    "name": "Zombie Prime",
+    "team": "Z"
+  },
+  {
+    "name": "Old Man",
+    "team": "J",
+    "description": "Weak character that will also win if they survive the round"
+  },
+  {
+    "name": "Revenger",
+    "team": "I",
+    "description": "Starts the game in love with someone and is notified when their love dies"
+  },
+  {
+    "name": "Impersonator",
+    "team": "T",
+    "description": "Traitor Version of the Deputy"
+  },
+  {
+    "name": "Beggar",
+    "team": "J"
+  },
+  {
+    "name": "Deputy",
+    "team": "I",
+    "description": "Becomes the Detective if the detective dies"
+  },
+  {
+    "name": "Drunk",
+    "team": "J",
+    "description": "Has no team for the first three minutes and then remembers which team they are on"
+  },
+  {
+    "name": "Killer Clown",
+    "team": "J",
+    "description": "Can't do damage until one of the other teams is eliminated and then may kill players."
+  },
+  {
+    "name": "Unknown",
+    "team": "C",
+    "description": "Server Crashed So not Captured"
+  },
+  {
+    "name": "Veteran",
+    "team": "I",
+    "description": "Gets a heal and extra damage when they are the last Innocent"
+  },
+  {
+    "name": "Mercenary",
+    "team": "I",
+    "description": "Can buy items that both the Detective and the Traitors can buy"
+  },
+  {
+    "name": "Body Snatcher",
+    "team": "J",
+    "description": "Can steal someone else's role"
+  },
+  {
+    "name": "Parasite",
+    "team": "T",
+    "description": "Someone that kills the Parasite becomes infected and then parasite can take control"
+  },
+  {
+    "name": "Mad Scientist",
+    "team": "J",
+    "description": "Bring people back as Zombies"
+  },
+  {
+    "name": "Paramedic",
+    "team": "I",
+    "description": "Innocent Role with a Defib"
+  },
+  {
+    "name": "Summoner",
+    "team": "T",
+    "description": "Has extra credits and access to items that can summon creatures"
+  },
+  {
+    "name": "Doctor",
+    "team": "I",
+    "description": "Has access to a Med kit"
+  },
+  {
+    "name": "Tracker",
+    "team": "I",
+    "description": "Detective Role"
+  },
+  {
+    "name": "Medium",
+    "team": "I",
+    "description": "Can see the Dead Players"
+  },
+  {
+    "name": "Paladin",
+    "team": "I",
+    "description": "Has a healing Aura"
+  },
+  {
+    "name": "Good Boy",
+    "team": "I",
+    "description": "Blinds anyone that kills them"
+  },
+  {
+    "name": "Bee",
+    "team": "T",
+    "description": "Special Role Added with a randommat"
+  },
+  {
+    "name": "Queen Bee",
+    "team": "T",
+    "description": "Special Role Added with a randommat"
+  },
+  {
+    "name": "Dread Thrall",
+    "team": "T",
+    "description": "Special Role that mimics Dread Thralls"
+  },
+  {
+    "name": "Possum",
+    "team": "I",
+    "description": "Spawns with a Dead Ringer so can play dead with one shot"
+  },
+  {
+    "name": "Loot Goblin",
+    "team": "J",
+    "description": "Can move faster and drops loot. Wins if they are still alive"
+  },
+  {
+    "name": "Randoman",
+    "team": "I",
+    "description": "Detective that can buy randomats"
+  },
+  {
+    "name": "Santa",
+    "team": "I",
+    "description": "Detective that can give gifts"
+  },
+  {
+    "name": "Turncoat",
+    "team": "I",
+    "description": "Can switch sides at the cost of health"
+  },
+  {
+    "name": "Informant",
+    "team": "T",
+    "description": "Can check the Roles of the other players"
+  },
+  {
+    "name": "Bee",
+    "team": "T",
+    "description": "Immune to Bee Damage"
+  },
+    {
+    "name": "Zombie",
+    "team": "T",
+    "description": "Bring people back as Zombies"
+  },
+  {
+    "name": "Elf",
+    "team": "J",
+    "description": "Bring people back as Elves"
+  },
+  {
+    "name": "Communist",
+    "team": "J",
+    "description": "Converts People to communism"
+  },
+  {
+    "name": "Taxidemist",
+    "team": "T",
+    "description": "New Uncomplete role"
+  },
+  {
+    "name": "Cupid",
+    "team": "J",
+    "description": "Make Players fall in love"
+  },
+  {
+    "name": "Marshal",
+    "team": "I",
+    "description": "Detective with a way to promote other players"
+  },
+  {
+    "name": "Shadow",
+    "team": "J",
+    "description": "Must Stay close to another player"
+  },
+  {
+    "name": "Mud Scientist",
+    "team": "J",
+    "description": "Must Collect Mud Samples"
+  }
+]

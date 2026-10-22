@@ -1,40 +1,30 @@
-import requests
 import xml.etree.ElementTree as ET
 
-
-class API:
-
-    def __init__(self):
-        self._api_endpoint = "https://boardgamegeek.com/xmlapi2/"
-        self._url = None
-
-    def get_xml(self, params=None):
-        try:
-            data = requests.get(self._url, params=params).text
-        except Exception as e:
-            raise e
-        return data
+from app.api import API
 
 
-class ThingAPI(API):
+class BGGAPI(API):
 
     def __init__(self):
-        super().__init__()
+        super().__init__(base_address="https://boardgamegeek.com/xmlapi2/")
 
-        self._url = self._api_endpoint + "thing"
-
-
-class UserApi(API):
-
-    def __init__(self):
-        super().__init__()
-
-        self._url = self._api_endpoint + "user"
+    def get_xml(self, path: str, params: dict = None) -> ET.Element:
+        return ET.fromstring(self.get(path, params).text)
 
 
-class PlaysApi(API):
+class ThingAPI(BGGAPI):
 
-    def __init__(self):
-        super().__init__()
+    def get_xml(self, params: dict = None) -> ET.Element:
+        return super().get_xml("thing", params)
 
-        self._url = self._api_endpoint + "plays"
+
+class UserApi(BGGAPI):
+
+    def get_xml(self, params: dict = None) -> ET.Element:
+        return super().get_xml("user", params)
+
+
+class PlaysApi(BGGAPI):
+
+    def get_xml(self, params: dict = None) -> ET.Element:
+        return super().get_xml("plays", params)

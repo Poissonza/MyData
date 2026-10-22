@@ -1,36 +1,52 @@
 services:
-#  bg-db:
-#    container_name: bg-db
-#    image: postgres
-#    restart: always
-#    environment:
-#      POSTGRES_USER: root
-#      POSTGRES_PASSWORD: root
-#      POSTGRES_DB: root
-#    healthcheck:
-#      test: ["CMD", "pg_isready"]
-#      interval: 10s
-#      timeout: 10s
-#      retries: 5
-#    ports:
-#      - "5432:5432"
-#    volumes:
-#      - ./db:/docker-entrypoint-initdb.d
+  spark:
+    image: apache/spark:3.5.0
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+    ports:
+      - "7077:7077"
+      - "8080:8080"
+    volumes:
+      - ./data/delta:/data/delta
+      - ./app:/app
+    env_file:
+      - .env
+
+  spark-worker:
+    build: .
+    entrypoint: ["/usr/local/lib/python3.11/site-packages/pyspark/bin/spark-class", "org.apache.spark.deploy.worker.Worker", "spark://spark:7077"]
+    volumes:
+      - ./data/delta:/data/delta
+      - ./app:/app
+    env_file:
+      - .env
+    environment:
+      - PYSPARK_PYTHON=python3
+    depends_on:
+      - spark
+
+  jupyter:
+    image: jupyter/pyspark-notebook:spark-3.5.0
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data/delta:/data/delta
+      - ./notebooks:/home/jovyan/work
+      - ./app:/home/jovyan/app
+    env_file:
+      - .env
+    depends_on:
+      - spark
+
   md-python:
     container_name: md-python
-    entrypoint: [ "tail", "-f", "/dev/null" ]
+    entrypoint: ["tail", "-f", "/dev/null"]
     build: .
     env_file:
-      - dev.env
-#    depends_on:
-#      bg-db:
-#        condition: service_healthy
+      - .env
+    environment:
+      - PYSPARK_PYTHON=python3
+    depends_on:
+      - spark
     volumes:
+      - ./data/delta:/data/delta
       - ./app:/app
-#      - ./output:/app/Output
-#    networks:
-#      - db_network
-#
-#networks:
-#  db_network:
-#    external: true

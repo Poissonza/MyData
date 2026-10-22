@@ -1,0 +1,69 @@
+speed:
+  - speed: Normal
+    description: This speed should finish within xx
+  - speed: Fast
+    description: This speed should finish within xx
+  - speed: Slow
+    description: This speed should finish within xx
+  - speed: Slowest
+    description: This speed should finish within xx
+difficulty:
+  - difficulty: Easy
+  - difficulty: Medium
+  - difficulty: Hard
+  - difficulty: Very Hard
+map:
+  - map: Contintents
+    description: This map is made up of several large landmasses, with a few smaller islands scattered throughout. It is ideal for players who enjoy exploring and expanding their empires across multiple continents.
+  - map: Archipelago
+    description: This map is made up of many small islands, with limited landmass on each. It is ideal for players who enjoy naval warfare and island hopping.
+faction:
+  - faction: Kin of Sherridyn
+    expansion: Original Game
+  - faction: Necrophage
+    expansion: Original Game
+  - faction: Sandshapers
+    expansion: Original Game
+world_size:
+    - world_size: Tiny
+      number_of_players: 2
+    - world_size: Small
+      number_of_players: 4
+    - world_size: Medium
+      number_of_players: 6
+    - world_size: Large
+      number_of_players: 8
+ai_simultaneos_turns:
+  - "Yes"
+  - "No"
+allow_fortress_instant_resolve:
+  - "Yes"
+  - "No"
+force_instant_resolve:
+  - "Yes"
+  - "No"
+peaceful_mode:
+  - "Yes"
+  - "No"
+initial_peace_duration:
+  - "No Duration"
+pre_founding_scouting_bonus:
+  - Bonuses On
+allow_optional_events:
+  - "Yes"
+  - "No"
+score_victory:
+  - "Yes"
+  - "No"
+conquest_victory:
+  - "Yes"
+  - "No"
+worship_victory_path:
+  - "Yes"
+  - "No"
+impress_victory_path:
+  - "Yes"
+  - "No"
+master_victory_path:
+  - "Yes"
+  - "No"

@@ -1,0 +1,27 @@
+players:
+  - id: 1
+    name: Zylus
+  - id: 2
+    name: Rythian
+  - id: 3
+    name: Duncan
+  - id: 4
+    name: Briony
+  - id: 5
+    name: Ben
+  - id: 6
+    name: Nilsey
+  - id: 7
+    name: Ravs
+  - id: 8
+    name: Osie
+  - id: 9
+    name: Kirsty
+  - id: 10
+    name: Sophie
+  - id: 11
+    name: Tom Clark
+  - id: 12
+    name: RTGame
+  - id: 13
+    name: Lewis

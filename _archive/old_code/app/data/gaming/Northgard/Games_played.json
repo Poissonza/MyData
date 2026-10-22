@@ -1,0 +1,66 @@
+[
+  {
+    "Game_name": "Game 1",
+    "Date": "2023-08-29",
+    "clan": "Eagle",
+    "Military": "Legion",
+    "Color": "Orange",
+    "Difficulty": "Easy",
+    "Map_size": "Small",
+    "Military_Path": "Legions",
+    "Events": [
+      {
+        "Year": 801,
+        "Month": "September",
+        "Event": "Dwarven Prospectors"
+      },
+      {
+        "Year": 803,
+        "Month": "January",
+        "Event": "Blizzard"
+      },
+      {
+        "Year": 803,
+        "Month": "December",
+        "Event": "Rat Infestation"
+      },
+      {
+        "Year": 804,
+        "Month": "November",
+        "Event": "Fallen Sailors"
+      },
+      {
+        "Year": 805,
+        "Month": "October",
+        "Event": "Kraken Attack"
+      },
+      {
+        "Year": 806,
+        "Month": "September",
+        "Event": "Draugur Invasion"
+      },
+      {
+        "Year": 807,
+        "Month": "July",
+        "Event": "Earthquake"
+      },
+      {
+        "Year": 808,
+        "Month": "June",
+        "Event": "Dwarven Prospects"
+      }
+    ],
+    "Opponents": [
+      {
+        "clan": "Stag",
+        "Military": "Leadership",
+        "Relic": "Hlidskjalf"
+      }
+    ],
+    "Outcome": {
+      "Condition": "Wisdom",
+      "year": 809,
+      "month": "April"
+    }
+  }
+]

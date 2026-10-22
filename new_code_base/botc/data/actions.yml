@@ -1,0 +1,71 @@
+actions:
+  - id: 1
+    game_id: 2
+    day: 1
+    timing: Night
+    role_id: 90
+    target_player_id: 6
+    target_role_id: null
+  - id: 2
+    game_id: 2
+    day: 2
+    timing: Night
+    role_id: 90
+    target_player_id: 6
+    target_role_id: null
+  - id: 3
+    game_id: 2
+    day: 2
+    timing: Night
+    role_id: 74
+    target_player_id: 4
+    target_role_id: null
+  - id: 4
+    game_id: 2
+    day: 3
+    timing: Night
+    role_id: 90
+    target_player_id: 4
+    target_role_id: null
+  - id: 5
+    game_id: 2
+    day: 3
+    timing: Day
+    role_id: 109
+    target_player_id: 2
+    target_role_id: null
+  - id: 6
+    game_id: 3
+    day: 1
+    timing: Night
+    role_id: 90
+    target_player_id: 2
+    target_role_id: null
+  - id: 7
+    game_id: 3
+    day: 2
+    timing: Night
+    role_id: 90
+    target_player_id: 6
+    target_role_id: null
+  - id: 8
+    game_id: 3
+    day: 3
+    timing: Night
+    role_id: 90
+    target_player_id: 1
+    target_role_id: null
+  - id: 9
+    game_id: 3
+    day: 4
+    timing: Night
+    role_id: 90
+    target_player_id: 7
+    target_role_id: null
+  - id: 10
+    game_id: 5
+    day: 3
+    timing: Day
+    role_id: 109
+    target_player_id: 9
+    target_role_id: null

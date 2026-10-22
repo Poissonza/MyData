@@ -1,0 +1,218 @@
+deaths:
+  - id: 1
+    game_id: 1
+    day: 1
+    player_id: 6
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 2
+    game_id: 1
+    day: 2
+    player_id: 7
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 3
+    game_id: 1
+    day: 2
+    player_id: 8
+    timing: Day
+    cause_type: Execution
+    cause_role_id: 123
+  - id: 4
+    game_id: 1
+    day: 3
+    player_id: 2
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 5
+    game_id: 1
+    day: 3
+    player_id: 1
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 6
+    game_id: 1
+    day: 4
+    player_id: 5
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 7
+    game_id: 2
+    day: 2
+    player_id: 9
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 8
+    game_id: 2
+    day: 3
+    player_id: 3
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 9
+    game_id: 2
+    day: 3
+    player_id: 7
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 10
+    game_id: 3
+    day: 2
+    player_id: 6
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 11
+    game_id: 3
+    day: 3
+    player_id: 4
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 12
+    game_id: 3
+    day: 4
+    player_id: 7
+    timing: Night
+    cause_type: Demon Mayor Bounce
+    cause_role_id: 54
+  - id: 13
+    game_id: 3
+    day: 4
+    player_id: 3
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 14
+    game_id: 3
+    day: 5
+    player_id: 8
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 15
+    game_id: 4
+    day: 2
+    player_id: 11
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 34
+  - id: 16
+    game_id: 4
+    day: 2
+    player_id: 12
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 17
+    game_id: 4
+    day: 3
+    player_id: 8
+    timing: Night
+    cause_type: Fang Gu killing Outsider
+    cause_role_id: 34
+  - id: 18
+    game_id: 4
+    day: 3
+    player_id: 10
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 19
+    game_id: 4
+    day: 4
+    player_id: 3
+    timing: Night
+    cause_type: Fang Gu killing Outsider
+    cause_role_id: 34
+  - id: 20
+    game_id: 4
+    day: 4
+    player_id: 9
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 21
+    game_id: 5
+    day: 2
+    player_id: 2
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 121
+  - id: 22
+    game_id: 5
+    day: 3
+    player_id: 12
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 121
+  - id: 23
+    game_id: 5
+    day: 3
+    player_id: 9
+    timing: Day
+    cause_type: Ability
+    cause_role_id: 109
+  - id: 24
+    game_id: 9
+    day: 3
+    player_id: 9
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 81
+  - id: 25
+    game_id: 9
+    day: 3
+    player_id: 2
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 81
+  - id: 26
+    game_id: 9
+    day: 3
+    player_id: 6
+    timing: Day
+    cause_type: Execution
+    cause_role_id: 123
+  - id: 27
+    game_id: 10
+    day: 1
+    player_id: 7
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 28
+    game_id: 11
+    day: 2
+    player_id: 7
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 58
+  - id: 29
+    game_id: 11
+    day: 3
+    player_id: 9
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 58
+  - id: 30
+    game_id: 11
+    day: 3
+    player_id: 6
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 31
+    game_id: 11
+    day: 4
+    player_id: 3
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null

@@ -1,0 +1,33 @@
+{
+  "Game_Played": [
+    {
+      "Name": "Game 1",
+      "Realm": "Fey-blessed Fields",
+      "Player_Distance": "Standard",
+      "Players": 4,
+      "Difficulty": "Normal",
+      "Turn_System": "Classic",
+      "Faction": "Ancient Manlings",
+      "Opponents": [
+        "Starbred Salamanders",
+        "Deep Dwellers"
+      ]
+    }
+  ],
+  "Custom_Race": [
+    {
+      "Physical Form": "Human",
+      "Culture": "Barbarian",
+      "Society_Trait": [
+        "Prolific Swarmers",
+        "Ancient Wise Ones"
+      ],
+      "Starting_Tome": "Tome of the Horde",
+      "Ruler's Origin": "Champion",
+      "Ruler_Weappon": "Bow",
+      "First_Name": "Borrut",
+      "Last_name": "Meatfrinder",
+      "Race_Name": "Ancient Manlings"
+    }
+  ]
+}

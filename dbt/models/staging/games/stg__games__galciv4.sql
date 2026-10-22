@@ -1,0 +1,21 @@
+SELECT
+    name                            AS game_name,
+    race,
+    galaxy_difficulty               AS difficulty,
+    game_pacing,
+    research_rate,
+    number_of_sectors,
+    starting_sector_size,
+    star_frequency,
+    planets_frequency,
+    minor_races,
+    hostile_entities,
+    version,
+    opponents,
+    victory_conditions,
+    turns,
+    result                          AS victory_condition,
+    score,
+    time_played,
+    'galciv4'                       AS game
+FROM {{ delta_source('gameanalysis/galciv4') }}

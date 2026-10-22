@@ -1,0 +1,369 @@
+nominations:
+  - id: 1
+    game_id: 1
+    day: 1
+    nominator_id: 6
+    nominee_id: 6
+    votes: 8
+    ghost_votes: 0
+    result_id: 2
+  - id: 2
+    game_id: 1
+    day: 2
+    nominator_id: 3
+    nominee_id: 1
+    votes: 2
+    ghost_votes: 1
+    result_id: 2
+  - id: 3
+    game_id: 1
+    day: 2
+    nominator_id: 1
+    nominee_id: 3
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 4
+    game_id: 1
+    day: 2
+    nominator_id: 8
+    nominee_id: 8
+    votes: null
+    ghost_votes: null
+    result_id: 4
+  - id: 5
+    game_id: 1
+    day: 3
+    nominator_id: 1
+    nominee_id: 3
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 6
+    game_id: 1
+    day: 3
+    nominator_id: 5
+    nominee_id: 1
+    votes: 4
+    ghost_votes: 1
+    result_id: 2
+  - id: 7
+    game_id: 2
+    day: 2
+    nominator_id: 6
+    nominee_id: 7
+    votes: 3
+    ghost_votes: null
+    result_id: 1
+  - id: 8
+    game_id: 2
+    day: 2
+    nominator_id: 7
+    nominee_id: 8
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 9
+    game_id: 2
+    day: 2
+    nominator_id: 2
+    nominee_id: 6
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 10
+    game_id: 2
+    day: 3
+    nominator_id: 7
+    nominee_id: 6
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 11
+    game_id: 2
+    day: 3
+    nominator_id: 4
+    nominee_id: 7
+    votes: 4
+    ghost_votes: null
+    result_id: 2
+  - id: 12
+    game_id: 2
+    day: 3
+    nominator_id: 2
+    nominee_id: 4
+    votes: 2
+    ghost_votes: null
+    result_id: 1
+  - id: 13
+    game_id: 3
+    day: 3
+    nominator_id: 8
+    nominee_id: 7
+    votes: 3
+    ghost_votes: null
+    result_id: 2
+  - id: 14
+    game_id: 3
+    day: 3
+    nominator_id: 7
+    nominee_id: 3
+    votes: 2
+    ghost_votes: 1
+    result_id: 3
+  - id: 15
+    game_id: 3
+    day: 3
+    nominator_id: 2
+    nominee_id: 5
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 16
+    game_id: 3
+    day: 4
+    nominator_id: 1
+    nominee_id: 3
+    votes: 3
+    ghost_votes: 1
+    result_id: 2
+  - id: 17
+    game_id: 3
+    day: 4
+    nominator_id: 2
+    nominee_id: 8
+    votes: 0
+    ghost_votes: 0
+    result_id: 1
+  - id: 18
+    game_id: 3
+    day: 5
+    nominator_id: 5
+    nominee_id: 1
+    votes: 1
+    ghost_votes: 1
+    result_id: 2
+  - id: 19
+    game_id: 3
+    day: 5
+    nominator_id: 2
+    nominee_id: 5
+    votes: 1
+    ghost_votes: 1
+    result_id: 3
+  - id: 20
+    game_id: 4
+    day: 2
+    nominator_id: 10
+    nominee_id: 12
+    votes: 4
+    ghost_votes: 0
+    result_id: 2
+  - id: 21
+    game_id: 4
+    day: 3
+    nominator_id: 2
+    nominee_id: 5
+    votes: 0
+    ghost_votes: 1
+    result_id: 1
+  - id: 22
+    game_id: 4
+    day: 3
+    nominator_id: 10
+    nominee_id: 9
+    votes: 2
+    ghost_votes: 1
+    result_id: 2
+  - id: 23
+    game_id: 4
+    day: 3
+    nominator_id: 9
+    nominee_id: 10
+    votes: 5
+    ghost_votes: 1
+    result_id: 2
+  - id: 24
+    game_id: 4
+    day: 4
+    nominator_id: 9
+    nominee_id: 2
+    votes: 1
+    ghost_votes: 0
+    result_id: 1
+  - id: 25
+    game_id: 4
+    day: 4
+    nominator_id: 2
+    nominee_id: 9
+    votes: 1
+    ghost_votes: 2
+    result_id: 2
+  - id: 26
+    game_id: 5
+    day: 3
+    nominator_id: 1
+    nominee_id: 1
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 27
+    game_id: 5
+    day: 3
+    nominator_id: 11
+    nominee_id: 11
+    votes: 0
+    ghost_votes: 0
+    result_id: 5
+  - id: 28
+    game_id: 9
+    day: 1
+    nominator_id: 2
+    nominee_id: 9
+    votes: 3
+    ghost_votes: null
+    result_id: 2
+  - id: 29
+    game_id: 9
+    day: 1
+    nominator_id: 6
+    nominee_id: 1
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 30
+    game_id: 9
+    day: 1
+    nominator_id: 4
+    nominee_id: 2
+    votes: 2
+    ghost_votes: null
+    result_id: 1
+  - id: 31
+    game_id: 9
+    day: 1
+    nominator_id: 1
+    nominee_id: 6
+    votes: 3
+    ghost_votes: null
+    result_id: 3
+  - id: 32
+    game_id: 9
+    day: 2
+    nominator_id: 6
+    nominee_id: 1
+    votes: 3
+    ghost_votes: null
+    result_id: 2
+  - id: 33
+    game_id: 9
+    day: 2
+    nominator_id: 1
+    nominee_id: 9
+    votes: 3
+    ghost_votes: null
+    result_id: 3
+  - id: 34
+    game_id: 9
+    day: 2
+    nominator_id: 9
+    nominee_id: 6
+    votes: 3
+    ghost_votes: null
+    result_id: 1
+  - id: 35
+    game_id: 9
+    day: 3
+    nominator_id: 1
+    nominee_id: 6
+    votes: 2
+    ghost_votes: null
+    result_id: 2
+  - id: 36
+    game_id: 9
+    day: 3
+    nominator_id: 4
+    nominee_id: 1
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 37
+    game_id: 9
+    day: 3
+    nominator_id: 6
+    nominee_id: 4
+    votes: null
+    ghost_votes: null
+    result_id: 4
+  - id: 38
+    game_id: 10
+    day: 1
+    nominator_id: 10
+    nominee_id: 13
+    votes: 3
+    ghost_votes: null
+    result_id: 2
+  - id: 39
+    game_id: 10
+    day: 1
+    nominator_id: 13
+    nominee_id: 7
+    votes: 4
+    ghost_votes: null
+    result_id: 2
+  - id: 40
+    game_id: 10
+    day: 1
+    nominator_id: 7
+    nominee_id: 10
+    votes: 2
+    ghost_votes: null
+    result_id: 1
+  - id: 41
+    game_id: 11
+    day: 1
+    nominator_id: 7
+    nominee_id: 9
+    votes: 0
+    ghost_votes: 0
+    result_id: 1
+  - id: 42
+    game_id: 11
+    day: 2
+    nominator_id: 6
+    nominee_id: 10
+    votes: 0
+    ghost_votes: null
+    result_id: 1
+  - id: 43
+    game_id: 11
+    day: 3
+    nominator_id: 7
+    nominee_id: 6
+    votes: 1
+    ghost_votes: 1
+    result_id: 2
+  - id: 44
+    game_id: 11
+    day: 3
+    nominator_id: 6
+    nominee_id: 10
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 45
+    game_id: 11
+    day: 4
+    nominator_id: 3
+    nominee_id: 13
+    votes: 2
+    ghost_votes: null
+    result_id: 2
+  - id: 46
+    game_id: 11
+    day: 4
+    nominator_id: 13
+    nominee_id: 3
+    votes: 3
+    ghost_votes: null
+    result_id: 2

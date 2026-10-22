@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: torn_user
+    description: Raw Torn user API responses stored in Delta Lake, partitioned by endpoint.
+    tables:
+      - name: user
+        description: "{{ delta_source('torn/user') }}"
+        columns:
+          - name: endpoint
+            description: API endpoint name (attacks, basic, battlestats, etc.)
+          - name: retrieved_at
+            description: UTC timestamp when the data was fetched
+          - name: data
+            description: Full raw API response as a nested struct
+
+  - name: torn_faction
+    description: Raw Torn faction API responses stored in Delta Lake, partitioned by endpoint.
+    tables:
+      - name: faction
+        description: "{{ delta_source('torn/faction') }}"
+        columns:
+          - name: endpoint
+          - name: retrieved_at
+          - name: data
+
+  - name: torn_travel
+    description: Parsed Torn travel log events stored in Delta Lake, partitioned by category.
+    tables:
+      - name: travel
+        description: "{{ delta_source('torn/travel') }}"
+        columns:
+          - name: category
+            description: "Event type: travel, purchase, hunt, rehab, travel_fee, fortune_teller"

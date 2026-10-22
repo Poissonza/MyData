@@ -1,0 +1,11 @@
+events:
+  - game: 1
+    events:
+      - type:
+        name:
+        turn_started:
+        reward:
+        requirements:
+        completed:
+          condition:
+          turn:

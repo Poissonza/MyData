@@ -1,0 +1,12 @@
+factions:
+  - name: Kin Of Sherridyn
+    expansion: Original Game
+    focus:
+
+game_options:
+  map:
+    - name: Continents
+      expansion: Original Game
+  world_size:
+    - name: Tiny
+      number_of_players: 2

@@ -1,0 +1,236 @@
+extra_info:
+  - id: 1
+    game_id: 1
+    day: 1
+    role_id: 126
+    info: Duncan or Zylus is the Soldier
+  - id: 2
+    game_id: 1
+    day: 1
+    role_id: 56
+    info: Ravs or Zylus is the Spy
+  - id: 3
+    game_id: 1
+    day: 1
+    role_id: 29
+    info: Got a 0
+  - id: 4
+    game_id: 1
+    day: 2
+    role_id: 29
+    info: Got a 0
+  - id: 5
+    game_id: 1
+    day: 3
+    role_id: 29
+    info: Got a 0
+  - id: 6
+    game_id: 2
+    day: 1
+    role_id: 21
+    info: The evil team is not sitting next to each other
+  - id: 7
+    game_id: 2
+    day: 1
+    role_id: 126
+    info: Briony or Rythian are the Slayer
+  - id: 8
+    game_id: 2
+    day: 1
+    role_id: 40
+    info: Briony and Kirsty are not the Demon
+  - id: 9
+    game_id: 2
+    day: 1
+    role_id: 54
+    info: 'Bluffs:  Investigator, Recluse, Empath'
+  - id: 10
+    game_id: 2
+    day: 2
+    role_id: 40
+    info: Nilsey and Osie are not the Demon
+  - id: 11
+    game_id: 3
+    day: 1
+    role_id: 62
+    info: Osie or Briony is the Butler
+  - id: 12
+    game_id: 3
+    day: 1
+    role_id: 56
+    info: Either Duncan or Ravs is the Poisoner.
+  - id: 13
+    game_id: 3
+    day: 1
+    role_id: 54
+    info: Bluffs are Empath, Soldier and Slayer
+  - id: 14
+    game_id: 3
+    day: 4
+    role_id: 99
+    info: Ben is the Slayer
+  - id: 15
+    game_id: 4
+    day: 1
+    role_id: 40
+    info: Neither Tom or Ben is evil
+  - id: 16
+    game_id: 4
+    day: 1
+    role_id: 106
+    info: Duncan and Tom are the same alignment.
+  - id: 17
+    game_id: 4
+    day: 1
+    role_id: 66
+    info: Kirsty is your Minion
+  - id: 18
+    game_id: 4
+    day: 1
+    role_id: 34
+    info: 'Bluffs: Empath, Mayor and Cannibal'
+  - id: 19
+    game_id: 4
+    day: 1
+    role_id: 79
+    info: One of the following is evil, Osie, Rythian or Kirsty
+  - id: 20
+    game_id: 4
+    day: 2
+    role_id: 66
+    info: Wants to kill Tom.
+  - id: 21
+    game_id: 4
+    day: 2
+    role_id: 40
+    info: Neither Duncan nor Kirsty is the Demon
+  - id: 22
+    game_id: 4
+    day: 3
+    role_id: 66
+    info: Wants to Kill Osie
+  - id: 23
+    game_id: 4
+    day: 3
+    role_id: 40
+    info: There is a Demon between Sophie (red Herring) and RTGamer.
+  - id: 24
+    game_id: 4
+    day: 4
+    role_id: 40
+    info: Either Osie and Rythian are a Demon.
+  - id: 25
+    game_id: 5
+    day: 1
+    role_id: 66
+    info: RTGame is you minion, Bluffs are Seamstress, Cannibal and Oracle
+  - id: 26
+    game_id: 5
+    day: 1
+    role_id: 30
+    info: '1'
+  - id: 27
+    game_id: 5
+    day: 1
+    role_id: 121
+    info: Bluffs are Saint, Mayor, Fortune Teller
+  - id: 28
+    game_id: 5
+    day: 2
+    role_id: 66
+    info: Wants to Kill Rythian
+  - id: 29
+    game_id: 5
+    day: 2
+    role_id: 82
+    info: There is 0 evil players dead.
+  - id: 30
+    game_id: 5
+    day: 3
+    role_id: 66
+    info: Wants to kill Kirsty
+  - id: 31
+    game_id: 5
+    day: 3
+    role_id: 82
+    info: There is 0 Evil Dead Players (Poisoned)
+  - id: 32
+    game_id: 9
+    day: 1
+    role_id: 81
+    info: Kirsty is your Marionette. Bluffs are Shugenja, Drunk, Lunatic
+  - id: 33
+    game_id: 9
+    day: 1
+    role_id: 56
+    info: Kirsty or NIlsey is the Marionette
+  - id: 34
+    game_id: 9
+    day: 2
+    role_id: 41
+    info: Gambled Rythian is the Investigator
+  - id: 35
+    game_id: 9
+    day: 3
+    role_id: 41
+    info: Gambled Nilsey as the Gambler
+  - id: 36
+    game_id: 9
+    day: 3
+    role_id: 81
+    info: Allowed to Kill two tonight due to House swap between Briony and Nilsey
+  - id: 37
+    game_id: 10
+    day: 1
+    role_id: 64
+    info: The Lleech host is Ravs
+  - id: 38
+    game_id: 10
+    day: 1
+    role_id: 104
+    info: Either one Evil player knows the other or someone is currently drunk
+  - id: 39
+    game_id: 11
+    day: 1
+    role_id: 58
+    info: Bluffs are Knight, Hatter and Fool
+  - id: 40
+    game_id: 11
+    day: 1
+    role_id: 129
+    info: Wish is, At the start of every day a player gets a stack of Minecraft spawners and if they don't use them all during the day they die. I pick Ravs to be the first player.
+  - id: 41
+    game_id: 11
+    day: 1
+    role_id: 30
+    info: '0'
+  - id: 42
+    game_id: 11
+    day: 1
+    role_id: 28
+    info: NIlsey is either a Fool or Wizard
+  - id: 43
+    game_id: 11
+    day: 1
+    role_id: 106
+    info: Sophie and Kirsty are on the same team.
+  - id: 44
+    game_id: 11
+    day: 2
+    role_id: 129
+    info: Duncan gets a stack of cat spawners
+  - id: 45
+    game_id: 11
+    day: 2
+    role_id: 28
+    info: Sophie is either the Banshee or a Yaggababble
+  - id: 46
+    game_id: 11
+    day: 3
+    role_id: 129
+    info: Lewis gets a stack of Chickens.
+  - id: 47
+    game_id: 11
+    day: 4
+    role_id: 129
+    info: Duncan can get a stack of Camels

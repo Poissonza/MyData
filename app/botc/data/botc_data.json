@@ -1,0 +1,68 @@
+{
+  "players": [
+    {
+      "name": "Lewis"
+    },
+    {
+      "name": "Ben"
+    },
+    {
+      "name": "Duncan"
+    },
+    {
+      "name": "Rhytian"
+    },
+    {
+      "name": "Nilesy"
+    },
+    {
+      "name": "Kirsty"
+    },
+    {
+      "name": "Osie"
+    },
+    {
+      "name": "Zylus"
+    },
+    {
+      "name": "Sips"
+    }
+  ],
+  "playervideo": [
+    {
+      "player": "",
+      "video": "",
+      "role": ""
+    }
+  ],
+  "roles": [
+    {
+      "name": "",
+      "alignment": "",
+      "base set": ""
+    }
+  ],
+  "roleplayer": [
+    {
+      "player": "",
+      "role": "",
+      "video": ""
+    }
+  ],
+  "videos": [
+    {
+      "name": "",
+      "date": "",
+      "time": "",
+      "members": true,
+      "id": ""
+    }
+  ],
+  "winners": [
+    {
+      "video_id": "",
+      "winner": "",
+      "nights": ""
+    }
+  ]
+}

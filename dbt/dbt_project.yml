@@ -1,0 +1,30 @@
+name: mydata
+version: "1.0.0"
+profile: mydata
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+clean-targets: ["target", "dbt_packages"]
+
+vars:
+  delta_base_path: "file:///data/delta"
+  databricks_catalog: "mydata"
+
+models:
+  mydata:
+    staging:
+      +materialized: view
+      torn:
+        +schema: staging_torn
+      games:
+        +schema: staging_games
+      ttt:
+        +schema: staging_ttt
+    marts:
+      +materialized: table
+      torn:
+        +schema: torn
+      games:
+        +schema: games

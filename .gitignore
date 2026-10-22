@@ -4,3 +4,13 @@
 /.idea/
 *.env
 .python-version
+__pycache__/
+*.pyc
+uv.lock
+uv.lock
+new_dbt/dbt_packages/dbt_utils/
+new_dbt/logs/
+new_dbt/target/
+/new_dbt/profiles.yml
+
+.DS_Store

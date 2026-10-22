@@ -1,0 +1,343 @@
+game_players:
+  - id: 1
+    player_id: 3
+    starting_role_id: 112
+    game_id: 1
+    seat: 1
+    believed_role_id: null
+  - id: 2
+    player_id: 2
+    starting_role_id: 56
+    game_id: 1
+    seat: 2
+    believed_role_id: null
+  - id: 3
+    player_id: 4
+    starting_role_id: 54
+    game_id: 1
+    seat: 3
+    believed_role_id: null
+  - id: 4
+    player_id: 5
+    starting_role_id: 29
+    game_id: 1
+    seat: 4
+    believed_role_id: 30
+  - id: 5
+    player_id: 6
+    starting_role_id: 126
+    game_id: 1
+    seat: 5
+    believed_role_id: null
+  - id: 6
+    player_id: 7
+    starting_role_id: 40
+    game_id: 1
+    seat: 6
+    believed_role_id: null
+  - id: 7
+    player_id: 1
+    starting_role_id: 113
+    game_id: 1
+    seat: 7
+    believed_role_id: null
+  - id: 8
+    player_id: 8
+    starting_role_id: 123
+    game_id: 1
+    seat: 8
+    believed_role_id: null
+  - id: 9
+    player_id: 9
+    starting_role_id: 74
+    game_id: 2
+    seat: 1
+    believed_role_id: null
+  - id: 10
+    player_id: 4
+    starting_role_id: 109
+    game_id: 2
+    seat: 2
+    believed_role_id: null
+  - id: 11
+    player_id: 7
+    starting_role_id: 54
+    game_id: 2
+    seat: 3
+    believed_role_id: null
+  - id: 12
+    player_id: 8
+    starting_role_id: 126
+    game_id: 2
+    seat: 4
+    believed_role_id: null
+  - id: 13
+    player_id: 6
+    starting_role_id: 103
+    game_id: 2
+    seat: 5
+    believed_role_id: null
+  - id: 14
+    player_id: 2
+    starting_role_id: 90
+    game_id: 2
+    seat: 6
+    believed_role_id: null
+  - id: 15
+    player_id: 3
+    starting_role_id: 40
+    game_id: 2
+    seat: 7
+    believed_role_id: null
+  - id: 16
+    player_id: 1
+    starting_role_id: 21
+    game_id: 2
+    seat: 8
+    believed_role_id: null
+  - id: 17
+    player_id: 6
+    starting_role_id: 120
+    game_id: 3
+    seat: 1
+    believed_role_id: null
+  - id: 18
+    player_id: 5
+    starting_role_id: 54
+    game_id: 3
+    seat: 2
+    believed_role_id: null
+  - id: 19
+    player_id: 3
+    starting_role_id: 90
+    game_id: 3
+    seat: 3
+    believed_role_id: null
+  - id: 20
+    player_id: 1
+    starting_role_id: 71
+    game_id: 3
+    seat: 4
+    believed_role_id: null
+  - id: 21
+    player_id: 4
+    starting_role_id: 56
+    game_id: 3
+    seat: 5
+    believed_role_id: null
+  - id: 22
+    player_id: 2
+    starting_role_id: 62
+    game_id: 3
+    seat: 6
+    believed_role_id: null
+  - id: 23
+    player_id: 8
+    starting_role_id: 103
+    game_id: 3
+    seat: 7
+    believed_role_id: null
+  - id: 24
+    player_id: 7
+    starting_role_id: 99
+    game_id: 3
+    seat: 8
+    believed_role_id: null
+  - id: 25
+    player_id: 8
+    starting_role_id: 34
+    game_id: 4
+    seat: 1
+    believed_role_id: null
+  - id: 26
+    player_id: 5
+    starting_role_id: 68
+    game_id: 4
+    seat: 2
+    believed_role_id: 99
+  - id: 27
+    player_id: 2
+    starting_role_id: 2
+    game_id: 4
+    seat: 3
+    believed_role_id: null
+  - id: 28
+    player_id: 9
+    starting_role_id: 40
+    game_id: 4
+    seat: 4
+    believed_role_id: null
+  - id: 29
+    player_id: 3
+    starting_role_id: 66
+    game_id: 4
+    seat: 5
+    believed_role_id: 121
+  - id: 30
+    player_id: 10
+    starting_role_id: 106
+    game_id: 4
+    seat: 6
+    believed_role_id: null
+  - id: 31
+    player_id: 11
+    starting_role_id: 82
+    game_id: 4
+    seat: 7
+    believed_role_id: null
+  - id: 32
+    player_id: 12
+    starting_role_id: 79
+    game_id: 4
+    seat: 8
+    believed_role_id: null
+  - id: 33
+    player_id: 12
+    starting_role_id: 13
+    game_id: 5
+    seat: 1
+    believed_role_id: null
+  - id: 34
+    player_id: 8
+    starting_role_id: 82
+    game_id: 5
+    seat: 2
+    believed_role_id: null
+  - id: 35
+    player_id: 2
+    starting_role_id: 30
+    game_id: 5
+    seat: 3
+    believed_role_id: null
+  - id: 36
+    player_id: 1
+    starting_role_id: 2
+    game_id: 5
+    seat: 4
+    believed_role_id: null
+  - id: 37
+    player_id: 11
+    starting_role_id: 66
+    game_id: 5
+    seat: 5
+    believed_role_id: 54
+  - id: 38
+    player_id: 10
+    starting_role_id: 109
+    game_id: 5
+    seat: 6
+    believed_role_id: null
+  - id: 39
+    player_id: 9
+    starting_role_id: 121
+    game_id: 5
+    seat: 7
+    believed_role_id: null
+  - id: 40
+    player_id: 3
+    starting_role_id: 18
+    game_id: 5
+    seat: 8
+    believed_role_id: null
+  - id: 41
+    player_id: 1
+    starting_role_id: 81
+    game_id: 9
+    seat: 1
+    believed_role_id: null
+  - id: 42
+    player_id: 9
+    starting_role_id: 68
+    game_id: 9
+    seat: 2
+    believed_role_id: 120
+  - id: 43
+    player_id: 4
+    starting_role_id: 123
+    game_id: 9
+    seat: 3
+    believed_role_id: null
+  - id: 44
+    player_id: 6
+    starting_role_id: 41
+    game_id: 9
+    seat: 4
+    believed_role_id: null
+  - id: 45
+    player_id: 2
+    starting_role_id: 56
+    game_id: 9
+    seat: 5
+    believed_role_id: null
+  - id: 46
+    player_id: 3
+    starting_role_id: 1
+    game_id: 10
+    seat: 1
+    believed_role_id: null
+  - id: 47
+    player_id: 7
+    starting_role_id: 113
+    game_id: 10
+    seat: 2
+    believed_role_id: null
+  - id: 48
+    player_id: 13
+    starting_role_id: 7
+    game_id: 10
+    seat: 3
+    believed_role_id: null
+  - id: 49
+    player_id: 9
+    starting_role_id: 88
+    game_id: 10
+    seat: 4
+    believed_role_id: null
+  - id: 50
+    player_id: 10
+    starting_role_id: 64
+    game_id: 10
+    seat: 5
+    believed_role_id: null
+  - id: 51
+    player_id: 6
+    starting_role_id: 104
+    game_id: 10
+    seat: 6
+    believed_role_id: null
+  - id: 52
+    player_id: 7
+    starting_role_id: 30
+    game_id: 11
+    seat: 1
+    believed_role_id: null
+  - id: 53
+    player_id: 9
+    starting_role_id: 28
+    game_id: 11
+    seat: 2
+    believed_role_id: null
+  - id: 54
+    player_id: 6
+    starting_role_id: 39
+    game_id: 11
+    seat: 3
+    believed_role_id: null
+  - id: 55
+    player_id: 13
+    starting_role_id: 58
+    game_id: 11
+    seat: 4
+    believed_role_id: null
+  - id: 56
+    player_id: 3
+    starting_role_id: 106
+    game_id: 11
+    seat: 5
+    believed_role_id: null
+  - id: 57
+    player_id: 10
+    starting_role_id: 11
+    game_id: 11
+    seat: 6
+    believed_role_id: null

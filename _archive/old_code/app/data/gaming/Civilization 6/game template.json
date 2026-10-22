@@ -1,0 +1,34 @@
+{
+  "game_name": "",
+  "game_seed": 0,
+  "map_seed": 0,
+  "map_size": "",
+  "map_type": "",
+  "civ_leader": "",
+  "civ_country": "",
+  "difficulty": "",
+  "game_speed": "",
+  "game_version": "",
+  "game_modes": [
+    ""
+  ],
+  "wonders": [
+  ],
+  "opponents": [
+  ],
+  "citystates": [
+  ],
+  "results": {
+    "number_of_turns": 0,
+    "score": 0,
+    "victory_condition": ""
+  },
+  "mapfeatures": [
+    {
+      "map_feature": "",
+      "feature_count": 0
+    }
+  ],
+  "luxuryresources": [],
+  "secretsociety": ""
+}

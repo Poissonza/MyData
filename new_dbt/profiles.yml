@@ -1,0 +1,12 @@
+mydata:
+  target: dev
+  outputs:
+
+    torn:
+      type: databricks
+      host:
+      http_path:
+      token:
+      catalog: torn
+      schema: default
+      threads: 4

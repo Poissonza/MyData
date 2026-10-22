@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: games
+    description: Flat game session data loaded from JSON files into Delta Lake.
+    tables:
+      - name: civ6
+        description: "{{ delta_source('gameanalysis/civ6') }}"
+      - name: galciv4
+        description: "{{ delta_source('gameanalysis/galciv4') }}"
+      - name: galciv4_supernova
+        description: "{{ delta_source('gameanalysis/galciv4_supernova') }}"
+      - name: humankind
+        description: "{{ delta_source('gameanalysis/humankind') }}"
+      - name: aow4
+        description: "{{ delta_source('gameanalysis/aow4') }}"
+      - name: northgard
+        description: "{{ delta_source('gameanalysis/northgard') }}"

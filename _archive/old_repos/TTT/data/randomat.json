@@ -1,0 +1,18 @@
+[
+  {
+    "name": "The Bar has Been Raised",
+    "description": "Increases the damage and push force of the crowbar"
+  },
+  {
+    "name": "Explosive Spectating",
+    "description": "Click while prop posessing to explode"
+  },
+  {
+    "name": "Suicide Squad",
+    "description": "Everyone gets detonators"
+  },
+  {
+    "name": "Gunpowder, Treason and Plot",
+    "descption": "Spawns Barrells"
+  }
+]

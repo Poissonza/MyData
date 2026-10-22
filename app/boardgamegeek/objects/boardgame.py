@@ -1,7 +1,7 @@
-from .things import Thing
+from .things import Serialisable, Thing
 
 
-class BoardGame(Thing):
+class BoardGame(Thing, Serialisable):
 
     def __init__(self, data):
         self._data = data

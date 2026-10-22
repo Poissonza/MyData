@@ -1,4 +1,4 @@
-from boardgamegeek.util import XMLTools
+from app.boardgamegeek.util import XMLTools
 from app.boardgamegeek.objects import User
 
 
