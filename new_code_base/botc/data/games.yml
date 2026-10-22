@@ -20,3 +20,6 @@ games:
   - id: 7
     game_number: 1
     video_id: 7
+  - id: 8
+    game_number: 1
+    video_id: 8
