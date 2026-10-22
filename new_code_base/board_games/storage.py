@@ -21,7 +21,9 @@ class SessionStore:
 
     def save(self, session_id: str, data: dict) -> None:
         with open(self.sessions_dir / f"{session_id}.yml", "w") as f:
-            yaml.dump(data, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+            yaml.dump(
+                data, f, default_flow_style=False, sort_keys=False, allow_unicode=True
+            )
 
     def exists(self, session_id: str) -> bool:
         return (self.sessions_dir / f"{session_id}.yml").exists()
@@ -54,14 +56,16 @@ def _extract_actions(session: dict) -> list[dict[str, Any]]:
     }
     for era in session.get("eras", []):
         for action in era.get("actions", []):
-            rows.append({
-                **base,
-                "era": era.get("era_number"),
-                "player": action.get("player"),
-                "action_type": action.get("action_type"),
-                "module": action.get("module"),
-                "module_level": action.get("module_level"),
-                "choice": action.get("choice"),
-                "notes": action.get("notes"),
-            })
+            rows.append(
+                {
+                    **base,
+                    "era": era.get("era_number"),
+                    "player": action.get("player"),
+                    "action_type": action.get("action_type"),
+                    "module": action.get("module"),
+                    "module_level": action.get("module_level"),
+                    "choice": action.get("choice"),
+                    "notes": action.get("notes"),
+                }
+            )
     return rows

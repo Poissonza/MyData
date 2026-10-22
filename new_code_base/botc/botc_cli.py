@@ -16,6 +16,7 @@ REF_DIR = BOTC_DIR / "reference"
 
 # ─── Helpers ─────────────────────────────────────────────────────────────────
 
+
 def load_ref() -> tuple[list, list]:
     with open(REF_DIR / "players.yml") as f:
         players = yaml.safe_load(f)["players"]
@@ -32,7 +33,9 @@ def load_game(game_id: str) -> dict:
 def save_game(game_id: str, data: dict) -> None:
     path = GAMES_DIR / f"{game_id}.yml"
     with open(path, "w") as f:
-        yaml.dump(data, f, default_flow_style=False, sort_keys=False, allow_unicode=True)
+        yaml.dump(
+            data, f, default_flow_style=False, sort_keys=False, allow_unicode=True
+        )
     print(f"  Saved → {path.relative_to(BOTC_DIR)}")
 
 
@@ -72,6 +75,7 @@ def int_or_none(val: str | None) -> int | None:
 
 
 # ─── Commands ────────────────────────────────────────────────────────────────
+
 
 def cmd_new_game(players_ref: list, roles_ref: list) -> None:
     print("\n=== New Game ===")
@@ -159,13 +163,15 @@ def cmd_add_day(players_ref: list, roles_ref: list) -> None:
             votes = int_or_none(ask("  Votes (Enter to skip)"))
             ghost_votes = int_or_none(ask("  Ghost votes (Enter to skip)"))
             result = ask("  Result (Enter to skip)")
-            nominations.append({
-                "nominate": nominate,
-                "nominator": nominator,
-                "votes": votes,
-                "ghost_votes": ghost_votes,
-                "result": result,
-            })
+            nominations.append(
+                {
+                    "nominate": nominate,
+                    "nominator": nominator,
+                    "votes": votes,
+                    "ghost_votes": ghost_votes,
+                    "result": result,
+                }
+            )
 
     day_entry: dict = {
         "day": day_num,
@@ -239,17 +245,25 @@ def cmd_reveal(players_ref: list, roles_ref: list) -> None:
             print(f"\nDay {day_num} — Minion actions:")
             for action in day_entry["minion_action"]:
                 if not action.get("role"):
-                    action["role"] = pick(roles_ref, "  Role (Enter to skip)", allow_blank=True)
+                    action["role"] = pick(
+                        roles_ref, "  Role (Enter to skip)", allow_blank=True
+                    )
                 if not action.get("player"):
-                    action["player"] = pick(game_players, "  Player (Enter to skip)", allow_blank=True)
+                    action["player"] = pick(
+                        game_players, "  Player (Enter to skip)", allow_blank=True
+                    )
 
         if "townsfolk_action" in day_entry:
             print(f"\nDay {day_num} — Townsfolk actions:")
             for action in day_entry["townsfolk_action"]:
                 if not action.get("role"):
-                    action["role"] = pick(roles_ref, "  Role (Enter to skip)", allow_blank=True)
+                    action["role"] = pick(
+                        roles_ref, "  Role (Enter to skip)", allow_blank=True
+                    )
                 if not action.get("player"):
-                    action["player"] = pick(game_players, "  Player (Enter to skip)", allow_blank=True)
+                    action["player"] = pick(
+                        game_players, "  Player (Enter to skip)", allow_blank=True
+                    )
 
         if day_num == first_day:
             print(f"\nDay {day_num} — Add reveal extra info (e.g. Imp bluffs)?")
@@ -257,7 +271,9 @@ def cmd_reveal(players_ref: list, roles_ref: list) -> None:
                 role = pick(roles_ref, "  Role", allow_blank=True)
                 if role:
                     info = ask("  Info")
-                    day_entry.setdefault("extra_info", []).append({"role": role, "info": info})
+                    day_entry.setdefault("extra_info", []).append(
+                        {"role": role, "info": info}
+                    )
 
     # Result
     print("\nGame result:")
@@ -269,6 +285,7 @@ def cmd_reveal(players_ref: list, roles_ref: list) -> None:
 
 
 # ─── Main loop ───────────────────────────────────────────────────────────────
+
 
 def main() -> None:
     print("\nBlood on the Clocktower — Data Entry")

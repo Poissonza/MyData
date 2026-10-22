@@ -57,12 +57,14 @@ def _session_status(sdata: dict, max_eras: int) -> list[dict]:
         era = era_map.get(era_n)
         n_actions = len(era["actions"]) if era else 0
         eoe = era.get("end_of_era", {}) if era else {}
-        rows.append({
-            "era": era_n,
-            "actions": n_actions,
-            "category": eoe.get("category_scored", "—"),
-            "eoe_recorded": bool(eoe.get("scores")),
-        })
+        rows.append(
+            {
+                "era": era_n,
+                "actions": n_actions,
+                "category": eoe.get("category_scored", "—"),
+                "eoe_recorded": bool(eoe.get("scores")),
+            }
+        )
     result = sdata.get("result", {})
     return rows, bool(result.get("final_scores"))
 
@@ -154,7 +156,9 @@ with tab_new:
 
 with tab_status:
     st.header("Session Status")
-    st.caption("Overview of what has been recorded — useful when returning to an in-progress game.")
+    st.caption(
+        "Overview of what has been recorded — useful when returning to an in-progress game."
+    )
 
     sessions = store.list_sessions()
     if not sessions:
@@ -176,8 +180,14 @@ with tab_status:
         era_rows, final_done = _session_status(sdata_s, max_eras_s)
         for row in era_rows:
             eoe_icon = "✅" if row["eoe_recorded"] else "⏳"
-            action_str = f"{row['actions']} action{'s' if row['actions'] != 1 else ''} logged"
-            cat_str = f"Category: {row['category']}" if row["eoe_recorded"] else "End of era not recorded"
+            action_str = (
+                f"{row['actions']} action{'s' if row['actions'] != 1 else ''} logged"
+            )
+            cat_str = (
+                f"Category: {row['category']}"
+                if row["eoe_recorded"]
+                else "End of era not recorded"
+            )
             st.markdown(
                 f"**Era {row['era']}** — {action_str} &nbsp;|&nbsp; {eoe_icon} {cat_str}"
             )
@@ -200,7 +210,9 @@ with tab_status:
 
 with tab_action:
     st.header("Log Actions")
-    st.caption("Record turns during the Action Phase (Phase 4). You can add to any era at any time.")
+    st.caption(
+        "Record turns during the Action Phase (Phase 4). You can add to any era at any time."
+    )
 
     sessions = store.list_sessions()
     if not sessions:
@@ -342,7 +354,9 @@ with tab_era:
     scores: dict = dict(existing_eoe.get("scores", {}))
     for p in sp_e:
         scores[p] = st.number_input(
-            f"{p}", min_value=0, value=int(scores.get(p, 0)),
+            f"{p}",
+            min_value=0,
+            value=int(scores.get(p, 0)),
             key=f"ee_score_{sel_e}_{p}",
         )
 
@@ -411,7 +425,9 @@ with tab_final:
     final_scores: dict = dict(existing_result.get("final_scores", {}))
     for p in sp_f:
         final_scores[p] = st.number_input(
-            f"{p}", min_value=0, value=int(final_scores.get(p, 0)),
+            f"{p}",
+            min_value=0,
+            value=int(final_scores.get(p, 0)),
             key=f"fs_score_{sel_f}_{p}",
         )
 

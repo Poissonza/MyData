@@ -12,5 +12,3 @@ with tab_ref:
 
 with tab_faction:
     tabs.faction_page()
-
-

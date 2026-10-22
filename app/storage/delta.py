@@ -14,7 +14,11 @@ class DeltaWriter:
         self._path = StorageConfig.table_path(self.TABLE_NAME)
 
     def write(
-        self, data: list[dict], mode: str = "append", make_id: bool = False, id_col : str = ""
+        self,
+        data: list[dict],
+        mode: str = "append",
+        make_id: bool = False,
+        id_col: str = "",
     ) -> None:
         df = self._spark.createDataFrame(data)
         if make_id:

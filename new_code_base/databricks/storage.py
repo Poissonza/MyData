@@ -5,8 +5,7 @@ from pyspark.sql.functions import col, current_date, current_timestamp, from_jso
 from pyspark.sql.utils import AnalysisException
 
 logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 
 logger = logging.getLogger(__name__)
@@ -26,7 +25,7 @@ class Storage:
         store_raw_json: bool = True,
     ):
         """Store API response data to Delta tables.
-        
+
         Args:
             data: Dictionary containing API response
             volume_path: Path like 'catalog/schema/volume/table' (no leading /Volumes/)
@@ -58,7 +57,9 @@ class Storage:
             logger.info("Using existing schema from %s", volume_path)
         except AnalysisException:
             # No existing table, infer from current batch
-            schema = df_strings.selectExpr("schema_of_json_agg(json_str)").collect()[0][0]
+            schema = df_strings.selectExpr("schema_of_json_agg(json_str)").collect()[0][
+                0
+            ]
             logger.info("Inferring new schema for %s", volume_path)
 
         data_df = df_strings.select(
