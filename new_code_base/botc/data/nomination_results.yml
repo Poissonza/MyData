@@ -11,3 +11,6 @@ nomination_results:
   - id: 4
     name: Virgin triggered
     block_effect: executes_nominator
+  - id: 5
+    name: Disrupted by Slayer Shot
+    block_effect: clears

@@ -199,3 +199,19 @@ nominations:
     votes: 1
     ghost_votes: 2
     result_id: 2
+  - id: 26
+    game_id: 5
+    day: 3
+    nominator_id: 1
+    nominee_id: 1
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 27
+    game_id: 5
+    day: 3
+    nominator_id: 11
+    nominee_id: 11
+    votes: null
+    ghost_votes: null
+    result_id: 5

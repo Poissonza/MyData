@@ -62,3 +62,10 @@ actions:
     role_id: 90
     target_player_id: 7
     target_role_id: null
+  - id: 10
+    game_id: 5
+    day: 3
+    timing: Day
+    role_id: 109
+    target_player_id: 9
+    target_role_id: null

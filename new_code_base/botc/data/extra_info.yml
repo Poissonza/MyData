@@ -119,3 +119,38 @@ extra_info:
     day: 4
     role_id: 40
     info: Either Osie and Rythian are a Demon.
+  - id: 25
+    game_id: 5
+    day: 1
+    role_id: 66
+    info: RTGame is you minion, Bluffs are Seamstress, Cannibal and Oracle
+  - id: 26
+    game_id: 5
+    day: 1
+    role_id: 30
+    info: '1'
+  - id: 27
+    game_id: 5
+    day: 1
+    role_id: 121
+    info: Bluffs are Saint, Mayor, Fortune Teller
+  - id: 28
+    game_id: 5
+    day: 2
+    role_id: 66
+    info: Wants to Kill Rythian
+  - id: 29
+    game_id: 5
+    day: 2
+    role_id: 82
+    info: There is 0 evil players dead.
+  - id: 30
+    game_id: 5
+    day: 3
+    role_id: 66
+    info: Wants to kill Kirsty
+  - id: 31
+    game_id: 5
+    day: 3
+    role_id: 82
+    info: There is 0 Evil Dead Players (Poisoned)

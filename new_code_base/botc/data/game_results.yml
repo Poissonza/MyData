@@ -15,3 +15,7 @@ game_results:
     game_id: 4
     winning_team: Evil
     win_condition_id: 4
+  - id: 5
+    game_id: 5
+    winning_team: Good
+    win_condition_id: 2
