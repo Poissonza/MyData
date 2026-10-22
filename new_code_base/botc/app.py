@@ -87,6 +87,11 @@ TABLES: dict[str, list[Col]] = {
         Col("game_number", "int", label="Game number in video"),
         Col("video_id", "ref", ref="videos", required=True),
     ],
+    "game_fabled":[
+        ID,
+        Col("game_id", "ref", ref="games", required=True),
+        Col("fabled_id", "ref", ref="fabled", required=True),
+    ],
     "game_players": [
         ID,
         Col("player_id", "ref", ref="players", required=True),
@@ -146,6 +151,11 @@ TABLES: dict[str, list[Col]] = {
         Col("new_team", "choice", choices=TEAMS),
         Col("cause"),
     ],
+    "fabled": [
+        ID,
+        Col("name", required=True),
+        Col("description", "long_text")
+    ],
 }
 
 SINGULAR = {
@@ -154,6 +164,7 @@ SINGULAR = {
     "game_players": "player to game", "game_results": "result", "deaths": "death",
     "nominations": "nomination", "actions": "action",
     "extra_info": "extra info", "role_swaps": "role swap",
+    "fabled": "fabled", "game_fabled": "fabled played"
 }
 EVENT_TABLES = ["deaths", "nominations", "actions", "extra_info", "role_swaps"]
 UNIQUE_NAME_TABLES = {"players", "roles", "nomination_results", "win_conditions"}
@@ -943,7 +954,7 @@ with tab_summary:
 # ─── Tab: Videos & Games ─────────────────────────────────────────────────────
 
 with tab_videos:
-    v_tab, g_tab = st.tabs(["Videos", "Games"])
+    v_tab, g_tab, f_tab = st.tabs(["Videos", "Games", "Fabled"])
     with v_tab:
         st.caption("One row per video. Length as HH:MM:SS.")
         entry_form(db, "videos", "f_videos")
@@ -952,18 +963,23 @@ with tab_videos:
         st.caption("One row per game. Leave the game number empty for the next one in that video (usually 1).")
         entry_form(db, "games", "f_games")
         edit_grid(db, "games", db["games"], "g_games")
+    with f_tab:
+        st.caption("Fabled characters for the Storyteller")
+        entry_form(db, "game_fabled", "f_game_fabled")
+        edit_grid(db, "game_fabled", db["game_fabled"], "g_game_fabled")
 
 
 # ─── Tab: Reference ──────────────────────────────────────────────────────────
 
 with tab_ref:
-    ref_tabs = st.tabs(["Players", "Roles", "Nomination Results", "Win Conditions"])
+    ref_tabs = st.tabs(["Players", "Roles", "Nomination Results", "Win Conditions", "Fabled"])
     for tab, table, hint in [
         (ref_tabs[0], "players", "Everyone who has played. Names must be unique."),
         (ref_tabs[1], "roles", "Default team fills in from the character type if left empty."),
         (ref_tabs[2], "nomination_results", "Block effect: 'marks' puts the nominee on the block, 'clears' empties it (a tie), "
                                              "'none' changes nothing, 'executes_nominator' executes the nominator at once and ends the day (Virgin)."),
         (ref_tabs[3], "win_conditions", "Possible endings. Use 'Either' where the ending can go to both teams."),
+        (ref_tabs[4], "fabled", "Fabled characters for the Storyteller")
     ]:
         with tab:
             st.caption(hint)
