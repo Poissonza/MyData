@@ -36,7 +36,11 @@ TABLES = {
     "games": [
         id_col,
         Col("ai_simultaneos_turns", "bool", label="AI Simultaneous Turns"),
-        Col("allow_fortress_instant_resolve", "bool", label="Allow Fortress Instant Resolve"),
+        Col(
+            "allow_fortress_instant_resolve",
+            "bool",
+            label="Allow Fortress Instant Resolve",
+        ),
         Col("force_instant_resolve", "bool", label="Force Instant Resolve"),
         Col("peaceful_mode", "bool", label="Peaceful Mode"),
         Col("allow_optional_events", "bool", label="Allow Optional Events"),
@@ -45,5 +49,5 @@ TABLES = {
         Col("worship_victory_path", "bool", label="Worship Victory Path"),
         Col("impress_victory_path", "bool", label="Impress Victory Path"),
         Col("master_victory_path", "bool", label="Master Victory Path"),
-    ]
+    ],
 }
