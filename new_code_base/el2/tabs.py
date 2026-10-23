@@ -151,8 +151,16 @@ def reference_tabs(caption: str, data, form_key: str) -> None:
     num_cols = len(cols)
 
     with st.form(key=f"f_{form_key}"):
+        values = {}
         f_cols = st.columns(min(3, num_cols))
         for i, c in enumerate(cols):
             with f_cols[i % len(f_cols)]:
-                st.text_input(c.name, key=f"{form_key}_{c.name}")
-        st.form_submit_button("Submit", key=f"{form_key}_{c.name}_submit")
+                values[c.name] = st.text_input(c.name, key=f"{form_key}_{c.name}")
+        submit_button = st.form_submit_button("Submit", key=f"{form_key}_{c.name}_submit")
+
+        if submit_button:
+            st.table(data)
+            values["id"] = len(data) + 1
+            st.write("Submitted values:", values)
+
+    st.table(data)
