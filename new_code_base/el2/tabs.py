@@ -5,7 +5,6 @@ import pandas as pd
 import constants
 from data import load_table, store_table, validate
 
-
 EL_2_DIR = Path(__file__).parent
 REFERENCE_DIR = EL_2_DIR / "reference"
 GAME_DIR = EL_2_DIR / "data"
@@ -148,19 +147,25 @@ def reference_page():
 
 def reference_tabs(caption: str, data: list(dict), form_key: str) -> None:
     st.caption(caption)
+    input_forms(form_key, data)
+    st.table(data)
+
+
+def input_forms(form_key: str, data: list(dict)):
     cols = [c for c in constants.TABLES[form_key] if c.name != "id"]
+
     short_cols = [c for c in cols if c.type != "long_text"]
     long_cols = [c for c in cols if c.type == "long_text"]
+
     num_cols = len(short_cols)
 
     with st.form(key=f"f_{form_key}", clear_on_submit=True):
-        values = {}
-        values["id"] = len(data) + 1
+        values = {"id": len(data) + 1}
         f_cols = st.columns(min(3, num_cols))
         for i, c in enumerate(short_cols):
             with f_cols[i % len(f_cols)]:
                 values[c.name] = st.text_input(
-                    c.label, key=f"{form_key}_{c.name}", value=None
+                    label=c.label, key=f"{form_key}_{c.name}", value=None
                 )
         for c in long_cols:
             values[c.name] = st.text_area(
@@ -178,4 +183,3 @@ def reference_tabs(caption: str, data: list(dict), form_key: str) -> None:
             else:
                 for error in data_check:
                     st.error(error)
-    st.table(data)
