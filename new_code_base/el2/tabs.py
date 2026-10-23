@@ -129,6 +129,7 @@ def game_page():
 
     st.table(game_data)
 
+
 def reference_page():
     tab_names = [tab.name for tab in constants.REFERENCE_TABS]
 
@@ -161,7 +162,9 @@ def reference_tabs(caption: str, data: list(dict), form_key: str) -> None:
                 values[c.name] = st.text_input(c.name, key=f"{form_key}_{c.name}")
         for c in long_cols:
             values[c.name] = st.text_area(c.name, key=f"{form_key}_{c.name}")
-        submit_button = st.form_submit_button("Submit", key=f"{form_key}_{c.name}_submit")
+        submit_button = st.form_submit_button(
+            "Submit", key=f"{form_key}_{c.name}_submit"
+        )
 
         if submit_button:
             data_check = validate(data, cols, values)

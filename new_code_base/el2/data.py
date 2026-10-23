@@ -19,15 +19,18 @@ def load_table(data_path: pathlib.Path, table_name: str) -> list:
             data = json.load(f)
         return data
 
+
 def store_table(data_path: pathlib.Path, data: list(dict), table_name: str) -> None:
     with open(data_path / f"{table_name}.json", "w") as f:
         json.dump(data, f)
+
 
 @dataclass(frozen=True)
 class Tab:
     name: str
     caption: str
     data_name: str
+
 
 def validate(data: list[dict], cols: list[Col], values: dict) -> list:
     errors = []
@@ -36,9 +39,12 @@ def validate(data: list[dict], cols: list[Col], values: dict) -> list:
             if col.unique:
                 current_val = [r[col.name] for r in data]
                 if values[col.name] in current_val:
-                    errors.append(f"Duplicate value found in column: {col.name} with value: {values[col.name]}")
+                    errors.append(
+                        f"Duplicate value found in column: {col.name} with value: {values[col.name]}"
+                    )
 
     return errors
+
 
 # def load_db(data_path: pathlib.Path, table_names: [str]) -> dict[list]:
 #     result = {}
