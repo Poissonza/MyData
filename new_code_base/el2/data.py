@@ -9,7 +9,7 @@ class Col:
     type: str = "text"
     unique: bool = False
     required: bool = False
-    label: str = None
+    label: str | None = None
 
 
 def load_table(data_path: pathlib.Path, table_name: str) -> list:
