@@ -1,7 +1,5 @@
 from pathlib import Path
 import streamlit as st
-import yaml
-import pandas as pd
 import constants
 from data import load_table, store_table, validate
 
@@ -79,56 +77,6 @@ REFERENCE_TABLE_2 = [
     },
 ]
 
-
-def create_columns(col1: st.columns, col2, col_data, reference_data):
-    for row in col_data:
-        col1.subheader(row["c1_label"])
-        if row["c1_data_type"] == "df":
-            col1.dataframe(
-                pd.DataFrame(reference_data[row["c1_data"]]),
-                hide_index=True,
-                width="stretch",
-            )
-        else:
-            col1.table(reference_data[row["c1_data"]])
-        col2.subheader(row["c2_label"])
-        if row["c2_data_type"] == "df":
-            col2.dataframe(
-                pd.DataFrame(reference_data[row["c2_data"]]),
-                hide_index=True,
-                width="stretch",
-            )
-        else:
-            col2.table(reference_data[row["c2_data"]])
-
-
-# @st.cache_data
-def load_ref_data():
-    with open(REFERENCE_DIR / "reference.yml") as f:
-        return yaml.safe_load(f)
-
-
-def load_game_data():
-    with open(GAME_DIR / "games.yml") as f:
-        return yaml.safe_load(f)
-
-
-def faction_page():
-    ref_data = load_ref_data()
-    st.title("Factions")
-
-    st.dataframe(pd.DataFrame(ref_data["faction"]), hide_index=True, width="stretch")
-
-
-def game_page():
-    ref_data = load_ref_data()
-    game_data = load_game_data()["games"]
-
-    st.header("Add new Game")
-
-    st.table(game_data)
-
-
 def reference_page():
     tab_names = [tab.name for tab in constants.REFERENCE_TABS]
 
@@ -145,13 +93,13 @@ def reference_page():
             )
 
 
-def tab_creation(caption: str, data: list(dict), form_key: str) -> None:
+def tab_creation(caption: str, data: list[dict], form_key: str) -> None:
     st.caption(caption)
     input_forms(form_key, data)
     st.table(data)
 
 
-def input_forms(form_key: str, data: list(dict)):
+def input_forms(form_key: str, data: list[dict]):
     cols = [c for c in constants.TABLES[form_key] if c.name != "id"]
 
     short_cols = [c for c in cols if c.type != "long_text"]
@@ -171,7 +119,7 @@ def input_forms(form_key: str, data: list(dict)):
 
         if submit_button:
             data_check = validate(data, cols, values)
-            if data_check == []:
+            if not data_check:
                 data.append(values)
                 store_table(GAME_DIR, data, form_key)
             else:

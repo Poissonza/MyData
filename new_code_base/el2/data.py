@@ -9,7 +9,7 @@ class Col:
     type: str = "text"
     unique: bool = False
     required: bool = False
-    label: str | None = None
+    label: str = ""
 
 
 def load_table(data_path: pathlib.Path, table_name: str) -> list:
@@ -22,7 +22,7 @@ def load_table(data_path: pathlib.Path, table_name: str) -> list:
         return data
 
 
-def store_table(data_path: pathlib.Path, data: list(dict), table_name: str) -> None:
+def store_table(data_path: pathlib.Path, data: list[dict], table_name: str) -> None:
     with open(data_path / f"{table_name}.json", "w") as f:
         json.dump(data, f)
 
