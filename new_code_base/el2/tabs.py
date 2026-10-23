@@ -3,7 +3,7 @@ import streamlit as st
 import yaml
 import pandas as pd
 import constants
-from data import load_table, store_table
+from data import load_table, store_table, validate
 
 
 EL_2_DIR = Path(__file__).parent
@@ -145,7 +145,7 @@ def reference_page():
             )
 
 
-def reference_tabs(caption: str, data, form_key: str) -> None:
+def reference_tabs(caption: str, data: list(dict), form_key: str) -> None:
     st.caption(caption)
     cols = [c for c in constants.TABLES[form_key] if c.name != "id"]
     short_cols = [c for c in cols if c.type != "long_text"]
