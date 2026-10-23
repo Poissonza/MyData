@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 import pathlib
-import yaml
+import json
 
 
 @dataclass(frozen=True)
@@ -10,9 +10,9 @@ class Col:
 
 
 def load_table(data_path: pathlib.Path, table_name: str) -> list:
-    with open(data_path / f"{table_name}.yml") as f:
-        data = yaml.safe_load(f)
-    return data.get(table_name)
+    with open(data_path / f"{table_name}.json") as f:
+        data = json.load(f)
+    return data
 
 
 @dataclass(frozen=True)
