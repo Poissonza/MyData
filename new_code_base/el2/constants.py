@@ -33,4 +33,17 @@ TABLES = {
         Col("number_of_players", "int", label="Number of Players"),
         Col("description", "long_text", label="Description"),
     ],
+    "games": [
+        id_col,
+        Col("ai_simultaneos_turns", "bool", label="AI Simultaneous Turns"),
+        Col("allow_fortress_instant_resolve", "bool", label="Allow Fortress Instant Resolve"),
+        Col("force_instant_resolve", "bool", label="Force Instant Resolve"),
+        Col("peaceful_mode", "bool", label="Peaceful Mode"),
+        Col("allow_optional_events", "bool", label="Allow Optional Events"),
+        Col("score_victory", "bool", label="Score Victory"),
+        Col("conquest_victory", "bool", label="Conquest Victory"),
+        Col("worship_victory_path", "bool", label="Worship Victory Path"),
+        Col("impress_victory_path", "bool", label="Impress Victory Path"),
+        Col("master_victory_path", "bool", label="Master Victory Path"),
+    ]
 }
