@@ -2,6 +2,9 @@ from pathlib import Path
 import streamlit as st
 import yaml
 import pandas as pd
+import constants
+from data import load_table
+
 
 EL_2_DIR = Path(__file__).parent
 REFERENCE_DIR = EL_2_DIR / "reference"
@@ -116,14 +119,29 @@ def game_page():
 
 
 
+def ref_page_v2():
+    
+    tab_names = [tab.name for tab in constants.REFERENCE_TABS]
+    
+    ref_tab = st.tabs(tab_names)    
+    # ref_tab = st.tabs(["Speed"])
+
+    ref_num_tabs = len(ref_tab)
+
+    for i in range(ref_num_tabs):
+        with ref_tab[i]:
+            reference_tabs(constants.REFERENCE_TABS[i].caption, load_table(GAME_DIR, constants.REFERENCE_TABS[i].data_name))
+    
+    
+
 
 def reference_page():
     ref_data = load_ref_data()
-    st.title("Reference Data")
+    # st.title("Reference Data")
 
-    c1, c2 = st.columns(2)
+    # c1, c2 = st.columns(2)
 
-    create_columns(c1, c2, REFERENCE_TABLE_1, ref_data)
+    # create_columns(c1, c2, REFERENCE_TABLE_1, ref_data)
 
     # c1.subheader("Speed Options")
     # c1.dataframe(pd.DataFrame(ref_data["speed"]), hide_index=True, width="stretch")
@@ -137,7 +155,11 @@ def reference_page():
     # c2.subheader("World Size")
     # c2.dataframe(pd.DataFrame(ref_data["world_size"]), hide_index=True, width="stretch")
 
-    st.subheader("General Settings")
-    c3, c4 = st.columns(2)
+    # st.subheader("General Settings")
+    # c3, c4 = st.columns(2)
 
-    create_columns(c3, c4, REFERENCE_TABLE_2, ref_data)
+    # create_columns(c3, c4, REFERENCE_TABLE_2, ref_data)
+        
+def reference_tabs(caption, data):
+    st.caption(caption)
+    st.table(data)
