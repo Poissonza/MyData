@@ -138,14 +138,14 @@ def reference_page():
 
     for i in range(ref_num_tabs):
         with ref_tab[i]:
-            reference_tabs(
+            tab_creation(
                 constants.REFERENCE_TABS[i].caption,
                 load_table(GAME_DIR, constants.REFERENCE_TABS[i].data_name),
                 constants.REFERENCE_TABS[i].data_name,
             )
 
 
-def reference_tabs(caption: str, data: list(dict), form_key: str) -> None:
+def tab_creation(caption: str, data: list(dict), form_key: str) -> None:
     st.caption(caption)
     input_forms(form_key, data)
     st.table(data)
