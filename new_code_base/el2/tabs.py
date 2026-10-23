@@ -148,18 +148,23 @@ def reference_page():
 def reference_tabs(caption: str, data, form_key: str) -> None:
     st.caption(caption)
     cols = [c for c in constants.TABLES[form_key] if c.name != "id"]
-    num_cols = len(cols)
+    short_cols = [c for c in cols if c.type != "long_text"]
+    long_cols = [c for c in cols if c.type == "long_text"]
+    num_cols = len(short_cols)
 
     with st.form(key=f"f_{form_key}"):
         values = {}
         f_cols = st.columns(min(3, num_cols))
-        for i, c in enumerate(cols):
+        for i, c in enumerate(short_cols):
             with f_cols[i % len(f_cols)]:
                 values[c.name] = st.text_input(c.name, key=f"{form_key}_{c.name}")
+        for c in long_cols:
+            values[c.name] = st.text_area(c.name, key=f"{form_key}_{c.name}")
         submit_button = st.form_submit_button("Submit", key=f"{form_key}_{c.name}_submit")
 
         if submit_button:
             values["id"] = len(data) + 1
+            st.write(values["id"])
             data.append(values)
             st.write(data)
             store_table(GAME_DIR, data, form_key)

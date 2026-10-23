@@ -10,9 +10,13 @@ class Col:
 
 
 def load_table(data_path: pathlib.Path, table_name: str) -> list:
-    with open(data_path / f"{table_name}.json") as f:
-        data = json.load(f)
-    return data
+    final_path = data_path / f"{table_name}.json"
+    if not final_path.exists():
+        return []
+    else:
+        with open(data_path / f"{table_name}.json") as f:
+            data = json.load(f)
+        return data
 
 def store_table(data_path: pathlib.Path, data: [dict], table_name: str) -> None:
     with open(data_path / f"{table_name}.json", "w") as f:
