@@ -14,6 +14,9 @@ def load_table(data_path: pathlib.Path, table_name: str) -> list:
         data = json.load(f)
     return data
 
+def store_table(data_path: pathlib.Path, data: [dict], table_name: str) -> None:
+    with open(data_path / f"{table_name}.json", "w") as f:
+        json.dump(data, f)
 
 @dataclass(frozen=True)
 class Tab:

@@ -6,7 +6,7 @@ REFERENCE_TABS = [
     Tab("Factions", "The Factions in the Game", "faction"),
 ]
 
-id_col = Col("ID")
+id_col = Col("id")
 
 TABLES = {
     "speed": [id_col, Col("name"), Col("description")],

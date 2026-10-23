@@ -3,7 +3,7 @@ import streamlit as st
 import yaml
 import pandas as pd
 import constants
-from data import load_table
+from data import load_table, store_table
 
 
 EL_2_DIR = Path(__file__).parent
@@ -159,8 +159,8 @@ def reference_tabs(caption: str, data, form_key: str) -> None:
         submit_button = st.form_submit_button("Submit", key=f"{form_key}_{c.name}_submit")
 
         if submit_button:
-            st.table(data)
             values["id"] = len(data) + 1
-            st.write("Submitted values:", values)
-
+            data.append(values)
+            st.write(data)
+            store_table(GAME_DIR, data, form_key)
     st.table(data)
