@@ -8,7 +8,7 @@ REFERENCE_TABS = [
     Tab("World Size", "The World Size Options", "world_sizes"),
 ]
 
-id_col = Col("id")
+id_col = Col("id", "int", unique=True, label="ID")
 
 TABLES = {
     "speeds": [
