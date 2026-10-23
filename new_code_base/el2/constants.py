@@ -11,13 +11,25 @@ REFERENCE_TABS = [
 id_col = Col("id")
 
 TABLES = {
-    "speeds": [id_col, Col("name", unique=True), Col("description", "long_text")],
-    "difficulty": [id_col, Col("name", unique=True)],
-    "faction": [id_col, Col("name", unique=True), Col("description", "long_text")],
-    "maps": [id_col, Col("name", unique=True), Col("description", "long_text")],
+    "speeds": [
+        id_col,
+        Col("name", unique=True, required=True),
+        Col("description", "long_text"),
+    ],
+    "difficulty": [id_col, Col("name", unique=True, required=True)],
+    "faction": [
+        id_col,
+        Col("name", unique=True, required=True),
+        Col("description", "long_text"),
+    ],
+    "maps": [
+        id_col,
+        Col("name", unique=True, required=True),
+        Col("description", "long_text"),
+    ],
     "world_sizes": [
         id_col,
-        Col("name", unique=True),
+        Col("name", unique=True, required=True),
         Col("number_of_players", "int"),
         Col("description", "long_text"),
     ],

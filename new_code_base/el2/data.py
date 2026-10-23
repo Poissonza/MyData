@@ -8,6 +8,7 @@ class Col:
     name: str
     type: str = "text"
     unique: bool = False
+    required: bool = False
 
 
 def load_table(data_path: pathlib.Path, table_name: str) -> list:
@@ -34,14 +35,15 @@ class Tab:
 
 def validate(data: list[dict], cols: list[Col], values: dict) -> list:
     errors = []
-    if data != []:
-        for col in cols:
-            if col.unique:
-                current_val = [r[col.name] for r in data]
-                if values[col.name] in current_val:
-                    errors.append(
-                        f"Duplicate value found in column: {col.name} with value: {values[col.name]}"
-                    )
+    for col in cols:
+        if col.unique and data != []:
+            current_val = [r[col.name] for r in data]
+            if values[col.name] in current_val:
+                errors.append(
+                    f"Duplicate value found in column: {col.name} with value: {values[col.name]}"
+                )
+        if col.required and values.get(col.name) is None:
+            errors.append(f"Missing required value for column: {col.name}")
 
     return errors
 
