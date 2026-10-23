@@ -1,29 +1,10 @@
-speed:
-  - speed: Normal
-    description: This speed should finish within xx
-  - speed: Fast
-    description: This speed should finish within xx
-  - speed: Slow
-    description: This speed should finish within xx
-  - speed: Slowest
-    description: This speed should finish within xx
-difficulty:
-  - difficulty: Easy
-  - difficulty: Medium
-  - difficulty: Hard
-  - difficulty: Very Hard
 map:
   - map: Contintents
     description: This map is made up of several large landmasses, with a few smaller islands scattered throughout. It is ideal for players who enjoy exploring and expanding their empires across multiple continents.
   - map: Archipelago
     description: This map is made up of many small islands, with limited landmass on each. It is ideal for players who enjoy naval warfare and island hopping.
 faction:
-  - faction: Kin of Sherridyn
-    expansion: Original Game
-  - faction: Necrophage
-    expansion: Original Game
-  - faction: Sandshapers
-    expansion: Original Game
+
 world_size:
     - world_size: Tiny
       number_of_players: 2

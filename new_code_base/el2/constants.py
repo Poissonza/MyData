@@ -13,5 +13,3 @@ TABLES = {
     "difficulty": [id_col, Col("name")],
     "faction": [id_col, Col("name"), Col("description")],
 }
-
-TABLE_NAMES = ["speed", "difficulty"]
