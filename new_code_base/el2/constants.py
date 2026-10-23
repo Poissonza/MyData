@@ -13,24 +13,24 @@ id_col = Col("id")
 TABLES = {
     "speeds": [
         id_col,
-        Col("name", unique=True, required=True),
-        Col("description", "long_text"),
+        Col("name", unique=True, required=True, label="Name"),
+        Col("description", "long_text", label="Description"),
     ],
-    "difficulty": [id_col, Col("name", unique=True, required=True)],
+    "difficulty": [id_col, Col("name", unique=True, required=True, label="Name")],
     "faction": [
         id_col,
-        Col("name", unique=True, required=True),
-        Col("description", "long_text"),
+        Col("name", unique=True, required=True, label="Name"),
+        Col("description", "long_text", label="Description"),
     ],
     "maps": [
         id_col,
-        Col("name", unique=True, required=True),
-        Col("description", "long_text"),
+        Col("name", unique=True, required=True, label="Name"),
+        Col("description", "long_text", label="Description"),
     ],
     "world_sizes": [
         id_col,
-        Col("name", unique=True, required=True),
-        Col("number_of_players", "int"),
-        Col("description", "long_text"),
+        Col("name", unique=True, required=True, label="Name"),
+        Col("number_of_players", "int", label="Number of Players"),
+        Col("description", "long_text", label="Description"),
     ],
 }

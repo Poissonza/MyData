@@ -160,11 +160,11 @@ def reference_tabs(caption: str, data: list(dict), form_key: str) -> None:
         for i, c in enumerate(short_cols):
             with f_cols[i % len(f_cols)]:
                 values[c.name] = st.text_input(
-                    c.name, key=f"{form_key}_{c.name}", value=None
+                    c.label, key=f"{form_key}_{c.name}", value=None
                 )
         for c in long_cols:
             values[c.name] = st.text_area(
-                c.name, key=f"{form_key}_{c.name}", value=None
+                c.label, key=f"{form_key}_{c.name}", value=None
             )
         submit_button = st.form_submit_button(
             "Submit", key=f"{form_key}_{c.name}_submit"
