@@ -9,8 +9,8 @@ tab_game, tab_ref, tab_faction, tab_test = st.tabs(
 # with tab_game:
 #     tabs.game_page()
 
-# with tab_ref:
-# tabs.reference_page()
+with tab_ref:
+    tabs.reference_page()
 
 # with tab_faction:
 #     tabs.faction_page()

@@ -129,13 +129,10 @@ def game_page():
 
     st.table(game_data)
 
-
-def ref_page_v2():
-
+def reference_page():
     tab_names = [tab.name for tab in constants.REFERENCE_TABS]
 
     ref_tab = st.tabs(tab_names)
-    # ref_tab = st.tabs(["Speed"])
 
     ref_num_tabs = len(ref_tab)
 
@@ -146,32 +143,6 @@ def ref_page_v2():
                 load_table(GAME_DIR, constants.REFERENCE_TABS[i].data_name),
                 constants.REFERENCE_TABS[i].data_name,
             )
-
-
-def reference_page():
-    ref_data = load_ref_data()
-    # st.title("Reference Data")
-
-    # c1, c2 = st.columns(2)
-
-    # create_columns(c1, c2, REFERENCE_TABLE_1, ref_data)
-
-    # c1.subheader("Speed Options")
-    # c1.dataframe(pd.DataFrame(ref_data["speed"]), hide_index=True, width="stretch")
-    #
-    # c2.subheader("Difficulty")
-    # c2.dataframe(pd.DataFrame(ref_data["difficulty"]), hide_index=True, width="stretch")
-    #
-    # c1.subheader("Map options")
-    # c1.dataframe(pd.DataFrame(ref_data["map"]), hide_index=True, width="stretch")
-    #
-    # c2.subheader("World Size")
-    # c2.dataframe(pd.DataFrame(ref_data["world_size"]), hide_index=True, width="stretch")
-
-    # st.subheader("General Settings")
-    # c3, c4 = st.columns(2)
-
-    # create_columns(c3, c4, REFERENCE_TABLE_2, ref_data)
 
 
 def reference_tabs(caption: str, data, form_key: str) -> None:
