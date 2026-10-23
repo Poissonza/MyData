@@ -152,7 +152,7 @@ def reference_tabs(caption: str, data, form_key: str) -> None:
     long_cols = [c for c in cols if c.type == "long_text"]
     num_cols = len(short_cols)
 
-    with st.form(key=f"f_{form_key}"):
+    with st.form(key=f"f_{form_key}", clear_on_submit=True):
         values = {}
         values["id"] = len(data) + 1
         f_cols = st.columns(min(3, num_cols))
@@ -164,9 +164,13 @@ def reference_tabs(caption: str, data, form_key: str) -> None:
         submit_button = st.form_submit_button("Submit", key=f"{form_key}_{c.name}_submit")
 
         if submit_button:
-
-            st.write(values["id"])
-            data.append(values)
-            st.write(data)
-            store_table(GAME_DIR, data, form_key)
+            data_check = validate(data, cols, values)
+            if data_check == []:
+                st.write(data_check)
+                data.append(values)
+                st.write(data)
+                store_table(GAME_DIR, data, form_key)
+            else:
+                for error in data_check:
+                    st.error(error)
     st.table(data)
