@@ -29,10 +29,10 @@ class Tab:
     data_name: str
 
 
-def load_db(data_path: pathlib.Path, table_names: [str]) -> dict[list]:
-    result = {}
-    for table in table_names:
-        with open(data_path / f"{table}.yml") as f:
-            data = yaml.safe_load(f)
-        result[table] = data
-    return result
+# def load_db(data_path: pathlib.Path, table_names: [str]) -> dict[list]:
+#     result = {}
+#     for table in table_names:
+#         with open(data_path / f"{table}.yml") as f:
+#             data = yaml.safe_load(f)
+#         result[table] = data
+#     return result
