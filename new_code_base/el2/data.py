@@ -2,10 +2,12 @@ from dataclasses import dataclass
 import pathlib
 import yaml
 
+
 @dataclass(frozen=True)
 class Col:
     name: str
     type: str = "text"
+
 
 def load_table(data_path: pathlib.Path, table_name: str) -> list:
     with open(data_path / f"{table_name}.yml") as f:
@@ -18,7 +20,6 @@ class Tab:
     name: str
     caption: str
     data_name: str
-
 
 
 def load_db(data_path: pathlib.Path, table_names: [str]) -> dict[list]:

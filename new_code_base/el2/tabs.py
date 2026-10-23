@@ -17,7 +17,7 @@ REFERENCE_TABLE_1 = [
         "c1_data_type": "df",
         "c2_label": "Difficulty",
         "c2_data": "difficulty",
-        "c2_data_type": "df"
+        "c2_data_type": "df",
     },
     {
         "c1_label": "Map options",
@@ -25,8 +25,8 @@ REFERENCE_TABLE_1 = [
         "c1_data_type": "df",
         "c2_label": "World Size",
         "c2_data": "world_size",
-        "c2_data_type": "df"
-    }
+        "c2_data_type": "df",
+    },
 ]
 
 REFERENCE_TABLE_2 = [
@@ -36,7 +36,7 @@ REFERENCE_TABLE_2 = [
         "c1_data_type": "list",
         "c2_label": "Fortress Instant Resolve",
         "c2_data": "allow_fortress_instant_resolve",
-        "c2_data_type": "list"
+        "c2_data_type": "list",
     },
     {
         "c1_label": "Force Instant Resolve",
@@ -44,7 +44,7 @@ REFERENCE_TABLE_2 = [
         "c1_data_type": "list",
         "c2_label": "Peaceful Mode",
         "c2_data": "peaceful_mode",
-        "c2_data_type": "list"
+        "c2_data_type": "list",
     },
     {
         "c1_label": "Initial Peace Duration",
@@ -52,7 +52,7 @@ REFERENCE_TABLE_2 = [
         "c1_data_type": "list",
         "c2_label": "Pre Founding Scouting Bonus",
         "c2_data": "pre_founding_scouting_bonus",
-        "c2_data_type": "list"
+        "c2_data_type": "list",
     },
     {
         "c1_label": "Allow Optional Events",
@@ -60,7 +60,7 @@ REFERENCE_TABLE_2 = [
         "c1_data_type": "list",
         "c2_label": "Score Victory",
         "c2_data": "score_victory",
-        "c2_data_type": "list"
+        "c2_data_type": "list",
     },
     {
         "c1_label": "Conquest Victory",
@@ -68,7 +68,7 @@ REFERENCE_TABLE_2 = [
         "c1_data_type": "list",
         "c2_label": "Worship Victory Path",
         "c2_data": "worship_victory_path",
-        "c2_data_type": "list"
+        "c2_data_type": "list",
     },
     {
         "c1_label": "Impress Victory Path",
@@ -76,20 +76,29 @@ REFERENCE_TABLE_2 = [
         "c1_data_type": "list",
         "c2_label": "Master Victory Path",
         "c2_data": "master_victory_path",
-        "c2_data_type": "list"
-    }
+        "c2_data_type": "list",
+    },
 ]
+
 
 def create_columns(col1: st.columns, col2, col_data, reference_data):
     for row in col_data:
         col1.subheader(row["c1_label"])
         if row["c1_data_type"] == "df":
-            col1.dataframe(pd.DataFrame(reference_data[row["c1_data"]]), hide_index=True, width="stretch")
+            col1.dataframe(
+                pd.DataFrame(reference_data[row["c1_data"]]),
+                hide_index=True,
+                width="stretch",
+            )
         else:
             col1.table(reference_data[row["c1_data"]])
         col2.subheader(row["c2_label"])
         if row["c2_data_type"] == "df":
-            col2.dataframe(pd.DataFrame(reference_data[row["c2_data"]]), hide_index=True, width="stretch")
+            col2.dataframe(
+                pd.DataFrame(reference_data[row["c2_data"]]),
+                hide_index=True,
+                width="stretch",
+            )
         else:
             col2.table(reference_data[row["c2_data"]])
 
@@ -99,15 +108,18 @@ def load_ref_data():
     with open(REFERENCE_DIR / "reference.yml") as f:
         return yaml.safe_load(f)
 
+
 def load_game_data():
     with open(GAME_DIR / "games.yml") as f:
         return yaml.safe_load(f)
+
 
 def faction_page():
     ref_data = load_ref_data()
     st.title("Factions")
 
     st.dataframe(pd.DataFrame(ref_data["faction"]), hide_index=True, width="stretch")
+
 
 def game_page():
     ref_data = load_ref_data()
@@ -118,21 +130,22 @@ def game_page():
     st.table(game_data)
 
 
-
 def ref_page_v2():
-    
+
     tab_names = [tab.name for tab in constants.REFERENCE_TABS]
-    
-    ref_tab = st.tabs(tab_names)    
+
+    ref_tab = st.tabs(tab_names)
     # ref_tab = st.tabs(["Speed"])
 
     ref_num_tabs = len(ref_tab)
 
     for i in range(ref_num_tabs):
         with ref_tab[i]:
-            reference_tabs(constants.REFERENCE_TABS[i].caption, load_table(GAME_DIR, constants.REFERENCE_TABS[i].data_name))
-    
-    
+            reference_tabs(
+                constants.REFERENCE_TABS[i].caption,
+                load_table(GAME_DIR, constants.REFERENCE_TABS[i].data_name),
+                constants.REFERENCE_TABS[i].data_name,
+            )
 
 
 def reference_page():
@@ -159,7 +172,16 @@ def reference_page():
     # c3, c4 = st.columns(2)
 
     # create_columns(c3, c4, REFERENCE_TABLE_2, ref_data)
-        
-def reference_tabs(caption, data):
+
+
+def reference_tabs(caption: str, data, form_key: str) -> None:
     st.caption(caption)
-    st.table(data)
+    cols = [c for c in constants.TABLES[form_key] if c.name != "id"]
+    num_cols = len(cols)
+
+    with st.form(key=f"f_{form_key}"):
+        f_cols = st.columns(min(3, num_cols))
+        for i, c in enumerate(cols):
+            with f_cols[i % len(f_cols)]:
+                st.text_input(c.name, key=f"{form_key}_{c.name}")
+        st.form_submit_button("Submit", key=f"{form_key}_{c.name}_submit")
