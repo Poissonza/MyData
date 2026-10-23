@@ -164,16 +164,10 @@ def input_forms(form_key: str, data: list(dict)):
         f_cols = st.columns(min(3, num_cols))
         for i, c in enumerate(short_cols):
             with f_cols[i % len(f_cols)]:
-                values[c.name] = st.text_input(
-                    label=c.label, key=f"{form_key}_{c.name}", value=None
-                )
+                values[c.name] = st.text_input(label=c.label, value=None)
         for c in long_cols:
-            values[c.name] = st.text_area(
-                c.label, key=f"{form_key}_{c.name}", value=None
-            )
-        submit_button = st.form_submit_button(
-            "Submit", key=f"{form_key}_{c.name}_submit"
-        )
+            values[c.name] = st.text_area(label=c.label, value=None)
+        submit_button = st.form_submit_button("Submit")
 
         if submit_button:
             data_check = validate(data, cols, values)
