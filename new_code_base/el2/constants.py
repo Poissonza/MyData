@@ -5,6 +5,7 @@ REFERENCE_TABS = [
     Tab("Difficulty", "The Game Difficulty Options", "difficulty"),
     Tab("Factions", "The Factions in the Game", "faction"),
     Tab("Map", "The Map the game is played on", "maps"),
+    Tab("World Size", "The World Size Options", "world_sizes"),
 ]
 
 id_col = Col("id")
@@ -14,4 +15,5 @@ TABLES = {
     "difficulty": [id_col, Col("name")],
     "faction": [id_col, Col("name"), Col("description", "long_text")],
     "maps": [id_col, Col("name"), Col("description", "long_text")],
+    "world_sizes": [id_col, Col("name"), Col("number_of_players", "int"), Col("description", "long_text")],
 }
