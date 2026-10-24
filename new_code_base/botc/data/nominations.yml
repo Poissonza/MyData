@@ -462,7 +462,7 @@ nominations:
     nominee_id: 10
     votes: 1
     ghost_votes: null
-    result_id: null
+    result_id: 1
   - id: 59
     game_id: 7
     day: 2
@@ -534,4 +534,60 @@ nominations:
     nominee_id: 5
     votes: 1
     ghost_votes: 1
+    result_id: 2
+  - id: 68
+    game_id: 8
+    day: 1
+    nominator_id: 19
+    nominee_id: 5
+    votes: 4
+    ghost_votes: 0
+    result_id: 2
+  - id: 69
+    game_id: 8
+    day: 1
+    nominator_id: 6
+    nominee_id: 6
+    votes: 5
+    ghost_votes: 0
+    result_id: 2
+  - id: 70
+    game_id: 8
+    day: 1
+    nominator_id: 18
+    nominee_id: 18
+    votes: 3
+    ghost_votes: null
+    result_id: 1
+  - id: 71
+    game_id: 8
+    day: 2
+    nominator_id: 7
+    nominee_id: 5
+    votes: 5
+    ghost_votes: null
+    result_id: 2
+  - id: 72
+    game_id: 8
+    day: 2
+    nominator_id: 8
+    nominee_id: 18
+    votes: 3
+    ghost_votes: null
+    result_id: 1
+  - id: 73
+    game_id: 8
+    day: 3
+    nominator_id: 7
+    nominee_id: 9
+    votes: 1
+    ghost_votes: 0
+    result_id: 1
+  - id: 74
+    game_id: 8
+    day: 3
+    nominator_id: 9
+    nominee_id: 7
+    votes: 3
+    ghost_votes: 3
     result_id: 2

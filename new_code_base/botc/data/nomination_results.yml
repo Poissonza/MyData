@@ -16,4 +16,4 @@ nomination_results:
     block_effect: none
   - id: 6
     name: Disrupted
-    block_effect: clears
+    block_effect: none

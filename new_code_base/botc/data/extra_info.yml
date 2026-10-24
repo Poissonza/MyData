@@ -379,3 +379,48 @@ extra_info:
     day: 5
     role_id: 49
     info: Ben is mad that Tom is Evil
+  - id: 77
+    game_id: 8
+    day: 1
+    role_id: 3
+    info: Bluffs are Ballonist, Fortune teller and Washer woman
+  - id: 78
+    game_id: 8
+    day: 1
+    role_id: 30
+    info: '1'
+  - id: 79
+    game_id: 8
+    day: 1
+    role_id: 48
+    info: Grandchild is Pyrion and their role is a Virgin
+  - id: 80
+    game_id: 8
+    day: 1
+    role_id: 28
+    info: Duncan is either the Farmer or Al-Hadikhia
+  - id: 81
+    game_id: 8
+    day: 2
+    role_id: 3
+    info: Picks Kirsty, Osie and Duncan
+  - id: 82
+    game_id: 8
+    day: 2
+    role_id: 30
+    info: '1'
+  - id: 83
+    game_id: 8
+    day: 2
+    role_id: 28
+    info: Zoey is. the Farmer or the Poisoner
+  - id: 84
+    game_id: 8
+    day: 3
+    role_id: 3
+    info: Picks Kirsty, Osie and Flax
+  - id: 85
+    game_id: 8
+    day: 3
+    role_id: 30
+    info: '0'
