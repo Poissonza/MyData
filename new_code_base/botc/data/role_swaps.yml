@@ -34,3 +34,10 @@ role_swaps:
     new_role_id: 54
     new_team: Evil
     cause: Imp Hop
+  - id: 6
+    game_id: 12
+    day: 2
+    player_id: 22
+    new_role_id: 65
+    new_team: Evil
+    cause: Scarlett woman Ability when Demon Dies

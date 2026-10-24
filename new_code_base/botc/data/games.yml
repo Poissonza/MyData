@@ -32,3 +32,6 @@ games:
   - id: 11
     game_number: 1
     video_id: 15
+  - id: 12
+    game_number: 1
+    video_id: 34

@@ -342,3 +342,45 @@ deaths:
     timing: Day
     cause_type: Execution
     cause_role_id: null
+  - id: 50
+    game_id: 12
+    day: 1
+    player_id: 9
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 51
+    game_id: 12
+    day: 2
+    player_id: 3
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 65
+  - id: 52
+    game_id: 12
+    day: 2
+    player_id: 20
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 53
+    game_id: 12
+    day: 3
+    player_id: 16
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 65
+  - id: 54
+    game_id: 12
+    day: 4
+    player_id: 7
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 65
+  - id: 55
+    game_id: 12
+    day: 4
+    player_id: 21
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null

@@ -424,3 +424,53 @@ extra_info:
     day: 3
     role_id: 30
     info: '0'
+  - id: 86
+    game_id: 12
+    day: 1
+    role_id: 65
+    info: The Bluffs are Mayor, Village Idiot, Night Watchmen
+  - id: 87
+    game_id: 12
+    day: 1
+    role_id: 21
+    info: 2 pairs and there is a Widow in play.
+  - id: 88
+    game_id: 12
+    day: 1
+    role_id: 30
+    info: '0'
+  - id: 89
+    game_id: 12
+    day: 2
+    role_id: 30
+    info: '0'
+  - id: 90
+    game_id: 12
+    day: 2
+    role_id: 18
+    info: '2'
+  - id: 91
+    game_id: 12
+    day: 2
+    role_id: 120
+    info: KIrsty was a Chef
+  - id: 92
+    game_id: 12
+    day: 2
+    role_id: 82
+    info: Neither dead player is evil (Poisoned)
+  - id: 93
+    game_id: 12
+    day: 3
+    role_id: 30
+    info: '1'
+  - id: 94
+    game_id: 12
+    day: 3
+    role_id: 82
+    info: 2 Are evil
+  - id: 95
+    game_id: 12
+    day: 4
+    role_id: 82
+    info: 2 Evil players are dead

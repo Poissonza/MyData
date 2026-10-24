@@ -90,3 +90,10 @@ actions:
     role_id: 90
     target_player_id: 19
     target_role_id: null
+  - id: 14
+    game_id: 12
+    day: 1
+    timing: Night
+    role_id: 127
+    target_player_id: 8
+    target_role_id: null

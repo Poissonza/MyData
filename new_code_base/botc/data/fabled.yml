@@ -2,3 +2,6 @@ fabled:
   - id: 1
     name: Toymaker
     description: this will be populated
+  - id: 2
+    name: Ferryman
+    description: On the final day, all dead players regain their vote token.
