@@ -2,10 +2,11 @@ import tabs
 import streamlit as st
 
 st.header("Endless Legend 2")
-tab_ref, tab_test = st.tabs(["Reference Data", "testing"])
+tab_event, tab_ref = st.tabs(["Events", "Reference Data"])
 
 with tab_ref:
     tabs.reference_page()
 
-# with tab_test:
-#     tabs.ref_page_v2()
+
+with tab_event:
+    tabs.events_page()

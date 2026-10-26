@@ -50,4 +50,10 @@ TABLES = {
         Col("impress_victory_path", "bool", label="Impress Victory Path"),
         Col("master_victory_path", "bool", label="Master Victory Path"),
     ],
+    "events":[
+        id_col,
+        Col("name", unique=True, required=True, label="Name"),
+        Col("event_type", "int", label="Event Type"),
+        Col("description", "long_text", label="Description"),
+    ]
 }
