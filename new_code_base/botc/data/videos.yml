@@ -169,3 +169,8 @@ videos:
     date: '2026-10-23'
     length: '01:02:35'
     members: false
+  - id: 35
+    name: A Gamble for the Imp
+    date: '2026-10-23'
+    length: '00:35:05'
+    members: true

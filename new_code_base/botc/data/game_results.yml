@@ -47,3 +47,7 @@ game_results:
     game_id: 12
     winning_team: Evil
     win_condition_id: 4
+  - id: 13
+    game_id: 13
+    winning_team: Evil
+    win_condition_id: 4

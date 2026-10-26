@@ -41,3 +41,10 @@ role_swaps:
     new_role_id: 65
     new_team: Evil
     cause: Scarlett woman Ability when Demon Dies
+  - id: 7
+    game_id: 13
+    day: 2
+    player_id: 21
+    new_role_id: 35
+    new_team: Good
+    cause: Farmer Pass

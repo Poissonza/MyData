@@ -474,3 +474,18 @@ extra_info:
     day: 4
     role_id: 82
     info: 2 Evil players are dead
+  - id: 96
+    game_id: 13
+    day: 1
+    role_id: 54
+    info: Bluffs are Lycanthope, Seamstress or Village Idiot
+  - id: 97
+    game_id: 13
+    day: 1
+    role_id: 30
+    info: '0'
+  - id: 98
+    game_id: 13
+    day: 1
+    role_id: 48
+    info: Ellen is your Grandchild and she is the Undertaker

@@ -631,3 +631,27 @@ nominations:
     votes: 2
     ghost_votes: 1
     result_id: 1
+  - id: 80
+    game_id: 13
+    day: 1
+    nominator_id: 7
+    nominee_id: 3
+    votes: 7
+    ghost_votes: null
+    result_id: 2
+  - id: 81
+    game_id: 13
+    day: 2
+    nominator_id: 9
+    nominee_id: 20
+    votes: 3
+    ghost_votes: 1
+    result_id: 2
+  - id: 82
+    game_id: 13
+    day: 2
+    nominator_id: 20
+    nominee_id: 9
+    votes: 1
+    ghost_votes: null
+    result_id: 1

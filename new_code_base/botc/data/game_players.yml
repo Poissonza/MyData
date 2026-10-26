@@ -533,3 +533,51 @@ game_players:
     game_id: 12
     seat: 8
     believed_role_id: null
+  - id: 90
+    player_id: 21
+    starting_role_id: 120
+    game_id: 13
+    seat: 1
+    believed_role_id: null
+  - id: 91
+    player_id: 22
+    starting_role_id: 48
+    game_id: 13
+    seat: 2
+    believed_role_id: null
+  - id: 92
+    player_id: 7
+    starting_role_id: 35
+    game_id: 13
+    seat: 3
+    believed_role_id: null
+  - id: 93
+    player_id: 20
+    starting_role_id: 128
+    game_id: 13
+    seat: 4
+    believed_role_id: null
+  - id: 94
+    player_id: 9
+    starting_role_id: 41
+    game_id: 13
+    seat: 5
+    believed_role_id: null
+  - id: 95
+    player_id: 16
+    starting_role_id: 30
+    game_id: 13
+    seat: 6
+    believed_role_id: null
+  - id: 96
+    player_id: 3
+    starting_role_id: 75
+    game_id: 13
+    seat: 7
+    believed_role_id: null
+  - id: 97
+    player_id: 8
+    starting_role_id: 54
+    game_id: 13
+    seat: 8
+    believed_role_id: null
