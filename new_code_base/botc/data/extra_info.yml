@@ -609,3 +609,43 @@ extra_info:
     day: 4
     role_id: 87
     info: As an empath you get a 2
+  - id: 123
+    game_id: 16
+    day: 1
+    role_id: 30
+    info: '2'
+  - id: 124
+    game_id: 16
+    day: 2
+    role_id: 29
+    info: Wants to protect Rythian
+  - id: 125
+    game_id: 16
+    day: 2
+    role_id: 30
+    info: '1'
+  - id: 126
+    game_id: 16
+    day: 2
+    role_id: 120
+    info: Scarlett Woman
+  - id: 127
+    game_id: 16
+    day: 3
+    role_id: 29
+    info: Wants to protect Rythian
+  - id: 128
+    game_id: 16
+    day: 3
+    role_id: 30
+    info: '1'
+  - id: 129
+    game_id: 16
+    day: 4
+    role_id: 29
+    info: Wants to Protect Rythian
+  - id: 130
+    game_id: 16
+    day: 4
+    role_id: 120
+    info: Osie is the the Scarlet Woman
