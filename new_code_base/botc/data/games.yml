@@ -41,3 +41,6 @@ games:
   - id: 14
     game_number: 1
     video_id: 9
+  - id: 15
+    game_number: 1
+    video_id: 10
