@@ -489,3 +489,53 @@ extra_info:
     day: 1
     role_id: 48
     info: Ellen is your Grandchild and she is the Undertaker
+  - id: 99
+    game_id: 14
+    day: 1
+    role_id: 65
+    info: Bluffs are Librarian, Fortune Teller and Virgin
+  - id: 100
+    game_id: 14
+    day: 1
+    role_id: 49
+    info: Ben must pretend Osie is Evil
+  - id: 101
+    game_id: 14
+    day: 1
+    role_id: 68
+    info: '0'
+  - id: 102
+    game_id: 14
+    day: 1
+    role_id: 79
+    info: One of Nilsey, Ben and Osie is Evil
+  - id: 103
+    game_id: 14
+    day: 1
+    role_id: 10
+    info: Zoey
+  - id: 104
+    game_id: 14
+    day: 2
+    role_id: 49
+    info: Ben must pretend that Duncan is Evil
+  - id: 105
+    game_id: 14
+    day: 2
+    role_id: 119
+    info: No Minion Nominated today
+  - id: 106
+    game_id: 14
+    day: 2
+    role_id: 106
+    info: Ben and Nilsey are not on the same team.
+  - id: 107
+    game_id: 14
+    day: 3
+    role_id: 49
+    info: Duncan is mad that Zoey is Evil
+  - id: 108
+    game_id: 14
+    day: 4
+    role_id: 49
+    info: Zoey is mad Duncan is evil

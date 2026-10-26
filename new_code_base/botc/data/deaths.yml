@@ -419,3 +419,45 @@ deaths:
     timing: Night
     cause_type: Demon
     cause_role_id: 54
+  - id: 61
+    game_id: 14
+    day: 1
+    player_id: 8
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 62
+    game_id: 14
+    day: 2
+    player_id: 6
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 65
+  - id: 63
+    game_id: 14
+    day: 2
+    player_id: 5
+    timing: Day
+    cause_type: Breaking Madness
+    cause_role_id: 49
+  - id: 64
+    game_id: 14
+    day: 3
+    player_id: 18
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 65
+  - id: 65
+    game_id: 14
+    day: 4
+    player_id: 19
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 65
+  - id: 66
+    game_id: 14
+    day: 4
+    player_id: 9
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
