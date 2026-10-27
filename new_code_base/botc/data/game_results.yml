@@ -63,3 +63,11 @@ game_results:
     game_id: 16
     winning_team: Good
     win_condition_id: 1
+  - id: 17
+    game_id: 17
+    winning_team: Evil
+    win_condition_id: 4
+  - id: 18
+    game_id: 18
+    winning_team: Evil
+    win_condition_id: 4

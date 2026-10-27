@@ -552,3 +552,94 @@ deaths:
     timing: Day
     cause_type: Execution
     cause_role_id: null
+  - id: 80
+    game_id: 17
+    day: 1
+    player_id: 1
+    timing: Day
+    cause_type: Execution
+    cause_role_id: 123
+  - id: 81
+    game_id: 17
+    day: 2
+    player_id: 9
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 125
+  - id: 82
+    game_id: 17
+    day: 2
+    player_id: 8
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 83
+    game_id: 17
+    day: 3
+    player_id: 2
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 125
+  - id: 84
+    game_id: 17
+    day: 4
+    player_id: 3
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 125
+  - id: 85
+    game_id: 17
+    day: 4
+    player_id: 10
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 86
+    game_id: 17
+    day: 3
+    player_id: 8
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 87
+    game_id: 18
+    day: 2
+    player_id: 8
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 88
+    game_id: 18
+    day: 3
+    player_id: 27
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 89
+    game_id: 18
+    day: 3
+    player_id: 25
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 48
+  - id: 90
+    game_id: 18
+    day: 3
+    player_id: 28
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 91
+    game_id: 18
+    day: 4
+    player_id: 26
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 92
+    game_id: 18
+    day: 4
+    player_id: 23
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null

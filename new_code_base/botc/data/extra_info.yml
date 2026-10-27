@@ -649,3 +649,93 @@ extra_info:
     day: 4
     role_id: 120
     info: Osie is the the Scarlet Woman
+  - id: 131
+    game_id: 17
+    day: 1
+    role_id: 125
+    info: The bluffs are Investigator, Monk and Ravenkeeper
+  - id: 132
+    game_id: 17
+    day: 1
+    role_id: 126
+    info: Either Gee or Birony is a Ravenkeeper
+  - id: 133
+    game_id: 17
+    day: 1
+    role_id: 21
+    info: There is 1 pair of evil players
+  - id: 134
+    game_id: 17
+    day: 1
+    role_id: 40
+    info: Between Kirsty and Rythian there is no Demon
+  - id: 135
+    game_id: 17
+    day: 2
+    role_id: 40
+    info: Between Gee and Duncan there is no Demon
+  - id: 136
+    game_id: 17
+    day: 2
+    role_id: 120
+    info: Zylus was a Spy
+  - id: 137
+    game_id: 17
+    day: 3
+    role_id: 40
+    info: Between Briony and Sophie neither is a Demon
+  - id: 138
+    game_id: 17
+    day: 3
+    role_id: 120
+    info: Osie Was the Legion
+  - id: 139
+    game_id: 17
+    day: 4
+    role_id: 40
+    info: There is no Demon between Gee and Duncan.
+  - id: 140
+    game_id: 18
+    day: 1
+    role_id: 54
+    info: The Bluffs are Dreamer, Ravenkeeper or Virgin
+  - id: 141
+    game_id: 18
+    day: 1
+    role_id: 126
+    info: Pyrion or Lydia is the Fortune Teller
+  - id: 142
+    game_id: 18
+    day: 1
+    role_id: 48
+    info: Grandchild is Alex the Rambler and he is the chef
+  - id: 143
+    game_id: 18
+    day: 1
+    role_id: 21
+    info: No pairs of evil players
+  - id: 144
+    game_id: 18
+    day: 1
+    role_id: 40
+    info: Neither Trott or Osie is the Demon
+  - id: 145
+    game_id: 18
+    day: 1
+    role_id: 79
+    info: Alex, Pyrion or Lydia is evil
+  - id: 146
+    game_id: 18
+    day: 2
+    role_id: 40
+    info: There is a Demon or Red Herring between Lydia and Ross.
+  - id: 147
+    game_id: 18
+    day: 3
+    role_id: 40
+    info: No Demon between Mark and Smithy
+  - id: 148
+    game_id: 18
+    day: 4
+    role_id: 40
+    info: There is no Demon between Mark hulmes and Trott

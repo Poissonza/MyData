@@ -48,3 +48,10 @@ role_swaps:
     new_role_id: 35
     new_team: Good
     cause: Farmer Pass
+  - id: 8
+    game_id: 17
+    day: 3
+    player_id: 4
+    new_role_id: 125
+    new_team: Evil
+    cause: Scarlett Woman Jump

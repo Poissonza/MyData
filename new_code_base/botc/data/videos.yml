@@ -174,3 +174,8 @@ videos:
     date: '2026-10-23'
     length: '00:35:05'
     members: true
+  - id: 36
+    name: New Player Mahem
+    date: '2025-02-21'
+    length: '01:09:58'
+    members: false
