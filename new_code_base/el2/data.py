@@ -11,6 +11,17 @@ class Col:
     required: bool = False
     label: str = ""
     choices: list[str] | None = None
+    ref: str | None = None
+
+
+def load_ref_choices(ref_table):
+    choices = [d.name for d in ref_table]
+
+
+def load_db(data_path: pathlib.Path, data_tables: dict) -> dict[list]:
+    db = {name: load_table(data_path, name) for name in data_tables}
+
+    return db
 
 
 def load_table(data_path: pathlib.Path, table_name: str) -> list:
