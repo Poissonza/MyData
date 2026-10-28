@@ -15,7 +15,8 @@ class Col:
 
 
 def load_ref_choices(ref_table):
-    choices = [d.name for d in ref_table]
+    return [d.name for d in ref_table]
+
 
 
 def load_db(data_path: pathlib.Path, data_tables: dict) -> dict[list]:
