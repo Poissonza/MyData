@@ -18,8 +18,7 @@ def load_ref_choices(ref_table):
     return [d.name for d in ref_table]
 
 
-
-def load_db(data_path: pathlib.Path, data_tables: dict) -> dict[list]:
+def load_db(data_path: pathlib.Path, data_tables: dict) -> dict[list[dict]]:
     db = {name: load_table(data_path, name) for name in data_tables}
 
     return db

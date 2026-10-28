@@ -1,7 +1,7 @@
 from pathlib import Path
 import streamlit as st
 import constants
-from data import load_table, store_table, validate, Col
+from data import store_table, validate, Col
 
 
 EL_2_DIR = Path(__file__).parent
@@ -9,13 +9,12 @@ REFERENCE_DIR = EL_2_DIR / "reference"
 GAME_DIR = EL_2_DIR / "data"
 
 
-def events_page():
-    tab_creation("The list of events", load_table(GAME_DIR, "events"), "events")
+def events_page(data: dict):
+    tab_creation("The list of events", data["events"], "events")
 
 
-def reference_page():
+def reference_page(data: dict):
     tab_names = [tab.name for tab in constants.REFERENCE_TABS]
-
     ref_tab = st.tabs(tab_names)
 
     ref_num_tabs = len(ref_tab)
@@ -24,7 +23,7 @@ def reference_page():
         with ref_tab[i]:
             tab_creation(
                 constants.REFERENCE_TABS[i].caption,
-                load_table(GAME_DIR, constants.REFERENCE_TABS[i].data_name),
+                data[constants.REFERENCE_TABS[i].data_name],
                 constants.REFERENCE_TABS[i].data_name,
             )
 
@@ -46,7 +45,7 @@ def input_field(col: Col):
         else:
             st.error("Errors in the choice matrix")
     else:
-        st.text_input(label=col.label, value=None)
+        return st.text_input(label=col.label, value=None)
 
 
 def input_forms(form_key: str, data: list[dict]):
