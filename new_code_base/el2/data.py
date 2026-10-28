@@ -28,6 +28,13 @@ def store_table(data_path: pathlib.Path, data: list[dict], table_name: str) -> N
         json.dump(data, f)
 
 
+def ref_prep(data: list[dict]):
+
+    ref_dict = {d["name"]: d["id"] for d in data}
+
+    return ref_dict
+
+
 @dataclass(frozen=True)
 class Tab:
     name: str
