@@ -6,6 +6,7 @@ REFERENCE_TABS = [
     Tab("Factions", "The Factions in the Game", "faction"),
     Tab("Map", "The Map the game is played on", "maps"),
     Tab("World Size", "The World Size Options", "world_sizes"),
+    Tab("Event Types", "The type of Events", "event_types"),
 ]
 
 id_col = Col("id", "int", unique=True, label="ID")
@@ -60,5 +61,9 @@ TABLES = {
             choices=["World", "Faction", "Map"],
         ),
         Col("description", "long_text", label="Description"),
+    ],
+    "event_types": [
+        id_col,
+        Col("name", unique=True, required=True, label="Name"),
     ],
 }
