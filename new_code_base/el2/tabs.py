@@ -1,7 +1,7 @@
 from pathlib import Path
 import streamlit as st
 import constants
-from data import store_table, validate, Col
+from data import store_table, validate, Col, load_ref_choices
 
 
 EL_2_DIR = Path(__file__).parent
@@ -34,7 +34,7 @@ def tab_creation(caption: str, data: list[dict], form_key: str) -> None:
     st.table(data[form_key])
 
 
-def input_field(col: Col):
+def input_field(col: Col, data: list[dict]):
     if col.type == "int":
         return st.number_input(label=col.label, value=None)
     elif col.type == "bool":
@@ -44,6 +44,8 @@ def input_field(col: Col):
             return st.selectbox(label=col.label, options=col.choices)
         else:
             st.error("Errors in the choice matrix")
+    elif col.type == "ref":
+        st.selectbox(label=col.label, options=load_ref_choices(data[col.ref]))
     else:
         return st.text_input(label=col.label, value=None)
 
@@ -61,9 +63,9 @@ def input_forms(form_key: str, data: list[dict]):
         f_cols = st.columns(min(3, num_cols))
         for i, c in enumerate(short_cols):
             with f_cols[i % len(f_cols)]:
-                values[c.name] = input_field(c)
+                values[c.name] = input_field(c, data)
         for c in long_cols:
-            values[c.name] = input_field(c)
+            values[c.name] = input_field(c, data)
         submit_button = st.form_submit_button("Submit")
 
         if submit_button:

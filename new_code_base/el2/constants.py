@@ -57,9 +57,9 @@ TABLES = {
         Col("name", unique=True, required=True, label="Name"),
         Col(
             "event_type",
-            "choice",
+            "ref",
             label="Event Type",
-            choices=["World", "Faction", "Map"],
+            ref="event_types",
         ),
         Col("description", "long_text", label="Description"),
     ],
