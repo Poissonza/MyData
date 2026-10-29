@@ -160,3 +160,45 @@ actions:
     role_id: 90
     target_player_id: 19
     target_role_id: null
+  - id: 24
+    game_id: 19
+    day: 1
+    timing: Night
+    role_id: 128
+    target_player_id: 2
+    target_role_id: null
+  - id: 25
+    game_id: 19
+    day: 1
+    timing: Night
+    role_id: 77
+    target_player_id: 4
+    target_role_id: null
+  - id: 26
+    game_id: 19
+    day: 2
+    timing: Night
+    role_id: 128
+    target_player_id: 14
+    target_role_id: null
+  - id: 27
+    game_id: 19
+    day: 2
+    timing: Night
+    role_id: 128
+    target_player_id: 24
+    target_role_id: null
+  - id: 28
+    game_id: 19
+    day: 3
+    timing: Night
+    role_id: 128
+    target_player_id: 4
+    target_role_id: null
+  - id: 29
+    game_id: 19
+    day: 3
+    timing: Night
+    role_id: 128
+    target_player_id: 17
+    target_role_id: null

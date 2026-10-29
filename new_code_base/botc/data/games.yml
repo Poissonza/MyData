@@ -53,3 +53,9 @@ games:
   - id: 18
     game_number: 1
     video_id: 36
+  - id: 19
+    game_number: 1
+    video_id: 37
+  - id: 20
+    game_number: 2
+    video_id: 37

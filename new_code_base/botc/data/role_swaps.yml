@@ -55,3 +55,10 @@ role_swaps:
     new_role_id: 125
     new_team: Evil
     cause: Scarlett Woman Jump
+  - id: 9
+    game_id: 19
+    day: 2
+    player_id: 24
+    new_role_id: 34
+    new_team: Evil
+    cause: Fang Gu Hop

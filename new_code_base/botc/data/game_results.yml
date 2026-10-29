@@ -71,3 +71,7 @@ game_results:
     game_id: 18
     winning_team: Evil
     win_condition_id: 4
+  - id: 19
+    game_id: 19
+    winning_team: Evil
+    win_condition_id: 4
