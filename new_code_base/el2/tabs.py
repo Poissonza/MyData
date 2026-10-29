@@ -10,7 +10,16 @@ GAME_DIR = EL_2_DIR / "data"
 
 
 def events_page(data: dict):
-    tab_creation("The list of events", data, "events")
+    tab_names = [tab.name for tab in constants.GAME_TABS]
+    game_tab = st.tabs(tab_names)
+
+    for i in range(len(game_tab)):
+        with game_tab[i]:
+            tab_creation(
+                constants.GAME_TABS[i].caption,
+                data,
+                constants.GAME_TABS[i].data_name,
+            )
 
 
 def reference_page(data: dict):

@@ -9,6 +9,11 @@ REFERENCE_TABS = [
     Tab("Event Types", "The type of Events", "event_types"),
 ]
 
+GAME_TABS = [
+    Tab("Games", "The Games", "games"),
+    Tab("Events", "The Game Events", "events"),
+]
+
 id_col = Col("id", "int", unique=True, label="ID")
 
 TABLES = {
@@ -37,6 +42,15 @@ TABLES = {
     ],
     "games": [
         id_col,
+        Col("faction_id", required=True, type="ref", ref="faction", label="Faction"),
+        Col("map_id", required=True, type="ref", ref="maps", label="Map"),
+        Col(
+            "world_size_id",
+            required=True,
+            type="ref",
+            ref="world_sizes",
+            label="World Size",
+        ),
         Col("ai_simultaneous_turns", "bool", label="AI Simultaneous Turns"),
         Col(
             "allow_fortress_instant_resolve",
