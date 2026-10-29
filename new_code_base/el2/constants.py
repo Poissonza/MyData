@@ -21,6 +21,7 @@ TABLES = {
     "faction": [
         id_col,
         Col("name", unique=True, required=True, label="Name"),
+        Col("expansion", required=True, label="Expansion"),
         Col("description", "long_text", label="Description"),
     ],
     "maps": [
