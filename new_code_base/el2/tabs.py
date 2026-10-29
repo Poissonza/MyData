@@ -1,7 +1,7 @@
 from pathlib import Path
 import streamlit as st
 import constants
-from data import store_table, validate, Col, load_ref_choices
+from data import store_table, validate, Col, load_ref_choices, prepare_data
 
 
 EL_2_DIR = Path(__file__).parent
@@ -45,7 +45,7 @@ def input_field(col: Col, data: list[dict]):
         else:
             st.error("Errors in the choice matrix")
     elif col.type == "ref":
-        st.selectbox(label=col.label, options=load_ref_choices(data[col.ref]))
+        return st.selectbox(label=col.label, options=load_ref_choices(data[col.ref]))
     else:
         return st.text_input(label=col.label, value=None)
 
@@ -69,10 +69,15 @@ def input_forms(form_key: str, data: list[dict]):
         submit_button = st.form_submit_button("Submit")
 
         if submit_button:
-            data_check = validate(data[form_key], cols, values)
+            data = prepare_data(data, cols, values)
+            if form_key not in data:
+                input_data = []
+            else:
+                input_data = data[form_key]
+            data_check = validate(input_data, cols, values)
             if not data_check:
-                data[form_key].append(values)
-                store_table(GAME_DIR, data[form_key], form_key)
+                input_data.append(values)
+                store_table(GAME_DIR, input_data, form_key)
             else:
                 for error in data_check:
                     st.error(error)

@@ -39,11 +39,19 @@ def store_table(data_path: pathlib.Path, data: list[dict], table_name: str) -> N
         json.dump(data, f)
 
 
-def ref_prep(data: list[dict]):
-
+def get_ref_dict(data):
     ref_dict = {d["name"]: d["id"] for d in data}
 
     return ref_dict
+
+
+def prepare_data(data: list[dict], cols: list[Col], values: dict) -> dict:
+    for col in cols:
+        if col.type == "ref":
+            ref_dict = get_ref_dict(data[col.ref])
+
+            values[col.name] = ref_dict[values[col.name]]
+    return values
 
 
 @dataclass(frozen=True)
