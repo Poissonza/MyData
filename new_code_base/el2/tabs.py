@@ -9,7 +9,7 @@ REFERENCE_DIR = EL_2_DIR / "reference"
 GAME_DIR = EL_2_DIR / "data"
 
 
-def events_page(data: dict):
+def game_page(data: dict):
     tab_names = [tab.name for tab in constants.GAME_TABS]
     game_tab = st.tabs(tab_names)
 
