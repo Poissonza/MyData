@@ -10,7 +10,7 @@ GAME_DIR = EL_2_DIR / "data"
 
 
 def events_page(data: dict):
-    tab_creation("The list of events", data["events"], "events")
+    tab_creation("The list of events", data, "events")
 
 
 def reference_page(data: dict):
@@ -23,7 +23,7 @@ def reference_page(data: dict):
         with ref_tab[i]:
             tab_creation(
                 constants.REFERENCE_TABS[i].caption,
-                data[constants.REFERENCE_TABS[i].data_name],
+                data,
                 constants.REFERENCE_TABS[i].data_name,
             )
 
@@ -31,7 +31,7 @@ def reference_page(data: dict):
 def tab_creation(caption: str, data: list[dict], form_key: str) -> None:
     st.caption(caption)
     input_forms(form_key, data)
-    st.table(data)
+    st.table(data[form_key])
 
 
 def input_field(col: Col):
@@ -57,7 +57,7 @@ def input_forms(form_key: str, data: list[dict]):
     num_cols = len(short_cols)
 
     with st.form(key=f"f_{form_key}", clear_on_submit=True):
-        values = {"id": len(data) + 1}
+        values = {"id": len(data[form_key]) + 1}
         f_cols = st.columns(min(3, num_cols))
         for i, c in enumerate(short_cols):
             with f_cols[i % len(f_cols)]:
@@ -67,10 +67,10 @@ def input_forms(form_key: str, data: list[dict]):
         submit_button = st.form_submit_button("Submit")
 
         if submit_button:
-            data_check = validate(data, cols, values)
+            data_check = validate(data[form_key], cols, values)
             if not data_check:
-                data.append(values)
-                store_table(GAME_DIR, data, form_key)
+                data[form_key].append(values)
+                store_table(GAME_DIR, data[form_key], form_key)
             else:
                 for error in data_check:
                     st.error(error)
