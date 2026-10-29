@@ -37,7 +37,7 @@ TABLES = {
     ],
     "games": [
         id_col,
-        Col("ai_simultaneos_turns", "bool", label="AI Simultaneous Turns"),
+        Col("ai_simultaneous_turns", "bool", label="AI Simultaneous Turns"),
         Col(
             "allow_fortress_instant_resolve",
             "bool",
