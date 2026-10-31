@@ -769,3 +769,33 @@ extra_info:
     day: 3
     role_id: 29
     info: You are still good
+  - id: 155
+    game_id: 20
+    day: 1
+    role_id: 32
+    info: Mark Is your Good Twin, he is the Empath
+  - id: 156
+    game_id: 20
+    day: 1
+    role_id: 54
+    info: The bluffs are undertaker, Gambler and the Oracle
+  - id: 157
+    game_id: 20
+    day: 1
+    role_id: 30
+    info: Learns about being the good twin, and got a 0
+  - id: 158
+    game_id: 20
+    day: 1
+    role_id: 108
+    info: Counter clockwise
+  - id: 159
+    game_id: 20
+    day: 2
+    role_id: 101
+    info: Briony or Ravs is the Demon
+  - id: 160
+    game_id: 20
+    day: 2
+    role_id: 30
+    info: '0'

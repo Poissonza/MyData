@@ -678,3 +678,24 @@ deaths:
     timing: Day
     cause_type: Ability
     cause_role_id: 128
+  - id: 98
+    game_id: 20
+    day: 1
+    player_id: 5
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 99
+    game_id: 20
+    day: 2
+    player_id: 17
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54
+  - id: 100
+    game_id: 20
+    day: 3
+    player_id: 4
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 54

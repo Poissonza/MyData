@@ -1007,3 +1007,51 @@ nominations:
     votes: 3
     ghost_votes: 0
     result_id: 3
+  - id: 127
+    game_id: 20
+    day: 1
+    nominator_id: 5
+    nominee_id: 5
+    votes: 4
+    ghost_votes: null
+    result_id: 2
+  - id: 128
+    game_id: 20
+    day: 1
+    nominator_id: 7
+    nominee_id: 7
+    votes: 3
+    ghost_votes: null
+    result_id: 1
+  - id: 129
+    game_id: 20
+    day: 2
+    nominator_id: 7
+    nominee_id: 7
+    votes: 1
+    ghost_votes: null
+    result_id: 1
+  - id: 130
+    game_id: 20
+    day: 2
+    nominator_id: 14
+    nominee_id: 4
+    votes: 0
+    ghost_votes: 0
+    result_id: 1
+  - id: 131
+    game_id: 20
+    day: 2
+    nominator_id: 24
+    nominee_id: 2
+    votes: 3
+    ghost_votes: 1
+    result_id: 2
+  - id: 132
+    game_id: 20
+    day: 2
+    nominator_id: 2
+    nominee_id: 24
+    votes: 2
+    ghost_votes: null
+    result_id: 1
