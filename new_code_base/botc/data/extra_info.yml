@@ -799,3 +799,73 @@ extra_info:
     day: 2
     role_id: 30
     info: '0'
+  - id: 161
+    game_id: 21
+    day: 1
+    role_id: 43
+    info: Your Quest is to convince a neighbour that they are your Marionette
+  - id: 162
+    game_id: 21
+    day: 1
+    role_id: 78
+    info: Your bluffs are Monk, soldier or Acrobat
+  - id: 163
+    game_id: 21
+    day: 1
+    role_id: 30
+    info: '0'
+  - id: 164
+    game_id: 21
+    day: 1
+    role_id: 40
+    info: Ben and Tom one is a Demon or your red herring
+  - id: 165
+    game_id: 21
+    day: 1
+    role_id: 71
+    info: You quest is to get everyones signature in a book
+  - id: 166
+    game_id: 21
+    day: 1
+    role_id: 2
+    info: Your quest is to tell everyone that you are a different role everyday until the final day
+  - id: 167
+    game_id: 21
+    day: 2
+    role_id: 120
+    info: Quest Don't let Tom have any private quests
+  - id: 168
+    game_id: 21
+    day: 2
+    role_id: 2
+    info: You have a new quest You must tell town everyday you are a different role and not an outsider
+  - id: 169
+    game_id: 21
+    day: 2
+    role_id: 30
+    info: '0'
+  - id: 170
+    game_id: 21
+    day: 2
+    role_id: 40
+    info: Ben and Sophie one is a demon or red herring
+  - id: 171
+    game_id: 21
+    day: 3
+    role_id: 43
+    info: You have done your quest, Lydia is the raven Keeper
+  - id: 172
+    game_id: 21
+    day: 3
+    role_id: 120
+    info: You failed your quest
+  - id: 173
+    game_id: 21
+    day: 3
+    role_id: 30
+    info: '0'
+  - id: 174
+    game_id: 21
+    day: 3
+    role_id: 40
+    info: RTgame and Lydia is either a Demon or the Red Herring

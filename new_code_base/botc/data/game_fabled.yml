@@ -8,3 +8,6 @@ game_fabled:
   - id: 3
     game_id: 12
     fabled_id: 2
+  - id: 4
+    game_id: 12
+    fabled_id: 3

@@ -5,3 +5,6 @@ fabled:
   - id: 2
     name: Ferryman
     description: On the final day, all dead players regain their vote token.
+  - id: 3
+    name: Zenomancer
+    description: needs details

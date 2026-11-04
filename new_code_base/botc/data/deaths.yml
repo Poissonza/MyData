@@ -699,3 +699,31 @@ deaths:
     timing: Night
     cause_type: Demon
     cause_role_id: 54
+  - id: 101
+    game_id: 21
+    day: 2
+    player_id: 5
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 78
+  - id: 102
+    game_id: 21
+    day: 3
+    player_id: 12
+    timing: Night
+    cause_type: Demon
+    cause_role_id: 78
+  - id: 103
+    game_id: 21
+    day: 3
+    player_id: 29
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
+  - id: 104
+    game_id: 20
+    day: 2
+    player_id: 2
+    timing: Day
+    cause_type: Execution
+    cause_role_id: null
