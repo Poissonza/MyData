@@ -45,7 +45,8 @@ def tab_creation(caption: str, data: list[dict], form_key: str) -> None:
 
 def input_field(col: Col, data: list[dict]):
     if col.type == "int":
-        return st.number_input(label=col.label, value=None)
+        number = st.number_input(label=col.label, value=None)
+        return int(number) if number is not None else None
     elif col.type == "bool":
         return st.checkbox(label=col.label)
     elif col.type == "choice":
