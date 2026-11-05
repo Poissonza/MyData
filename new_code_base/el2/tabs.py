@@ -78,11 +78,8 @@ def input_forms(form_key: str, data: list[dict]):
         submit_button = st.form_submit_button("Submit")
 
         if submit_button:
-            data = prepare_data(data, cols, values)
-            if form_key not in data:
-                input_data = []
-            else:
-                input_data = data[form_key]
+            values = prepare_data(data, cols, values)
+            input_data = data[form_key]
             data_check = validate(input_data, cols, values)
             if not data_check:
                 input_data.append(values)

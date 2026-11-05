@@ -47,7 +47,7 @@ def get_ref_dict(data):
 
 def prepare_data(data: list[dict], cols: list[Col], values: dict) -> dict:
     for col in cols:
-        if col.type == "ref":
+        if col.type == "ref" and values.get(col.name) is not None:
             ref_dict = get_ref_dict(data[col.ref])
 
             values[col.name] = ref_dict[values[col.name]]
