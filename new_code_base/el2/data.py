@@ -11,20 +11,23 @@ class Col:
     required: bool = False
     label: str = ""
     choices: list[str] | None = None
-    ref: str | None = None
+    ref: str = ""
 
 
-def load_ref_choices(ref_table):
-    return [d.get("name") for d in ref_table]
+Database = dict[str, list[dict]]  # table name -> rows
 
 
-def load_db(data_path: pathlib.Path, data_tables: dict) -> dict[list[dict]]:
+def load_ref_choices(ref_table: list[dict]) -> list[str]:
+    return [d["name"] for d in ref_table]
+
+
+def load_db(data_path: pathlib.Path, data_tables: dict[str, list[Col]]) -> Database:
     db = {name: load_table(data_path, name) for name in data_tables}
 
     return db
 
 
-def load_table(data_path: pathlib.Path, table_name: str) -> list:
+def load_table(data_path: pathlib.Path, table_name: str) -> list[dict]:
     final_path = data_path / f"{table_name}.json"
     if not final_path.exists():
         return []
@@ -39,13 +42,13 @@ def store_table(data_path: pathlib.Path, data: list[dict], table_name: str) -> N
         json.dump(data, f)
 
 
-def get_ref_dict(data):
+def get_ref_dict(data: list[dict]) -> dict:
     ref_dict = {d["name"]: d["id"] for d in data}
 
     return ref_dict
 
 
-def prepare_data(data: list[dict], cols: list[Col], values: dict) -> dict:
+def prepare_data(data: Database, cols: list[Col], values: dict) -> dict:
     for col in cols:
         if col.type == "ref" and values.get(col.name) is not None:
             ref_dict = get_ref_dict(data[col.ref])

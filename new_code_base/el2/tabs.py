@@ -1,7 +1,7 @@
 from pathlib import Path
 import streamlit as st
 import constants
-from data import store_table, validate, Col, load_ref_choices, prepare_data
+from data import Database, store_table, validate, Col, load_ref_choices, prepare_data
 
 
 EL_2_DIR = Path(__file__).parent
@@ -9,7 +9,7 @@ REFERENCE_DIR = EL_2_DIR / "reference"
 GAME_DIR = EL_2_DIR / "data"
 
 
-def game_page(data: dict):
+def game_page(data: Database):
     tab_names = [tab.name for tab in constants.GAME_TABS]
     game_tab = st.tabs(tab_names)
 
@@ -22,7 +22,7 @@ def game_page(data: dict):
             )
 
 
-def reference_page(data: dict):
+def reference_page(data: Database):
     tab_names = [tab.name for tab in constants.REFERENCE_TABS]
     ref_tab = st.tabs(tab_names)
 
@@ -37,30 +37,30 @@ def reference_page(data: dict):
             )
 
 
-def tab_creation(caption: str, data: list[dict], form_key: str) -> None:
+def tab_creation(caption: str, data: Database, form_key: str) -> None:
     st.caption(caption)
     input_forms(form_key, data)
     st.table(data[form_key])
 
 
-def input_field(col: Col, data: list[dict]):
+def input_field(col: Col, data: Database):
     if col.type == "int":
         number = st.number_input(label=col.label, value=None)
         return int(number) if number is not None else None
     elif col.type == "bool":
         return st.checkbox(label=col.label)
     elif col.type == "choice":
-        if col.label is not None:
-            return st.selectbox(label=col.label, options=col.choices)
-        else:
-            st.error("Errors in the choice matrix")
+        if col.choices is None:
+            st.error(f"No choices defined for column: {col.name}")
+            return None
+        return st.selectbox(label=col.label, options=col.choices)
     elif col.type == "ref":
         return st.selectbox(label=col.label, options=load_ref_choices(data[col.ref]))
     else:
         return st.text_input(label=col.label, value=None)
 
 
-def input_forms(form_key: str, data: list[dict]):
+def input_forms(form_key: str, data: Database):
     cols = [c for c in constants.TABLES[form_key] if c.name != "id"]
 
     short_cols = [c for c in cols if c.type != "long_text"]
