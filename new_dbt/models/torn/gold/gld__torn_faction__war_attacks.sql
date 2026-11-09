@@ -1,0 +1,32 @@
+{{
+    config(
+        materialized='table',
+        schema='gold',
+        alias='gld__torn_faction__attacks_test'
+    )
+}}
+
+SELECT startedTimeStamp,
+    `code`,
+    started,
+    chain,
+    AttackerID,
+    AttackerName,
+    AttackerFactionId,
+    AttackerFactionName,
+    DefenderID,
+    DefenderName,
+    DefenderFactionId,
+    DefenderFactionName,
+    RespectGain,
+    RespectLoss,
+    ModifiersFairFight,
+    ModifiersWar,
+    ModifiersRetaliation,
+    ModifiersGroup,
+    ModifiersOverseas,
+    ModifiersChain,
+    ModifiersWarlord,
+    Result,
+    IsRankedWar
+FROM {{ref('sil__torn_faction__attacks')}}
