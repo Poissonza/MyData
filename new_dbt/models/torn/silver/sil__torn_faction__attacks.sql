@@ -5,8 +5,12 @@
         alias='sil__torn_faction__attacks_test'
     )
 }}
+WITH rw AS (
+SELECT * FROM {{ ref('ranked_wars') }} QUALIFY row_number() OVER(PARTITION BY id ORDER BY ts DESC) =1
+)
+
 SELECT
-    id,
+    fa.id,
       `code`,
       started,
       CAST(from_unixtime(started) AS TIMESTAMP) AS startedTimeStamp,
@@ -36,5 +40,7 @@ SELECT
       modifiers.`group` as ModifiersGroup,
       modifiers.overseas as ModifiersOverseas,
       modifiers.chain as ModifiersChain,
-      modifiers.warlord as ModifiersWarlord
- FROM {{ ref('faction_attacks')}}
+      modifiers.warlord as ModifiersWarlord,
+      CAST(from_unixtime(rw.start) AS TIMESTAMP) as RankedWarStart
+ FROM {{ ref('faction_attacks') }} as fa
+ LEFT JOIN rw ON fa.started > rw.start and fa.started < rw.end
