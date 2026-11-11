@@ -869,3 +869,33 @@ extra_info:
     day: 3
     role_id: 40
     info: RTgame and Lydia is either a Demon or the Red Herring
+  - id: 175
+    game_id: 22
+    day: 1
+    role_id: 107
+    info: Bluffs are Professor, Gambler and the Grandmother
+  - id: 176
+    game_id: 22
+    day: 1
+    role_id: 30
+    info: '1'
+  - id: 177
+    game_id: 22
+    day: 1
+    role_id: 6
+    info: Strange feeling about the Inn. Asked if the role involves the Demon and got a cold
+  - id: 178
+    game_id: 22
+    day: 2
+    role_id: 53
+    info: I think the Damsel is Zoey
+  - id: 179
+    game_id: 22
+    day: 3
+    role_id: 6
+    info: You are back alive and there is something with the Inn. Do you have anything for me?
+  - id: 180
+    game_id: 22
+    day: 4
+    role_id: 6
+    info: Have you got something for me?

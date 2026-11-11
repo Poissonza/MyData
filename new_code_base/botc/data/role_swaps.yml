@@ -62,3 +62,17 @@ role_swaps:
     new_role_id: 34
     new_team: Evil
     cause: Fang Gu Hop
+  - id: 10
+    game_id: 22
+    day: 2
+    player_id: 7
+    new_role_id: 35
+    new_team: Good
+    cause: Farmer Hop
+  - id: 11
+    game_id: 22
+    day: 3
+    player_id: 1
+    new_role_id: 35
+    new_team: Good
+    cause: Farmer Hob
